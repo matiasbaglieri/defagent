@@ -1,0 +1,31 @@
+<section
+  class="section {{ background ? 'bg-' + background : '' }} {{
+    edge ? 'edge ' + edge : ''
+  }}"
+  [ngClass]="classes"
+>
+  <div class="container bring-to-front">
+    <div class="row">
+      <div class="col-md-4">
+        <h2>
+          {{ 'FAQS.FAQS1.DO_YOU_HAVE' | translate }}
+          <span class="bold">{{ 'FAQS.FAQS1.QUESTIONS' | translate }}</span>
+        </h2>
+
+        <p class="lead">
+          {{ 'FAQS.FAQS1.NOT_SURE_HOW' | translate }}
+        </p>
+
+        <p class="text-muted">
+          {{ 'FAQS.FAQS1.HERE_ARE_THE_ANSWERS' | translate }}
+        </p>
+      </div>
+
+      <div class="col-md-8">
+        <div class="accordion accordion-clean">
+          <dc-faqs-accordion></dc-faqs-accordion>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

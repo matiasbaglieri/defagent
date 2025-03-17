@@ -1,0 +1,61 @@
+<!-- ./Dashboard Included -->
+<section class="section bg-light edge top-left">
+  <div class="container bring-to-front">
+    <div class="section-heading text-center">
+      <h2>{{ 'ABOUT.SOLUTIONS.A_SOLUTION_FOR_EVERY_NEED' | translate }}</h2>
+      <p class="lead">
+        {{ 'ABOUT.SOLUTIONS.LOREM_IPSUM' | translate }}
+      </p>
+    </div>
+    <div class="row align-items-center gap-y">
+      <div class="col-md-6 col-lg-5 text-center text-md-left">
+        <ul class="list-unstyled">
+          <li
+            class="media d-block d-lg-flex"
+            *ngFor="let feature of features; let i = index; let length = count"
+          >
+            <dc-feather
+              [name]="feature.icon"
+              [iconClass]="'stroke-primary'"
+              class="mr-3 text-lg-right"
+            ></dc-feather>
+            <div class="media-body mt-3 mt-lg-0 text-center text-md-left">
+              <h5 class="bold text-darker">{{ feature.title }}</h5>
+              <p class="mt-0" [ngClass]="{ 'mb-5': i < length }">
+                {{ feature.description }}
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-6 col-lg-5 ml-md-auto">
+        <div class="shadow card">
+          <div
+            class="card-header blanket gradient gradient-blue-purple alpha-5 image-background cover"
+            style="background-image: url(assets/images/about/dashboard.png)"
+          >
+            <div class="content">
+              <h2 class="mt-9 text-contrast light">
+                {{ 'ABOUT.SOLUTIONS.DASHCORE_INCLUDED' | translate }}
+              </h2>
+            </div>
+          </div>
+          <div class="card-body">
+            <p>
+              {{ 'ABOUT.SOLUTIONS.OUR_TEMPLATE_IS_PACKED_WITH_A' | translate }}
+              <span class="bold">{{
+                'ABOUT.SOLUTIONS.START_ADMIN_DASHBOARD' | translate
+              }}</span>
+              {{ 'ABOUT.SOLUTIONS.START_RIGHT_AWAY' | translate }}
+            </p>
+            <a
+              href="https://everythink.ai/app/#/sessions/signup"
+              class="btn btn-primary btn-rounded mt-4"
+              >{{ 'ABOUT.SOLUTIONS.TRY_THE_DASHBOARD' | translate }}</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

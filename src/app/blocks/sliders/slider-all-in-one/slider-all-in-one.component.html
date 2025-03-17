@@ -1,0 +1,167 @@
+<section class="section">
+  <div class="container">
+    <div class="section-heading text-center">
+      <h2 class="bold">
+        {{ 'SLIDERS.SLIDER_ALL_IN_ONE.EVERYTHINK_YOU_NEED' | translate }}
+      </h2>
+    </div>
+
+    <nav
+      class="slide nav nav-tabs nav-outlined nav-rounded justify-content-around justify-content-md-center mb-5"
+    >
+      <a
+        class="nav-item nav-link"
+        [class.active]="i === currentSlide"
+        (click)="updateSlider(i)"
+        *ngFor="
+          let item of ['Solution', 'Efficiency', 'Experience', 'Itearate'];
+          let i = index
+        "
+      >
+        {{ item }}
+      </a>
+    </nav>
+
+    <swiper [index]="currentSlide" (indexChange)="onIndexChange($event)">
+      <div class="swiper-slide">
+        <div class="container-fluid pt-0 pb-4">
+          <div class="row gap-y align-items-center">
+            <div class="col-md-6 mr-md-auto">
+              <div class="browser shadow">
+                <img
+                  src="assets/img/screens/dash/Imagen_1.png"
+                  class="img-responsive"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="col-md-5">
+              <dc-badge [bg]="'contrast'" [text]="'primary'">
+                {{
+                  'SLIDERS.SLIDER_ALL_IN_ONE.REAL_TIME_SOLUTION' | translate
+                }}</dc-badge
+              >
+              <h2 class="display-4 light">
+                {{
+                  'SLIDERS.SLIDER_ALL_IN_ONE.STREAMLINES_PROCESSES' | translate
+                }}
+              </h2>
+              <p>
+                {{ 'SLIDERS.SLIDER_ALL_IN_ONE.AFFORDABILLITY' | translate }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="container-fluid pt-0 pb-4">
+          <div class="row gap-y align-items-center">
+            <div class="col-md-6 order-md-2 ml-md-auto">
+              <div class="">
+                <img
+                  src="assets/img/screens/dash/stockvault-trade-and-commerce-world-map-over-city-at-night240624.jpg"
+                  alt=""
+                  class="img-responsive"
+                />
+              </div>
+            </div>
+
+            <div class="col-md-5 mr-md-auto">
+              <dc-badge [bg]="'contrast'" [text]="'primary'"
+                >Efficiency</dc-badge
+              >
+              <h2 class="display-4 light">
+                {{
+                  'SLIDERS.SLIDER_ALL_IN_ONE.SINCE_THE_NEED_FORHUMAN'
+                    | translate
+                }}
+              </h2>
+              <p class="lead">
+                {{
+                  'SLIDERS.SLIDER_ALL_IN_ONE.EVERYTHINK_DOES_ALL' | translate
+                }}
+              </p>
+
+              <hr class="mt-5" />
+              <p class="small text-secondary">
+                {{ 'SLIDERS.SLIDER_ALL_IN_ONE.ALWAYS_ON_TIME' | translate }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="container-fluid pt-0 pb-4">
+          <div class="row gap-y align-items-center">
+            <div class="col-md-6 order-md-2 ml-md-auto">
+              <img
+                src="assets/img/screens/dash/prueba_01.png"
+                alt=""
+                class="img-responsive"
+                style="right: 0; top: 0"
+              />
+            </div>
+
+            <div class="col-md-5">
+              <dc-badge [bg]="'contrast'" [text]="'primary'">
+                {{
+                  'SLIDERS.SLIDER_ALL_IN_ONE.UNIQUE_USER)EXPERIENCE' | translate
+                }}</dc-badge
+              >
+              <h2 class="display-4 light">
+                {{
+                  'SLIDERS.SLIDER_ALL_IN_ONE.A_NEW_AND_INTUITIVE_EXPERIENCE'
+                    | translate
+                }}
+              </h2>
+              <p class="lead text-secondary">
+                {{
+                  'SLIDERS.SLIDER_ALL_IN_ONE.ESPECIALLY_WHEN_YOUR_CLIENTS_NEEDS'
+                    | translate
+                }}
+              </p>
+              <p>
+                {{ 'SLIDERS.SLIDER_ALL_IN_ONE.OUTSTANDING' | translate }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="container-fluid pt-0 pb-4">
+          <div class="row gap-y align-items-center">
+            <div class="col-md-6 order-md-2 ml-md-auto">
+              <div class="">
+                <img
+                  src="assets/img/screens/dash/brain.png"
+                  alt=""
+                  class="img-responsive"
+                  style="right: 0; top: 0"
+                />
+              </div>
+            </div>
+
+            <div class="col-md-5">
+              <dc-badge [bg]="'contrast'" [text]="'primary'">Iterate</dc-badge>
+              <h2 class="display-4 light">
+                {{ 'SLIDERS.SLIDER_ALL_IN_ONE.ANALYTICS' | translate }}
+              </h2>
+              <p class="lead">
+                {{ 'SLIDERS.SLIDER_ALL_IN_ONE.SIT_BACK_AS_YOUR' | translate }}
+              </p>
+              <p>
+                {{
+                  'SLIDERS.SLIDER_ALL_IN_ONE.CONTINUOUSLY_CHECK_IN' | translate
+                }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </swiper>
+  </div>
+</section>

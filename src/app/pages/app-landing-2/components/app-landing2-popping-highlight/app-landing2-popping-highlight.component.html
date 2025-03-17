@@ -1,0 +1,98 @@
+<!-- See why people love ShasCore -->
+<section class="section why-people-love-us">
+  <div class="shapes-container overflow-clear">
+    <div class="shape shape-circle shape-circle-1">
+      <div data-aos="fade-up-left"></div>
+    </div>
+    <div class="shape shape-circle shape-circle-2">
+      <div data-aos="fade-up-right" data-aos-delay="200"></div>
+    </div>
+
+    <div class="shape pattern pattern-dots pattern-dots-1"></div>
+
+    <div class="shape shape-triangle shape-animated">
+      <div class="animation--rotating"></div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row gap-y">
+      <div class="col-md-6 order-md-last">
+        <div class="section-heading">
+          <p class="text-primary bold">
+            {{
+              'DEMOS.SALES.APP_LANDING2_POPPING_HIGHLIGHT.DISCOVER_CREATE_LOVE'
+                | translate
+            }}
+          </p>
+          <h2 class="heading-line">
+            {{
+              'DEMOS.SALES.APP_LANDING2_POPPING_HIGHLIGHT.SEE_WHY_PEOPLE_LOVE_EVERTTHINK'
+                | translate
+            }}
+          </h2>
+        </div>
+
+        <ul class="list-unstyled">
+          <li *ngFor="let item of items">
+            <div class="media pb-3">
+              <div
+                class="bg-light p-3 rounded d-flex align-items-center justify-content-center mr-3"
+              >
+                <dc-feather
+                  [name]="item.icon"
+                  [iconClass]="'stroke-primary'"
+                ></dc-feather>
+              </div>
+              <div class="media-body">
+                <h5 *ngIf="translate.currentLang === 'es'">
+                  {{ item.title.es }}
+                </h5>
+                <h5 *ngIf="translate.currentLang === 'en-US'">
+                  {{ item.title.en }}
+                </h5>
+                <p *ngIf="translate.currentLang === 'es'">
+                  {{ item.description.es }}
+                </p>
+                <p *ngIf="translate.currentLang === 'en-US'">
+                  {{ item.description.en }}
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-md-6">
+        <div class="bubble bubble-left center-x-md">
+          <figure class="rounded overflow-hidden shadow" data-aos="zoom-in">
+            <img
+              src="assets/images/app-landing-2/screens/app/pieces/4.png"
+              class="img-responsive"
+              alt=""
+            />
+          </figure>
+        </div>
+
+        <figure class="bubble bubble-right rounded overflow-hidden shadow">
+          <img
+            src="assets/images/app-landing-2/screens/app/pieces/5.png"
+            class="img-responsive"
+            alt=""
+            data-aos="fade-left"
+          />
+        </figure>
+
+        <div class="iphone-x">
+          <div class="screen shadow-box">
+            <img
+              src="assets/images/app-landing-2/screens/app/6.png"
+              alt="..."
+            />
+          </div>
+          <div class="notch"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

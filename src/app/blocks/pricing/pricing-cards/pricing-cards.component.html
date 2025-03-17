@@ -1,0 +1,55 @@
+<section>
+  <div class="container">
+    <div class="section-heading text-center">
+      <h2 class="mb-2">{{ 'DEMOS.START_UP.PRICING.TITLE' | translate }}</h2>
+      <p class="lead text-secondary">
+        {{ 'DEMOS.START_UP.PRICING.SUBTITLE' | translate }}
+      </p>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3 mt-4" *ngFor="let plan of plans">
+        <div class="card text-center">
+          <div
+            [class]="
+              'pricing card-header d-flex align-items-center flex-column ' +
+              (plan.best
+                ? 'bg-primary-gradient text-contrast'
+                : 'bg-light-gradient')
+            "
+          >
+            <h4 [class.text-contrast]="plan.best">
+              {{ plan.plan.name | translate }}
+            </h4>
+
+            <!-- <div class="pricing-value">
+              <span class="price bold">{{ plan.plan.price }}</span>
+            </div> -->
+
+            <p>{{ plan.plan.description | translate }}</p>
+          </div>
+
+          <ul class="list-group list-group-flush">
+            <li
+              class="list-group-item {{ feature.class }}"
+              *ngFor="let feature of plan.features"
+            >
+              {{ feature.name | translate }}
+            </li>
+          </ul>
+
+          <div class="card-body">
+            <a
+              href="https://everythink.ai/app/#/sessions/signup"
+              class="btn {{
+                plan.best ? 'btn-primary' : 'btn-outline-secondary'
+              }}"
+            >
+              {{ 'DEMOS.START_UP.PRICING.BUY' | translate }}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

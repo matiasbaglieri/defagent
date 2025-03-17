@@ -1,0 +1,43 @@
+<!-- lightbox -->
+<section class="section bg-darker edge top-left">
+  <div class="container pt-8">
+    <div class="section-heading text-center w-75 mx-auto">
+      <h2 class="text-contrast bold">
+        {{ 'DEMOS.START_UP.VIDEOs.HOW_TO_VIDEO' | translate }}
+      </h2>
+      <p class="lead text-contrast">
+        {{ 'DEMOS.START_UP.VIDEOs.TAKE_A_LOOKING_AT' | translate }}
+      </p>
+    </div>
+
+    <div class="row gap-y">
+      <div class="col-12 col-sm-6 col-md-4" *ngFor="let post of posts">
+        <div class="card shadow-box shadow-hover border-0">
+          <dc-modal-video [identifier]="'myModal'" [videoId]="post.videoId">
+            <div
+              [style.background-image]="
+                'url(assets/images/calendar/' + post.gravity + ')'
+              "
+              class="blanket gradient gradient-blue-purple alpha-3 p-6 image-background cover center-flex"
+            >
+              <div class="content">
+                <dc-feather
+                  [name]="'play'"
+                  [iconClass]="'stroke-contrast'"
+                ></dc-feather>
+              </div>
+            </div>
+          </dc-modal-video>
+
+          <div class="card-body">
+            <h4 class="card-title regular">{{ post.title | translate }}</h4>
+
+            <p class="card-text text-secondary">
+              {{ post.description | translate }}.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

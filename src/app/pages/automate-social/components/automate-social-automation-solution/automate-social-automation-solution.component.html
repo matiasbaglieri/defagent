@@ -1,0 +1,50 @@
+<!-- ./Advanced Marketing Automation Solution -->
+<section
+  class="section text-contrast advanced-automation-solution overflow-hidden"
+>
+  <div class="shape-wrapper">
+    <div class="shape shape-background mountain top shape-left"></div>
+  </div>
+
+  <div class="container">
+    <div class="section-heading text-center">
+      <h2 class="bold text-contrast">
+        {{
+          'DEMOS.CUSTOMER_SERVICE.AUTOMATE_SOCIAL_AUTOMATION_SOLUTION.ADVANCED_CUSTOMER'
+            | translate
+        }}
+      </h2>
+      <p class="lead">
+        {{
+          'DEMOS.CUSTOMER_SERVICE.AUTOMATE_SOCIAL_AUTOMATION_SOLUTION.DESCRIPTION'
+            | translate
+        }}
+      </p>
+    </div>
+
+    <div class="bg-contrast shadow-lg rounded">
+      <div class="browser">
+        <div class="screen">
+          <img
+            src="assets/images/automate-social/screens/dash/1.png"
+            class="img-responsive rounded-bottom"
+            alt="#{buble.text}"
+          />
+        </div>
+
+        <div class="bubbles-speech d-none d-md-block">
+          <span
+            class="absolute small shadow speech-bubble"
+            *ngFor="let bubble of bubbles"
+            [ngStyle]="{
+              'top.%': bubble.position.top,
+              'left.%': bubble.position.left
+            }"
+            data-aos="slide-up"
+            >{{ bubble.text }}</span
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

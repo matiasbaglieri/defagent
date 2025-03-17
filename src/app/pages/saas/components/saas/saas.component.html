@@ -1,0 +1,126 @@
+<dc-saas-heading></dc-saas-heading>
+
+<dc-saas-perspective-mockups></dc-saas-perspective-mockups>
+<dc-saas-lightweight-template></dc-saas-lightweight-template>
+<dc-slider-start-right-way></dc-slider-start-right-way>
+<dc-slider-all-in-one></dc-slider-all-in-one>
+<dc-testimonial-simple-text-left></dc-testimonial-simple-text-left>
+<dc-big-screen [img]="'assets/img/screens/dash/5.png'">
+  <div class="section-heading text-center" section-heading>
+    <p class="rounded-pill py-2 px-4 bold badge badge-info">
+      {{ 'DEMOS.SAAS.BUILD_TO_LAST' | translate }}
+    </p>
+    <h2>{{ 'DEMOS.SAAS.WHAT_YOU_WILL_GET_WITH_EVERTTHINK' | translate }}</h2>
+    <p class="lead text-secondary px-6 col-md-12 text-center">
+      {{ 'DEMOS.SAAS.GEOLOCATED_INTELLIGENT_ASSISTANTS' | translate }}
+    </p>
+  </div>
+  <div class="row gap-y text-center text-md-left">
+    <div
+      class="col-md-6"
+      *ngFor="
+        let f of [
+          {
+            icon: 'pie-chart',
+            title: 'Boost team productivity',
+            description:
+              'EveryThink automates repetitive processes so real estate teams can focus their time and resources on other processes that guarantee better returns.'
+          },
+          {
+            icon: 'dollar-sign',
+            title: 'Tracking and management',
+            description:
+              'An intuitive user-friendly management dashboard makes it easy to track processes, analyze transactions within the EveryThink platform.'
+          },
+          {
+            icon: 'sliders',
+            title: 'Better customer experience',
+            description:
+              'Deliver an extra service to your customers. By automating processes and providing accurate connections, your outcomes are more efficient and effective.'
+          },
+          {
+            icon: 'download',
+            title: 'Save time',
+            description:
+              'Generate more leads, sell more homes faster, easier, and cheaper with EveryThink’s powerful real estate AI tool that helps maximize your time and resources.'
+          }
+        ]
+      "
+    >
+      <dc-feather
+        [name]="f.icon"
+        [iconClass]="'stroke-primary mb-3'"
+      ></dc-feather>
+      <p class="my-0 bold lead text-dark">{{ f.title }}</p>
+      <p>
+        {{ f.description }}
+      </p>
+    </div>
+  </div>
+</dc-big-screen>
+
+<dc-big-screen [screenPos]="'left'">
+  <div class="section-heading">
+    <span class="bold py-2">
+      <dc-feather
+        [name]="'bar-chart'"
+        [iconClass]="'stroke-primary mr-2'"
+      ></dc-feather>
+      <span class="bold text-info">{{
+        'DEMOS.SAAS.DASHBORD_INCLUDED' | translate
+      }}</span>
+    </span>
+
+    <h2 class="mt-3">
+      {{ 'DEMOS.SAAS.SIMPLE_IMPLEMENTATION' | translate }}
+    </h2>
+
+    <p class="lead">
+      {{ 'DEMOS.SAAS.SINCE_THE_NEED_FOR_HUMAN' | translate }}
+    </p>
+  </div>
+
+  <p>
+    {{ 'DEMOS.SAAS.THE_POSSIBILITIES' | translate }}
+  </p>
+
+  <a href="#" class="btn px-4 btn-rounded btn-primary mt-4">{{
+    'DEMOS.SAAS.Learn_More' | translate
+  }}</a>
+
+  <div class="device-twin align-items-center mt-4 mt-lg-0" images>
+    <div class="browser shadow" data-aos="fade-right">
+      <img src="assets/images/saas/screens/dash/4.png" alt="..." />
+    </div>
+
+    <div
+      class="front iphone-x absolute d-none d-sm-block"
+      data-aos="fade-up"
+      data-aos-delay=".5"
+      style="right: 0; bottom: -1.5rem;"
+    >
+      <div class="screen">
+        <video
+          width="100%"
+          autoplay="autoplay"
+          controls
+          style="margin-top: 50px; margin-bottom: 20px;"
+        >
+          <source
+            src="assets/images/saas/screens/app/Story-Realstate-storie 2-buyer.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+
+      <div class="notch"></div>
+    </div>
+  </div>
+</dc-big-screen>
+
+<dc-trust-us [title]="'They trust us'" [containerClass]="'pb-0'"></dc-trust-us>
+<dc-faqs1 [edge]="'bottom-right'" [background]="'light'"></dc-faqs1>
+<dc-start-now-box></dc-start-now-box>
+<dc-cta1></dc-cta1>
+
+<dc-footer2></dc-footer2>

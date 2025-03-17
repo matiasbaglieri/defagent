@@ -1,0 +1,31 @@
+<section
+  class="section counters gradient gradient-primary-dark text-contrast shadow-lg"
+>
+  <div class="container" [ngClass]="getPaddingBottom()">
+    <div class="section-heading text-center">
+      <h2 class="text-contrast">
+        {{ 'COUNTER.COUNTER1.MILLIONS_BUSSINESS' | translate }}
+      </h2>
+      <p>
+        {{ 'COUNTER.COUNTER1.THESE_AMAZING_STATS' | translate }}
+      </p>
+    </div>
+    <div class="row">
+      <div
+        class="col-xs-4 col-md-3 text-center"
+        *ngFor="let counter of counters"
+      >
+        <dc-feather [name]="counter.icon"></dc-feather>
+        <p class="counter bold font-md mt-0" [countUp]="counter.value">
+          {{ counter.value }}
+        </p>
+        <p class="m-0" *ngIf="translate.currentLang === 'es'">
+          {{ counter.es }}
+        </p>
+        <p class="m-0" *ngIf="translate.currentLang === 'en-US'">
+          {{ counter.en }}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

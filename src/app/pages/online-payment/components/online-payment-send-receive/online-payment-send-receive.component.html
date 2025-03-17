@@ -1,0 +1,19 @@
+<section class="section bg-light send-and-receive">
+  <div class="container bring-to-front">
+    <div class="row gap-y">
+      <div class="col-md-6" *ngFor="let card of cards">
+        <div
+          class="rounded bg-contrast shadow-box image-background off-left-background p-3 pl-6 pl-md-12"
+          [style.background-image]="
+            'url(assets/images/online-payment/payments/' + card.img + '.svg)'
+          "
+        >
+          <h3>{{ card.title }}</h3>
+          <p class="text-secondary mb-0">
+            {{ card.description }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

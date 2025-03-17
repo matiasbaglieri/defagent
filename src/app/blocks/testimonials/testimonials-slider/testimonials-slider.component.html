@@ -1,0 +1,28 @@
+<div class="testimonials-slider">
+  <swiper [config]="config" class="swiper-container pb-5">
+    <div class="swiper-slide" *ngFor="let i of [1, 2, 3, 4]">
+      <div class="d-flex flex-column align-items-center">
+        <img
+          src="assets/images/app-landing/avatar/{{ i }}.jpg"
+          alt=""
+          class="rounded-circle shadow mb-4"
+        />
+
+        <p class="w-75 lead mt-3">
+          {{ 'TESTIMONIALS.TESTIMONIAL_SLIDER.LOREM_IPS' | translate }}
+        </p>
+
+        <hr class="w-50" />
+        <footer>
+          <cite class="bold text-primary text-capitalize"
+            >—
+            {{ 'TESTIMONIALS.TESTIMONIAL_SLIDER.JANE_DOR' | translate }}</cite
+          >
+          <span class="small text-secondary mt-0">{{
+            'TESTIMONIALS.TESTIMONIAL_SLIDER.AWESOME_COMPANY' | translate
+          }}</span>
+        </footer>
+      </div>
+    </div>
+  </swiper>
+</div>

@@ -1,0 +1,40 @@
+<section id="features" class="section features">
+  <div class="container">
+    <div class="section-heading text-center">
+      <h2 class="bold">
+        {{ 'HOME.APP_LANDING_HEADING.FEATURE_CARDS.WHAT_YOU_GET' | translate }}
+      </h2>
+      <p class="lead text-secondary">
+        {{
+          'HOME.APP_LANDING_HEADING.FEATURE_CARDS.WITH_A_SINGLE_TOOL'
+            | translate
+        }}
+      </p>
+    </div>
+
+    <div class="row gap-y text-center text-md-left">
+      <div
+        class="col-md-4 py-4 rounded shadow-hover"
+        *ngFor="let element of elements"
+      >
+        <dc-feather
+          [name]="element.icon"
+          class=""
+          [iconClass]="'stroke-primary mb-3'"
+        ></dc-feather>
+        <h5 class="bold" *ngIf="translate.currentLang === 'es'">
+          {{ element.title.es }}
+        </h5>
+        <h5 class="bold" *ngIf="translate.currentLang === 'en-US'">
+          {{ element.title.en }}
+        </h5>
+        <p *ngIf="translate.currentLang === 'es'">
+          {{ element.description.es }}
+        </p>
+        <p *ngIf="translate.currentLang === 'en-US'">
+          {{ element.description.en }}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

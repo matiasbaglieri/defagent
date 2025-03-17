@@ -1,0 +1,30 @@
+<section class="section bg-light bg-light-gradient edge bottom-right">
+  <div class="container bring-to-front">
+    <div class="section-heading text-center">
+      <p class="rounded-pill py-2 px-4 bold badge badge-info">
+        {{ 'DEMOS.HEALTH.CORPORATE.BUSINESS.LETS_DO_BUSINESS' | translate }}
+      </p>
+      <h2>
+        {{
+          'DEMOS.HEALTH.CORPORATE.BUSINESS.WHAT_EVERYTHINK_OFFERS' | translate
+        }}
+      </h2>
+    </div>
+
+    <div class="row gap-y">
+      <div class="col-md-6" *ngFor="let card of cards">
+        <div
+          class="rounded bg-contrast shadow-box image-background off-left-background p-1 pl-12 pl-md-12"
+          [style.background-image]="
+            'url(assets/images/corporate/lcards/' + card.img + '.svg)'
+          "
+        >
+          <h3>{{ card.title }}</h3>
+          <p class="text-secondary mb-0">
+            {{ card.description }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,105 @@
+<!-- ./Tons of benefits -->
+<section class="section overflow-hidden">
+  <div class="container bring-to-front">
+    <div class="row gap-y align-items-center">
+      <div class="col-md-6 col-lg-5 mr-lg-auto">
+        <div class="center-xy op-1">
+          <div
+            class="shape shape-background rounded-circle shadow-lg bg-info"
+            style="width: 600px; height: 600px;"
+            data-aos="zoom-in"
+          ></div>
+        </div>
+
+        <div class="device-twin align-items-center">
+          <div class="mockup absolute" data-aos="fade-left">
+            <div class="screen">
+              <video width="100%" autoplay="autoplay" controls>
+                <source
+                  src="assets/images/app-landing/screens/app/hr_manager_phone_01.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+            <span class="button"></span>
+          </div>
+
+          <div class="iphone-x front mr-0">
+            <div class="screen shadow-box">
+              <video
+                width="100%"
+                autoplay="autoplay"
+                controls
+                style="margin-top: 50px; margin-bottom: 20px;"
+              >
+                <source
+                  src="assets/images/app-landing/screens/app/hr_manager_phone_02.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+            <div class="notch"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 text-center text-md-left">
+        <div class="section-heading">
+          <i class="far fa-check-circle fa-2x text-danger mb-3"></i>
+          <h2 class="bold font-md">
+            {{
+              'HOME.APP_LANDING_HEADING.TWIN_PHONE_LEFT_RIGHT.WE_HAVE_A_TON_OF_BENEFITSS'
+                | translate
+            }}
+          </h2>
+          <p>
+            {{
+              'HOME.APP_LANDING_HEADING.TWIN_PHONE_LEFT_RIGHT.EVERYTHINK_DOES_ALL_OF'
+                | translate
+            }}
+          </p>
+        </div>
+
+        <div class="row gap-y">
+          <div class="col-md-6" *ngFor="let box of boxes">
+            <div
+              class="media flex-column flex-lg-row align-items-center align-items-md-start"
+            >
+              <dc-feather
+                [name]="box.icon"
+                class="mx-auto ml-md-0 mr-md-3"
+                [iconClass]="'stroke-primary'"
+              ></dc-feather>
+              <div class="media-body mt-3 mt-md-0">
+                <h5
+                  class="bold mt-0 mb-1"
+                  *ngIf="translate.currentLang === 'es'"
+                >
+                  {{ box.title.es }}
+                </h5>
+                <h5
+                  class="bold mt-0 mb-1"
+                  *ngIf="translate.currentLang === 'en-US'"
+                >
+                  {{ box.title.en }}
+                </h5>
+                <p
+                  class="m-0 d-md-none d-lg-block"
+                  *ngIf="translate.currentLang === 'es'"
+                >
+                  {{ box.description.es }}
+                </p>
+                <p
+                  class="m-0 d-md-none d-lg-block"
+                  *ngIf="translate.currentLang === 'en-US'"
+                >
+                  {{ box.description.en }}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

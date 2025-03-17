@@ -1,0 +1,92 @@
+<!-- ./Path to success -->
+<section class="section path-success">
+  <div class="shape-wrapper">
+    <div class="shape-ring absolute right top" data-aos="fade-up"></div>
+  </div>
+
+  <div class="container bring-to-front">
+    <div class="row gap-y align-items-center text-center text-lg-left">
+      <div class="col-md-6 col-lg-5 ml-lg-auto order-md-2">
+        <div class="device-twin align-items-center">
+          <div class="mockup absolute right" data-aos="fade-right">
+            <div class="screen">
+              <video width="100%" autoplay="autoplay" controls>
+                <source
+                  src="assets/images/app-landing/screens/app/hr_web_phone_03.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+            <span class="button"></span>
+          </div>
+
+          <div class="iphone-x front ml-0">
+            <div class="screen shadow-box">
+              <video
+                width="100%"
+                autoplay="autoplay"
+                controls
+                style="margin-top: 50px; margin-bottom: 20px;"
+              >
+                <source
+                  src="assets/images/app-landing/screens/app/hr-web_phone_01.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+            <div class="notch"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 text-center text-md-left">
+        <div class="section-heading">
+          <i class="fas fa-trophy fa-2x text-danger mb-3"></i>
+          <h2 class="bold font-md">
+            {{
+              'HOME.APP_LANDING_HEADING.TWIN_PHONE_LEFT_LIST.WE_ARE_YOUR_PATH_TO_SUCCESS'
+                | translate
+            }}
+          </h2>
+        </div>
+
+        <ul class="list-unstyled">
+          <li
+            class="media flex-column flex-md-row"
+            *ngFor="let feature of elements"
+          >
+            <!-- {{ " mt-3" if loop.index > 1 }} -->
+            <dc-feather
+              [name]="feature.icon"
+              class="mx-auto mr-md-3"
+              [iconClass]="'stroke-primary'"
+            ></dc-feather>
+            <div class="media-body mt-3 mt-md-0">
+              <h5 class="bold mt-0 mb-1" *ngIf="translate.currentLang === 'es'">
+                {{ feature.title.es }}
+              </h5>
+              <h5
+                class="bold mt-0 mb-1"
+                *ngIf="translate.currentLang === 'en-US'"
+              >
+                {{ feature.title.en }}
+              </h5>
+              <p
+                class="m-0 d-md-none d-lg-block"
+                *ngIf="translate.currentLang === 'es'"
+              >
+                {{ feature.description.es }}
+              </p>
+              <p
+                class="m-0 d-md-none d-lg-block"
+                *ngIf="translate.currentLang === 'en-US'"
+              >
+                {{ feature.description.en }}
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

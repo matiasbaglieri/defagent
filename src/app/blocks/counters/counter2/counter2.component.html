@@ -1,0 +1,57 @@
+<section
+  class="section image-background blanket blanket-contrast alpha-5 contain"
+  [style.background-image]="'url(assets/img/shps/map-dots.svg)'"
+>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-5 mr-md-auto">
+        <span class="rounded-pill shadow-box py-2 px-4 badge badge-info">
+          {{ 'COUNTER.COUNTER2.WHY_CUSTOMER_TRUST_US' | translate }}
+        </span>
+
+        <p class="font-md display-md-1 light m-0 text-darker">
+          <span class="counter extra-bold" [countUp]="1">1</span>
+        </p>
+
+        <p class="m-0 font-md text-primary">
+          <span class="bold">{{ 'COUNTER.COUNTER2.HAPPY' | translate }}</span>
+          {{ 'COUNTER.COUNTER2.CUSTOMER' | translate }}
+        </p>
+
+        <hr class="my-4 w-25" />
+        <p class="small text-secondary">
+          {{ 'COUNTER.COUNTER2.THESE_AMAZING_STATS' | translate }}
+        </p>
+      </div>
+
+      <div class="col-md-6">
+        <dc-feather
+          name="thumbs-up"
+          width="48"
+          height="48"
+          class="stroke-primary"
+        ></dc-feather>
+
+        <div class="section-heading">
+          <h2 class="bold font-md display-md-4">
+            {{
+              'COUNTER.COUNTER2.TONS_OF_SUCCESSFULL_IMPLEMENATION' | translate
+            }}
+          </h2>
+
+          <p class="lead text-secondary">
+            {{ 'COUNTER.COUNTER2.USERS_IMPROVE_THEIR_ABILITY' | translate }}
+          </p>
+        </div>
+
+        <p>{{ 'COUNTER.COUNTER2.ALL_POWERED_BY' | translate }}</p>
+
+        <a
+          href="https://everythink.ai/app/#/sessions/signup"
+          class="btn btn-rounded btn-primary mt-2"
+          >{{ 'COUNTER.COUNTER2.LEARN_MORE' | translate }}</a
+        >
+      </div>
+    </div>
+  </div>
+</section>

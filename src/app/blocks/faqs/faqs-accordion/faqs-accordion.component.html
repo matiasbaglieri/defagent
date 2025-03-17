@@ -1,0 +1,33 @@
+<ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+  <ngb-panel *ngFor="let faq of faqs">
+    <ng-template ngbPanelHeader class="mb-3">
+      <button
+        class="card-title btn"
+        ngbPanelToggle
+        *ngIf="translate.currentLang === 'es'"
+      >
+        <fa-icon [icon]="chevronDown" class="angle"></fa-icon>
+        {{ faq.question.es }}
+      </button>
+      <button
+        class="card-title btn"
+        ngbPanelToggle
+        *ngIf="translate.currentLang === 'en-US'"
+      >
+        <fa-icon [icon]="chevronDown" class="angle"></fa-icon>
+        {{ faq.question.en }}
+      </button>
+    </ng-template>
+
+    <ng-template ngbPanelContent>
+      <div
+        [innerHTML]="faq.answer.es"
+        *ngIf="translate.currentLang === 'es'"
+      ></div>
+      <div
+        [innerHTML]="faq.answer.en"
+        *ngIf="translate.currentLang === 'en-US'"
+      ></div>
+    </ng-template>
+  </ngb-panel>
+</ngb-accordion>

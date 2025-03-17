@@ -1,0 +1,63 @@
+<section class="section">
+  <div class="shape-wrapper">
+    <img src="assets/img/shps/shape-2.svg" class="shape-right" alt="..." />
+  </div>
+
+  <div class="container bring-to-front">
+    <div class="row gap-y align-items-center">
+      <div class="col-12 col-md-5 col-lg-5 mr-md-auto text-center text-lg-left">
+        <dc-feather [name]="'box'" [iconClass]="'stroke-primary'"></dc-feather>
+        <p class="small text-primary bold">
+          {{ 'DEMOS.DEVELOPERS.TOOL.INTEGRATION_TOOLS' | translate }}
+        </p>
+        <h2 class="bold">
+          {{ 'DEMOS.DEVELOPERS.TOOL.EASY_INTEGRATIONS' | translate }}
+        </h2>
+        <p class="text-secondary">
+          {{ 'DEMOS.DEVELOPERS.TOOL.LOREM_IPSUM' | translate }}
+        </p>
+      </div>
+
+      <div class="col-12 col-md-7 col-lg-6">
+        <div class="row gap-y">
+          <div
+            class="col-6 col-sm-5 col-md-6 col-lg-5 {{ card.class }}"
+            *ngFor="let card of cards"
+          >
+            <div
+              class="{{
+                card.bg
+              }} rounded text-contrast p-2 p-sm-4 shadow text-center"
+              [attr.data-aos]="card.animation"
+            >
+              <img
+                [src]="'assets/img/logos/' + card.img + '.svg'"
+                class="img-responsive op-8 px-0 px-sm-4"
+                alt="..."
+              />
+
+              <p class="bold mt-5">{{ card.title }}</p>
+
+              <p class="op-5 small">
+                {{ 'DEMOS.DEVELOPERS.TOOL.LOREM_IPSUM_DOLOR' | translate }}.
+              </p>
+
+              <a
+                href="https://everythink.ai/app/#/sessions/signup"
+                class="btn btn-rounded btn-contrast mt-4"
+              >
+                <fa-icon
+                  [icon]="longAarrowAltRight"
+                  class="d-inline-block d-sm-none"
+                ></fa-icon>
+                <span class="d-none d-sm-inline-block"
+                  >{{ 'DEMOS.DEVELOPERS.TOOL.INTEGRATE' | translate }}.</span
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

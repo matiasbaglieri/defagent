@@ -1,0 +1,82 @@
+<dc-startup-heading></dc-startup-heading>
+
+<dc-big-screen [img]="'assets/images/calendar/calendar.png'">
+  <div class="section-heading text-center" section-heading>
+    <p class="handwritten highlight font-md text-alternate">
+      {{ 'USUAL.START_NOW_BOX.WHY_WAIT' | translate }}
+    </p>
+
+    <a
+      href="https://everythink.ai/app/#/sessions/signup"
+      class="btn btn-darker btn-rounded mt-4"
+    >
+      {{ 'USUAL.START_NOW_BOX.START_NOW' | translate }}
+    </a>
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <h2>{{ 'DEMOS.SAAS.WHAT_YOU_WILL_GET_WITH_EVERTTHINK' | translate }}</h2>
+    <p class="lead text-secondary px-6 col-md-12 text-center">
+      {{ 'DEMOS.SAAS.GEOLOCATED_INTELLIGENT_ASSISTANTS' | translate }}
+    </p>
+  </div>
+  <div class="row gap-y text-center text-md-left">
+    <div
+      class="col-md-6"
+      *ngFor="
+        let f of [
+          {
+            icon: 'briefcase',
+            title: 'DEMOS.START_UP.WHAT_YOU_GET.BUSINESS_TITLE',
+            description: 'DEMOS.START_UP.WHAT_YOU_GET.BUSINESS_DESC'
+          },
+          {
+            icon: 'dollar-sign',
+            title: 'DEMOS.START_UP.WHAT_YOU_GET.PAYMENTS_TITLE',
+            description: 'DEMOS.START_UP.WHAT_YOU_GET.PAYMENTS_DESC'
+          },
+          {
+            icon: 'home',
+            title: 'DEMOS.START_UP.WHAT_YOU_GET.SCHEDULES_TITLE',
+            description: 'DEMOS.START_UP.WHAT_YOU_GET.SCHEDULES_DESC'
+          },
+          {
+            icon: 'clock',
+            title: 'DEMOS.START_UP.WHAT_YOU_GET.SITE_TITLE',
+            description: 'DEMOS.START_UP.WHAT_YOU_GET.SAVING_DESC'
+          }
+        ]
+      "
+    >
+      <dc-feather
+        [name]="f.icon"
+        [iconClass]="'stroke-primary mb-3'"
+      ></dc-feather>
+      <p class="my-0 bold lead text-dark">{{ f.title | translate }}</p>
+      <p>
+        {{ f.description | translate }}
+      </p>
+    </div>
+  </div>
+</dc-big-screen>
+<dc-startup-features></dc-startup-features>
+
+<dc-startup-why-dashcore></dc-startup-why-dashcore>
+<dc-startup-videos></dc-startup-videos>
+<dc-pricing-cards></dc-pricing-cards>
+<dc-slider-icons></dc-slider-icons>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<dc-pricing-two-cards></dc-pricing-two-cards>
+<dc-startup-download></dc-startup-download>
+<dc-footer2></dc-footer2>

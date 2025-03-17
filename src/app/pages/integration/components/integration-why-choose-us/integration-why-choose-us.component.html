@@ -1,0 +1,77 @@
+<section class="section why-choose-us">
+  <div class="shapes-container">
+    <div class="pattern pattern-dots"></div>
+  </div>
+
+  <div class="container pb-8 bring-to-front">
+    <div class="row gap-y">
+      <div class="col-md-6">
+        <div class="mb-5">
+          <h2 class="heading-line">
+            {{
+              'DEMOS.DATAFLOWS_CREATOORS.INTEGRATION.WHY_CHOOSE_US.SIMPLE_IMPLEMENTATION_WITH'
+                | translate
+            }}
+          </h2>
+          <p class="text-muted lead">
+            {{
+              'DEMOS.DATAFLOWS_CREATOORS.INTEGRATION.WHY_CHOOSE_US.SINCE_THE_NEED_FOR_HUMAN'
+                | translate
+            }}
+          </p>
+        </div>
+
+        <div
+          *ngFor="let item of features; let i = index"
+          class="media"
+          [class.pb-3]="i < features.length"
+        >
+          <div
+            class="bg-light p-3 rounded d-flex align-items-center justify-content-center mr-3"
+          >
+            <dc-feather
+              [name]="item.icon"
+              [iconClass]="'stroke-primary'"
+            ></dc-feather>
+          </div>
+          <div class="media-body">
+            <h5>{{ item.name }}</h5>
+            <p>{{ item.description }}</p>
+          </div>
+        </div>
+
+        <hr class="my-5" />
+        <div class="text-center text-md-left">
+          <a href="#!" class="btn btn-primary btn-rounded">
+            {{
+              'DEMOS.DATAFLOWS_CREATOORS.INTEGRATION.WHY_CHOOSE_US.KNOW_MORE'
+                | translate
+            }}
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="rotated-mockups device-twin">
+          <div class="browser absolute shadow-lg">
+            <img
+              src="assets/images/integration/screens/tablet/1.png"
+              alt="..."
+            />
+          </div>
+
+          <div class="front iphone-x">
+            <div class="screen">
+              <img
+                src="assets/images/integration/screens/app/1.png"
+                alt="..."
+              />
+            </div>
+
+            <div class="notch"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

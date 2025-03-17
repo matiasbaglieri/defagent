@@ -1,0 +1,34 @@
+<form class="form">
+  <div class="form-group">
+    <label for="name">
+      {{ 'ACTIONS.FORM_REGISTER_COMPANY.NAME' | translate }}</label
+    >
+    <input type="text" class="form-control" id="name" placeholder="Name" />
+  </div>
+  <div class="form-group">
+    <label for="email">{{
+      'ACTIONS.FORM_REGISTER_COMPANY.EMAIL' | translate
+    }}</label>
+    <input type="email" class="form-control" id="email" placeholder="Email" />
+  </div>
+  <div class="form-group">
+    <label for="company">{{
+      'ACTIONS.FORM_REGISTER_COMPANY.COMPANY' | translate
+    }}</label>
+    <input
+      type="text"
+      class="form-control"
+      id="company"
+      placeholder="Company"
+    />
+  </div>
+
+  <div class="form-group mt-5">
+    <button
+      class="btn btn-rounded btn-primary btn-block btn-lg text-center"
+      type="submit"
+    >
+      {{ 'ACTIONS.FORM_REGISTER_COMPANY.SEND_MY_APPLICATION' | translate }}n
+    </button>
+  </div>
+</form>

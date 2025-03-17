@@ -1,0 +1,195 @@
+<dc-navbar-shell
+  [darkLinks]="darkLinks"
+  [useOnlyDarkLogo]="darkLinks ? true : useOnlyDarkLogo"
+>
+  <ul class="nav navbar-nav" [class.ml-auto]="isRightPositioned()">
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/ai-agents']">{{
+        'NAVBAR.DEFAULT.HOME' | translate
+      }}</a>
+    </li>
+    <!-- <li class="nav-item">
+      <a class="nav-link" href="https://everythink.ai/pages/about-us">{{
+        'NAVBAR.DEFAULT.ABOUT' | translate
+      }}</a>
+    </li> -->
+    <li class="nav-item">
+      <a
+        class="nav-link"
+        href="https://api.whatsapp.com/send?phone=5491164616122&text=i%20want%20to%20know%20more%20about%20defagent.ai"
+        >{{ 'NAVBAR.DEFAULT.CONTACT' | translate }}</a
+      >
+    </li>
+
+    <li
+      class="nav-item dropdown mega"
+      ngbDropdown
+      placement="bottom left right"
+    >
+      <a
+        class="nav-link dropdown-toggle"
+        ngbDropdownToggle
+        href="javascript:;"
+        >{{ 'NAVBAR.DEFAULT.DEMOS' | translate }}</a
+      >
+      <div class="dropdown-menu p-3" ngbDropdownMenu>
+        <div class="row">
+          <div class="col-md-4">
+            <p class="dropdown-heading bold mt-0 pt-0">
+              {{ 'NAVBAR.DEFAULT.COMPANY' | translate }}
+            </p>
+            <a class="dropdown-item" [routerLink]="['/ai-agents']">{{
+              'NAVBAR.DEFAULT.HUMAN_RESOURCE' | translate
+            }}</a>
+            <a class="dropdown-item" [routerLink]="['/processes']">{{
+              'NAVBAR.DEFAULT.SALES' | translate
+            }}</a>
+            <!-- <a class="dropdown-item" [routerLink]="['/customer-service']">{{
+              'NAVBAR.DEFAULT.CUSTOMER_SERVICE' | translate
+            }}</a> -->
+          </div>
+          <!-- 
+          <div class="col-md-4">
+            <p class="dropdown-heading bold mt-0 pt-0">
+              {{ 'NAVBAR.DEFAULT.MODULES' | translate }}
+            </p>
+            <a class="dropdown-item" [routerLink]="['/startup']">{{
+              'NAVBAR.DEFAULT.CALENDAR' | translate
+            }}</a> -->
+          <!--    <a class="dropdown-item" [routerLink]="['/developers']">{{
+              'NAVBAR.DEFAULT.DEVELOPERS' | translate
+            }}</a> -->
+          <!-- <a class="dropdown-item" [routerLink]="['/rpa']">{{
+              'NAVBAR.DEFAULT.RPA_CREATORS' | translate
+            }}</a> -->
+          <!-- </div>
+          <div class="col-md-4">
+            <p class="dropdown-heading bold mt-0 pt-0">
+              {{ 'NAVBAR.DEFAULT.PRODUCT' | translate }}
+            </p>
+            <a class="dropdown-item" [routerLink]="['/health']">{{
+              'NAVBAR.DEFAULT.HEALTH' | translate
+            }}</a>
+            <a class="dropdown-item" [routerLink]="['/real-estate']">{{
+              'NAVBAR.DEFAULT.SAAS' | translate
+            }}</a> -->
+          <!--    <a class="dropdown-item" [routerLink]="['/developers']">{{
+              'NAVBAR.DEFAULT.DEVELOPERS' | translate
+            }}</a> -->
+          <!-- <a class="dropdown-item" [routerLink]="['/rpa']">{{
+              'NAVBAR.DEFAULT.RPA_CREATORS' | translate
+            }}</a> -->
+          <!-- </div> -->
+
+          <div class="col-md-4">
+            <!-- <p class="dropdown-heading bold mt-0 pt-0">
+              {{ 'NAVBAR.DEFAULT.SERVICES' | translate }}
+            </p> -->
+            <!-- <a class="dropdown-item" [routerLink]="['/dataflows']">{{
+              'NAVBAR.DEFAULT.DATAFLOWS_CREATORS' | translate
+            }}</a> -->
+            <!--             <a class="dropdown-item" [routerLink]="['/startup']">{{
+              'NAVBAR.DEFAULT.START_UP' | translate
+            }}</a> -->
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <!-- <li class="nav-item dropdown mega" ngbDropdown placement="bottom-right">
+      <a
+        class="nav-link dropdown-toggle"
+        ngbDropdownToggle
+        href="javascript:;"
+        >{{ 'NAVBAR.DEFAULT.PRODUCT' | translate }}</a
+      >
+
+      <div class="dropdown-menu dropdown-menu-right" ngbDropdownMenu>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-4 b-md-r">
+              <a class="dropdown-item text-wrap" href="javascript:;">
+                <p class="bold my-0">
+                  {{ 'NAVBAR.DEFAULT.FOR_STORY_TELLERS' | translate }}
+                </p>
+                <p class="my-0 small">
+                  {{ 'NAVBAR.DEFAULT.AWESOME_DESIGN_BLOCKS' | translate }}
+                </p>
+              </a>
+              <a class="dropdown-item text-wrap" [routerLink]="['developers']">
+                <p class="my-0 small">
+                  {{ 'NAVBAR.DEFAULT.THE_DEVELOPERS_PLACE' | translate }}
+                </p>
+              </a>
+            </div>
+            <div class="col-md-8">
+              <h3 class="text-darker mb-0 light mt-4 mt-md-0">
+                Think about<span class="bold d-block">{{
+                  'NAVBAR.DEFAULT.YOUR_BUSINESS' | translate
+                }}</span>
+              </h3>
+              <p class="text-secondary">
+                {{ 'NAVBAR.DEFAULT.OUT_BEST_BET' | translate }}
+              </p>
+              <a
+                href="https://everythink.ai/pages/pricing"
+                class="btn btn-rounded btn-info mt-3"
+                >{{ 'NAVBAR.DEFAULT.VIEW_PLAN' | translate }} &amp;
+                {{ 'NAVBAR.DEFAULT.HOME' | translate }}</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </li> -->
+
+    <!--start-->
+    <li class="nav-item dropdown" ngbDropdown placement="bottom-right">
+      <a
+        class="nav-link dropdown-toggle"
+        ngbDropdownToggle
+        href="javascript:;"
+        >{{ 'NAVBAR.DEFAULT.LANGUAGE' | translate }}</a
+      >
+      <div class="dropdown-menu dropdown-menu-right" ngbDropdownMenu>
+        <a class="dropdown-item" (click)="setLanguage('en-US')">{{
+          'NAVBAR.DEFAULT.EN' | translate
+        }}</a>
+        <a class="dropdown-item" (click)="setLanguage('es')">{{
+          'NAVBAR.DEFAULT.ES' | translate
+        }}</a>
+      </div>
+    </li>
+    <!--end-->
+  </ul>
+
+  <nav
+    class="nav navbar-nav justify-content-center mt-4 mt-md-0 flex-row"
+    [ngClass]="{ 'ml-md-auto': !isRightPositioned() }"
+  >
+    <a
+      class="btn btn-rounded btn-outline mr-3 px-3"
+      href="https://everythink.ai/app/#/sessions/signin"
+    >
+      <fa-icon
+        [icon]="signInAlt"
+        class="d-none d-md-inline mr-md-0 mr-lg-2"
+      ></fa-icon>
+      <span class="d-md-none d-lg-inline">{{
+        'NAVBAR.DEFAULT.LOGIN' | translate
+      }}</span>
+    </a>
+    <a
+      class="btn btn-rounded btn-solid px-3"
+      href="https://everythink.ai/app/#/sessions/signup"
+    >
+      <fa-icon
+        [icon]="userPlus"
+        class="d-none d-md-inline mr-md-0 mr-lg-2"
+      ></fa-icon>
+      <span class="d-md-none d-lg-inline">{{
+        'NAVBAR.DEFAULT.SIGNUP' | translate
+      }}</span>
+    </a>
+  </nav>
+</dc-navbar-shell>

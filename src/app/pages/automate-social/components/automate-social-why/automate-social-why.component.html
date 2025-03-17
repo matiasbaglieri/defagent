@@ -1,0 +1,68 @@
+<section class="section why-us overflow-hidden">
+  <div class="shape-wrapper">
+    <div class="absolute shape-background top right"></div>
+  </div>
+
+  <div class="container">
+    <div class="section-heading text-center">
+      <h2 class="bold">
+        {{
+          'DEMOS.CUSTOMER_SERVICE.AUTOMATE_SOCIAL_WHY.WHY_EVERYTHINK'
+            | translate
+        }}
+      </h2>
+      <p class="lead text-secondary">
+        {{
+          'DEMOS.CUSTOMER_SERVICE.AUTOMATE_SOCIAL_WHY.OUR_MISSION_IS_TO_PROVIDE_YOU'
+            | translate
+        }}
+      </p>
+    </div>
+
+    <div class="row gap-y">
+      <div class="col-md-5">
+        <ul class="list-unstyled why-icon-list">
+          <li class="list-item" *ngFor="let feature of features">
+            <div class="media">
+              <div
+                class="rounded-circle bg-{{ feature.color }} shadow-{{
+                  feature.color
+                }} text-contrast p-3 icon-xl d-flex align-items-center justify-content-center mr-3"
+              >
+                <dc-feather
+                  [name]="feature.icon"
+                  [iconClass]="feature.icon"
+                ></dc-feather>
+              </div>
+
+              <div class="media-body">
+                <h5 class="bold">{{ feature.name }}</h5>
+                <p class="my-0">{{ feature.description }}</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-md-7">
+        <figure data-aos="fade-left">
+          <img
+            src="assets/images/automate-social/build.svg"
+            class="img-responsive"
+            alt=""
+          />
+        </figure>
+      </div>
+    </div>
+
+    <div class="mt-5 text-center">
+      <a
+        href="https://everythink.ai/app/#/sessions/signup"
+        class="btn btn-primary btn-rounded"
+        >Get started!</a
+      >
+      <p class="small">- or -</p>
+      <a [routerLink]="['/contact']" class="btn btn-link">Contact us</a>
+    </div>
+  </div>
+</section>

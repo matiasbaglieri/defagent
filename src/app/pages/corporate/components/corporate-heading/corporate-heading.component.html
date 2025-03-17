@@ -1,0 +1,43 @@
+<!-- ./Page header -->
+<header
+  class="header page section parallax image-background center-bottom cover blanket gradient gradient-purple-navy alpha-8 text-contrast"
+  [style.background-image]="'url(assets/images/corporate/bg/grid.jpg)'"
+>
+  <div class="container overflow-hidden">
+    <div class="row">
+      <div class="col-md-10 col-lg-8">
+        <h1 class="display-4 text-contrast bold">
+          {{
+            'DEMOS.HEALTH.CORPORATE.HEADING.EVERYTHINK_FOR_HEALTH' | translate
+          }}
+          <span class="d-block light">{{
+            'DEMOS.HEALTH.CORPORATE.HEADING.WELCOME_TO_THE_FUTURE' | translate
+          }}</span>
+        </h1>
+        <p class="lead">
+          {{ 'DEMOS.HEALTH.CORPORATE.HEADING.WITH_THE_RIGHT_DATA' | translate }}
+        </p>
+        <p class="handwritten font-md highlight px-4">Why wait? Start now!</p>
+
+        <nav class="nav mt-5">
+          <a
+            href="https://everythink.ai/app/#/sessions/signup"
+            class="nav-link mr-3 btn btn-rounded btn-success"
+          >
+            {{ 'DEMOS.HEALTH.CORPORATE.HEADING.START_NOW' | translate }}
+          </a>
+
+          <a
+            href="https://everythink.ai/pages/pricing"
+            class="nav-link btn btn btn-rounded btn-contrast"
+          >
+            <fa-icon [icon]="tag" [class]="'mr-3'"></fa-icon>
+            {{
+              'DEMOS.HEALTH.CORPORATE.HEADING.PLANS_AND_PRICEING' | translate
+            }}
+          </a>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>

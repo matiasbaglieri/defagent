@@ -1,0 +1,50 @@
+<section class="section bg-contrast edge bottom-right latest-projects">
+  <div class="container bring-to-front pt-0">
+    <div class="shadow-lg bg-contrast rounded">
+      <div class="bg-contrast rounded-bottom p-4">
+        <p class="bold lead my-0">
+          {{
+            'DEMOS.DATAFLOWS_CREATOORS.INTEGRATION.LATEST_PROJECTS.EVERYTHINK_MARKETPLACE'
+              | translate
+          }}
+        </p>
+        <p class="text-muted my-0">
+          {{
+            'DEMOS.DATAFLOWS_CREATOORS.INTEGRATION.LATEST_PROJECTS.TAKE_A_LOOK_AT_OUR_LATEST_PROJECTS'
+              | translate
+          }}
+        </p>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-6 col-md-4" *ngFor="let image of images; let i = index">
+          <div class="project-detail blanket blanket-secondary">
+            <a href="https://everythink.ai/app/#/sessions/signup">
+              <img
+                [src]="
+                  'https://picsum.photos/500/300?random=' +
+                  (i + 1) +
+                  '&gravity=south'
+                "
+                alt=""
+              />
+              <div class="description bg-dark text-contrast p-1 p-md-2">
+                <p class="bold">
+                  {{
+                    'DEMOS.DATAFLOWS_CREATOORS.INTEGRATION.LATEST_PROJECTS.SOMOS_PILEROS'
+                      | translate
+                  }}
+                </p>
+                <p class="text-muted">
+                  {{
+                    'DEMOS.DATAFLOWS_CREATOORS.INTEGRATION.LATEST_PROJECTS.WE_BUILT_DATA'
+                      | translate
+                  }}
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

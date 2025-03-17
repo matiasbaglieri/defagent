@@ -1,0 +1,116 @@
+<header class="header app-landing-2-header section">
+  <div class="shapes-container">
+    <!-- diagonal shapes -->
+    <div
+      class="shape shape-animated"
+      [attr.data-aos]="shape.aos"
+      [attr.data-aos-duration]="shape.duration"
+      [attr.data-aos-delay]="shape.delay"
+      *ngFor="let shape of shapes"
+    ></div>
+
+    <!-- animated shapes -->
+    <div class="animation-shape shape-triangle">
+      <div class="animation--rotating"></div>
+    </div>
+    <div class="animation-shape shape-cross">
+      <div class="animation--rotating"></div>
+    </div>
+
+    <!-- static shapes -->
+    <div class="static-shape shape-ring shape-ring-1">
+      <div class="animation animation--rotating"></div>
+    </div>
+    <div class="static-shape shape-ring shape-ring-2">
+      <div class="animation animation--rotating-clockwise"></div>
+    </div>
+
+    <div class="static-shape pattern-dots-1"></div>
+    <div class="static-shape pattern-dots-2"></div>
+
+    <!-- main shape -->
+    <div class="static-shape background-shape-main"></div>
+  </div>
+
+  <div class="container">
+    <div class="row align-items-center gap-y">
+      <div class="col-md-6">
+        <span
+          class="rounded-pill shadow-box bg-contrast text-dark bold py-2 px-4"
+        >
+          <fa-icon [icon]="lightbulb" class="text-primary mr-2"></fa-icon>
+          <span class="text-primary">
+            {{ 'DEMOS.SALES.APP_LANDING_HEADING2.ALLISONE' | translate }}</span
+          >
+          {{ 'DEMOS.SALES.APP_LANDING_HEADING2.INFINTY' | translate }}
+        </span>
+
+        <h1 class="display-4 display-md-2 mt-3">
+          <span class="bold">{{
+            'DEMOS.SALES.APP_LANDING_HEADING2.EVERYTHINKFORSALES' | translate
+          }}</span>
+        </h1>
+        <p class="lead bold">
+          {{ 'DEMOS.SALES.APP_LANDING_HEADING2.BETTERMARKETING' | translate }},
+          <span class="head-line-2">{{
+            'DEMOS.SALES.APP_LANDING_HEADING2.BETTERRESULT' | translate
+          }}</span>
+        </p>
+
+        <p class="lead">
+          {{ 'DEMOS.SALES.APP_LANDING_HEADING2.OURIAS' | translate }}
+        </p>
+
+        <!-- <div class="hero-form shadow-lg">
+          <form>
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Your Email"
+              />
+              <button
+                onclick="location.href = 'https://everythink.ai/app/#/sessions/signup';"
+                class="btn btn-primary more-link"
+              >
+                {{
+                  'DEMOS.SALES.APP_LANDING_HEADING2.SUBSCRIBENOW' | translate
+                }}
+              </button>
+            </div>
+          </form>
+        </div> -->
+      </div>
+
+      <div class="col-md-6 col-lg-4 ml-lg-auto">
+        <div data-aos="fade-le2ft">
+          <div class="mobile-dev2ice ipho1ne-x">
+            <div class="scre2en">
+              <!-- <video
+                width="100%"
+                autoplay="autoplay"
+                controls
+                style="margin-top: 50px; margin-bottom: 20px;"
+              >
+                <source
+                  src="assets/images/app-landing/screens/app/hr_web_phone_01_A.gif"
+                  type="video/mp4"
+                />
+              </video> -->
+              <img
+                src="https://everythink.sfo2.digitaloceanspaces.com/avatars/kyle/01.gif"
+                alt=""
+                width="90%"
+                data-aos-delay="1000"
+                data-aos="zoom-in"
+              />
+            </div>
+            <div class="notch"></div>
+          </div>
+
+          <div class="notch"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

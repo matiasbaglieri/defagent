@@ -1,0 +1,86 @@
+<!-- ./Tools for everyone - Swiper -->
+<section class="section b-b b-t bg-light">
+  <div class="container">
+    <div class="section-heading text-center">
+      <dc-feather
+        [name]="'sliders'"
+        [iconClass]="'stroke-primary'"
+      ></dc-feather>
+      <h2>{{ 'SLIDERS.SLIDER_START_RIGHT_WAY.FOR_EVERYONE' | translate }}</h2>
+      <p class="lead text-secondary">
+        {{ 'SLIDERS.SLIDER_START_RIGHT_WAY.EVERYTHINK_DOES_ALL' | translate }}
+      </p>
+    </div>
+
+    <div class="row align-items-end">
+      <div class="col-lg-4">
+        <h2 class="bold">
+          {{ 'SLIDERS.SLIDER_START_RIGHT_WAY.START_THE_RIGHT_WAY' | translate
+          }}<br /><span class="light">{{
+            'SLIDERS.SLIDER_START_RIGHT_WAY.START_WITH_EVERy_THINK' | translate
+          }}</span>
+        </h2>
+        <p class="lead text-secondary">
+          {{
+            'SLIDERS.SLIDER_START_RIGHT_WAY.THINKING_ABOUT_YOUR_AI_JOURNEY'
+              | translate
+          }}
+        </p>
+
+        <a
+          href="https://everythink.ai/pages/pricing"
+          class="btn btn-primary btn-rounded mt-4"
+          >{{
+            'SLIDERS.SLIDER_START_RIGHT_WAY.CHOOSE_THE_RIGHT_PLAN' | translate
+          }}
+          <fa-icon [icon]="longArrowAltRight" [class]="'ml-3'"></fa-icon>
+        </a>
+
+        <ol
+          id="sw-nav-tools"
+          class="nav nav-process nav-circle nav-justified mt-5"
+        >
+          <li
+            class="nav-item"
+            [class.active]="i === currentSlide"
+            *ngFor="let element of elements; let i = index"
+          >
+            <a
+              class="nav-link"
+              href="javascript:void(0)"
+              [attr.data-step]="i + 1"
+              (click)="updateSlider(i)"
+            >
+              <small class="mt-4 absolute">{{ element }}</small>
+            </a>
+          </li>
+        </ol>
+      </div>
+
+      <div class="col-lg-7 ml-lg-auto">
+        <div class="" data-aos="fade-left">
+          <swiper [index]="currentSlide" (indexChange)="onIndexChange($event)">
+            <div class="swiper-slide" *ngFor="let i of [1, 2, 3, 4]">
+              <!-- <img
+                src="assets/img/screens/dash/{{ i }}.png"
+                alt=""
+                class="img-responsive"
+              /> -->
+              <video
+                width="100%"
+                autoplay="autoplay"
+                controls
+                style="margin-top: 50px; margin-bottom: 20px;"
+              >
+                <source
+                  src="assets/img/screens/dash/website_dashboard_0{{ i }}.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+          </swiper>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

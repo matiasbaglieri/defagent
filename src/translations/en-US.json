@@ -1,0 +1,829 @@
+{
+  "APP_NAME": "DefAgent",
+  "About": "About us",
+  "Hello world !": "Hello world!",
+  "Home": "Home",
+  "Logged in as": "Logged in as",
+  "Login": "Login",
+  "Logout": "Logout",
+  "Password": "Password",
+  "Password is required": "Password is required",
+  "Username": "Username",
+  "Username is required": "Username is required",
+  "Username or password incorrect.": "Username or password incorrect.",
+  "Remember me": "Remember me",
+  "Version": "Version",
+
+  "ACTIONS": {
+    "FORM_REGISTER_SIMPLE_INLINE": {
+      "CHECK_YOUR_EMAIL": "Check your email",
+      "WE_SENT_YOU_AN_EMAIL": "We sent you an email with a link to get started. You’ll be in your account in no time."
+    },
+    "FORM_REGISTER_COMPANY": {
+      "NAME": "Name",
+      "EMAIL": "Email",
+      "COMPANY": "Company",
+      "SEND_MY_APPLICATION": "Send my application"
+    }
+  },
+  "NAVBAR": {
+    "DEFAULT": {
+      "HOME": "Home",
+      "ABOUT": "About us",
+      "CONTACT": "Contact",
+      "DEMOS": "Solutions",
+      "COMPANY": "Segments",
+      "HUMAN_RESOURCE": "AI Agents",
+      "SALES": "Processes",
+      "CUSTOMER_SERVICE": "Customer Service",
+      "MODULES": "Modules",
+      "CALENDAR": "Calendar",
+      "PRODUCT": "Verticals",
+      "HEALTH": "Health",
+      "DEVELOPERS": "Developers",
+      "RPA_CREATORS": "RPA Creators",
+      "SERVICES": "Marketplace",
+      "DATAFLOWS_CREATORS": "Dataflows Creators",
+      "SAAS": "Real Estate",
+      "START_UP": "Startup",
+      "FOR_STORY_TELLERS": "For StoryTellers",
+      "AWESOME_DESIGN_BLOCKS": "Awesome blocks",
+      "FOR_DEVELOPERS": "For Developers",
+      "THE_DEVELOPERS_PLACE": "The developers' place",
+      "YOUR_BUSINESS": "your business",
+      "OUT_BEST_BET": "Our best bet is you, we can ensure you that DefAgent fit your needs.",
+      "VIEW_PLAN": "View plans",
+      "LANGUAGE": "Languaje",
+      "EN": "English",
+      "ES": "Español",
+      "LOGIN": "Login",
+      "SIGNUP": "Signup"
+    }
+  },
+  "SLIDERS": {
+    "SLIDER_CARD_PROJECTS": {
+      "NEW_SUBSCRIBERS": "New subscribers",
+      "NEXT": "Next"
+    },
+    "SLIDER_START_RIGHT_WAY": {
+      "FOR_EVERYONE": "DefAgent IAs for Professionals",
+      "EVERYTHINK_DOES_ALL": "DefAgent’s low-code platform does ALL OF THE HEAVY LIFTING by automating repetitive processes so you can focus on more complex tasks and achieve unprecedented levels of efficiency.",
+      "START_THE_RIGHT_WAY": "Start the right way",
+      "START_WITH_EVERy_THINK": "Start with DefAgent",
+      "THINKING_ABOUT_YOUR_AI_JOURNEY": "Thinking about your AI journey?",
+      "CHOOSE_THE_RIGHT_PLAN": "CHOOSE THE RIGHT PLAN"
+    },
+    "SLIDER_BRING_TO_LIFE": {
+      "ADMIN_TEMPLATE_INCLUDED": "Admin dashboards included",
+      "WE_INCLUDED_A_FULLY_FUNcTIONAL": "We've included a fully functional starter admin dashboards",
+      "POWER_WITH_MULIPLE_STARTER_APPS": " Powered by DefAgent",
+      "ITS_AWESOME_YOU_TO": "We have new features that you are going to love!",
+      "SIMPLE_AND_TRANSPARENT": "Simple and transparent",
+      "BRING_YOU_APPLICAION_TO_LIFE": "Bring your IAs to life",
+      "DASHCORE_INCLUDED": "DefAgent includes an outstanding starter Admin Dashboard UI Interface. With this feature you can start developing right away your applications.",
+      "CLEAN_INBOX_UI": "User friendly"
+    },
+    "SLIDER_ALL_IN_ONE": {
+      "EVERYTHINK_YOU_NEED": "Everything you need - all in your hand!",
+      "REAL_TIME_SOLUTION": "Solution",
+      "STREAMLINES_PROCESSES": "Real-time",
+      "AFFORDABILLITY": "Become ultra-responsive in real-time. Create your own white-label apps. Gain valuable insights into clients, markets, and processes and achieve much more with our powerful AI-enabled tool.",
+      "SINCE_THE_NEED_FORHUMAN": "Global reach",
+      "EVERYTHINK_DOES_ALL": "Close more deals with less friction. Win more listings with greater ease. Streamline your efforts through automation and predictors. Gain a competitive edge with greater functionality and efficiency.",
+      "ALWAYS_ON_TIME": "Always on Time",
+      "UNIQUE_USER)EXPERIENCE": "Experience",
+      "A_NEW_AND_INTUITIVE_EXPERIENCE": "Unique",
+      "ESPECIALLY_WHEN_YOUR_CLIENTS_NEEDS": "Leverage DefAgent AI-driven low-code platform to streamline processes to deliver effortless, instantaneous, and much more enriching experiences for buyers, sellers, real estate agents, and everyone involved!",
+      "OUTSTANDING": "",
+      "ANALYTICS": "Outstanding",
+      "SIT_BACK_AS_YOUR": "DefAgent’s software as a service platform offers much more than just a flawless absorption and spewing of data. These ‘teachable’ IAs gather and review user interactions for analysis and iteration.",
+      "CONTINUOUSLY_CHECK_IN": "Continuously check in with your IAs for new suggestions on automating processes or ways to give better solutions to your clients and employees."
+    }
+  },
+  "SCREENSHOTS": {
+    "APP": {
+      "APP_SCREENSHOTS": "Build your ai agents in one place and automate all the processes",
+      "A_PICTURE_IS_WORTH_A_THOUSAND_WORDS": ""
+    }
+  },
+  "HOME": {
+    "NETWORK_SEARCH_META": {
+      "TITLE": "DefAgent - AI AGENTIC PLATFORM FOR DEFENSE",
+      "KEYWORDS": "Network Search, Networks directory App Landing1"
+    },
+    "APP_LANDING_HEADING": {
+      "HEADING": {
+        "AWARDED": "Selected onto the Global Entrepreneur Programme of the British Government",
+        "HR_CONSULTIN": "DefAgent",
+        "CONSULTANT": "AI AGENTIC PLATFORM FOR DEFENSE",
+        "IAS": "With a proprietary system of AI agents, DefAgent enables you to go from idea to production-ready product, eliminating the need to find a technical cofounder or hire developers. Simply explain your business idea as you would to a human developer, and we handles the rest - product, payments, security, infrastructure, scalability, and more.",
+        "GERSTARTED": "Get Started",
+        "WHAT_YOU_GET": "What You Get"
+      },
+      "FEATURE_CARDS": {
+        "WHAT_YOU_GET": "What You Get",
+        "WITH_A_SINGLE_TOOL": "Easily and quickly implements real-time solutions without need for a dedicated technology professional on staff. No other solution on the market matches our: "
+      },
+      "TWIN_PHONE_LEFT_LIST": {
+        "WE_ARE_YOUR_PATH_TO_SUCCESS": "Types of ai agents in defense"
+      },
+      "TWIN_PHONE_LEFT_RIGHT": {
+        "WE_HAVE_A_TON_OF_BENEFITSS": "We have tons of benefits",
+        "EVERYTHINK_DOES_ALL_OF": "DefAgent does ALL OF THE HEAVY LIFTING so you can focus on more valuable and complex tasks."
+      },
+      "DOWNLOAD": {
+        "START_TODAY": "Start Today",
+        "DOWNLOAD_THE_APP": "Download The App",
+        "DOWNLOAD_EVERYTHING": "Position your business for HR success. Download DefAgent App now and get started on your AI journey! Available on Windows, Mac, iOS, and Android devices.",
+        "GET_IT_ON_THE": "Get it on",
+        "APP_STORE": "App Store",
+        "DOWNLOAD_ON": "Download on",
+        "GOOGLE_PLAY": "Google Play"
+      }
+    }
+  },
+  "DEMOS": {
+    "HUMANRE_SOURCES": {},
+    "SALES": {
+      "NETWORK_SEARCH_META": {
+        "TITLE": "DefAgent - Sales",
+        "KEYWORDS": "Network Search, Networks directory Sales"
+      },
+      "APP_LANDING_HEADING2": {
+        "ALLISONE": "All is one,",
+        "INFINTY": "where infinity starts",
+        "EVERYTHINKFORSALES": "DefAgent",
+        "BETTERMARKETING": "AI-powered agents are emerging as invaluable",
+        "BETTERRESULT": "assets in the Department of Defense (DoD)",
+        "OURIAS": "Revolutionizing how we fight by streamlining work and enhancing decision-making speed. These agents excel in automating low-level, low-risk tasks, freeing warfighters to concentrate on vital, mission-critical decisions.",
+        "SUBSCRIBENOW": "Get Started"
+      },
+      "APP_LANDING2_TRENDING_DESIGN": {
+        "SIMPLE_IMPLEMENTATION": "Simple implementation with exponentially positive impacts",
+        "SINCE_THE_NEED": " Human interactions are vastly reduced to give way for better workflow efficiency and better management of resources. Better cost-effectiveness!",
+        "THE_POSSIBILITIES": "The possibilities for using DefAgent for defense are everywhere and are limited only by the ingenuity of users who want to use AI agents to improve and simplify their processes."
+      },
+      "APP_LANDING2_FOCUS_ON_SUCCESS": {
+        "FORGET_OBSOLETE": "Forget obsolete systems & costly investments",
+        "EVERYTHINK_DELIVERS": "DefAgent’s AI-driven software as a service will completely transform your business. Our IAs interacts directly with employees, customers, and suppliers to understand their needs, connect them with people, processes, and in real-time.",
+        "DOT_NOT_WASTE_TIME": "Help your team become more productive and profitable! Stop wasting valuable time and start getting meaningful results now!"
+      },
+      "APP_LANDING2_SAFETY": {
+        "SAFETY_FIRST": "You First!",
+        "YOUR_SUCCESS_IS_OUR_SUCCESS": "Your success is our success!",
+        "EVERYTHINK_DOESALL": "DefAgent helps your team to automate routine processes, blaze through mountains of data, and can even handle more complex tasks."
+      },
+      "APP_LANDING2_POPPING_HIGHLIGHT": {
+        "DISCOVER_CREATE_LOVE": "Discover. Empower. Win.",
+        "SEE_WHY_PEOPLE_LOVE_EVERTTHINK": "See why businesses and brands love DefAgent"
+      },
+      "APP_LANDING2_DOWNLOAD": {
+        "START_TODAY": "Start Today",
+        "DOWNLOAD_THE_APP": "Download The App",
+        "DOWNLOAD_EVERTTHINK": "Download DefAgent App Now And Get Started On Your AI For Sales Journey! Available On Windows, Mac, iOS, And Android Devices.",
+        "GET_IT_ON_THE": "Get It On",
+        "APP_STORE": "App Store",
+        "DOWNLOAD_ON": "Download On",
+        "GOOGLE_PLAY": "Google Play"
+      }
+    },
+    "CUSTOMER_SERVICE": {
+      "NETWORK_SEARCH_META": {
+        "TITLE": "DefAgent - Network search  ",
+        "KEYWORDS": "Network Search, Networks directory network search"
+      },
+      "AUTOMATE_SOCIAL_HEADING": {
+        "EVERYTHINK_FOR_CUSTOMER_SERVICE": "DefAgent Customer Service",
+        "DONT_THINK_IT": "Don’t think it; don’t even answer, because we have it!",
+        "DRIVE_YOUR_BUSINESS_FORWARD": "Drive your business forward with managed customer care IAs in the palm of your hands!"
+      },
+      "AUTOMATE_SOCIAL_GET_STARTED": {
+        "ALL_IN_ONE": "All-in-one Customer Service Solution",
+        "EVERTTHINK_YOU_NEED_IN_ONE_SOLUTION": "Get everything you need in one solution.",
+        "EVERTTHINK_YOU_NEED_IN_ONE_SOLUTION1": "",
+
+        "INTRODUCING": "Create effortless and consistent experiences and reduce costs with a powerful customer service automation tool.",
+        "COMMUNICATE_BETTER": "Capture communication; analyze and aggregate conversations to deliver real-time solutions, insights, and statistics with our low-code platform!",
+        "NO_CREDIT_CARD_NEEDED": "Get your AI journey started!",
+        "START_NOW": "Start Now",
+        "BY_REGISTERING": " By registering you will get 14 days of DefAgent."
+      },
+      "AUTOMATE_SOCIAL_WHY": {
+        "WHY_EVERYTHINK": "Why DefAgent",
+        "OUR_MISSION_IS_TO_PROVIDE_YOU": "Our goal with the powerful DefAgent software as a service platform is the accurate automation of your entire customer service by connecting actors, processes, and devices in real-time. More so, it also provides strategy-based metrics that make it easy to measure business performance against intended goals."
+      },
+      "AUTOMATE_SOCIAL_AUTOMATION_SOLUTION": {
+        "ADVANCED_CUSTOMER": "Advanced Customer Service Automation Solution",
+        "DESCRIPTION": "DefAgent IAs are poised to help brands deliver superior customer self-service experiences and overhaul engagements across digital channels. This is advanced customer service automation right in your palms!",
+        "OUR_INTELLIGENT_ASSISTANTS": ""
+      }
+    },
+    "DEVELOPERS": {
+      "NETWORK_SEARCH_META": {
+        "TITLE": "DefAgent - developer",
+        "KEYWORDS": "Network Search, Networks directory developer"
+      },
+      "HEADING": {
+        "WELCOME_DREAMERS": "Welcome Dreamers!",
+        "CREATE_EMOTIONS": "Create Emotions for Smart Assistants",
+        "SHOW_VIDEO": "Show video"
+      },
+      "INTEGRATioNS": {
+        "KNOW_WHAT_YOU_CAN_DO_WITH_US": "Know what you can do with Us",
+        "LEARN_MORE": "Learn more"
+      },
+      "TOOL": {
+        "INTEGRATION_TOOLS": "",
+        "EASY_INTEGRATIONS": "",
+        "LOREM_IPSUM": "",
+        "LOREM_IPSUM_DOLOR": "",
+        "INTEGRATE": ""
+      }
+    },
+    "HEALTH": {
+      "NETWORK_SEARCH_META": {
+        "TITLE": "DefAgent - corporate",
+        "KEYWORDS": "Network Search, Networks directory corporate"
+      },
+      "CORPORATE": {
+        "EVERYTHINK_MAKE_TREATMENT_MORE": "DefAgent makes treatment more effective, and patients safer, allowing hospitals and insurance companies to save money.",
+        "LEARN_MORE": "Learn More",
+        "80_OF_THE_CASE_ARISE": "80% of these cases arise from miscommunications during care transitions, resulting in more than 7000 deaths and 500,000 preventable injuries caused by medical errors. Not to mention the 3 out of every 10 lab tests that are reordered because the results get lost in the process. As much as 18% of hospital medical patients are readmitted within a month. All or most of these could be avoided!",
+        "DID_YOU_KNOW": "Did you know that medical errors are the third leading cause of death in the US?",
+        "HEADING": {
+          "EVERYTHINK_FOR_HEALTH": "DefAgent Health",
+          "WELCOME_TO_THE_FUTURE": "Driving the next wave of meaningful innovation in healthcare, don’t be left behind!",
+          "WITH_THE_RIGHT_DATA": "Gain insights and leverage radically interoperable data to accelerate healthcare research, usher in a new era of treatment optimization, drug development, outcome prediction, disease diagnosis and prognosis, patient engagement, and better public health.",
+          "START_NOW": "Start now",
+          "PLANS_AND_PRICEING": "Plans & pricing"
+        },
+        "BUSINESS": {
+          "LETS_DO_BUSINESS": "Let's get started",
+          "WHAT_EVERYTHINK_OFFERS": "What DefAgent offers"
+        },
+        "EVERYTHINK_IS_THE_SOLUTION": "DefAgent augments the clinician-patient experience. With this software as AIaaS tool at the fundamental of your healthcare delivery interactions, most medical errors can be prevented. The technology integrates the patients’ records in a single, highly secure place that allows for easy sharing within and outside the network, for the benefits of both patients as well as the medical staff."
+      }
+    },
+    "RPACREAORS": {
+      "NETWORK_SEARCH_META": {
+        "TITLE": "DefAgent - online payment",
+        "KEYWORDS": "Network Search, Networks directory online payment"
+      },
+      "ONLINE_PAYMENT": {
+        "HEADING": {
+          "GO_BIG": "Go big, or back home!",
+          "CREATE_BUY": "Create, buy and sell automated processes.",
+          "WITHOUT_CODING": "- Without coding.",
+          "KNOW_MORE": "Know more",
+          "START_NOW": "Start now"
+        },
+        "FEATURES": {
+          "REASONS_TO_USE_EVERYTHINK": "Reasons to use DefAgent",
+          "KNOW_WHAT_YOU_CAN_DO_WITH_US": "Know what you can do with Us"
+        },
+        "CUSTOMERS_MANAGEMENT": {
+          "CREATE_SMART": "Create Smart",
+          "EXERIENCES_WITH": "Experiences with",
+          "EVERYTHINK": "DefAgent Studio",
+          "SIMPLE_IMPLEMENTATION": " Simple implementation with exponentially positive impact.",
+          "CUSTOMERSADMINISTRATION": "Customers administration."
+        }
+      }
+    },
+    "DATAFLOWS_CREATOORS": {
+      "NETWORK_SEARCH_META": {
+        "TITLE": "DefAgent - integration",
+        "KEYWORDS": "Network Search, Networks directory integration"
+      },
+      "INTEGRATION": {
+        "HEADING": {
+          "CREATE_EMOTIONS_FOR_SMART_ASSISTANTS": "Create Emotions for Smart Assistants",
+          "CREATE_BUY_AND_SELL": " Create, Buy and Sell data flows to train Smart Assistants for the different geolocated conversations necessary for each of the actors that participate in each network, community and channel.",
+          "JOIN_EVERY_TTHINK": "Join DefAgent"
+        },
+        "HOW_IT_WORK": {
+          "KNOW_WHAT_YOU_CAN_DO_WITH_US": "Know what you can do with Us",
+          "EVERYTHINK_DOES_ALL": "DefAgent does ALL OF THE HEAVY LIFTING so you can focus on more valuable and complex tasks."
+        },
+        "BUILT_TECH": {
+          "INDUSTRY_LEADING": "Industry leading",
+          "TECHNOLOGY": "technology",
+          "EVERYTHINK_STUDIO": "DefAgent Studio gives you everything you and your business  needs to build robust data flows. All without coding!",
+          "ONE_STEP_AHEAD_OF_AIS": "One step ahead of AIs",
+          "EMPOWER_THE_INTELLIGENT": "Empower the Intelligent Assistants by providing new interactions created by you, this elevating your problem solving skills in real time."
+        },
+        "EXTEND_CORE": {
+          "LIMITLESS_POSSIBILITIES": "Limitless possibilities",
+          "BUILD_FAST_BUILD_MORE": "Build Fast. Build More.",
+          "USING_EVERYTHINK": "Using DefAgent Studio’s unique software for fast and fluid data flows development, you can build and deploy all data flows you need  in minutes. No scripting, programming, or technical skills required.",
+          "KNOW_MORE": "Know more",
+          "REGISTER_ACCOUNT": "Register Account"
+        },
+        "LATEST_PROJECTS": {
+          "EVERYTHINK_MARKETPLACE": "DefAgent Marketplace",
+          "TAKE_A_LOOK_AT_OUR_LATEST_PROJECTS": "Take a look at our latest projects, those customer have trust in our services to bring their business to the next level!",
+          "SOMOS_PILEROS": "Somos Pileros",
+          "WE_BUILT_DATA": "We built data flows to connect entrepreneurs with volunteers and mentors more quickly and efficiently by automating the search and connection process between users, in real time."
+        },
+        "REGISTER": {
+          "FILL_IN_THE_FORM": "Fill in the form",
+          "YOUR_SUCCESS_IS_OUR_SUCCESS": "Your success is our success",
+          "IF_YOU_ARE_LOOKING": "If you're looking to be part of DefAgent network, just fill in the form, we're sure we can build great things together!"
+        },
+        "WHY_CHOOSE_US": {
+          "SIMPLE_IMPLEMENTATION_WITH": " Simple implementation with exponentially positive impact",
+          "SINCE_THE_NEED_FOR_HUMAN": "Since the need for human intervention is reduced and workflow efficiency is increased, the process is highly affordable.",
+          "KNOW_MORE": "Know More"
+        }
+      }
+    },
+    "SAAS": {
+      "NETWORK_SEARCH_META": {
+        "TITLE": "DefAgent - saas",
+        "KEYWORDS": "Network Search, Networks directory saas"
+      },
+      "HEADING": {
+        "EVERYTHINK_FOR_REAL_ESTATE": "DefAgent Real Estate",
+        "YOU_AGENT_IN_YOUR_HANDS_WITHGLOBAL_REACH": "Your agent in your hands with global reach!",
+        "OUT_IAS_ARE_POISED": "Our IAs will revolutionize your real estate service delivery with process automation and AI-based innovations. Better still, it is always right there in your palms",
+        "PLANS_AND_PRICING": "Plans & pricing",
+        "START_NOW": "Start now"
+      },
+      "LIGHTWEIGHT_TEMPLATE": {
+        "YOUR_SMART_PUPPETS": "Your Very Own Smart Puppets",
+        "WILL_PROVIDE_YOUR_PROSPECTS_AND_CLIENTS": "With DefAgent software as a service platform, our IAs can help become ultra-responsive in real-time; gain valuable insights into prospects, clients, markets, and processes; leverage valuable data to address clients’ needs and close more sales, achieve greater system transparency; and improve overall efficiency.",
+        "SIMLIFYING_THE_CURRENT": "",
+        "LEARN_MORE": "Learn More"
+      },
+      "BUILD_TO_LAST": "Built to Last",
+      "WHAT_YOU_WILL_GET_WITH_EVERTTHINK": "What You Get",
+      "GEOLOCATED_INTELLIGENT_ASSISTANTS": "Automate Your Booking Process With DefAgent Calendar And Focus Only On What Matters",
+      "DASHBORD_INCLUDED": "Dashboards included",
+      "SIMPLE_IMPLEMENTATION": "Simple implementation with exponentially positive impact",
+      "SINCE_THE_NEED_FOR_HUMAN": "Since the need for human intervention is reduced and workflow efficiency is increased, the process is highly affordable.",
+      "THE_POSSIBILITIES": "The possibilities for using DefAgent for Sales are everywhere, and only  limited to the ingenuity of users who want to utilize AI to improve their quality of life.",
+      "Learn_More": "Learn more"
+    },
+    "START_UP": {
+      "NETWORK_SEARCH_META": {
+        "TITLE": "DefAgent - Networks directory sstart up",
+        "KEYWORDS": "Network Search, Networks directory start up"
+      },
+      "HEADING": {
+        "DELIVERING_THE_TOOLS": "Still Struggling To Get New Clients,",
+        "YOU_NEED_TO_SUCCEED": "To Generate Loyal Customers?",
+        "IT_ALL_BEGINS_BY_CHOSSING": "Find Prequalified Small Business Leads, Identify Issues, then Contact and Close Deals",
+        "TRY_IT_FREE": "Get Started!"
+      },
+      "WHAT_YOU_GET": {
+        "BUSINESS_TITLE": "WORK FROM ANYWHERE",
+        "PAYMENTS_TITLE": "ACCEPT PAYMENTS",
+        "SCHEDULES_TITLE": "YOUR BRAND YOUR WAY",
+        "SITE_TITLE": "SAVE TIME AND MONEY",
+        "BUSINESS_DESC": "Manage Your Bookings From Any Device. Combine Schedules And Sync Calendars.",
+        "PAYMENTS_DESC": "Flexible Appointment Pricing. Payments With 0% Commission In 26 Currencies.",
+        "SCHEDULES_DESC": "Fully Customizable Design To Showcase Your Brand. Set Your Space Between Appointments.",
+        "SAVING_DESC": "No More Back And Forth Emails. Affordable, Usage-based Plans To Fit Your Budget."
+      },
+      "PRICING": {
+        "TITLE": "DefAgent Calendar",
+        "SUBTITLE": "Works With Any Type Of Business And Any Type Of Appointment Scheduling",
+        "BUY": "Buy now",
+        "PLAN_PERSONAL": "One on One",
+        "PLAN_PERSONAL1": "Therapists",
+        "PLAN_PERSONAL2": "Personal trainers",
+        "PLAN_PERSONAL3": "Human Resources & Head Hunting",
+        "PLAN_PERSONAL4": "Pet care services",
+        "PLAN_PERSONAL5": "Sales teams & consultants",
+        "PLAN_PERSONAL_DESC": "",
+        "PLAN_BUSINESS": "Group",
+        "PLAN_BUSINESS1": "Gym & Fitness studio",
+        "PLAN_BUSINESS2": "Tour operators",
+        "PLAN_BUSINESS3": "Language schools",
+        "PLAN_BUSINESS4": "Schools & Universities",
+        "PLAN_BUSINESS5": "Events, Workshops & Seminars",
+        "PLAN_BUSINESS_DESC": "",
+        "PLAN_ENTERPRISE": "Reservations",
+        "PLAN_ENTERPRISE1": "Venue/Equipment Rentals",
+        "PLAN_ENTERPRISE2": "Photography studio",
+        "PLAN_ENTERPRISE3": "Resource scheduling",
+        "PLAN_ENTERPRISE4": "Conference & meeting rooms",
+        "PLAN_ENTERPRISE5": "Sport court reservations",
+        "PLAN_ENTERPRISE_DESC": "",
+        "PLAN_BUSINESSD": "Service",
+        "PLAN_BUSINESSD1": "Beauty salons",
+        "PLAN_BUSINESSD2": "Medical professionals",
+        "PLAN_BUSINESSD3": "Driving instructors",
+        "PLAN_BUSINESSD4": "Repair professionals",
+        "PLAN_BUSINESSD5": "Household & cleaning services",
+        "PLAN_BUSINESSD_DESC": ""
+      },
+      "PRICING_TWO": {
+        "TITLE": "Affordable pricing plans.",
+        "TITLE0": "Go Ahead And",
+        "TITLE01": "Get Your Discounted",
+        "TITLE1": "DefAgent Calendar",
+        "TITLE11": "License",
+        "TITLE2": "Today!",
+        "TITLE22": "Choose Your Plan:",
+        "SUBTITLE": "",
+        "BUY": "Buy Now",
+        "MONTHLY": "Monthly Basis",
+        "ANNUAL": "Annual Basis",
+        "DISCOUNT": "(Save Up To 30% Off On Annual Plans)",
+        "GETNOW": "Get It Now",
+        "CUSTOM": "For Teams",
+        "CUSTOM1": "(Best Value)",
+        "CUSTOM2": "For Teams And Businesses With Additional Scheduling Needs, Customization And Advanced Features",
+        "CUSTOM3": "Contact Us",
+        "PLAN_BASIC": "For Individuals",
+        "PLAN_BASIC_DESC": "Everything You Can Get From A Professional Solution To Keep Your Business On Its Way To Success",
+        "FEATURES1": "200 Maximum Number Of Upcoming Appointments",
+        "FEATURES2": "1 Integration To Collect Payments",
+        "FEATURES3": "50 Free SMS Invitations",
+        "FEATURES4": "DefAgent Calendar In Your Website",
+        "FEATURES5": "Custom Branding",
+        "FEATURES6": "Webhooks",
+        "FEATURES7": "Real-time Support",
+        "FEATURES8": "Workflows",
+        "FEATURES9": "Real-time Reports",
+        "FEATURES10": "Marketing Packages",
+        "FEATURES11": "Over 700 App Integrations With Zapier",
+        "FEATURES12": "Connect To Zoom, Microsoft Teams, Google Meet, And GoToMeeting"
+      },
+      "FEATURES": {
+        "BUSINESS_TITLE": "Scale Your Business",
+        "PAYMENTS_TITLE": "Collect Payments",
+        "SCHEDULES_TITLE": "Optimize Time Saving",
+        "SAVING_TITLE": "Coordinate Different Schedules",
+        "INTERFACE_TITLE": "Desktop And Mobile Interface",
+        "SITE_TITLE": "Integrate In Your Site",
+        "BUSINESS_DESC": "Get More Customers And Increase Your Revenue",
+        "PAYMENTS_DESC": "Synchronize with Google Calendar and Outlook",
+        "SCHEDULES_DESC": "Integrate Payment With Zero Commission And Supports 26 Currencies",
+        "SAVING_DESC": "Save Time With Automated Features",
+        "INTERFACE_DESC": "Use An Award Winning User Friendly Interface",
+        "SITE_DESC": "Integrate Seamlessly Into Your Website",
+        "DASHCORE_FEATURE": "DefAgent Features",
+        "WHAT_DASHCORE_CAN_DO": "Benefits Of Using DefAgent Calendar",
+        "LOREM_IPSUM": "With DefAgent, In Less Than 24 Hours An Organization Can Build Geolocated Intelligent Assistants That will Manage Data, And Match Needs With Solutions By Interconnecting People, Automated Processes And Devices In Real-time, Constantly Measuring The Performance Of Each Business Actor – All Without Coding."
+      },
+      "WHY_DASHCORE": {
+        "WHY_DASHCORE_TEMPLATE": "Simple Implementation With High Impact",
+        "WHEN_LOOKING": "Since The Need For Human Intervention Is Reduced And Workflow Efficiency Is Increased, The Process Is Highly Affordable",
+        "DEVELOPERS": "Assignments",
+        "ENGAGING_DEVELOPERS0": "",
+        "ENGAGING_DEVELOPERS01": "",
+        "ENGAGING_DEVELOPERS1": "Maximize Meeting Efficiency",
+        "ENGAGING_DEVELOPERS11": "By Connecting Your Customers With The Right Team Members.",
+        "ENGAGING_DEVELOPERS2": "",
+        "ENGAGING_DEVELOPERS22": "",
+        "LOREM_IPSUM": "",
+        "DESIGNER": "Customization",
+        "ENGAGING_DESIGNER0": "",
+        "ENGAGING_DESIGNER01": "",
+        "ENGAGING_DESIGNER1": "",
+        "ENGAGING_DESIGNER11": "",
+        "ENGAGING_DESIGNER2": "Create A Premium Customer Experience",
+        "ENGAGING_DESIGNER22": "With Advanced Branding And Customization Options.",
+        "REMINDERS": "Reminders",
+        "ENGAGING_REMINDERS0": "",
+        "ENGAGING_REMINDERS01": "",
+        "ENGAGING_REMINDERS1": "Email & SMS Notifications",
+        "ENGAGING_REMINDERS11": "Ensure No One Forgets A Booking.",
+        "ENGAGING_REMINDERS2": "",
+        "ENGAGING_REMINDERS22": "",
+        "PAYMENTS": "Integrations",
+        "ENGAGING_PAYMENTS0": "",
+        "ENGAGING_PAYMENTS01": "",
+        "ENGAGING_PAYMENTS1": "Create A Seamless Experience",
+        "ENGAGING_PAYMENTS11": "For Your Team With A Range Of Third-Party Integrations.",
+        "ENGAGING_PAYMENTS2": "",
+        "ENGAGING_PAYMENTS22": "",
+        "PAGE": "Website",
+        "ENGAGING_PAGE0": "",
+        "ENGAGING_PAGE01": "",
+        "ENGAGING_PAGE1": "Add To Your Website & Facebook Page",
+        "ENGAGING_PAGE11": "Or Use Your Appointment Schedule As A Standalone If You Don’t Have A Site.",
+        "ENGAGING_PAGE2": "",
+        "ENGAGING_PAGE22": "",
+        "CALENDARS": "Calendars",
+        "ENGAGING_CALENDARS0": "",
+        "ENGAGING_CALENDARS01": "",
+        "ENGAGING_CALENDARS1": "Synchronize With Other Calendars",
+        "ENGAGING_CALENDARS11": "Or Let Your Availability Depend On Another Calendar.",
+        "ENGAGING_CALENDARS2": "",
+        "ENGAGING_CALENDARS22": "",
+        "REPORTING": "Reporting",
+        "ENGAGING_REPORTING0": "Understand Your Booking Traffic And Your",
+        "ENGAGING_REPORTING01": "Customers Needs.",
+        "ENGAGING_REPORTING1": "",
+        "ENGAGING_REPORTING11": "",
+        "ENGAGING_REPORTING2": "",
+        "ENGAGING_REPORTING22": "",
+        "SECURITY": "Security",
+        "ENGAGING_SECURITY0": "Keep Your Data",
+        "ENGAGING_SECURITY01": "Safe And Secure.",
+        "ENGAGING_SECURITY1": "",
+        "ENGAGING_SECURITY11": "",
+        "ENGAGING_SECURITY2": "",
+        "ENGAGING_SECURITY22": ""
+      },
+      "VIDEOs": {
+        "HOW_TO_VIDEO": "Why Us?",
+        "TAKE_A_LOOKING_AT": "At DefAgent We’re All About Powering People And Organizations With Smart Solutions That Shorten Time-To-Engagement In All Phases Of The Customer Lifecycle",
+        "1_TITLE": "Maximize Scheduling Opportunities",
+        "1_DESC": "How Customers The Combined Availability Of Your Team",
+        "2_TITLE": "Maximize Conversion Opportunities",
+        "2_DESC": "Assign Meetings To Team Members With The Right Skills",
+        "3_TITLE": "Maximize Resource Utilization",
+        "3_DESC": "Distribute Meetings Equally Across Your Team"
+      }
+    }
+  },
+  "PROJECT": {
+    "NETWORK_SEARCH_META": {
+      "TITLE": "DefAgent - Networks directory",
+      "KEYWORDS": "Network Search, Networks directory"
+    },
+    "FOR_DEVELOPERS": {},
+    "FORSTORYTELLERS": {},
+    "VIEW_PLANAND_PRICE": {}
+  },
+  "FAQS": {
+    "FAQS1": {
+      "DO_YOU_HAVE": "Do you have",
+      "QUESTIONS": "questions?",
+      "NOT_SURE_HOW": "Not sure how DefAgent can help you? Wondering why you need to start your AI journey?",
+      "HERE_ARE_THE_ANSWERS": "You can ask us any questions. However, here are the answers to the most common questions we get asked by our esteemed customers."
+    }
+  },
+  "COUNTER": {
+    "COUNTER1": {
+      "MILLIONS_BUSSINESS": "Millions rely on DefAgent to find and retain top talents!",
+      "THESE_AMAZING_STATS": "Numerous brands and businesses around the world use DefAgent AIaaS and cognitive computing capabilities to optimize their HR workflows. Numbers don’t lie and these amazing stats can’t be wrong!"
+    },
+    "COUNTER1_L2": {
+      "MILLIONS_BUSSINESS": "Many businesses rely on DefAgent to boost their sales performance!",
+      "THESE_AMAZING_STATS": "Businesses and brands are across the world are leveraging our powerful talent technology to boost their lead volume, close rate, and entire sales performance. Check out our numbers!"
+    },
+    "COUNTER2": {
+      "WHY_CUSTOMER_TRUST_US": "Why customer trust us",
+      "HAPPY": "Happy",
+      "CUSTOMER": "Customers",
+      "THESE_AMAZING_STATS": "These amazing stats can be wrong, many happy customers around the world trust our service to boost their business.",
+      "TONS_OF_SUCCESSFULL_IMPLEMENATION": "Tons of successful implementations",
+      "USERS_IMPROVE_THEIR_ABILITY": "DefAgent raises the bar for efficiency and productivity, thus increasing job satisfaction. This low-code platform also guarantees exceptional ease of implementation and so is trusted by hundreds of thousands of brands across the world.",
+      "ALL_POWERED_BY": "Powered by a cognitive engine which can develop characters for various roles, to complete different functions within the company.",
+      "LEARN_MORE": "Learn more"
+    },
+    "COUNTER3": {
+      "AMAZING_STATS": "Amazing stats",
+      "EVERYTHINK_CREaTES_A_POWERFUL_AND_EFFECTIVE": "Leverage DefAgent’s AIaaS platform to implement a circular economy business model!",
+      "EACH_USER_IS_EMPOWERED": "Users are empowered by the ability to improve networking and boost job performance."
+    },
+    "COUNTER6": {
+      "SUCCESSFULL_IMPLEMENTATIONS": "1M+ Successfully Implementations",
+      "GET_THEVERY_BEST": "Get the very best of us by doing the best of you"
+    }
+  },
+  "CATE": {
+    "CATE1": {
+      "READY_TO_GET_STARTED": "Ready to get started?",
+      "BECOME_ONE_OF_THE_MILLIONS": "Join millions of people and brands around the world who love and use EveryThink!",
+      "CREATE_EVERTTHINKACCOUNT": "Create account"
+    }
+  },
+  "TESTIMONIALS": {
+    "TESTIMONIAL_SIMPLE_SLIDER": {
+      "TESTIMONIALS": "Testimonials"
+    },
+    "TESTIMONIAL_SLIDER": {
+      "LOREM_IPS": "This is an incredible tool that can help anyone to create their own algorithms and generate a more sustainable business. Thank you very much for helping us help other people!",
+      "JANE_DOR": "Estefany Güechá,",
+      "AWESOME_COMPANY": "Somos Pileros"
+    },
+    "TESTIMONIAL_SIMPLE_TEXT_RIGHT": {
+      "IF_YOU_ARE_STRUGGLING": "If you are struggling to stay in business, there may be several options you can explore.",
+      "EVERYTHINK": "DefAgent,",
+      "IS_THE_PERFECT_TOOL": " is the perfect tool. It is very easy to use, and it has all the functionality you are looking for.",
+      "CARO_FOGLIATO": "Caro Fogliato,",
+      "CEOANDFOUNDER": " CEO & Founder of DefAgent inc."
+    },
+    "TESTIMONIAL_SIMPLE_TEXT_LEFT": {
+      "EVERYTHIN_IS_GREAT_FOR": "DefAgent is great for",
+      "ANYONE_WHO_IS_LOOKING_FOR_SIMPLE": " Anyone who is looking for simple implementation with exponentially positive impact",
+      "EVERYTHINK_LTD_TEAM": "DefAgent inc. Team,",
+      "DoING_GREATE_SINCE": " Doing great since 2024"
+    },
+    "TESTIMONIAL_SKEWED_SLIDER": {
+      "OUR_CUSTOMERS_HAVE_SOMETHING_TO_SAY": "Our customers have something to say",
+      "THEY_ARE_THE_BEST": "They are the best, our customer want to let you know how DefAgent is helping them to achieve their goals and how simple is to use it!"
+    },
+    "TESTIMONIAL_WORLD_MAP": {
+      "WE_HEARD_OUR_CUSTOMERS_SAY": "We've heard our customers say",
+      "SED_OUT_PERSPICIATIS": "This is an incredible tool that can help anyone to create their own algorithms and generate a more sustainable business. Thank you very much for helping us help other people!",
+      "JANE_DOE": "Estefany Güechá,",
+      "MARKEYING_DIRECTOR": "Somos Pileros"
+    }
+  },
+  "USUAL": {
+    "FEATURES_ICONS_COL": {
+      "UP_TO_THE_TASK": "Start your AI for health journey with DefAgent",
+      "WHAT_YOU_GET": "What You Get",
+      "GEOLOCATED_INTELLIGENT_ASSISTANTS": "With DefAgent AIaaS low-code platform, you can leverage geolocated IAs to manage data from disparate sources like electronic health records and social determinants of health; interconnect people and devices and, automate costly, repetitive, and error-prone administrative labor into a far more efficient and inexpensive digital workforce."
+    },
+    "DEVELOPER_DESIGNER": {
+      "JOIN_AS_DESIGNER": "Join us!",
+      "JOIN_AS_DEVELOPER": "",
+      "LOREM_IPSUM": ""
+    },
+    "START_NOW_BOX": {
+      "TRY_EVERYTHINK_NOW": "Try DefAgent now.... love it forever",
+      "WHY_WAIT": "Why wait? Start now!",
+      "START_NOW": "Start now"
+    }
+  },
+  "FOOTER": {
+    "FOOTER1": {
+      "EVERYTHINK_IS_POISED": "All is one, where infinity starts.",
+      "COMPANY": "DefAgent",
+      "ABOUT": "About Us",
+      "BLOG": "Blog",
+      "PRODUCt": "Product",
+      "SERVICES": "Services",
+      "FEATURES": "Features",
+      "API": "API",
+      "CUSTOMERS": "Customers",
+      "CHANNELS": "Channels",
+      "CAREERS": "Careers",
+      "CONTACT": "Contact",
+      "SEARCH": "Search",
+      "COPYRIGHT": "Copyright © 2024-2025 DefAgent inc. All Rights Reserved."
+    }
+  },
+  "CONTACT": {
+    "NETWORK_SEARCH_META": {
+      "TITLE": "EveryThink - contact",
+      "KEYWORDS": "Network Search, Networks directory contact"
+    },
+    "FORM": {
+      "LETS_DO_BUSINESS": "Let's do business",
+      "STEP_INTO_OUR_PLACE": "Step into our place",
+      "123_STREET_ST": "Texas",
+      "YC_COUNTRY": " United States"
+    },
+    "OTHER_CHANNELS": {
+      "CONTACT_SALE": "Contact Sale",
+      "LOOKING_FOR_CUSTOM_QUOTE": "Looking for a custom quote? need to tell us more about your project? or want a demonstration? drop us a line to",
+      "TECHNICAL_SUPPORT": "Technical Support",
+      "ANY_QUESTION": "Any question about how to integrate your product?. Don't fret, our team is ready for help you"
+    }
+  },
+  "ABOUT": {
+    "NETWORK_SEARCH_META": {
+      "TITLE": "EveryThink - about",
+      "KEYWORDS": "Network Search, Networks directory about"
+    },
+    "OVERVIEW": {
+      "SUCCEED_WITH_DASHCORE": "Succeed with EveryThink",
+      "THE_NEW_WAY_TO_SHOWCASE": "The new way to boost your Business",
+      "DASHCORE_IS_A_BOOTSTRAP": "",
+      "IT_INCLUDES_MULTIPLE": "It includes multiple components and pre-made demos ready for you to personalize according to your own needs. EveryThink includes a ready-to-go Admin Dashboard with many out-of-the-box features."
+    },
+    "VIDEO": {
+      "DISCOVER_HOW_DASHCORE_WORKS": "Discover how EveryThink works",
+      "PLAY_THE_VIDEO": "Play the video"
+    },
+    "SOLUTIONS": {
+      "A_SOLUTION_FOR_EVERY_NEED": "A solution for every need",
+      "LOREM_IPSUM": "",
+      "DASHCORE_INCLUDED": "Dashboards Included",
+      "OUR_TEMPLATE_IS_PACKED_WITH_A": "EveryThink",
+      "START_ADMIN_DASHBOARD": "also has control panels that are customizable according to your needs",
+      "START_RIGHT_AWAY": "started right away with your project.",
+      "TRY_THE_DASHBOARD": "Try EveryThink"
+    },
+    "FEATURES": {
+      "OUR_FEATURES_STACK": "Our features stack",
+      "TAKE_THE_CONTROL": "Take the control of your business with EveryThink. You can customize  according to your needs or just use the ready-to-use the solution we made for you"
+    },
+    "CUSTOMERS": {
+      "THIRD_PARTY": "Third party integration",
+      "WE_USE_THE_LATEST_TRENDS": " We use the latest trends because you deserve better",
+      "ARE_YOU_A_DEVELOPER": "Are you a developer?",
+      "REVIEW_THE_SPECS": "Review the specs"
+    },
+    "TEAM": {
+      "GET_TO_KNOW_OUR_TEAM": "Get to know our team",
+      "THESE_AMAZING_PEOPLE": "These amazing people have made possible to stay where we are"
+    },
+    "REGISTER": {
+      "DASHCORE_OFFICIAL": "EveryThink Ltd",
+      "NEWSLETTER": "Newsletter"
+    }
+  },
+  "TERMS": {
+    "trm_terms_of_use": "Terms Of Use",
+    "trm_last_update": "Last Update: March 30, 2025",
+    "trm_general_information": "General Information",
+    "trm_introduction": "Welcome to DefAgent inc. (the “Company”). DefAgent builds technologies and services that enable people to connect with each other, proceses and devices; builds networks, communities, and channels; and grows businesses. These Terms govern your use of DefAgent, and the other products, modules, features, apps, services, technologies, and software we offer. These Products are provided to you by DefAgent, inc. By creating a DefAgent account, whether through a mobile device, mobile application or computer (collectively, the “Service”) you agree to be bound by these Terms of Use and our Privacy Policy, which is incorporated by reference into this Agreement and available in the Service (this “Agreement”). If you do not accept and agree to be bound by all of the terms of this Agreement, please do not use the Service.",
+    "trm_1_acceptance_terms": "1. Acceptance of Terms of Use Agreement.",
+    "trm_1_acceptance_terms_1": "This Agreement is an electronic contract that establishes the legally binding terms you must accept to use the Service. This Agreement includes the Company’s (i) Privacy Policy, (ii) Our Safety Tips and (iii) Terms Disclosed And Agreed To By You if you purchase or accept additional features, modules, products or services we offer on the Service.",
+    "trm_1_acceptance_terms_2": "We may, at any time and for any reason make changes to this Agreement. We may do this for a variety of reasons including to reflect changes in or requirements of the law, new features, or changes in business practices. The most recent version of this Agreement will be posted on the Services under Settings and also on https://defagent.ai/ Web-page, and you should regularly check for the most recent version. The most recent version is the version that applies. If the changes include material changes that affect your rights or obligations, we will notify you of the changes by reasonable means, which could include notification through the Services or via email. If you continue to use the Services after the changes become effective, then you shall be deemed to have accepted those changes. If you don’t agree to these changes, you must end your relationship with us by ceasing to use the Services and leaving DefAgent.",
+    "trm_2_eligibility": "2. Eligibility.",
+    "trm_2_eligibility_1": "You must be at least 18 years of age to create an account on DefAgent and use the Service. By creating and account and using the Service, you represent and warrant that you can form a binding contract with DefAgent, you are not a person who is barred from using the Service under the laws of texas,usa or any other applicable jurisdiction meaning that you do not appear on texas,usa. Treasury Department’s list of Specially Designated Nationals or face any other similar prohibition, and you will comply with this Agreement and all applicable local, state, national and international laws, rules and regulations. If you create an account, you represent and warrant that you have never been convicted of a felony and that you are not required to register as a sex offender with any state, federal or local sex offender registry.",
+    "trm_3_user_accounts": "3. User Accounts.",
+    "trm_3_user_accounts_1": "In order to use most aspects of the Services, you must register for and maintain an active personal user Services account ('Account'). You must be at least 18 years of age, or the age of legal majority in your jurisdiction (if different than 18), to obtain an Account, unless a specific Service permits otherwise. Account registration requires you to submit to DefAgent certain personal information, such as your name, address, mobile phone number and age, as well as at least one valid payment method supported by DefAgent. You agree to maintain accurate, complete, and up-to-date information in your Account. Your failure to maintain accurate, complete, and up-to-date Account information, including having an invalid or expired payment method on file, may result in your inability to access or use the Services. You are responsible for all activity that occurs under your Account, and you agree to maintain the security and secrecy of your Account username and password at all times. Unless otherwise permitted by DefAgent in writing, you may only possess one Account.",
+    "trm_4_terms_termination": "4. Terms And Termination.",
+    "trm_4_terms_termination_1": "This Agreement will remain in full force and effect while you use the Service and/or have a DefAgent account. You may terminate your account at any time, for any reason, by following the instructions in “Settings” in the Service. The Company may terminate or suspend your account at any time without notice if the Company believes that you have breached this Agreement in its sole discretion. Upon such termination or suspension, you will not be entitled to any refund of unused fees for in app purchases. After your account is terminated, this Agreement will terminate, except that the following provisions will still apply: Section 4, Section 8, Section 9 and Sections 16-18.",
+    "trm_5_non_commercial_use": "5. Non-commercial Use by Users.",
+    "trm_5_non_commercial_use_1": "The Service is for personal use only. Users may not use the Service or any content contained in the Service (including, but not limited to, content of other users, designs, text, graphics, images, video, logos, software, and computer code) in connection with any commercial endeavors, such as advertising or soliciting any user to buy or sell any products or services not offered by the Company. Users of the Service may not use any information obtained from the Service to contact, advertise to, solicit, or sell to any other user without his or her prior explicit consent. Organizations, companies, and/or businesses may not use the Service for any purpose except with DefAgent’ express consent (such as for promoted profiles or other advertisements), which DefAgent may provide or deny in its sole discretion. The Company may investigate and take any available legal action in response to illegal and/or unauthorized uses of the Service.",
+    "trm_6_the_services": "6. The Services.",
+    "trm_6_the_services_1": "DefAgent is a Mobile (Android and iOS) and Web interactive network hosted by a virtual assistant with artificial intelligence capable of connecting people according to their personal, work, social and educational interests, needs and abilities through specific questions. The virtual assistant is capable of learning about the user needs, abilities, interests and aspirations in every environment through contextualized and geospatial questions, in order to achieve assertive connections with others.",
+    "trm_7_interactions": "7. Your Interactions With Other Users.",
+    "trm_7_interactions_1": "YOU ARE SOLELY RESPONSIBLE FOR YOUR INTERACTIONS WITH OTHER USERS. YOU UNDERSTAND THAT THE COMPANY CURRENTLY DOES NOT CONDUCT CRIMINAL BACKGROUND CHECKS ON ITS USERS. THE COMPANY ALSO DOES NOT VERIFY THE STATEMENTS OF ITS USERS. THE COMPANY MAKES NO REPRESENTATIONS OR WARRANTIES AS TO THE CONDUCT OF USERS OR THEIR COMPATIBILITY WITH ANY CURRENT OR FUTURE USERS. THE COMPANY RESERVES THE RIGHT TO CONDUCT ANY CRIMINAL BACKGROUND CHECK OR OTHER SCREENINGS (SUCH AS SEX OFFENDER REGISTER SEARCHES), AT ANY TIME AND USING AVAILABLE PUBLIC RECORDS.",
+    "trm_7_interactions_2": "The Company is not responsible for the conduct of any user. As noted in and without limiting Section 15 below, in no event shall the Company, its affiliates or its partners be liable (directly or indirectly) for any losses or damages whatsoever, whether direct, indirect, general, special, compensatory, consequential, and/or incidental, arising out of or relating to the conduct of you or anyone else in connection with the use of the Service including, without limitation, death, bodily injury, emotional distress, and/or any other damages resulting from communications or meetings with other users or persons you meet through the Service. You agree to take all necessary precautions in all interactions with other users, particularly if you decide to communicate off the Service or meet in person, or if you decide to send money to another user. In addition, you agree to review and follow the Company’s Safety Tips, located in the Service, prior to using the Service. You should not provide your financial information (for example, your credit card or bank account information), or wire or otherwise send money, to other users.",
+    "trm_8_content_posted": "8. Content Posted By You In The Service.",
+    "trm_8_content_posted_1": "You are solely responsible for the content and information that you post, upload, publish, link to, transmit, record, display or otherwise make available (collectively, “post”) on the Service or transmit to other users, including text messages, chat, videos, photographs, or profile text, whether publicly posted or privately transmitted (collectively, “Content”). You may not post as part of the Service, or transmit to the Company or any other user (either on or off the Service), any offensive, inaccurate, incomplete, abusive, obscene, profane, threatening, intimidating, harassing, racially offensive, or illegal material, or any material that infringes or violates another person’s rights (including intellectual property rights, and rights of privacy and publicity). You represent and warrant that (i) all information that you submit upon creation of your account, is accurate and truthful and that you will promptly update any information provided by you that subsequently becomes inaccurate, incomplete, misleading or false and (ii) you have the right to post the Content on the Service and grant the licenses set forth below.",
+    "trm_8_content_posted_2": "You understand and agree that the Company may, but is not obligated to, monitor or review any Content you post as part of a Service. The Company may delete any Content, in whole or in part, that in the sole judgment of the Company violates this Agreement or may harm the reputation of the Service or the Company.",
+    "trm_8_content_posted_3": "By posting Content as part of the Service, you grant to DefAgent a worldwide, transferable, sub-licensable, royalty-free, right and license to host, store, use, copy, display, reproduce, adapt, edit, publish, modify and distribute the Content. This license is for the limited purpose of operating, developing, providing, promoting, and improving the Service and researching and developing new ones.",
+    "trm_8_content_posted_4": "In addition to the types of Content described in Section 8 (a) above, the following is a partial list of the kind of Content that is prohibited in the Service. You may not post, upload, display or otherwise make available Content that:",
+    "trm_8_content_posted_4_1": "(I) Promotes racism, bigotry, hatred or physical harm of any kind against any group or individual;",
+    "trm_8_content_posted_4_2": "(II) Advocates harassment or intimidation of another person;",
+    "trm_8_content_posted_4_3": "(III) Spams or solicits DefAgent’ users;",
+    "trm_8_content_posted_4_4": "(IV) Promotes information that is false or misleading, or promotes illegal activities or conduct that is defamatory, libelous or otherwise objectionable;",
+    "trm_8_content_posted_4_5": "(V) Promotes an illegal or unauthorized copy of another person’s copyrighted work, such as providing pirated computer programs, images, audio or video files or links to them;",
+    "trm_8_content_posted_4_6": "(VI) Contains video, audio photographs, or images of another person without his or her permission (or in the case of a minor, the minor’s legal guardian);",
+    "trm_8_content_posted_4_7": "(VII) Contains restricted or password only access pages, or hidden pages or images (those not linked to or from another accessible page);",
+    "trm_8_content_posted_4_8": "(VIII) Provides material that exploits people in a sexual, violent or other illegal manner, or solicits personal information from anyone under the age of 18;",
+    "trm_8_content_posted_4_9": "(IX) Provides instructional information about illegal activities such as making or buying illegal weapons or drugs, violating someone’s privacy, or providing, disseminating or creating computer viruses;",
+    "trm_8_content_posted_4_10": "(X) Contains viruses, time bombs, trojan horses, cancelbots, worms or other harmful, or disruptive codes, components or devices;",
+    "trm_8_content_posted_4_11": "(XI) Impersonates, or otherwise misrepresents affiliation, connection or association with, any person or entity;",
+    "trm_8_content_posted_4_12": "(XII) Provides information or data you do not have a right to make available under law or under contractual or fiduciary relationships (such as inside information, proprietary and confidential information);",
+    "trm_8_content_posted_4_13": "(XIII) Disrupts the normal flow of dialogue, causes a screen to “scroll” faster than other users are able to type, or otherwise negatively affects other users’ ability to engage in real time exchanges; and",
+    "trm_8_content_posted_4_14": "(XIV) Solicits passwords or personal identifying information for commercial or unlawful purposes from other users or disseminates another person’s personal information without his or her permission.",
+    "trm_8_content_posted_text": "The Company reserves the right, in its sole discretion, to investigate and take any legal action against anyone who violates this provision, including removing the offending communication from the Service and terminating or suspending the account of such violators.",
+    "trm_9_use_service_0": "9. Use Of The Service",
+    "trm_9_use_service": "Your use of the Service, including all Content you post through the Service, must comply with all applicable laws and regulations. You agree that the Company may access, preserve and disclose your account information and Content if required to do so by law or in a good faith belief that such access, preservation or disclosure is reasonably necessary, such as to: (i) comply with legal process; (ii) enforce this Agreement; (iii) respond to claims that any Content violates the rights of third parties; (iv) respond to your requests for customer service or allow you to use the Service in the future; or (v) protect the rights, property or personal safety of the Company or any other person.",
+    "trm_10_agree_content": "You agree that any Content you place on the Service may be viewed by other users and may be viewed by any person visiting or participating in the Service (such as individuals who may receive shared Content from other DefAgent users).",
+    "trm_11_prohibited_activities": "10. Prohibited Activities",
+    "trm_11_prohibited_activities_1": "The Company reserves the right to investigate, suspend and/or terminate your account if you have misused the Service or behaved in a way the Company regards as inappropriate or unlawful, including actions or communications the occur off the Service but involve users you meet through the Service. The following is a partial list of the type of actions that you may not engage in with respect to the Service. You will not:",
+    "trm_11_prohibited_activities_1_1": "(I) Impersonate any person or entity.",
+    "trm_11_prohibited_activities_1_2": "(II) Solicit money from any users.",
+    "trm_11_prohibited_activities_1_3": "(III) Post any Content that is prohibited by Section 7.",
+    "trm_11_prohibited_activities_1_4": "(IV) “Stalk” or otherwise harass any person.",
+    "trm_11_prohibited_activities_1_5": "(V) Express or imply that any statements you make are endorsed by the Company without our specific prior written consent.",
+    "trm_11_prohibited_activities_1_6": "(VI) Use the Service in an illegal manner or to commit an illegal act.",
+    "trm_11_prohibited_activities_1_7": "(VII) Access the Service in a jurisdiction in which it is illegal or unauthorized.",
+    "trm_11_prohibited_activities_1_8": "(VIII) Use any robot, spider, site search/retrieval application, or other manual or automatic device or process to retrieve, index, “data mine”, or in any way reproduce or circumvent the navigational structure or presentation of the Service or its contents.",
+    "trm_11_prohibited_activities_1_9": "(IX) Collect usernames and/or email addresses of users by electronic or other means for the purpose of sending unsolicited email or unauthorized framing of or linking to the Service.",
+    "trm_11_prohibited_activities_1_10": "(X) Interfere with or disrupt the Service or the servers or networks connected to the Service.",
+    "trm_11_prohibited_activities_1_11": "(XII) Transmit any material that contains software viruses or any other computer code, files or programs designed to interrupt, destroy or limit the functionality of any computer software or hardware or telecommunications equipment.",
+    "trm_11_prohibited_activities_1_12": "(XIII) Forge headers or otherwise manipulate identifiers in order to disguise the origin of any information transmitted to or through the Service (either directly or indirectly through use of third party software).",
+    "trm_11_prohibited_activities_1_13": "(XIV) “Frame” or “Mirror” any part of the Service, without the Company’s prior written authorization.",
+    "trm_11_prohibited_activities_1_14": "(XV) Use meta tags or code or other devices containing any reference to the Company or the Service (or any trademark, trade name, service mark, logo or slogan of the Company) to direct any person to any other website for any purpose.",
+    "trm_11_prohibited_activities_1_15": "(XVI) Modify, adapt, sublicense, translate, sell, reverse engineer, decipher, decompile or otherwise disassemble any portion of the Service any software used on or for the Service, or cause others to do so.",
+    "trm_11_prohibited_activities_1_16": "(XVII) Post, use, transmit or distribute, directly or indirectly, (e.g. screen scrape) in any manner or media any content or information obtained from the Service other than solely in connection with your use of the Service in accordance with this Agreement.",
+    "trm_12_propietary_rights": "11. Proprietary Rights.",
+    "trm_12_propietary_rights_1": "The Company owns and retains all proprietary rights in the Service, and in all content, trademarks, trade names, service marks and other intellectual property rights related thereto. The Service contains the copyrighted material, trademarks, and other proprietary information of the Company and its licensors. You agree to not copy, modify, transmit, create any derivative works from, make use of, or reproduce in any way any copyrighted material, trademarks, trade names, service marks, or other intellectual property or proprietary information accessible through the Service, without first obtaining the prior written consent of the Company or, if such property is not owned by the Company, the owner of such intellectual property or proprietary rights. You agree to not remove, obscure or otherwise alter any proprietary notices appearing on any content, including copyright, trademark and other intellectual property notices.",
+    "trm_13_ownership": "12. Ownership.",
+    "trm_13_ownership_1": "The Services and all rights therein are and shall remain DefAgent' property or the property of DefAgent ' licensors. Neither these Terms nor your use of the Services convey or grant to you any rights: (i) in or related to the Services except for the limited license granted above; or (ii) to use or reference in any manner DefAgent company names, logos, product and service names, trademarks or services marks or those of DefAgent licensors.",
+    "trm_14_user_provided_content": "13. User Provided Content",
+    "trm_14_user_provided_content_1": "DefAgent may, in DefAgent sole discretion, permit you from time to time to submit, upload, publish or otherwise make available to DefAgent through the Services textual, audio, and/or visual content and information, including commentary and feedback related to the Services, initiation of support requests, and submission of entries for competitions and promotions ('User Content'). Any User Content provided by you remains your property. However, by providing User Content to DefAgent, you grant DefAgent a worldwide, perpetual, irrevocable, transferable, royalty-free license, with the right to sublicense, to use, copy, modify, create derivative works of, distribute, publicly display, publicly perform, and otherwise exploit in any manner such User Content in all formats and distribution channels now known or hereafter devised (including in connection with the Services and DefAgent business and on third-party sites and services), without further notice to or consent from you, and without the requirement of payment to you or any other person or entity.You represent and warrant that: (i) you either are the sole and exclusive owner of all User Content or you have all rights, licenses, consents and releases necessary to grant DefAgent the license to the User Content as set forth above; and (ii) neither the User Content, nor your submission, uploading, publishing or otherwise making available of such User Content, nor DefAgent use of the User Content as permitted herein will infringe, misappropriate or violate a third party's intellectual property or proprietary rights, or rights of publicity or privacy, or result in the violation of any applicable law or regulation.You agree to not provide User Content that is defamatory, libelous, hateful, violent, obscene, pornographic, unlawful, or otherwise offensive, as determined by DefAgent in its sole discretion, whether or not such material may be protected by law. DefAgent may, but shall not be obligated to, review, monitor, or remove User Content, at DefAgent sole discretion and at any time and for any reason, without notice to you.",
+    "trm_15_network_access_devices": "14. Networks, Communities, And Channels Access And Devices.",
+    "trm_15_network_access_devices_1": "You are responsible for obtaining the data network access necessary to use the Services. Your mobile network's data and messaging rates and fees may apply if you access or use the Services from your device. You are responsible for acquiring and updating compatible hardware or devices necessary to access and use the Services and Applications and any updates thereto. DefAgent does not guarantee that the Services, or any portion thereof, will function on any particular hardware or devices. In addition, the Services may be subject to malfunctions and delays inherent in the use of the Internet and electronic communications.",
+    "trm_16_modifications_service": "15. Modifications To Service.",
+    "trm_16_modifications_service_1": "The Company reserves the right at any time to modify or discontinue, temporarily or permanently, the Service (or any part thereof) with or without notice. You agree that the Company shall not be liable to you or to any third party for any modification, suspension or discontinuance of the Service. To protect the integrity of the Service, the Company reserves the right at any time in its sole discretion to block users from certain IP addresses from accessing the Service.",
+    "trm_17_copyright_policy": "16. Copyright Policy.",
+    "trm_17_copyright_policy_1": "Notice and Procedure for Making Claims of Copyright Infringement. You may not post, distribute, or reproduce in any way any copyrighted material, trademarks, or other proprietary information without obtaining the prior written consent of the owner of such proprietary rights. If you believe that your work has been copied and posted on the Service in a way that constitutes copyright infringement, please provide our Copyright Agent with the following information:",
+    "trm_17_copyright_policy_1_1": "(I) An electronic or physical signature of the person authorized to act on behalf of the owner of the copyright interest;",
+    "trm_17_copyright_policy_1_2": "(II) A description of the copyrighted work that you claim has been infringed;",
+    "trm_17_copyright_policy_1_3": "(III) A description of where the material that you claim is infringing is located on the Service (and such description must be reasonably sufficient to enable the Company to find the alleged infringing material, such as a url);",
+    "trm_17_copyright_policy_1_4": "(IV) Your address, telephone number and email address;",
+    "trm_17_copyright_policy_1_5": "(V) A written statement by you that you have a good faith belief that the disputed use is not authorized by the copyright owner, its agent, or the law; and",
+    "trm_17_copyright_policy_1_6": "(VI) A statement by you, made under penalty of perjury, that the above information in your notice is accurate and that you are the copyright owner or authorized to act on the copyright owner’s behalf.",
+    "trm_17_copyright_policy_1_text": "Notice of claims of copyright infringement should be provided to the Company’s Copyright Agent at caro@DefAgent.ai",
+    "trm_17_copyright_policy_1_text1": "The Company will terminate the accounts of repeat infringers.",
+    "trm_17_disclaimers": "17.  Disclaimers, Limitation Of Liability.",
+    "trm_17_disclaimers_0": "DISCLAIMERS.",
+    "trm_17_disclaimers_1": "THE SERVICES ARE PROVIDED 'AS IS' AND 'AS AVAILABLE.' DEFAGENT DISCLAIMS ALL REPRESENTATIONS AND WARRANTIES, EXPRESS, IMPLIED, OR STATUTORY, NOT EXPRESSLY SET OUT IN THESE TERMS, INCLUDING THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN ADDITION, DEFAGENT MAKES NO REPRESENTATION, WARRANTY, OR GUARANTEE REGARDING THE RELIABILITY, TIMELINESS, QUALITY, SUITABILITY, OR AVAILABILITY OF THE SERVICES OR ANY SERVICES OR GOODS REQUESTED THROUGH THE USE OF THE SERVICES, OR THAT THE SERVICES WILL BE UNINTERRUPTED OR ERROR-FREE. DEFAGENT DOES NOT GUARANTEE THE QUALITY, SUITABILITY, SAFETY OR ABILITY OF THIRD PARTY PROVIDERS. YOU AGREE THAT THE ENTIRE RISK ARISING OUT OF YOUR USE OF THE SERVICES, AND ANY SERVICE OR GOOD REQUESTED IN CONNECTION THEREWITH, REMAINS SOLELY WITH YOU, TO THE MAXIMUM EXTENT PERMITTED UNDER APPLICABLE LAW.",
+    "trm_17_limitation": "LIMITATION OF LIABILITY.",
+    "trm_17_limitation_1": "DEFAGENT SHALL NOT BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, PUNITIVE, OR CONSEQUENTIAL DAMAGES, INCLUDING LOST PROFITS, LOST DATA, PERSONAL INJURY, OR PROPERTY DAMAGE RELATED TO, IN CONNECTION WITH, OR OTHERWISE RESULTING FROM ANY USE OF THE SERVICES, REGARDLESS OF THE NEGLIGENCE (EITHER ACTIVE, AFFIRMATIVE, SOLE, OR CONCURRENT) OF DEFAGENT, EVEN IF DEFAGENT HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. DEFAGENT SHALL NOT BE LIABLE FOR ANY DAMAGES, LIABILITY OR LOSSES ARISING OUT OF: (i) YOUR USE OF OR RELIANCE ON THE SERVICES OR YOUR INABILITY TO ACCESS OR USE THE SERVICES; OR (ii) ANY TRANSACTION OR RELATIONSHIP BETWEEN YOU AND ANY THIRD PARTY PROVIDER, EVEN IF DEFAGENT HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. DEFAGENT SHALL NOT BE LIABLE FOR DELAY OR FAILURE IN PERFORMANCE RESULTING FROM CAUSES BEYOND DEFAGENT REASONABLE CONTROL. YOU ACKNOWLEDGE THAT THIRD PARTY PROVIDERS PROVIDING TRANSPORTATION SERVICES REQUESTED THROUGH SOME REQUEST PRODUCTS MAY OFFER RIDESHARING OR PEER-TO-PEER TRANSPORTATION SERVICES AND MAY NOT BE PROFESSIONALLY LICENSED OR PERMITTED. THE SERVICES MAY BE USED BY YOU TO REQUEST AND SCHEDULE TRANSPORTATION, GOODS, OR LOGISTICS SERVICES WITH THIRD PARTY PROVIDERS, BUT YOU AGREE THAT DEFAGENT HAS NO RESPONSIBILITY OR LIABILITY TO YOU RELATED TO ANY TRANSPORTATION, GOODS OR LOGISTICS SERVICES PROVIDED TO YOU BY THIRD PARTY PROVIDERS OTHER THAN AS EXPRESSLY SET FORTH IN THESE TERMS. THE LIMITATIONS AND DISCLAIMER IN THIS SECTION DO NOT PURPORT TO LIMIT LIABILITY OR ALTER YOUR RIGHTS AS A CONSUMER THAT CANNOT BE EXCLUDED UNDER APPLICABLE LAW. BECAUSE SOME STATES OR JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF OR THE LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES, IN SUCH STATES OR JURISDICTIONS, DEFAGENT LIABILITY SHALL BE LIMITED TO THE EXTENT PERMITTED BY LAW. THIS PROVISION SHALL HAVE NO EFFECT ON DEFAGENT CHOICE OF LAW PROVISION SET FORTH BELOW.",
+    "trm_18_arbitration": "18. Arbitration And Governing Law.",
+    "trm_18_arbitration_p": "Except for users residing within the European Union, Norway and elsewhere where prohibited by applicable law:",
+    "trm_18_arbitration_i_01": "The exclusive means of resolving any dispute or claim arising out of or relating to this Agreement (including any alleged breach thereof) or the Service shall be BINDING ARBITRATION administered by the texas,usa Arbitration Association. The one exception to the exclusivity of arbitration is that you have the right to bring an individual claim against the Company in a small-claims court of competent jurisdiction. But whether you choose arbitration or small-claims court, you may not under any circumstances commence or maintain against the Company any class action, class arbitration, or other representative action or proceeding.",
+    "trm_18_arbitration_i_02": "By using the Service in any manner, you agree to the above arbitration agreement. In doing so, YOU GIVE UP YOUR RIGHT TO GO TO COURT to assert or defend any claims between you and the Company (except for matters that may be taken to small-claims court). YOU ALSO GIVE UP YOUR RIGHT TO PARTICIPATE IN A CLASS ACTION OR OTHER CLASS PROCEEDING. Your rights will be determined by a NEUTRAL ARBITRATOR, NOT A JUDGE OR JURY. You are entitled to a fair hearing before the arbitrator. The arbitrator can grant any relief that a court can, but you should note that arbitration proceedings are usually simpler and more streamlined than trials and other judicial proceedings. Decisions by the arbitrator are enforceable in court and may be overturned by a court only for very limited reasons. For details on the arbitration process, see our Arbitration Procedures.",
+    "trm_18_arbitration_i_03": "Any proceeding to enforce this arbitration agreement, including any proceeding to confirm, modify, or vacate an arbitration award, may be commenced in any court of competent jurisdiction. In the event that this arbitration agreement is for any reason held to be unenforceable, any litigation against the Company (except for small-claims court actions) may be commenced only in the federal or state courts located in texas,usa. You hereby irrevocably consent to the jurisdiction of those courts for such purposes.",
+    "trm_18_arbitration_i_04": "This Agreement, and any dispute between you and the Company, shall be governed by the laws of texas,usa without regard to principles of conflicts of law, provided that this arbitration agreement shall be governed by the Federal Arbitration Act.",
+    "trm_18_arbitration_p_1": "For users residing in the European Union, Norway or elsewhere where this arbitration agreement is prohibited by law, the laws of texas,usa, excluding texas,usa’s conflict of laws rules, will apply to any disputes arising out of or relating to this Agreement or the Services. All claims arising out of or relating to this Agreement or the Services will be litigated exclusively in the federal or state courts of texas,usa, and you and DefAgent consent to personal jurisdiction in those courts.",
+    "trm_19_": "19. Indemnity By You.",
+    "trm_19_p": "You agree to indemnify and hold the Company, its subsidiaries, and affiliates, and its and their officers, agents, partners and employees, harmless from any loss, liability, claim, or demand, including reasonable attorney’s fees, made by any third party due to or arising out of your breach of or failure to comply with this Agreement (including any breach of your representations and warranties contained herein), any postings or Content you post in the Service, and the violation of any law or regulation by you. The Company reserves the right to assume the exclusive defense and control of any matter otherwise subject to indemnification by you, in which event you will fully cooperate with the Company in connection therewith.",
+    "trm_20_": "20. Notice.",
+    "trm_20_p": "The Company may provide you with notices, including those regarding changes to this Agreement, using any reasonable means, which may include email, SMS, MMS, text message or postings in the Service. Such notices may not be received if you violate this Agreement by accessing the Service in an unauthorized manner. You agree that you are deemed to have received any and all notices that would have been delivered had you accessed the Service in an authorized manner.",
+    "trm_21_": "21. Entire Agreement",
+    "trm_21_p": "This Agreement, with the Privacy Policy and any specific guidelines or rules that are separately posted for particular services or offers in the Service, contains the entire agreement between you and the Company regarding the use of the Service. If any provision of this Agreement is held invalid, the remainder of this Agreement shall continue in full force and effect. The failure of the Company to exercise or enforce any right or provision of this Agreement shall not constitute a waiver of such right or provision. You agree that your DefAgent account is non-transferable and all of your rights to your profile or contents within your DefAgent account terminate upon your death. No agency, partnership, joint venture or employment is created as a result of this Agreement and you may not make any representations or bind the Company in any manner.",
+    "trm_question": "Questions?",
+    "trm_privacy_policy": "Any questions about this Privacy Policy should be addressed to caro@defagent.ai"
+  }
+}

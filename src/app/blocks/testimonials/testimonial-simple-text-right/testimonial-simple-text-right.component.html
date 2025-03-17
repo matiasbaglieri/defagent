@@ -1,0 +1,44 @@
+<section class="singl-testimonial shadow">
+  <div class="container-fluid py-0">
+    <div
+      class="row align-items-center gradient gradient-navy-blue text-contrast"
+    >
+      <div
+        class="col-md-7 image-background cover center-top"
+        [style.background-image]="'url(assets/img/testimonials/2.jpg)'"
+      ></div>
+
+      <div class="col-md-3 mx-auto py-5 py-md-2">
+        <blockquote class="bold mt-1 text-contrast">
+          <fa-icon [icon]="quoteLeft" [class]="'quote'"></fa-icon>
+          {{
+            'TESTIMONIALS.TESTIMONIAL_SIMPLE_TEXT_RIGHT.IF_YOU_ARE_STRUGGLING'
+              | translate
+          }}
+          <span class="bold">
+            {{
+              'TESTIMONIALS.TESTIMONIAL_SIMPLE_TEXT_RIGHT.EVERYTHINK'
+                | translate
+            }}</span
+          >
+          {{
+            'TESTIMONIALS.TESTIMONIAL_SIMPLE_TEXT_RIGHT.IS_THE_PERFECT_TOOL'
+              | translate
+          }}
+        </blockquote>
+
+        <hr class="my-4" />
+        <div class="small text-contrast">
+          <span class="bold d-block">{{
+            'TESTIMONIALS.TESTIMONIAL_SIMPLE_TEXT_RIGHT.CARO_FOGLIATO'
+              | translate
+          }}</span>
+          {{
+            'TESTIMONIALS.TESTIMONIAL_SIMPLE_TEXT_RIGHT.CEOANDFOUNDER'
+              | translate
+          }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

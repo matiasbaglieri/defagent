@@ -1,0 +1,189 @@
+<section class="bg-light edge top-left">
+  <div class="container bring-to-front pb-0 pt-3">
+    <div class="section-heading">
+      <div class="row justify-content-center">
+        <div class="col-md-10 col-lg-8 text-center">
+          <h2>
+            <p style="color:#212121;font-size:35px;  font-weight: normal">
+              {{ 'DEMOS.START_UP.PRICING_TWO.TITLE0' | translate }}
+              <span style="color:#000000;font-weight: bold;font-size:40px">{{
+                'DEMOS.START_UP.PRICING_TWO.TITLE01' | translate
+              }}</span>
+            </p>
+            <p style="color:#000000;font-weight: bold;font-size:40px">
+              {{ 'DEMOS.START_UP.PRICING_TWO.TITLE1' | translate }}
+              <span style="color:#212121;font-size:35px; font-weight: normal">{{
+                'DEMOS.START_UP.PRICING_TWO.TITLE11' | translate
+              }}</span>
+            </p>
+            <p style="color:#000000;font-weight: bold;font-size:40px">
+              {{ 'DEMOS.START_UP.PRICING_TWO.TITLE2' | translate }}
+              <span style="color:#212121;font-size:35px; font-weight: normal">{{
+                'DEMOS.START_UP.PRICING_TWO.TITLE22' | translate
+              }}</span>
+            </p>
+          </h2>
+
+          <p class="lead text-muted">
+            {{ 'DEMOS.START_UP.PRICING_TWO.SUBTITLE' | translate }}
+          </p>
+        </div>
+      </div>
+
+      <!-- <div class="text-center mt-4">
+        <div
+          class="btn-group btn-group-toggle pricing-table-basis"
+          data-toggle="buttons"
+        >
+          <label class="btn btn-info active">
+            <input
+              type="radio"
+              name="pricing-value"
+              value="monthly"
+              autocomplete="off"
+              checked
+            />
+            {{ 'DEMOS.START_UP.PRICING_TWO.MONTHLY' | translate }}
+          </label>
+          <label class="btn btn-info">
+            <input
+              type="radio"
+              name="pricing-value"
+              value="yearly"
+              autocomplete="off"
+            />
+            {{ 'DEMOS.START_UP.PRICING_TWO.ANNUAL' | translate }}
+          </label>
+        </div>
+        <p>
+          {{ 'DEMOS.START_UP.PRICING_TWO.DISCOUNT' | translate }}
+        </p>
+      </div> -->
+    </div>
+
+    <div class="row align-items-center no-gutters">
+      <div
+        class="col-md-{{ 12 / (plans.length + 1) }}"
+        style="z-index: 1"
+        *ngFor="let plan of plans"
+      >
+        <div
+          class="card border-0 rounded-lg shadow-lg mb-4 mb-md-0"
+          data-aos="fade-up"
+        >
+          <div class="card-body py-4">
+            <div class="row">
+              <div class="col-xl-9 mx-auto">
+                <div class="pricing text-center mb-5">
+                  <h5 class="bold text-uppercase text-primary">
+                    {{ plan.plan.name | translate }}
+                  </h5>
+                  <hr class="my-4" />
+
+                  <p>{{ plan.plan.description | translate }}</p>
+
+                  <div class="pricing-value">
+                    <span
+                      class="price display-lg-4 semibold odometer text-dark"
+                      [attr.data-monthly-price]="plan.plan.price.monthly"
+                      [attr.data-yearly-price]="plan.plan.price.yearly"
+                    >
+                      {{ plan.plan.price.monthly }}
+                    </span>
+                  </div>
+                </div>
+
+                <ul class="list-unstyled">
+                  <li *ngFor="let feature of plan.features">
+                    <div class="media align-items-center mb-3">
+                      <div
+                        class="icon-md bg-success p-2 rounded-circle center-flex mr-3"
+                      >
+                        <dc-feather
+                          [name]="feature.icon"
+                          [size]="16"
+                          [iconClass]="'stroke-contrast'"
+                        ></dc-feather>
+                      </div>
+
+                      <div class="media-body">
+                        {{ feature.name | translate }}
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <a
+            href="https://everythink.ai/app/#/sessions/signup"
+            class="btn btn-primary btn-lg btn-block rounded-top-0 rounded-bottom py-4"
+          >
+            {{ 'DEMOS.START_UP.PRICING_TWO.GETNOW' | translate }}
+
+            <dc-feather
+              [name]="'arrow-right'"
+              [size]="16"
+              [iconClass]="'ml-3'"
+            ></dc-feather>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-{{ 12 / (plans.length + 1) }} ml-md-n3">
+        <div
+          class="card border-0 rounded-lg shadow-lg"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <div class="card-body py-4">
+            <div class="row">
+              <div class="col-xl-10 mx-auto">
+                <div class="text-center">
+                  <h5 class="bold text-uppercase">
+                    {{ 'DEMOS.START_UP.PRICING_TWO.CUSTOM' | translate }}
+                  </h5>
+                  <hr class="my-4" />
+
+                  <p class="lead bold">
+                    {{ 'DEMOS.START_UP.PRICING_TWO.CUSTOM1' | translate }}
+                  </p>
+
+                  <p class="text-muted">
+                    {{ 'DEMOS.START_UP.PRICING_TWO.CUSTOM2' | translate }}
+                  </p>
+
+                  <div class="row no-gutters">
+                    <div
+                      class="col-6 border-{{ xtra.border }}"
+                      [class.border-top]="i > 1"
+                      *ngFor="let xtra of xtras; let i = index"
+                    >
+                      <div class="text-center p-3">
+                        <dc-feather
+                          [name]="xtra.icon"
+                          [size]="32"
+                          [iconClass]="'stroke-primary'"
+                        ></dc-feather>
+                        <p class="mb-0">{{ xtra.title | translate }}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a
+            href="https://everythink.ai/app/#/sessions/signup"
+            class="btn btn-light btn-lg btn-block rounded-top-0 rounded-bottom py-4"
+            >{{ 'DEMOS.START_UP.PRICING_TWO.CUSTOM3' | translate }}
+
+            <dc-feather name="arrow-right" class="ml-3"></dc-feather>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

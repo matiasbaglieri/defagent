@@ -1,0 +1,67 @@
+<section class="section extending-core border-top bg-light edge bottom-right">
+  <div class="shapes-container">
+    <div class="shape shape-circle">
+      <div></div>
+    </div>
+  </div>
+  <div class="container pb-9">
+    <div class="row gap-y align-items-center">
+      <div class="col-lg-6">
+        <div class="section-heading">
+          <p class="text-primary bold small text-uppercase">
+            {{
+              'DEMOS.DATAFLOWS_CREATOORS.INTEGRATION.EXTEND_CORE.LIMITLESS_POSSIBILITIES'
+                | translate
+            }}
+          </p>
+          <h2>
+            {{
+              'DEMOS.DATAFLOWS_CREATOORS.INTEGRATION.EXTEND_CORE.BUILD_FAST_BUILD_MORE'
+                | translate
+            }}
+          </h2>
+          <p>
+            {{
+              'DEMOS.DATAFLOWS_CREATOORS.INTEGRATION.EXTEND_CORE.USING_EVERYTHINK'
+                | translate
+            }}
+          </p>
+        </div>
+        <a href="#" class="btn btn-rounded btn-outline-primary bw-2 mr-3">
+          {{
+            'DEMOS.DATAFLOWS_CREATOORS.INTEGRATION.EXTEND_CORE.KNOW_MORE'
+              | translate
+          }}</a
+        >
+        <a href="#" class="btn btn-rounded btn-primary bw-2 bold text-contrast">
+          {{
+            'DEMOS.DATAFLOWS_CREATOORS.INTEGRATION.EXTEND_CORE.REGISTER_ACCOUNT'
+              | translate
+          }}</a
+        >
+      </div>
+
+      <div class="col-lg-6">
+        <div class="icons-wrapper position-relative">
+          <div
+            class="floating icon {{
+              icon.size
+            }} bg-contrast rounded-circle p-3 shadow m-0 absolute d-flex justify-content-center align-items-center"
+            *ngFor="let icon of icons"
+            [ngStyle]="{
+              'left.%': icon.position.left,
+              'top.%': icon.position.top
+            }"
+            data-aos="fade-left"
+          >
+            <img
+              [src]="'assets/images/integration/' + icon.name + '.svg'"
+              class="img-responsive"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,26 @@
+<!-- .Screenshots -->
+<section class="screenshots coverflow">
+  <div class="container">
+    <div class="section-heading text-center">
+      <h2 class="bold display-4">
+        {{ 'SCREENSHOTS.APP.APP_SCREENSHOTS' | translate }}
+      </h2>
+      <p class="text-secondary">
+        {{ 'SCREENSHOTS.APP.A_PICTURE_IS_WORTH_A_THOUSAND_WORDS' | translate }}
+      </p>
+    </div>
+
+    <swiper [config]="config" class="swiper-container">
+      <div
+        class="swiper-slide"
+        *ngFor="let i of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]"
+      >
+        <img
+          class="img-responsive"
+          src="assets/images/app-landing/screens/app/{{ i }}.png"
+          alt="..."
+        />
+      </div>
+    </swiper>
+  </div>
+</section>

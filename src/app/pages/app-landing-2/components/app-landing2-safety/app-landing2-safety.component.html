@@ -1,0 +1,72 @@
+<section class="section app-safety">
+  <div class="shapes-container">
+    <div class="shape shape-circle">
+      <div data-aos="fade-up-left"></div>
+    </div>
+    <div class="shape shape-ring shape-ring-2">
+      <div data-aos="fade-up-right" data-aos-delay="200"></div>
+    </div>
+    <div class="shape pattern pattern-dots"></div>
+  </div>
+
+  <div class="container">
+    <div class="row gap-y align-items-center">
+      <div class="col-md-5">
+        <div class="section-heading">
+          <p class="text-primary bold">
+            {{ 'DEMOS.SALES.APP_LANDING2_SAFETY.SAFETY_FIRST' | translate }}
+          </p>
+          <h2>
+            {{
+              'DEMOS.SALES.APP_LANDING2_SAFETY.YOUR_SUCCESS_IS_OUR_SUCCESS'
+                | translate
+            }}
+          </h2>
+          <p class="lead text-muted">
+            {{
+              'DEMOS.SALES.APP_LANDING2_SAFETY.EVERYTHINK_DOESALL' | translate
+            }}
+          </p>
+        </div>
+
+        <div class="media pb-3" *ngFor="let item of items">
+          <div
+            class="bg-light p-3 rounded d-flex align-items-center justify-content-center mr-3"
+          >
+            <dc-feather
+              [name]="item.icon"
+              [iconClass]="'stroke-primary'"
+            ></dc-feather>
+          </div>
+          <div class="media-body">
+            <h5 *ngIf="translate.currentLang === 'es'">
+              {{ item.title.es }}
+            </h5>
+            <h5 *ngIf="translate.currentLang === 'en-US'">
+              {{ item.title.en }}
+            </h5>
+            <p *ngIf="translate.currentLang === 'es'">
+              {{ item.description.es }}
+            </p>
+            <p *ngIf="translate.currentLang === 'en-US'">
+              {{ item.description.en }}
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-7">
+        <div class="row gap-y align-items-center text-center">
+          <div
+            class="col-md-4 {{ card.class }}"
+            *ngFor="let card of cards; let i = index"
+          >
+            <div class="figure shadow rounded overflow-hidden border">
+              <img class="img-responsive" src="{{ card.uri }}" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

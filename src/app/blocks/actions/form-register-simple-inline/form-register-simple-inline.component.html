@@ -1,0 +1,27 @@
+<form class="form" data-response-message-animation="slide-in-left" novalidate>
+  <div class="input-group-register" [ngClass]="inputClass">
+    <input
+      type="email"
+      name="Subscribe[email]"
+      class="form-control shadow-lg bg-contrast form-control-rounded"
+      placeholder="Enter your email"
+      required
+    />
+    <button
+      onclick="location.href = 'https://everythink.ai/app/#/sessions/signup';"
+      class="btn btn-rounded btn-primary btn-lg text-capitalize"
+    >
+      {{ label }}
+    </button>
+  </div>
+</form>
+
+<div class="response-message">
+  <i class="fas fa-envelope font-lg"></i>
+  <p class="font-md m-0">
+    {{ 'ACTIONS.FORM_REGISTER_SIMPLE_INLINE.CHECK_YOUR_EMAIL' | translate }}
+  </p>
+  <p class="response">
+    {{ 'ACTIONS.FORM_REGISTER_SIMPLE_INLINE.WE_SENT_YOU_AN_EMAIL' | translate }}
+  </p>
+</div>

@@ -1,0 +1,25 @@
+<section id="features" class="section">
+  <div class="container pb-5">
+    <div class="section-heading mb-6 text-center">
+      <h2 class="mt-3">
+        {{ 'DEMOS.START_UP.FEATURES.WHAT_DASHCORE_CAN_DO' | translate }}
+      </h2>
+    </div>
+
+    <div class="row gap-y text-center text-md-left">
+      <div
+        class="col-md-4 py-4 rounded shadow-hover"
+        *ngFor="let element of elements"
+      >
+        <dc-feather
+          [name]="element.icon"
+          [iconClass]="'stroke-primary mb-3'"
+        ></dc-feather>
+        <h5 class="bold">{{ element.title | translate }}</h5>
+        <p>
+          {{ element.desc | translate }}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

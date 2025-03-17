@@ -1,0 +1,53 @@
+<header class="header page online-payment-header section text-contrast">
+  <div id="stripes">
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <div class="container overflow-hidden bring-to-front">
+    <div class="row">
+      <div class="col-md-6">
+        <h1 class="text-contrast bold">
+          {{ 'DEMOS.RPACREAORS.ONLINE_PAYMENT.HEADING.GO_BIG' | translate }}
+          <span class="d-block light">{{
+            'DEMOS.RPACREAORS.ONLINE_PAYMENT.HEADING.CREATE_BUY' | translate
+          }}</span>
+        </h1>
+        <p class="lead">
+          -
+          {{
+            'DEMOS.RPACREAORS.ONLINE_PAYMENT.HEADING.WITHOUT_CODING' | translate
+          }}
+        </p>
+
+        <nav class="nav mt-5">
+          <a
+            [routerLink]="['/pricing']"
+            class="nav-link mr-3 btn btn btn-rounded btn-contrast"
+          >
+            <fa-icon [icon]="tag" class="mr-3"></fa-icon>
+            {{
+              'DEMOS.RPACREAORS.ONLINE_PAYMENT.HEADING.KNOW_MORE' | translate
+            }}
+          </a>
+
+          <a
+            href="https://everythink.ai/app/#/sessions/signup"
+            class="nav-link btn btn-rounded btn-success"
+          >
+            {{
+              'DEMOS.RPACREAORS.ONLINE_PAYMENT.HEADING.START_NOW' | translate
+            }}
+          </a>
+        </nav>
+      </div>
+
+      <div class="col-md-6">
+        <img
+          src="assets/images/online-payment/bg/online-payment.svg"
+          class="img-hero img-responsive absolute-md"
+          alt=""
+        />
+      </div>
+    </div>
+  </div>
+</header>
