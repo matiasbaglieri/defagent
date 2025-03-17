@@ -10,7 +10,7 @@ yarn-error.log*
 !/src/assets/**
 !karma.conf.js
 !proxy.conf.js
-!/dist
+!/dist/**
 # Runtime data
 pids
 *.pid
