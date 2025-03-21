@@ -11,10 +11,6 @@
         class="col-md-4 py-4 rounded shadow-hover"
         *ngFor="let element of elements"
       >
-        <dc-feather
-          [name]="element.icon"
-          [iconClass]="'stroke-primary mb-3'"
-        ></dc-feather>
         <h5 class="bold">{{ element.title | translate }}</h5>
         <p>
           {{ element.desc | translate }}

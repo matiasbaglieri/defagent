@@ -1,5 +1,7 @@
 build_app:
-	ng build --prod --baseHref /landings/ #--deploy-url https://angular.nyc3.cdn.digitaloceanspaces.com/landings/whitelabel/everythink/
+	ng build --prod --baseHref /
+depoloy_aws:
+	sudo cp -R dist/* /var/www/html
 deploy:
 	rm -rf ../directory/dist/landings
 	cp -R dist/ ../directory/dist/landings

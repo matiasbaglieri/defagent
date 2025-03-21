@@ -67,7 +67,7 @@ const routes: Routes = [
         import('./pages/saas/saas.module').then(m => m.SaasModule)
     },
     {
-      path: 'startup',
+      path: 'drones',
       loadChildren: () =>
         import('./pages/startup/startup.module').then(m => m.StartupModule)
     }

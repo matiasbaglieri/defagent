@@ -6,7 +6,7 @@ import { HomeComponent } from './components/home/home.component';
 import { Shell } from '@app/shell/services/shell.service';
 
 const routes: Routes = [
-  Shell.childRoutes([{ path: '', redirectTo: '/ai-agents', pathMatch: 'full' }])
+  Shell.childRoutes([{ path: '', redirectTo: '/drones', pathMatch: 'full' }])
 ];
 
 @NgModule({

@@ -9,19 +9,19 @@ import { TranslateService } from '@ngx-translate/core';
 export class StartupVideosComponent implements OnInit {
   posts = [
     {
-      gravity: '3.jpeg',
+      gravity: '3.png',
       title: 'DEMOS.START_UP.VIDEOs.1_TITLE',
       description: 'DEMOS.START_UP.VIDEOs.1_DESC',
       videoId: '_VArFyZxGzg'
     },
     {
-      gravity: '1.jpeg',
+      gravity: '1.png',
       title: 'DEMOS.START_UP.VIDEOs.2_TITLE',
       description: 'DEMOS.START_UP.VIDEOs.2_DESC',
       videoId: 'elysFgtMrPY'
     },
     {
-      gravity: '2.jpeg',
+      gravity: '2.png',
       title: 'DEMOS.START_UP.VIDEOs.3_TITLE',
       description: 'DEMOS.START_UP.VIDEOs.3_DESC',
       videoId: 'a4Z_PQ99lAU'
