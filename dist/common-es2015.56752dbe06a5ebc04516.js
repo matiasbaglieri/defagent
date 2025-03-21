@@ -4,13 +4,13 @@
     '7cks': function(n, t, e) {
       'use strict';
       e.d(t, 'a', function() {
-        return o;
+        return a;
       });
       var c = e('fXoL'),
         i = e('sYmb'),
         s = e('ofXK'),
         r = e('AL06');
-      function a(n, t) {
+      function o(n, t) {
         if (
           (1 & n &&
             (c.Qb(0, 'div', 7),
@@ -37,7 +37,7 @@
             c.Gc(n.description);
         }
       }
-      let o = (() => {
+      let a = (() => {
         class n {
           constructor(n) {
             (this.translate = n),
@@ -118,7 +118,7 @@
                 c.Fc(18, '\n\n    '),
                 c.Qb(19, 'div', 5),
                 c.Fc(20, '\n      '),
-                c.Dc(21, a, 10, 4, 'div', 6),
+                c.Dc(21, o, 10, 4, 'div', 6),
                 c.Fc(22, '\n    '),
                 c.Pb(),
                 c.Fc(23, '\n  '),
@@ -159,7 +159,7 @@
     'KO+a': function(n, t, e) {
       'use strict';
       e.d(t, 'a', function() {
-        return a;
+        return o;
       });
       var c = e('fXoL'),
         i = e('ofXK');
@@ -167,7 +167,7 @@
           return { small: n };
         },
         r = ['*'];
-      let a = (() => {
+      let o = (() => {
         class n {
           constructor() {
             (this.text = 'contrast'), (this.small = !0);
@@ -506,7 +506,7 @@
     WGuQ: function(n, t, e) {
       'use strict';
       e.d(t, 'a', function() {
-        return a;
+        return o;
       });
       var c = e('fXoL'),
         i = e('ofXK');
@@ -519,7 +519,7 @@
       const r = function(n) {
         return { 'mb-4': n };
       };
-      let a = (() => {
+      let o = (() => {
         class n {
           constructor() {}
           ngOnInit() {}
@@ -650,13 +650,13 @@
     XMwz: function(n, t, e) {
       'use strict';
       e.d(t, 'a', function() {
-        return a;
+        return o;
       });
       var c = e('3Pt+'),
         i = e('ofXK'),
         s = e('sYmb'),
         r = e('fXoL');
-      let a = (() => {
+      let o = (() => {
         class n {}
         return (
           (n.ɵmod = r.Jb({ type: n })),
@@ -673,7 +673,7 @@
     YJ7q: function(n, t, e) {
       'use strict';
       e.d(t, 'a', function() {
-        return o;
+        return a;
       });
       var c = e('fXoL'),
         i = e('ofXK');
@@ -697,10 +697,10 @@
           c.xb(2), c.kc('src', 'assets/img/logos/' + n + '.png', c.yc);
         }
       }
-      const a = function() {
+      const o = function() {
         return [1, 2, 3, 4];
       };
-      let o = (() => {
+      let a = (() => {
         class n {
           constructor() {}
           ngOnInit() {}
@@ -778,7 +778,7 @@
                   c.xb(2),
                   c.kc('ngIf', t.title),
                   c.xb(4),
-                  c.kc('ngForOf', c.nc(7, a)));
+                  c.kc('ngForOf', c.nc(7, o)));
             },
             directives: [i.i, i.k, i.j],
             styles: ['']
@@ -790,7 +790,7 @@
     aaX3: function(n, t, e) {
       'use strict';
       e.d(t, 'a', function() {
-        return b;
+        return l;
       });
       var c = e('fXoL'),
         i = e('ofXK'),
@@ -801,7 +801,7 @@
           c.xb(1), c.Hc('\n      ', n.title, '\n    ');
         }
       }
-      function a(n, t) {
+      function o(n, t) {
         if (
           (1 & n &&
             (c.Qb(0, 'div', 5),
@@ -815,10 +815,10 @@
           c.xb(2), c.mc('src', 'assets/img/logos/', n, '.png', c.yc);
         }
       }
-      const o = function() {
+      const a = function() {
         return [1, 2, 3, 4, 5, 6];
       };
-      let b = (() => {
+      let l = (() => {
         class n {
           constructor() {
             (this.bordered = !0),
@@ -877,7 +877,7 @@
                 c.Fc(5, '\n\n    '),
                 c.Qb(6, 'swiper', 2),
                 c.Fc(7, '\n      '),
-                c.Dc(8, a, 4, 1, 'div', 3),
+                c.Dc(8, o, 4, 1, 'div', 3),
                 c.Fc(9, '\n    '),
                 c.Pb(),
                 c.Fc(10, '\n  '),
@@ -900,7 +900,7 @@
                   c.xb(2),
                   c.kc('config', t.config),
                   c.xb(2),
-                  c.kc('ngForOf', c.nc(9, o)));
+                  c.kc('ngForOf', c.nc(9, a)));
             },
             directives: [i.k, s.a, i.j],
             styles: ['']
@@ -912,13 +912,13 @@
     cqDB: function(n, t, e) {
       'use strict';
       e.d(t, 'a', function() {
-        return a;
+        return o;
       });
       var c = e('fXoL'),
         i = e('sYmb'),
         s = e('3Pt+'),
         r = e('ofXK');
-      let a = (() => {
+      let o = (() => {
         class n {
           constructor(n) {
             (this.translate = n), (this.label = 'Register');
@@ -1044,15 +1044,15 @@
     'f+4U': function(n, t, e) {
       'use strict';
       e.d(t, 'a', function() {
-        return l;
+        return b;
       });
       var c = e('wHSu'),
         i = e('fXoL'),
         s = e('sYmb'),
         r = e('nhfI'),
-        a = e('ofXK'),
-        o = e('6NWb');
-      function b(n, t) {
+        o = e('ofXK'),
+        a = e('6NWb');
+      function l(n, t) {
         if (
           (1 & n &&
             (i.Qb(0, 'div', 9),
@@ -1132,7 +1132,7 @@
             i.kc('icon', c.infoCircle);
         }
       }
-      let l = (() => {
+      let b = (() => {
         class n {
           constructor(n) {
             (this.translate = n),
@@ -1248,7 +1248,7 @@
                 i.Fc(7, '\n        '),
                 i.Qb(8, 'div', 4),
                 i.Fc(9, '\n          '),
-                i.Dc(10, b, 39, 8, 'div', 5),
+                i.Dc(10, l, 39, 8, 'div', 5),
                 i.Fc(11, '\n        '),
                 i.Pb(),
                 i.Fc(12, '\n\n        '),
@@ -1285,7 +1285,7 @@
                   i.zb('features-nav-icon'),
                   i.kc('icon', t.longArrowAltRight));
             },
-            directives: [r.b, a.j, o.a],
+            directives: [r.b, o.j, a.a],
             pipes: [s.b],
             styles: [
               '@media (min-width:576px){.container[_ngcontent-%COMP%] > .cards-wrapper[_ngcontent-%COMP%]{width:510px}}@media (min-width:768px){.container[_ngcontent-%COMP%] > .cards-wrapper[_ngcontent-%COMP%]{width:690px}}@media (min-width:992px){.container[_ngcontent-%COMP%] > .cards-wrapper[_ngcontent-%COMP%]{width:930px}}@media (min-width:1200px){.container[_ngcontent-%COMP%] > .cards-wrapper[_ngcontent-%COMP%]{width:1110px}}@media (min-width:992px){.container.lift-up[_ngcontent-%COMP%]{padding-bottom:16rem}.container.lift-up[_ngcontent-%COMP%] > .cards-wrapper[_ngcontent-%COMP%]{position:absolute;transform:translateY(-50%)}}.logo[_ngcontent-%COMP%]{min-height:48px}'
@@ -1607,28 +1607,28 @@
           var i,
             s,
             r = (n + t) * e,
-            a = Math.floor(n + r),
-            o = Math.floor(t + r),
-            b = (a + o) * c,
-            l = n - a + b,
-            d = t - o + b;
-          l > d ? ((i = 1), (s = 0)) : ((i = 0), (s = 1));
-          var p = l - i + c,
-            F = d - s + c,
-            u = l - 1 + 2 * c,
-            g = d - 1 + 2 * c,
-            m = this.perm,
-            P = this.gradP,
-            h = P[(a &= 255) + i + m[(o &= 255) + s]],
-            f = P[a + 1 + m[o + 1]],
-            S = 0.5 - l * l - d * d,
-            T = 0.5 - p * p - F * F,
-            E = 0.5 - u * u - g * g;
+            o = Math.floor(n + r),
+            a = Math.floor(t + r),
+            l = (o + a) * c,
+            b = n - o + l,
+            d = t - a + l;
+          b > d ? ((i = 1), (s = 0)) : ((i = 0), (s = 1));
+          var p = b - i + c,
+            u = d - s + c,
+            g = b - 1 + 2 * c,
+            f = d - 1 + 2 * c,
+            h = this.perm,
+            F = this.gradP,
+            m = F[(o &= 255) + i + h[(a &= 255) + s]],
+            v = F[o + 1 + h[a + 1]],
+            x = 0.5 - b * b - d * d,
+            w = 0.5 - p * p - u * u,
+            P = 0.5 - g * g - f * f;
           return (
             70 *
-            ((S < 0 ? 0 : (S *= S) * S * P[a + m[o]].dot2(l, d)) +
-              (T < 0 ? 0 : (T *= T) * T * h.dot2(p, F)) +
-              (E < 0 ? 0 : (E *= E) * E * f.dot2(u, g)))
+            ((x < 0 ? 0 : (x *= x) * x * F[o + h[a]].dot2(b, d)) +
+              (w < 0 ? 0 : (w *= w) * w * m.dot2(p, u)) +
+              (P < 0 ? 0 : (P *= P) * P * v.dot2(g, f)))
           );
         }),
           (t.prototype.simplex3 = function(n, t, e) {
@@ -1636,51 +1636,51 @@
               i,
               s,
               r,
-              a,
               o,
-              b = (n + t + e) * (1 / 3),
-              l = Math.floor(n + b),
-              d = Math.floor(t + b),
-              p = Math.floor(e + b),
-              F = (l + d + p) * (1 / 6),
-              u = n - l + F,
-              g = t - d + F,
-              m = e - p + F;
-            u >= g
-              ? g >= m
-                ? ((c = 1), (i = 0), (s = 0), (r = 1), (a = 1), (o = 0))
-                : u >= m
-                ? ((c = 1), (i = 0), (s = 0), (r = 1), (a = 0), (o = 1))
-                : ((c = 0), (i = 0), (s = 1), (r = 1), (a = 0), (o = 1))
-              : g < m
-              ? ((c = 0), (i = 0), (s = 1), (r = 0), (a = 1), (o = 1))
-              : u < m
-              ? ((c = 0), (i = 1), (s = 0), (r = 0), (a = 1), (o = 1))
-              : ((c = 0), (i = 1), (s = 0), (r = 1), (a = 1), (o = 0));
-            var P = u - c + 1 / 6,
-              h = g - i + 1 / 6,
-              f = m - s + 1 / 6,
-              S = u - r + (1 / 6) * 2,
-              T = g - a + (1 / 6) * 2,
-              E = m - o + (1 / 6) * 2,
-              x = u - 1 + 0.5,
-              I = g - 1 + 0.5,
-              v = m - 1 + 0.5,
-              _ = this.perm,
-              R = this.gradP,
-              O = R[(l &= 255) + c + _[(d &= 255) + i + _[(p &= 255) + s]]],
-              A = R[l + r + _[d + a + _[p + o]]],
-              w = R[l + 1 + _[d + 1 + _[p + 1]]],
-              Q = 0.5 - u * u - g * g - m * m,
-              y = 0.5 - P * P - h * h - f * f,
-              N = 0.5 - S * S - T * T - E * E,
-              C = 0.5 - x * x - I * I - v * v;
+              a,
+              l = (n + t + e) * (1 / 3),
+              b = Math.floor(n + l),
+              d = Math.floor(t + l),
+              p = Math.floor(e + l),
+              u = (b + d + p) * (1 / 6),
+              g = n - b + u,
+              f = t - d + u,
+              h = e - p + u;
+            g >= f
+              ? f >= h
+                ? ((c = 1), (i = 0), (s = 0), (r = 1), (o = 1), (a = 0))
+                : g >= h
+                ? ((c = 1), (i = 0), (s = 0), (r = 1), (o = 0), (a = 1))
+                : ((c = 0), (i = 0), (s = 1), (r = 1), (o = 0), (a = 1))
+              : f < h
+              ? ((c = 0), (i = 0), (s = 1), (r = 0), (o = 1), (a = 1))
+              : g < h
+              ? ((c = 0), (i = 1), (s = 0), (r = 0), (o = 1), (a = 1))
+              : ((c = 0), (i = 1), (s = 0), (r = 1), (o = 1), (a = 0));
+            var F = g - c + 1 / 6,
+              m = f - i + 1 / 6,
+              v = h - s + 1 / 6,
+              x = g - r + (1 / 6) * 2,
+              w = f - o + (1 / 6) * 2,
+              P = h - a + (1 / 6) * 2,
+              y = g - 1 + 0.5,
+              E = f - 1 + 0.5,
+              Q = h - 1 + 0.5,
+              k = this.perm,
+              O = this.gradP,
+              _ = O[(b &= 255) + c + k[(d &= 255) + i + k[(p &= 255) + s]]],
+              C = O[b + r + k[d + o + k[p + a]]],
+              S = O[b + 1 + k[d + 1 + k[p + 1]]],
+              I = 0.5 - g * g - f * f - h * h,
+              T = 0.5 - F * F - m * m - v * v,
+              L = 0.5 - x * x - w * w - P * P,
+              M = 0.5 - y * y - E * E - Q * Q;
             return (
               32 *
-              ((Q < 0 ? 0 : (Q *= Q) * Q * R[l + _[d + _[p]]].dot3(u, g, m)) +
-                (y < 0 ? 0 : (y *= y) * y * O.dot3(P, h, f)) +
-                (N < 0 ? 0 : (N *= N) * N * A.dot3(S, T, E)) +
-                (C < 0 ? 0 : (C *= C) * C * w.dot3(x, I, v)))
+              ((I < 0 ? 0 : (I *= I) * I * O[b + k[d + k[p]]].dot3(g, f, h)) +
+                (T < 0 ? 0 : (T *= T) * T * _.dot3(F, m, v)) +
+                (L < 0 ? 0 : (L *= L) * L * C.dot3(x, w, P)) +
+                (M < 0 ? 0 : (M *= M) * M * S.dot3(y, E, Q)))
             );
           }),
           (t.prototype.perlin2 = function(n, t) {
@@ -1688,36 +1688,36 @@
               c = Math.floor(t);
             (n -= e), (t -= c);
             var r = this.perm,
-              a = this.gradP,
-              o = a[(e &= 255) + r[(c &= 255)]].dot2(n, t),
-              b = a[e + r[c + 1]].dot2(n, t - 1),
-              l = a[e + 1 + r[c]].dot2(n - 1, t),
-              d = a[e + 1 + r[c + 1]].dot2(n - 1, t - 1),
+              o = this.gradP,
+              a = o[(e &= 255) + r[(c &= 255)]].dot2(n, t),
+              l = o[e + r[c + 1]].dot2(n, t - 1),
+              b = o[e + 1 + r[c]].dot2(n - 1, t),
+              d = o[e + 1 + r[c + 1]].dot2(n - 1, t - 1),
               p = i(n);
-            return s(s(o, l, p), s(b, d, p), i(t));
+            return s(s(a, b, p), s(l, d, p), i(t));
           }),
           (t.prototype.perlin3 = function(n, t, e) {
             var c = Math.floor(n),
               r = Math.floor(t),
-              a = Math.floor(e);
-            (n -= c), (t -= r), (e -= a);
-            var o = this.perm,
-              b = this.gradP,
-              l = b[(c &= 255) + o[(r &= 255) + o[(a &= 255)]]].dot3(n, t, e),
-              d = b[c + o[r + o[a + 1]]].dot3(n, t, e - 1),
-              p = b[c + o[r + 1 + o[a]]].dot3(n, t - 1, e),
-              F = b[c + o[r + 1 + o[a + 1]]].dot3(n, t - 1, e - 1),
-              u = b[c + 1 + o[r + o[a]]].dot3(n - 1, t, e),
-              g = b[c + 1 + o[r + o[a + 1]]].dot3(n - 1, t, e - 1),
-              m = b[c + 1 + o[r + 1 + o[a]]].dot3(n - 1, t - 1, e),
-              P = b[c + 1 + o[r + 1 + o[a + 1]]].dot3(n - 1, t - 1, e - 1),
-              h = i(n),
-              f = i(t),
-              S = i(e);
+              o = Math.floor(e);
+            (n -= c), (t -= r), (e -= o);
+            var a = this.perm,
+              l = this.gradP,
+              b = l[(c &= 255) + a[(r &= 255) + a[(o &= 255)]]].dot3(n, t, e),
+              d = l[c + a[r + a[o + 1]]].dot3(n, t, e - 1),
+              p = l[c + a[r + 1 + a[o]]].dot3(n, t - 1, e),
+              u = l[c + a[r + 1 + a[o + 1]]].dot3(n, t - 1, e - 1),
+              g = l[c + 1 + a[r + a[o]]].dot3(n - 1, t, e),
+              f = l[c + 1 + a[r + a[o + 1]]].dot3(n - 1, t, e - 1),
+              h = l[c + 1 + a[r + 1 + a[o]]].dot3(n - 1, t - 1, e),
+              F = l[c + 1 + a[r + 1 + a[o + 1]]].dot3(n - 1, t - 1, e - 1),
+              m = i(n),
+              v = i(t),
+              x = i(e);
             return s(
-              s(s(l, u, h), s(d, g, h), S),
-              s(s(p, m, h), s(F, P, h), S),
-              f
+              s(s(b, g, m), s(d, f, m), x),
+              s(s(p, h, m), s(u, F, m), x),
+              v
             );
           }),
           (n.Noise = t);
@@ -1745,565 +1745,17 @@
         );
       })();
     },
-    mrcQ: function(n, t, e) {
-      'use strict';
-      e.d(t, 'a', function() {
-        return l;
-      });
-      var c = e('fXoL'),
-        i = e('sYmb'),
-        s = e('ofXK'),
-        r = e('AL06');
-      function a(n, t) {
-        if (
-          (1 & n &&
-            (c.Qb(0, 'li'),
-            c.Fc(1, '\n                    '),
-            c.Qb(2, 'div', 34),
-            c.Fc(3, '\n                      '),
-            c.Qb(4, 'div', 35),
-            c.Fc(5, '\n                        '),
-            c.Mb(6, 'dc-feather', 33),
-            c.Fc(7, '\n                      '),
-            c.Pb(),
-            c.Fc(8, '\n\n                      '),
-            c.Qb(9, 'div', 36),
-            c.Fc(10),
-            c.gc(11, 'translate'),
-            c.Pb(),
-            c.Fc(12, '\n                    '),
-            c.Pb(),
-            c.Fc(13, '\n                  '),
-            c.Pb()),
-          2 & n)
-        ) {
-          const n = t.$implicit;
-          c.xb(6),
-            c.kc('name', n.icon)('size', 16)('iconClass', 'stroke-contrast'),
-            c.xb(4),
-            c.Hc(
-              '\n                        ',
-              c.hc(11, 4, n.name),
-              '\n                      '
-            );
-        }
-      }
-      function o(n, t) {
-        if (
-          (1 & n &&
-            (c.Qb(0, 'div', 23),
-            c.Fc(1, '\n        '),
-            c.Qb(2, 'div', 24),
-            c.Fc(3, '\n          '),
-            c.Qb(4, 'div', 11),
-            c.Fc(5, '\n            '),
-            c.Qb(6, 'div', 12),
-            c.Fc(7, '\n              '),
-            c.Qb(8, 'div', 25),
-            c.Fc(9, '\n                '),
-            c.Qb(10, 'div', 26),
-            c.Fc(11, '\n                  '),
-            c.Qb(12, 'h5', 27),
-            c.Fc(13),
-            c.gc(14, 'translate'),
-            c.Pb(),
-            c.Fc(15, '\n                  '),
-            c.Mb(16, 'hr', 16),
-            c.Fc(17, '\n\n                  '),
-            c.Qb(18, 'p'),
-            c.Fc(19),
-            c.gc(20, 'translate'),
-            c.Pb(),
-            c.Fc(21, '\n\n                  '),
-            c.Qb(22, 'div', 28),
-            c.Fc(23, '\n                    '),
-            c.Qb(24, 'span', 29),
-            c.Fc(25),
-            c.Pb(),
-            c.Fc(26, '\n                  '),
-            c.Pb(),
-            c.Fc(27, '\n                '),
-            c.Pb(),
-            c.Fc(28, '\n\n                '),
-            c.Qb(29, 'ul', 30),
-            c.Fc(30, '\n                  '),
-            c.Dc(31, a, 14, 6, 'li', 31),
-            c.Fc(32, '\n                '),
-            c.Pb(),
-            c.Fc(33, '\n              '),
-            c.Pb(),
-            c.Fc(34, '\n            '),
-            c.Pb(),
-            c.Fc(35, '\n          '),
-            c.Pb(),
-            c.Fc(36, '\n\n          '),
-            c.Qb(37, 'a', 32),
-            c.Fc(38),
-            c.gc(39, 'translate'),
-            c.Mb(40, 'dc-feather', 33),
-            c.Fc(41, '\n          '),
-            c.Pb(),
-            c.Fc(42, '\n        '),
-            c.Pb(),
-            c.Fc(43, '\n      '),
-            c.Pb()),
-          2 & n)
-        ) {
-          const n = t.$implicit,
-            e = c.fc();
-          c.Ab('col-md-', 12 / (e.plans.length + 1), ''),
-            c.xb(13),
-            c.Hc(
-              '\n                    ',
-              c.hc(14, 13, n.plan.name),
-              '\n                  '
-            ),
-            c.xb(6),
-            c.Gc(c.hc(20, 15, n.plan.description)),
-            c.xb(5),
-            c.yb('data-monthly-price', n.plan.price.monthly)(
-              'data-yearly-price',
-              n.plan.price.yearly
-            ),
-            c.xb(1),
-            c.Hc(
-              '\n                      ',
-              n.plan.price.monthly,
-              '\n                    '
-            ),
-            c.xb(6),
-            c.kc('ngForOf', n.features),
-            c.xb(7),
-            c.Hc(
-              '\n            ',
-              c.hc(39, 17, 'DEMOS.START_UP.PRICING_TWO.GETNOW'),
-              '\n\n            '
-            ),
-            c.xb(2),
-            c.kc('name', 'arrow-right')('size', 16)('iconClass', 'ml-3');
-        }
-      }
-      function b(n, t) {
-        if (
-          (1 & n &&
-            (c.Qb(0, 'div'),
-            c.Fc(1, '\n                      '),
-            c.Qb(2, 'div', 37),
-            c.Fc(3, '\n                        '),
-            c.Mb(4, 'dc-feather', 33),
-            c.Fc(5, '\n                        '),
-            c.Qb(6, 'p', 38),
-            c.Fc(7),
-            c.gc(8, 'translate'),
-            c.Pb(),
-            c.Fc(9, '\n                      '),
-            c.Pb(),
-            c.Fc(10, '\n                    '),
-            c.Pb()),
-          2 & n)
-        ) {
-          const n = t.$implicit,
-            e = t.index;
-          c.Ab('col-6 border-', n.border, ''),
-            c.Db('border-top', e > 1),
-            c.xb(4),
-            c.kc('name', n.icon)('size', 32)('iconClass', 'stroke-primary'),
-            c.xb(3),
-            c.Gc(c.hc(8, 9, n.title));
-        }
-      }
-      let l = (() => {
-        class n {
-          constructor(n) {
-            (this.translate = n),
-              (this.plans = [
-                {
-                  icon: 'box',
-                  plan: {
-                    name: 'DEMOS.START_UP.PRICING_TWO.PLAN_BASIC',
-                    price: { monthly: 9.99, yearly: 99.78 },
-                    description: 'DEMOS.START_UP.PRICING_TWO.PLAN_BASIC_DESC'
-                  },
-                  features: [
-                    {
-                      name: 'DEMOS.START_UP.PRICING_TWO.FEATURES1',
-                      icon: 'calendar'
-                    },
-                    {
-                      name: 'DEMOS.START_UP.PRICING_TWO.FEATURES2',
-                      icon: 'dollar-sign'
-                    },
-                    {
-                      name: 'DEMOS.START_UP.PRICING_TWO.FEATURES3',
-                      icon: 'smartphone'
-                    },
-                    {
-                      name: 'DEMOS.START_UP.PRICING_TWO.FEATURES4',
-                      icon: 'layout'
-                    }
-                  ]
-                }
-              ]),
-              (this.xtras = [
-                {
-                  icon: 'home',
-                  title: 'DEMOS.START_UP.PRICING_TWO.FEATURES5',
-                  border: 'right'
-                },
-                {
-                  icon: 'git-branch',
-                  title: 'DEMOS.START_UP.PRICING_TWO.FEATURES6'
-                },
-                {
-                  icon: 'headphones',
-                  title: 'DEMOS.START_UP.PRICING_TWO.FEATURES7',
-                  border: 'right'
-                },
-                {
-                  icon: 'activity',
-                  title: 'DEMOS.START_UP.PRICING_TWO.FEATURES8'
-                },
-                {
-                  icon: 'trello',
-                  title: 'DEMOS.START_UP.PRICING_TWO.FEATURES9',
-                  border: 'right'
-                },
-                {
-                  icon: 'volume-2',
-                  title: 'DEMOS.START_UP.PRICING_TWO.FEATURES10'
-                },
-                {
-                  icon: 'box',
-                  title: 'DEMOS.START_UP.PRICING_TWO.FEATURES11',
-                  border: 'right'
-                },
-                {
-                  icon: 'share-2',
-                  title: 'DEMOS.START_UP.PRICING_TWO.FEATURES12'
-                }
-              ]);
-          }
-          ngOnInit() {}
-        }
-        return (
-          (n.ɵfac = function(t) {
-            return new (t || n)(c.Lb(i.c));
-          }),
-          (n.ɵcmp = c.Fb({
-            type: n,
-            selectors: [['dc-pricing-two-cards']],
-            decls: 95,
-            vars: 38,
-            consts: [
-              [1, 'bg-light', 'edge', 'top-left'],
-              [1, 'container', 'bring-to-front', 'pb-0', 'pt-3'],
-              [1, 'section-heading'],
-              [1, 'row', 'justify-content-center'],
-              [1, 'col-md-10', 'col-lg-8', 'text-center'],
-              [
-                2,
-                'color',
-                '#212121',
-                'font-size',
-                '35px',
-                'font-weight',
-                'normal'
-              ],
-              [
-                2,
-                'color',
-                '#000000',
-                'font-weight',
-                'bold',
-                'font-size',
-                '40px'
-              ],
-              [1, 'lead', 'text-muted'],
-              [1, 'row', 'align-items-center', 'no-gutters'],
-              ['style', 'z-index: 1', 3, 'class', 4, 'ngFor', 'ngForOf'],
-              [
-                'data-aos',
-                'fade-up',
-                'data-aos-delay',
-                '200',
-                1,
-                'card',
-                'border-0',
-                'rounded-lg',
-                'shadow-lg'
-              ],
-              [1, 'card-body', 'py-4'],
-              [1, 'row'],
-              [1, 'col-xl-10', 'mx-auto'],
-              [1, 'text-center'],
-              [1, 'bold', 'text-uppercase'],
-              [1, 'my-4'],
-              [1, 'lead', 'bold'],
-              [1, 'text-muted'],
-              [1, 'row', 'no-gutters'],
-              [3, 'class', 'border-top', 4, 'ngFor', 'ngForOf'],
-              [
-                'href',
-                'https://everythink.ai/app/#/sessions/signup',
-                1,
-                'btn',
-                'btn-light',
-                'btn-lg',
-                'btn-block',
-                'rounded-top-0',
-                'rounded-bottom',
-                'py-4'
-              ],
-              ['name', 'arrow-right', 1, 'ml-3'],
-              [2, 'z-index', '1'],
-              [
-                'data-aos',
-                'fade-up',
-                1,
-                'card',
-                'border-0',
-                'rounded-lg',
-                'shadow-lg',
-                'mb-4',
-                'mb-md-0'
-              ],
-              [1, 'col-xl-9', 'mx-auto'],
-              [1, 'pricing', 'text-center', 'mb-5'],
-              [1, 'bold', 'text-uppercase', 'text-primary'],
-              [1, 'pricing-value'],
-              [1, 'price', 'display-lg-4', 'semibold', 'odometer', 'text-dark'],
-              [1, 'list-unstyled'],
-              [4, 'ngFor', 'ngForOf'],
-              [
-                'href',
-                'https://everythink.ai/app/#/sessions/signup',
-                1,
-                'btn',
-                'btn-primary',
-                'btn-lg',
-                'btn-block',
-                'rounded-top-0',
-                'rounded-bottom',
-                'py-4'
-              ],
-              [3, 'name', 'size', 'iconClass'],
-              [1, 'media', 'align-items-center', 'mb-3'],
-              [
-                1,
-                'icon-md',
-                'bg-success',
-                'p-2',
-                'rounded-circle',
-                'center-flex',
-                'mr-3'
-              ],
-              [1, 'media-body'],
-              [1, 'text-center', 'p-3'],
-              [1, 'mb-0']
-            ],
-            template: function(n, t) {
-              1 & n &&
-                (c.Qb(0, 'section', 0),
-                c.Fc(1, '\n  '),
-                c.Qb(2, 'div', 1),
-                c.Fc(3, '\n    '),
-                c.Qb(4, 'div', 2),
-                c.Fc(5, '\n      '),
-                c.Qb(6, 'div', 3),
-                c.Fc(7, '\n        '),
-                c.Qb(8, 'div', 4),
-                c.Fc(9, '\n          '),
-                c.Qb(10, 'h2'),
-                c.Fc(11, '\n            '),
-                c.Qb(12, 'p', 5),
-                c.Fc(13),
-                c.gc(14, 'translate'),
-                c.Qb(15, 'span', 6),
-                c.Fc(16),
-                c.gc(17, 'translate'),
-                c.Pb(),
-                c.Fc(18, '\n            '),
-                c.Pb(),
-                c.Fc(19, '\n            '),
-                c.Qb(20, 'p', 6),
-                c.Fc(21),
-                c.gc(22, 'translate'),
-                c.Qb(23, 'span', 5),
-                c.Fc(24),
-                c.gc(25, 'translate'),
-                c.Pb(),
-                c.Fc(26, '\n            '),
-                c.Pb(),
-                c.Fc(27, '\n            '),
-                c.Qb(28, 'p', 6),
-                c.Fc(29),
-                c.gc(30, 'translate'),
-                c.Qb(31, 'span', 5),
-                c.Fc(32),
-                c.gc(33, 'translate'),
-                c.Pb(),
-                c.Fc(34, '\n            '),
-                c.Pb(),
-                c.Fc(35, '\n          '),
-                c.Pb(),
-                c.Fc(36, '\n\n          '),
-                c.Qb(37, 'p', 7),
-                c.Fc(38),
-                c.gc(39, 'translate'),
-                c.Pb(),
-                c.Fc(40, '\n        '),
-                c.Pb(),
-                c.Fc(41, '\n      '),
-                c.Pb(),
-                c.Fc(42, '\n\n      '),
-                c.Fc(43, '\n    '),
-                c.Pb(),
-                c.Fc(44, '\n\n    '),
-                c.Qb(45, 'div', 8),
-                c.Fc(46, '\n      '),
-                c.Dc(47, o, 44, 19, 'div', 9),
-                c.Fc(48, '\n\n      '),
-                c.Qb(49, 'div'),
-                c.Fc(50, '\n        '),
-                c.Qb(51, 'div', 10),
-                c.Fc(52, '\n          '),
-                c.Qb(53, 'div', 11),
-                c.Fc(54, '\n            '),
-                c.Qb(55, 'div', 12),
-                c.Fc(56, '\n              '),
-                c.Qb(57, 'div', 13),
-                c.Fc(58, '\n                '),
-                c.Qb(59, 'div', 14),
-                c.Fc(60, '\n                  '),
-                c.Qb(61, 'h5', 15),
-                c.Fc(62),
-                c.gc(63, 'translate'),
-                c.Pb(),
-                c.Fc(64, '\n                  '),
-                c.Mb(65, 'hr', 16),
-                c.Fc(66, '\n\n                  '),
-                c.Qb(67, 'p', 17),
-                c.Fc(68),
-                c.gc(69, 'translate'),
-                c.Pb(),
-                c.Fc(70, '\n\n                  '),
-                c.Qb(71, 'p', 18),
-                c.Fc(72),
-                c.gc(73, 'translate'),
-                c.Pb(),
-                c.Fc(74, '\n\n                  '),
-                c.Qb(75, 'div', 19),
-                c.Fc(76, '\n                    '),
-                c.Dc(77, b, 11, 11, 'div', 20),
-                c.Fc(78, '\n                  '),
-                c.Pb(),
-                c.Fc(79, '\n                '),
-                c.Pb(),
-                c.Fc(80, '\n              '),
-                c.Pb(),
-                c.Fc(81, '\n            '),
-                c.Pb(),
-                c.Fc(82, '\n          '),
-                c.Pb(),
-                c.Fc(83, '\n\n          '),
-                c.Qb(84, 'a', 21),
-                c.Fc(85),
-                c.gc(86, 'translate'),
-                c.Mb(87, 'dc-feather', 22),
-                c.Fc(88, '\n          '),
-                c.Pb(),
-                c.Fc(89, '\n        '),
-                c.Pb(),
-                c.Fc(90, '\n      '),
-                c.Pb(),
-                c.Fc(91, '\n    '),
-                c.Pb(),
-                c.Fc(92, '\n  '),
-                c.Pb(),
-                c.Fc(93, '\n'),
-                c.Pb(),
-                c.Fc(94, '\n')),
-                2 & n &&
-                  (c.xb(13),
-                  c.Hc(
-                    '\n              ',
-                    c.hc(14, 16, 'DEMOS.START_UP.PRICING_TWO.TITLE0'),
-                    '\n              '
-                  ),
-                  c.xb(3),
-                  c.Gc(c.hc(17, 18, 'DEMOS.START_UP.PRICING_TWO.TITLE01')),
-                  c.xb(5),
-                  c.Hc(
-                    '\n              ',
-                    c.hc(22, 20, 'DEMOS.START_UP.PRICING_TWO.TITLE1'),
-                    '\n              '
-                  ),
-                  c.xb(3),
-                  c.Gc(c.hc(25, 22, 'DEMOS.START_UP.PRICING_TWO.TITLE11')),
-                  c.xb(5),
-                  c.Hc(
-                    '\n              ',
-                    c.hc(30, 24, 'DEMOS.START_UP.PRICING_TWO.TITLE2'),
-                    '\n              '
-                  ),
-                  c.xb(3),
-                  c.Gc(c.hc(33, 26, 'DEMOS.START_UP.PRICING_TWO.TITLE22')),
-                  c.xb(6),
-                  c.Hc(
-                    '\n            ',
-                    c.hc(39, 28, 'DEMOS.START_UP.PRICING_TWO.SUBTITLE'),
-                    '\n          '
-                  ),
-                  c.xb(9),
-                  c.kc('ngForOf', t.plans),
-                  c.xb(2),
-                  c.Ab('col-md-', 12 / (t.plans.length + 1), ' ml-md-n3'),
-                  c.xb(13),
-                  c.Hc(
-                    '\n                    ',
-                    c.hc(63, 30, 'DEMOS.START_UP.PRICING_TWO.CUSTOM'),
-                    '\n                  '
-                  ),
-                  c.xb(6),
-                  c.Hc(
-                    '\n                    ',
-                    c.hc(69, 32, 'DEMOS.START_UP.PRICING_TWO.CUSTOM1'),
-                    '\n                  '
-                  ),
-                  c.xb(4),
-                  c.Hc(
-                    '\n                    ',
-                    c.hc(73, 34, 'DEMOS.START_UP.PRICING_TWO.CUSTOM2'),
-                    '\n                  '
-                  ),
-                  c.xb(5),
-                  c.kc('ngForOf', t.xtras),
-                  c.xb(8),
-                  c.Hc(
-                    '',
-                    c.hc(86, 36, 'DEMOS.START_UP.PRICING_TWO.CUSTOM3'),
-                    '\n\n            '
-                  ));
-            },
-            directives: [s.j, r.a],
-            pipes: [i.b],
-            styles: ['']
-          })),
-          n
-        );
-      })();
-    },
     nEva: function(n, t, e) {
       'use strict';
       e.d(t, 'a', function() {
-        return l;
+        return b;
       });
       var c = e('fXoL'),
         i = e('sYmb'),
         s = e('nhfI'),
         r = e('ofXK'),
-        a = e('AL06');
-      function o(n, t) {
+        o = e('AL06');
+      function a(n, t) {
         if (
           (1 & n &&
             (c.Qb(0, 'div', 15),
@@ -2331,7 +1783,7 @@
             );
         }
       }
-      function b(n, t) {
+      function l(n, t) {
         if (
           (1 & n &&
             (c.Qb(0, 'div', 15),
@@ -2378,7 +1830,7 @@
             c.Gc(n.customer.name);
         }
       }
-      let l = (() => {
+      let b = (() => {
         class n {
           constructor(n) {
             (this.translate = n),
@@ -2513,7 +1965,7 @@
                 c.Fc(23, '\n            '),
                 c.Qb(24, 'div', 8),
                 c.Fc(25, '\n              '),
-                c.Dc(26, o, 7, 3, 'div', 9),
+                c.Dc(26, a, 7, 3, 'div', 9),
                 c.Fc(27, '\n            '),
                 c.Pb(),
                 c.Fc(28, '\n\n            '),
@@ -2544,7 +1996,7 @@
                 c.Fc(46, '\n            '),
                 c.Qb(47, 'div', 8),
                 c.Fc(48, '\n              '),
-                c.Dc(49, b, 22, 3, 'div', 9),
+                c.Dc(49, l, 22, 3, 'div', 9),
                 c.Fc(50, '\n            '),
                 c.Pb(),
                 c.Fc(51, '\n          '),
@@ -2601,7 +2053,7 @@
                   c.xb(7),
                   c.kc('name', 'arrow-right')('size', 24));
             },
-            directives: [s.b, r.j, a.a],
+            directives: [s.b, r.j, o.a],
             pipes: [i.b],
             styles: ['']
           })),
@@ -2704,241 +2156,6 @@
                     '\n      '
                   ));
             },
-            pipes: [i.b],
-            styles: ['']
-          })),
-          n
-        );
-      })();
-    },
-    u8tZ: function(n, t, e) {
-      'use strict';
-      e.d(t, 'a', function() {
-        return o;
-      });
-      var c = e('fXoL'),
-        i = e('sYmb'),
-        s = e('ofXK');
-      function r(n, t) {
-        if (
-          (1 & n && (c.Qb(0, 'li'), c.Fc(1), c.gc(2, 'translate'), c.Pb()),
-          2 & n)
-        ) {
-          const n = t.$implicit;
-          c.Ab('list-group-item ', n.class, ''),
-            c.xb(1),
-            c.Hc('\n              ', c.hc(2, 4, n.name), '\n            ');
-        }
-      }
-      function a(n, t) {
-        if (
-          (1 & n &&
-            (c.Qb(0, 'div', 6),
-            c.Fc(1, '\n        '),
-            c.Qb(2, 'div', 7),
-            c.Fc(3, '\n          '),
-            c.Qb(4, 'div'),
-            c.Fc(5, '\n            '),
-            c.Qb(6, 'h4'),
-            c.Fc(7),
-            c.gc(8, 'translate'),
-            c.Pb(),
-            c.Fc(9, '\n\n            '),
-            c.Fc(10, '\n\n            '),
-            c.Qb(11, 'p'),
-            c.Fc(12),
-            c.gc(13, 'translate'),
-            c.Pb(),
-            c.Fc(14, '\n          '),
-            c.Pb(),
-            c.Fc(15, '\n\n          '),
-            c.Qb(16, 'ul', 8),
-            c.Fc(17, '\n            '),
-            c.Dc(18, r, 3, 6, 'li', 9),
-            c.Fc(19, '\n          '),
-            c.Pb(),
-            c.Fc(20, '\n\n          '),
-            c.Qb(21, 'div', 10),
-            c.Fc(22, '\n            '),
-            c.Qb(23, 'a', 11),
-            c.Fc(24),
-            c.gc(25, 'translate'),
-            c.Pb(),
-            c.Fc(26, '\n          '),
-            c.Pb(),
-            c.Fc(27, '\n        '),
-            c.Pb(),
-            c.Fc(28, '\n      '),
-            c.Pb()),
-          2 & n)
-        ) {
-          const n = t.$implicit;
-          c.xb(4),
-            c.zb(
-              'pricing card-header d-flex align-items-center flex-column ' +
-                (n.best
-                  ? 'bg-primary-gradient text-contrast'
-                  : 'bg-light-gradient')
-            ),
-            c.xb(2),
-            c.Db('text-contrast', n.best),
-            c.xb(1),
-            c.Hc(
-              '\n              ',
-              c.hc(8, 11, n.plan.name),
-              '\n            '
-            ),
-            c.xb(5),
-            c.Gc(c.hc(13, 13, n.plan.description)),
-            c.xb(6),
-            c.kc('ngForOf', n.features),
-            c.xb(5),
-            c.Ab('btn ', n.best ? 'btn-primary' : 'btn-outline-secondary', ''),
-            c.xb(1),
-            c.Hc(
-              '\n              ',
-              c.hc(25, 15, 'DEMOS.START_UP.PRICING.BUY'),
-              '\n            '
-            );
-        }
-      }
-      let o = (() => {
-        class n {
-          constructor(n) {
-            (this.translate = n),
-              (this.plans = [
-                {
-                  icon: 'box',
-                  plan: {
-                    name: 'DEMOS.START_UP.PRICING.PLAN_PERSONAL',
-                    price: 0.99,
-                    description: 'DEMOS.START_UP.PRICING.PLAN_PERSONAL_DESC'
-                  },
-                  features: [
-                    { name: 'DEMOS.START_UP.PRICING.PLAN_PERSONAL1' },
-                    { name: 'DEMOS.START_UP.PRICING.PLAN_PERSONAL2' },
-                    { name: 'DEMOS.START_UP.PRICING.PLAN_PERSONAL3' },
-                    { name: 'DEMOS.START_UP.PRICING.PLAN_PERSONAL4' },
-                    { name: 'DEMOS.START_UP.PRICING.PLAN_PERSONAL5' }
-                  ]
-                },
-                {
-                  icon: 'download-cloud',
-                  best: !0,
-                  plan: {
-                    name: 'DEMOS.START_UP.PRICING.PLAN_BUSINESS',
-                    price: 29.99,
-                    description: 'DEMOS.START_UP.PRICING.PLAN_BUSINESS_DESC'
-                  },
-                  features: [
-                    { name: 'DEMOS.START_UP.PRICING.PLAN_BUSINESS1' },
-                    { name: 'DEMOS.START_UP.PRICING.PLAN_BUSINESS2' },
-                    { name: 'DEMOS.START_UP.PRICING.PLAN_BUSINESS3' },
-                    { name: 'DEMOS.START_UP.PRICING.PLAN_BUSINESS4' },
-                    { name: 'DEMOS.START_UP.PRICING.PLAN_BUSINESS5' }
-                  ]
-                },
-                {
-                  icon: 'settings',
-                  plan: {
-                    name: 'DEMOS.START_UP.PRICING.PLAN_ENTERPRISE',
-                    price: 99.99,
-                    description: 'DEMOS.START_UP.PRICING.PLAN_ENTERPRISE_DESC'
-                  },
-                  features: [
-                    { name: 'DEMOS.START_UP.PRICING.PLAN_ENTERPRISE1' },
-                    { name: 'DEMOS.START_UP.PRICING.PLAN_ENTERPRISE2' },
-                    { name: 'DEMOS.START_UP.PRICING.PLAN_ENTERPRISE3' },
-                    { name: 'DEMOS.START_UP.PRICING.PLAN_ENTERPRISE4' },
-                    { name: 'DEMOS.START_UP.PRICING.PLAN_ENTERPRISE5' }
-                  ]
-                },
-                {
-                  icon: 'download-cloud',
-                  best: !0,
-                  plan: {
-                    name: 'DEMOS.START_UP.PRICING.PLAN_BUSINESSD',
-                    price: 29.99,
-                    description: 'DEMOS.START_UP.PRICING.PLAN_BUSINESSD_DESC'
-                  },
-                  features: [
-                    { name: 'DEMOS.START_UP.PRICING.PLAN_BUSINESSD1' },
-                    { name: 'DEMOS.START_UP.PRICING.PLAN_BUSINESSD2' },
-                    { name: 'DEMOS.START_UP.PRICING.PLAN_BUSINESSD3' },
-                    { name: 'DEMOS.START_UP.PRICING.PLAN_BUSINESSD4' },
-                    { name: 'DEMOS.START_UP.PRICING.PLAN_BUSINESSD5' }
-                  ]
-                }
-              ]);
-          }
-          ngOnInit() {}
-        }
-        return (
-          (n.ɵfac = function(t) {
-            return new (t || n)(c.Lb(i.c));
-          }),
-          (n.ɵcmp = c.Fb({
-            type: n,
-            selectors: [['dc-pricing-cards']],
-            decls: 22,
-            vars: 7,
-            consts: [
-              [1, 'container'],
-              [1, 'section-heading', 'text-center'],
-              [1, 'mb-2'],
-              [1, 'lead', 'text-secondary'],
-              [1, 'row'],
-              ['class', 'col-md-3 mt-4', 4, 'ngFor', 'ngForOf'],
-              [1, 'col-md-3', 'mt-4'],
-              [1, 'card', 'text-center'],
-              [1, 'list-group', 'list-group-flush'],
-              [3, 'class', 4, 'ngFor', 'ngForOf'],
-              [1, 'card-body'],
-              ['href', 'https://everythink.ai/app/#/sessions/signup']
-            ],
-            template: function(n, t) {
-              1 & n &&
-                (c.Qb(0, 'section'),
-                c.Fc(1, '\n  '),
-                c.Qb(2, 'div', 0),
-                c.Fc(3, '\n    '),
-                c.Qb(4, 'div', 1),
-                c.Fc(5, '\n      '),
-                c.Qb(6, 'h2', 2),
-                c.Fc(7),
-                c.gc(8, 'translate'),
-                c.Pb(),
-                c.Fc(9, '\n      '),
-                c.Qb(10, 'p', 3),
-                c.Fc(11),
-                c.gc(12, 'translate'),
-                c.Pb(),
-                c.Fc(13, '\n    '),
-                c.Pb(),
-                c.Fc(14, '\n\n    '),
-                c.Qb(15, 'div', 4),
-                c.Fc(16, '\n      '),
-                c.Dc(17, a, 29, 17, 'div', 5),
-                c.Fc(18, '\n    '),
-                c.Pb(),
-                c.Fc(19, '\n  '),
-                c.Pb(),
-                c.Fc(20, '\n'),
-                c.Pb(),
-                c.Fc(21, '\n')),
-                2 & n &&
-                  (c.xb(7),
-                  c.Gc(c.hc(8, 3, 'DEMOS.START_UP.PRICING.TITLE')),
-                  c.xb(4),
-                  c.Hc(
-                    '\n        ',
-                    c.hc(12, 5, 'DEMOS.START_UP.PRICING.SUBTITLE'),
-                    '\n      '
-                  ),
-                  c.xb(6),
-                  c.kc('ngForOf', t.plans));
-            },
-            directives: [s.j],
             pipes: [i.b],
             styles: ['']
           })),

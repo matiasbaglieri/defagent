@@ -1,15 +1,15 @@
 !(function() {
   function n(n, e) {
     for (var t = 0; t < e.length; t++) {
-      var i = e[t];
-      (i.enumerable = i.enumerable || !1),
-        (i.configurable = !0),
-        'value' in i && (i.writable = !0),
-        Object.defineProperty(n, i.key, i);
+      var c = e[t];
+      (c.enumerable = c.enumerable || !1),
+        (c.configurable = !0),
+        'value' in c && (c.writable = !0),
+        Object.defineProperty(n, c.key, c);
     }
   }
-  function e(e, t, i) {
-    return t && n(e.prototype, t), i && n(e, i), e;
+  function e(e, t, c) {
+    return t && n(e.prototype, t), c && n(e, c), e;
   }
   function t(n, e) {
     if (!(n instanceof e))
@@ -18,15 +18,15 @@
   (window.webpackJsonp = window.webpackJsonp || []).push([
     [23],
     {
-      pu65: function(n, e, i) {
+      pu65: function(n, e, c) {
         'use strict';
-        i.d(e, 'a', function() {
+        c.d(e, 'a', function() {
           return a;
         });
-        var c = i('nhfI'),
-          s = i('M0ag'),
-          o = i('sYmb'),
-          r = i('fXoL'),
+        var i = c('nhfI'),
+          s = c('M0ag'),
+          o = c('sYmb'),
+          r = c('fXoL'),
           a = (function() {
             var n = function n() {
               t(this, n);
@@ -37,26 +37,26 @@
                 factory: function(e) {
                   return new (e || n)();
                 },
-                imports: [[c.c, s.a, o.a.forChild()]]
+                imports: [[i.c, s.a, o.a.forChild()]]
               })),
               n
             );
           })();
       },
-      rOCi: function(n, i, c) {
+      rOCi: function(n, c, i) {
         'use strict';
-        c.r(i),
-          c.d(i, 'BusinessSolutionsModule', function() {
-            return tn;
+        i.r(c),
+          i.d(c, 'BusinessSolutionsModule', function() {
+            return an;
           });
         var s,
           o,
           r,
           a,
-          b = c('M0ag'),
-          d = c('V6j0'),
-          l = c('fXoL'),
-          u =
+          b = i('M0ag'),
+          d = i('V6j0'),
+          l = i('fXoL'),
+          F =
             (((s = function n() {
               t(this, n);
             }).ɵmod = l.Jb({ type: s })),
@@ -67,12 +67,12 @@
               imports: [[d.a]]
             })),
             s),
-          p = c('M0Rk'),
-          F = c('pu65'),
-          f = c('2d4A'),
-          m = c('kpBo'),
-          g = c('ofXK'),
-          v =
+          u = i('M0Rk'),
+          p = i('pu65'),
+          m = i('2d4A'),
+          f = i('kpBo'),
+          g = i('ofXK'),
+          h =
             (((o = function n() {
               t(this, n);
             }).ɵmod = l.Jb({ type: o })),
@@ -83,10 +83,10 @@
               imports: [[g.b]]
             })),
             o),
-          h = c('pRTP'),
-          y = c('tyNb'),
-          w = c('ey9i'),
-          P =
+          P = i('pRTP'),
+          v = i('tyNb'),
+          y = i('ey9i'),
+          x =
             (((a = (function() {
               function n() {
                 t(this, n);
@@ -198,7 +198,7 @@
               styles: ['']
             })),
             a),
-          x =
+          Q =
             (((r = (function() {
               function n() {
                 t(this, n);
@@ -253,8 +253,8 @@
               styles: ['']
             })),
             r),
-          Q = c('nhfI');
-        function k(n, e) {
+          T = i('nhfI');
+        function w(n, e) {
           if (
             (1 & n &&
               (l.Qb(0, 'div', 2),
@@ -268,13 +268,13 @@
             l.xb(2), l.mc('src', 'assets/img/logos/', t, '.png', l.yc);
           }
         }
-        var C,
-          M,
-          O = function() {
+        var O,
+          S,
+          I = function() {
             return [1, 2, 3, 4, 5, 6];
           },
-          I =
-            (((M = (function() {
+          k =
+            (((S = (function() {
               function n() {
                 t(this, n),
                   (this.config = {
@@ -288,10 +288,10 @@
               }
               return e(n, [{ key: 'ngOnInit', value: function() {} }]), n;
             })()).ɵfac = function(n) {
-              return new (n || M)();
+              return new (n || S)();
             }),
-            (M.ɵcmp = l.Fb({
-              type: M,
+            (S.ɵcmp = l.Fb({
+              type: S,
               selectors: [['dc-slider-logos']],
               decls: 5,
               vars: 3,
@@ -315,30 +315,30 @@
                 1 & n &&
                   (l.Qb(0, 'swiper', 0),
                   l.Fc(1, '\n  '),
-                  l.Dc(2, k, 4, 1, 'div', 1),
+                  l.Dc(2, w, 4, 1, 'div', 1),
                   l.Fc(3, '\n'),
                   l.Pb(),
                   l.Fc(4, '\n')),
                   2 & n &&
                     (l.kc('config', e.config),
                     l.xb(2),
-                    l.kc('ngForOf', l.nc(2, O)));
+                    l.kc('ngForOf', l.nc(2, I)));
               },
-              directives: [Q.a, g.j],
+              directives: [T.a, g.j],
               styles: ['']
             })),
-            M),
-          j =
-            (((C = (function() {
+            S),
+          C =
+            (((O = (function() {
               function n() {
                 t(this, n);
               }
               return e(n, [{ key: 'ngOnInit', value: function() {} }]), n;
             })()).ɵfac = function(n) {
-              return new (n || C)();
+              return new (n || O)();
             }),
-            (C.ɵcmp = l.Fb({
-              type: C,
+            (O.ɵcmp = l.Fb({
+              type: O,
               selectors: [['dc-business-solutions-integration-icons']],
               decls: 15,
               vars: 0,
@@ -370,12 +370,12 @@
                   l.Pb(),
                   l.Fc(14, '\n'));
               },
-              directives: [I],
+              directives: [k],
               styles: ['']
             })),
-            C),
-          A = c('AL06');
-        function S(n, e) {
+            O),
+          M = i('AL06');
+        function R(n, e) {
           if (
             (1 & n &&
               (l.Qb(0, 'li', 14),
@@ -404,9 +404,9 @@
               l.Gc(t.title);
           }
         }
-        var T,
-          D =
-            (((T = (function() {
+        var E,
+          A =
+            (((E = (function() {
               function n() {
                 t(this, n),
                   (this.features = [
@@ -432,10 +432,10 @@
               }
               return e(n, [{ key: 'ngOnInit', value: function() {} }]), n;
             })()).ɵfac = function(n) {
-              return new (n || T)();
+              return new (n || E)();
             }),
-            (T.ɵcmp = l.Fb({
-              type: T,
+            (E.ɵcmp = l.Fb({
+              type: E,
               selectors: [['dc-business-solutions-start-business']],
               decls: 45,
               vars: 1,
@@ -508,7 +508,7 @@
                   l.Fc(21, '\n\n        '),
                   l.Qb(22, 'ul', 7),
                   l.Fc(23, '\n          '),
-                  l.Dc(24, S, 13, 4, 'li', 8),
+                  l.Dc(24, R, 13, 4, 'li', 8),
                   l.Fc(25, '\n        '),
                   l.Pb(),
                   l.Fc(26, '\n\n        '),
@@ -540,13 +540,13 @@
                   l.Fc(44, '\n')),
                   2 & n && (l.xb(24), l.kc('ngForOf', e.features));
               },
-              directives: [g.j, A.a],
+              directives: [g.j, M.a],
               styles: ['']
             })),
-            T),
-          B = c('wHSu'),
-          L = c('6NWb');
-        function E(n, e) {
+            E),
+          _ = i('wHSu'),
+          U = i('6NWb');
+        function D(n, e) {
           if (
             (1 & n &&
               (l.Qb(0, 'div', 13),
@@ -575,9 +575,9 @@
             2 & n)
           ) {
             var t = e.$implicit,
-              i = e.index,
-              c = l.fc();
-            l.Db('mb-5', 0 == i),
+              c = e.index,
+              i = l.fc();
+            l.Db('mb-5', 0 == c),
               l.xb(2),
               l.kc('name', t.icon)('size', 36)(
                 'iconClass',
@@ -588,10 +588,10 @@
               l.xb(3),
               l.Gc(t.description),
               l.xb(4),
-              l.kc('icon', c.longArrowAltRight);
+              l.kc('icon', i.longArrowAltRight);
           }
         }
-        function q(n, e) {
+        function G(n, e) {
           if (
             (1 & n &&
               (l.Qb(0, 'div', 18),
@@ -614,7 +614,7 @@
               );
           }
         }
-        function G(n, e) {
+        function N(n, e) {
           if (
             (1 & n &&
               (l.Qb(0, 'div', 18),
@@ -640,16 +640,16 @@
             2 & n)
           ) {
             var t = e.$implicit,
-              i = l.fc();
-            l.xb(3), l.Gc(t.title), l.xb(7), l.kc('icon', i.longArrowAltRight);
+              c = l.fc();
+            l.xb(3), l.Gc(t.title), l.xb(7), l.kc('icon', c.longArrowAltRight);
           }
         }
-        var J,
-          R =
-            (((J = (function() {
+        var W,
+          L =
+            (((W = (function() {
               function n() {
                 t(this, n),
-                  (this.longArrowAltRight = B.l),
+                  (this.longArrowAltRight = _.l),
                   (this.features = [
                     { title: 'Dashboard', img: '4' },
                     { title: 'Invoicing', img: 'invoice' },
@@ -709,10 +709,10 @@
                 n
               );
             })()).ɵfac = function(n) {
-              return new (n || J)();
+              return new (n || W)();
             }),
-            (J.ɵcmp = l.Fb({
-              type: J,
+            (W.ɵcmp = l.Fb({
+              type: W,
               selectors: [['dc-slider-features-fluid-cols']],
               decls: 41,
               vars: 6,
@@ -765,7 +765,7 @@
                   l.Fc(5, '\n      '),
                   l.Qb(6, 'div', 3),
                   l.Fc(7, '\n        '),
-                  l.Dc(8, E, 18, 8, 'div', 4),
+                  l.Dc(8, D, 18, 8, 'div', 4),
                   l.Fc(9, '\n      '),
                   l.Pb(),
                   l.Fc(10, '\n\n      '),
@@ -775,7 +775,7 @@
                   l.Fc(14, '\n          '),
                   l.Qb(15, 'div', 7),
                   l.Fc(16, '\n            '),
-                  l.Dc(17, q, 7, 1, 'div', 8),
+                  l.Dc(17, G, 7, 1, 'div', 8),
                   l.Fc(18, '\n          '),
                   l.Pb(),
                   l.Fc(19, '\n        '),
@@ -792,7 +792,7 @@
                   l.Fc(26, '\n              '),
                   l.Qb(27, 'div', 7),
                   l.Fc(28, '\n                '),
-                  l.Dc(29, G, 13, 2, 'div', 8),
+                  l.Dc(29, N, 13, 2, 'div', 8),
                   l.Fc(30, '\n              '),
                   l.Pb(),
                   l.Fc(31, '\n\n              '),
@@ -824,13 +824,557 @@
                     l.xb(4),
                     l.kc('ngForOf', e.features));
               },
-              directives: [g.j, Q.b, A.a, L.a],
+              directives: [g.j, T.b, M.a, U.a],
               styles: ['']
             })),
-            J),
-          V = c('nEva'),
-          $ = c('mrcQ');
+            W),
+          H = i('nEva'),
+          j = i('sYmb');
         function z(n, e) {
+          if (
+            (1 & n &&
+              (l.Qb(0, 'li'),
+              l.Fc(1, '\n                    '),
+              l.Qb(2, 'div', 34),
+              l.Fc(3, '\n                      '),
+              l.Qb(4, 'div', 35),
+              l.Fc(5, '\n                        '),
+              l.Mb(6, 'dc-feather', 33),
+              l.Fc(7, '\n                      '),
+              l.Pb(),
+              l.Fc(8, '\n\n                      '),
+              l.Qb(9, 'div', 36),
+              l.Fc(10),
+              l.gc(11, 'translate'),
+              l.Pb(),
+              l.Fc(12, '\n                    '),
+              l.Pb(),
+              l.Fc(13, '\n                  '),
+              l.Pb()),
+            2 & n)
+          ) {
+            var t = e.$implicit;
+            l.xb(6),
+              l.kc('name', t.icon)('size', 16)('iconClass', 'stroke-contrast'),
+              l.xb(4),
+              l.Hc(
+                '\n                        ',
+                l.hc(11, 4, t.name),
+                '\n                      '
+              );
+          }
+        }
+        function B(n, e) {
+          if (
+            (1 & n &&
+              (l.Qb(0, 'div', 23),
+              l.Fc(1, '\n        '),
+              l.Qb(2, 'div', 24),
+              l.Fc(3, '\n          '),
+              l.Qb(4, 'div', 11),
+              l.Fc(5, '\n            '),
+              l.Qb(6, 'div', 12),
+              l.Fc(7, '\n              '),
+              l.Qb(8, 'div', 25),
+              l.Fc(9, '\n                '),
+              l.Qb(10, 'div', 26),
+              l.Fc(11, '\n                  '),
+              l.Qb(12, 'h5', 27),
+              l.Fc(13),
+              l.gc(14, 'translate'),
+              l.Pb(),
+              l.Fc(15, '\n                  '),
+              l.Mb(16, 'hr', 16),
+              l.Fc(17, '\n\n                  '),
+              l.Qb(18, 'p'),
+              l.Fc(19),
+              l.gc(20, 'translate'),
+              l.Pb(),
+              l.Fc(21, '\n\n                  '),
+              l.Qb(22, 'div', 28),
+              l.Fc(23, '\n                    '),
+              l.Qb(24, 'span', 29),
+              l.Fc(25),
+              l.Pb(),
+              l.Fc(26, '\n                  '),
+              l.Pb(),
+              l.Fc(27, '\n                '),
+              l.Pb(),
+              l.Fc(28, '\n\n                '),
+              l.Qb(29, 'ul', 30),
+              l.Fc(30, '\n                  '),
+              l.Dc(31, z, 14, 6, 'li', 31),
+              l.Fc(32, '\n                '),
+              l.Pb(),
+              l.Fc(33, '\n              '),
+              l.Pb(),
+              l.Fc(34, '\n            '),
+              l.Pb(),
+              l.Fc(35, '\n          '),
+              l.Pb(),
+              l.Fc(36, '\n\n          '),
+              l.Qb(37, 'a', 32),
+              l.Fc(38),
+              l.gc(39, 'translate'),
+              l.Mb(40, 'dc-feather', 33),
+              l.Fc(41, '\n          '),
+              l.Pb(),
+              l.Fc(42, '\n        '),
+              l.Pb(),
+              l.Fc(43, '\n      '),
+              l.Pb()),
+            2 & n)
+          ) {
+            var t = e.$implicit,
+              c = l.fc();
+            l.Ab('col-md-', 12 / (c.plans.length + 1), ''),
+              l.xb(13),
+              l.Hc(
+                '\n                    ',
+                l.hc(14, 13, t.plan.name),
+                '\n                  '
+              ),
+              l.xb(6),
+              l.Gc(l.hc(20, 15, t.plan.description)),
+              l.xb(5),
+              l.yb('data-monthly-price', t.plan.price.monthly)(
+                'data-yearly-price',
+                t.plan.price.yearly
+              ),
+              l.xb(1),
+              l.Hc(
+                '\n                      ',
+                t.plan.price.monthly,
+                '\n                    '
+              ),
+              l.xb(6),
+              l.kc('ngForOf', t.features),
+              l.xb(7),
+              l.Hc(
+                '\n            ',
+                l.hc(39, 17, 'DEMOS.START_UP.PRICING_TWO.GETNOW'),
+                '\n\n            '
+              ),
+              l.xb(2),
+              l.kc('name', 'arrow-right')('size', 16)('iconClass', 'ml-3');
+          }
+        }
+        function $(n, e) {
+          if (
+            (1 & n &&
+              (l.Qb(0, 'div'),
+              l.Fc(1, '\n                      '),
+              l.Qb(2, 'div', 37),
+              l.Fc(3, '\n                        '),
+              l.Mb(4, 'dc-feather', 33),
+              l.Fc(5, '\n                        '),
+              l.Qb(6, 'p', 38),
+              l.Fc(7),
+              l.gc(8, 'translate'),
+              l.Pb(),
+              l.Fc(9, '\n                      '),
+              l.Pb(),
+              l.Fc(10, '\n                    '),
+              l.Pb()),
+            2 & n)
+          ) {
+            var t = e.$implicit,
+              c = e.index;
+            l.Ab('col-6 border-', t.border, ''),
+              l.Db('border-top', c > 1),
+              l.xb(4),
+              l.kc('name', t.icon)('size', 32)('iconClass', 'stroke-primary'),
+              l.xb(3),
+              l.Gc(l.hc(8, 9, t.title));
+          }
+        }
+        var q,
+          J =
+            (((q = (function() {
+              function n(e) {
+                t(this, n),
+                  (this.translate = e),
+                  (this.plans = [
+                    {
+                      icon: 'box',
+                      plan: {
+                        name: 'DEMOS.START_UP.PRICING_TWO.PLAN_BASIC',
+                        price: { monthly: 9.99, yearly: 99.78 },
+                        description:
+                          'DEMOS.START_UP.PRICING_TWO.PLAN_BASIC_DESC'
+                      },
+                      features: [
+                        {
+                          name: 'DEMOS.START_UP.PRICING_TWO.FEATURES1',
+                          icon: 'calendar'
+                        },
+                        {
+                          name: 'DEMOS.START_UP.PRICING_TWO.FEATURES2',
+                          icon: 'dollar-sign'
+                        },
+                        {
+                          name: 'DEMOS.START_UP.PRICING_TWO.FEATURES3',
+                          icon: 'smartphone'
+                        },
+                        {
+                          name: 'DEMOS.START_UP.PRICING_TWO.FEATURES4',
+                          icon: 'layout'
+                        }
+                      ]
+                    }
+                  ]),
+                  (this.xtras = [
+                    {
+                      icon: 'home',
+                      title: 'DEMOS.START_UP.PRICING_TWO.FEATURES5',
+                      border: 'right'
+                    },
+                    {
+                      icon: 'git-branch',
+                      title: 'DEMOS.START_UP.PRICING_TWO.FEATURES6'
+                    },
+                    {
+                      icon: 'headphones',
+                      title: 'DEMOS.START_UP.PRICING_TWO.FEATURES7',
+                      border: 'right'
+                    },
+                    {
+                      icon: 'activity',
+                      title: 'DEMOS.START_UP.PRICING_TWO.FEATURES8'
+                    },
+                    {
+                      icon: 'trello',
+                      title: 'DEMOS.START_UP.PRICING_TWO.FEATURES9',
+                      border: 'right'
+                    },
+                    {
+                      icon: 'volume-2',
+                      title: 'DEMOS.START_UP.PRICING_TWO.FEATURES10'
+                    },
+                    {
+                      icon: 'box',
+                      title: 'DEMOS.START_UP.PRICING_TWO.FEATURES11',
+                      border: 'right'
+                    },
+                    {
+                      icon: 'share-2',
+                      title: 'DEMOS.START_UP.PRICING_TWO.FEATURES12'
+                    }
+                  ]);
+              }
+              return e(n, [{ key: 'ngOnInit', value: function() {} }]), n;
+            })()).ɵfac = function(n) {
+              return new (n || q)(l.Lb(j.c));
+            }),
+            (q.ɵcmp = l.Fb({
+              type: q,
+              selectors: [['dc-pricing-two-cards']],
+              decls: 95,
+              vars: 38,
+              consts: [
+                [1, 'bg-light', 'edge', 'top-left'],
+                [1, 'container', 'bring-to-front', 'pb-0', 'pt-3'],
+                [1, 'section-heading'],
+                [1, 'row', 'justify-content-center'],
+                [1, 'col-md-10', 'col-lg-8', 'text-center'],
+                [
+                  2,
+                  'color',
+                  '#212121',
+                  'font-size',
+                  '35px',
+                  'font-weight',
+                  'normal'
+                ],
+                [
+                  2,
+                  'color',
+                  '#000000',
+                  'font-weight',
+                  'bold',
+                  'font-size',
+                  '40px'
+                ],
+                [1, 'lead', 'text-muted'],
+                [1, 'row', 'align-items-center', 'no-gutters'],
+                ['style', 'z-index: 1', 3, 'class', 4, 'ngFor', 'ngForOf'],
+                [
+                  'data-aos',
+                  'fade-up',
+                  'data-aos-delay',
+                  '200',
+                  1,
+                  'card',
+                  'border-0',
+                  'rounded-lg',
+                  'shadow-lg'
+                ],
+                [1, 'card-body', 'py-4'],
+                [1, 'row'],
+                [1, 'col-xl-10', 'mx-auto'],
+                [1, 'text-center'],
+                [1, 'bold', 'text-uppercase'],
+                [1, 'my-4'],
+                [1, 'lead', 'bold'],
+                [1, 'text-muted'],
+                [1, 'row', 'no-gutters'],
+                [3, 'class', 'border-top', 4, 'ngFor', 'ngForOf'],
+                [
+                  'href',
+                  'https://everythink.ai/app/#/sessions/signup',
+                  1,
+                  'btn',
+                  'btn-light',
+                  'btn-lg',
+                  'btn-block',
+                  'rounded-top-0',
+                  'rounded-bottom',
+                  'py-4'
+                ],
+                ['name', 'arrow-right', 1, 'ml-3'],
+                [2, 'z-index', '1'],
+                [
+                  'data-aos',
+                  'fade-up',
+                  1,
+                  'card',
+                  'border-0',
+                  'rounded-lg',
+                  'shadow-lg',
+                  'mb-4',
+                  'mb-md-0'
+                ],
+                [1, 'col-xl-9', 'mx-auto'],
+                [1, 'pricing', 'text-center', 'mb-5'],
+                [1, 'bold', 'text-uppercase', 'text-primary'],
+                [1, 'pricing-value'],
+                [
+                  1,
+                  'price',
+                  'display-lg-4',
+                  'semibold',
+                  'odometer',
+                  'text-dark'
+                ],
+                [1, 'list-unstyled'],
+                [4, 'ngFor', 'ngForOf'],
+                [
+                  'href',
+                  'https://everythink.ai/app/#/sessions/signup',
+                  1,
+                  'btn',
+                  'btn-primary',
+                  'btn-lg',
+                  'btn-block',
+                  'rounded-top-0',
+                  'rounded-bottom',
+                  'py-4'
+                ],
+                [3, 'name', 'size', 'iconClass'],
+                [1, 'media', 'align-items-center', 'mb-3'],
+                [
+                  1,
+                  'icon-md',
+                  'bg-success',
+                  'p-2',
+                  'rounded-circle',
+                  'center-flex',
+                  'mr-3'
+                ],
+                [1, 'media-body'],
+                [1, 'text-center', 'p-3'],
+                [1, 'mb-0']
+              ],
+              template: function(n, e) {
+                1 & n &&
+                  (l.Qb(0, 'section', 0),
+                  l.Fc(1, '\n  '),
+                  l.Qb(2, 'div', 1),
+                  l.Fc(3, '\n    '),
+                  l.Qb(4, 'div', 2),
+                  l.Fc(5, '\n      '),
+                  l.Qb(6, 'div', 3),
+                  l.Fc(7, '\n        '),
+                  l.Qb(8, 'div', 4),
+                  l.Fc(9, '\n          '),
+                  l.Qb(10, 'h2'),
+                  l.Fc(11, '\n            '),
+                  l.Qb(12, 'p', 5),
+                  l.Fc(13),
+                  l.gc(14, 'translate'),
+                  l.Qb(15, 'span', 6),
+                  l.Fc(16),
+                  l.gc(17, 'translate'),
+                  l.Pb(),
+                  l.Fc(18, '\n            '),
+                  l.Pb(),
+                  l.Fc(19, '\n            '),
+                  l.Qb(20, 'p', 6),
+                  l.Fc(21),
+                  l.gc(22, 'translate'),
+                  l.Qb(23, 'span', 5),
+                  l.Fc(24),
+                  l.gc(25, 'translate'),
+                  l.Pb(),
+                  l.Fc(26, '\n            '),
+                  l.Pb(),
+                  l.Fc(27, '\n            '),
+                  l.Qb(28, 'p', 6),
+                  l.Fc(29),
+                  l.gc(30, 'translate'),
+                  l.Qb(31, 'span', 5),
+                  l.Fc(32),
+                  l.gc(33, 'translate'),
+                  l.Pb(),
+                  l.Fc(34, '\n            '),
+                  l.Pb(),
+                  l.Fc(35, '\n          '),
+                  l.Pb(),
+                  l.Fc(36, '\n\n          '),
+                  l.Qb(37, 'p', 7),
+                  l.Fc(38),
+                  l.gc(39, 'translate'),
+                  l.Pb(),
+                  l.Fc(40, '\n        '),
+                  l.Pb(),
+                  l.Fc(41, '\n      '),
+                  l.Pb(),
+                  l.Fc(42, '\n\n      '),
+                  l.Fc(43, '\n    '),
+                  l.Pb(),
+                  l.Fc(44, '\n\n    '),
+                  l.Qb(45, 'div', 8),
+                  l.Fc(46, '\n      '),
+                  l.Dc(47, B, 44, 19, 'div', 9),
+                  l.Fc(48, '\n\n      '),
+                  l.Qb(49, 'div'),
+                  l.Fc(50, '\n        '),
+                  l.Qb(51, 'div', 10),
+                  l.Fc(52, '\n          '),
+                  l.Qb(53, 'div', 11),
+                  l.Fc(54, '\n            '),
+                  l.Qb(55, 'div', 12),
+                  l.Fc(56, '\n              '),
+                  l.Qb(57, 'div', 13),
+                  l.Fc(58, '\n                '),
+                  l.Qb(59, 'div', 14),
+                  l.Fc(60, '\n                  '),
+                  l.Qb(61, 'h5', 15),
+                  l.Fc(62),
+                  l.gc(63, 'translate'),
+                  l.Pb(),
+                  l.Fc(64, '\n                  '),
+                  l.Mb(65, 'hr', 16),
+                  l.Fc(66, '\n\n                  '),
+                  l.Qb(67, 'p', 17),
+                  l.Fc(68),
+                  l.gc(69, 'translate'),
+                  l.Pb(),
+                  l.Fc(70, '\n\n                  '),
+                  l.Qb(71, 'p', 18),
+                  l.Fc(72),
+                  l.gc(73, 'translate'),
+                  l.Pb(),
+                  l.Fc(74, '\n\n                  '),
+                  l.Qb(75, 'div', 19),
+                  l.Fc(76, '\n                    '),
+                  l.Dc(77, $, 11, 11, 'div', 20),
+                  l.Fc(78, '\n                  '),
+                  l.Pb(),
+                  l.Fc(79, '\n                '),
+                  l.Pb(),
+                  l.Fc(80, '\n              '),
+                  l.Pb(),
+                  l.Fc(81, '\n            '),
+                  l.Pb(),
+                  l.Fc(82, '\n          '),
+                  l.Pb(),
+                  l.Fc(83, '\n\n          '),
+                  l.Qb(84, 'a', 21),
+                  l.Fc(85),
+                  l.gc(86, 'translate'),
+                  l.Mb(87, 'dc-feather', 22),
+                  l.Fc(88, '\n          '),
+                  l.Pb(),
+                  l.Fc(89, '\n        '),
+                  l.Pb(),
+                  l.Fc(90, '\n      '),
+                  l.Pb(),
+                  l.Fc(91, '\n    '),
+                  l.Pb(),
+                  l.Fc(92, '\n  '),
+                  l.Pb(),
+                  l.Fc(93, '\n'),
+                  l.Pb(),
+                  l.Fc(94, '\n')),
+                  2 & n &&
+                    (l.xb(13),
+                    l.Hc(
+                      '\n              ',
+                      l.hc(14, 16, 'DEMOS.START_UP.PRICING_TWO.TITLE0'),
+                      '\n              '
+                    ),
+                    l.xb(3),
+                    l.Gc(l.hc(17, 18, 'DEMOS.START_UP.PRICING_TWO.TITLE01')),
+                    l.xb(5),
+                    l.Hc(
+                      '\n              ',
+                      l.hc(22, 20, 'DEMOS.START_UP.PRICING_TWO.TITLE1'),
+                      '\n              '
+                    ),
+                    l.xb(3),
+                    l.Gc(l.hc(25, 22, 'DEMOS.START_UP.PRICING_TWO.TITLE11')),
+                    l.xb(5),
+                    l.Hc(
+                      '\n              ',
+                      l.hc(30, 24, 'DEMOS.START_UP.PRICING_TWO.TITLE2'),
+                      '\n              '
+                    ),
+                    l.xb(3),
+                    l.Gc(l.hc(33, 26, 'DEMOS.START_UP.PRICING_TWO.TITLE22')),
+                    l.xb(6),
+                    l.Hc(
+                      '\n            ',
+                      l.hc(39, 28, 'DEMOS.START_UP.PRICING_TWO.SUBTITLE'),
+                      '\n          '
+                    ),
+                    l.xb(9),
+                    l.kc('ngForOf', e.plans),
+                    l.xb(2),
+                    l.Ab('col-md-', 12 / (e.plans.length + 1), ' ml-md-n3'),
+                    l.xb(13),
+                    l.Hc(
+                      '\n                    ',
+                      l.hc(63, 30, 'DEMOS.START_UP.PRICING_TWO.CUSTOM'),
+                      '\n                  '
+                    ),
+                    l.xb(6),
+                    l.Hc(
+                      '\n                    ',
+                      l.hc(69, 32, 'DEMOS.START_UP.PRICING_TWO.CUSTOM1'),
+                      '\n                  '
+                    ),
+                    l.xb(4),
+                    l.Hc(
+                      '\n                    ',
+                      l.hc(73, 34, 'DEMOS.START_UP.PRICING_TWO.CUSTOM2'),
+                      '\n                  '
+                    ),
+                    l.xb(5),
+                    l.kc('ngForOf', e.xtras),
+                    l.xb(8),
+                    l.Hc(
+                      '',
+                      l.hc(86, 36, 'DEMOS.START_UP.PRICING_TWO.CUSTOM3'),
+                      '\n\n            '
+                    ));
+              },
+              directives: [g.j, M.a],
+              pipes: [j.b],
+              styles: ['']
+            })),
+            q);
+        function V(n, e) {
           if (
             (1 & n &&
               (l.Qb(0, 'div', 4),
@@ -870,13 +1414,13 @@
               l.Gc(t.title);
           }
         }
-        var H,
-          N,
-          X,
+        var X,
           K,
+          Y,
           Z,
-          W =
-            (((H = (function() {
+          nn,
+          en =
+            (((X = (function() {
               function n() {
                 t(this, n),
                   (this.features = [
@@ -890,10 +1434,10 @@
               }
               return e(n, [{ key: 'ngOnInit', value: function() {} }]), n;
             })()).ɵfac = function(n) {
-              return new (n || H)();
+              return new (n || X)();
             }),
-            (H.ɵcmp = l.Fb({
-              type: H,
+            (X.ɵcmp = l.Fb({
+              type: X,
               selectors: [['dc-business-solutions-pricing-includes']],
               decls: 11,
               vars: 1,
@@ -925,7 +1469,7 @@
                   l.Fc(3, '\n    '),
                   l.Qb(4, 'div', 2),
                   l.Fc(5, '\n      '),
-                  l.Dc(6, z, 19, 3, 'div', 3),
+                  l.Dc(6, V, 19, 3, 'div', 3),
                   l.Fc(7, '\n    '),
                   l.Pb(),
                   l.Fc(8, '\n  '),
@@ -935,24 +1479,24 @@
                   l.Fc(10, '\n')),
                   2 & n && (l.xb(6), l.kc('ngForOf', e.features));
               },
-              directives: [g.j, A.a],
+              directives: [g.j, M.a],
               styles: ['']
             })),
-            H),
-          Y = function() {
+            X),
+          tn = function() {
             return ['Money', 'Time', 'Costs'];
           },
-          _ =
-            (((N = (function() {
+          cn =
+            (((K = (function() {
               function n() {
                 t(this, n);
               }
               return e(n, [{ key: 'ngOnInit', value: function() {} }]), n;
             })()).ɵfac = function(n) {
-              return new (n || N)();
+              return new (n || K)();
             }),
-            (N.ɵcmp = l.Fb({
-              type: N,
+            (K.ɵcmp = l.Fb({
+              type: K,
               selectors: [['dc-business-solutions-get-theme']],
               decls: 39,
               vars: 6,
@@ -1057,31 +1601,31 @@
                   l.Fc(38, '\n')),
                   2 & n &&
                     (l.xb(16),
-                    l.kc('strings', l.nc(5, Y))('typeSpeed', 150)(
+                    l.kc('strings', l.nc(5, tn))('typeSpeed', 150)(
                       'backDelay',
                       500
                     )('backSpeed', 50)('loop', !0));
               },
-              directives: [h.b],
+              directives: [P.b],
               styles: ['']
             })),
-            N),
-          U = c('iLZQ'),
-          nn = [
+            K),
+          sn = i('iLZQ'),
+          on = [
             {
               path: '',
               component:
-                ((X = (function() {
+                ((Y = (function() {
                   function n() {
                     t(this, n);
                   }
                   return e(n, [{ key: 'ngOnInit', value: function() {} }]), n;
                 })()),
-                (X.ɵfac = function(n) {
-                  return new (n || X)();
+                (Y.ɵfac = function(n) {
+                  return new (n || Y)();
                 }),
-                (X.ɵcmp = l.Fb({
-                  type: X,
+                (Y.ɵcmp = l.Fb({
+                  type: Y,
                   selectors: [['dc-business-solutions']],
                   decls: 24,
                   vars: 4,
@@ -1123,14 +1667,25 @@
                         l.xb(6),
                         l.kc('shapeCssText', 'contrast'));
                   },
-                  directives: [P, x, j, D, R, V.a, $.a, W, _, U.a],
+                  directives: [x, Q, C, A, L, H.a, J, en, cn, sn.a],
                   styles: ['']
                 })),
-                X),
-              data: { title: Object(w.c)('About') }
+                Y),
+              data: { title: Object(y.c)('About') }
             }
           ],
-          en =
+          rn =
+            (((nn = function n() {
+              t(this, n);
+            }).ɵmod = l.Jb({ type: nn })),
+            (nn.ɵinj = l.Ib({
+              factory: function(n) {
+                return new (n || nn)();
+              },
+              imports: [[v.g.forChild(on)], v.g]
+            })),
+            nn),
+          an =
             (((Z = function n() {
               t(this, n);
             }).ɵmod = l.Jb({ type: Z })),
@@ -1138,20 +1693,9 @@
               factory: function(n) {
                 return new (n || Z)();
               },
-              imports: [[y.g.forChild(nn)], y.g]
+              imports: [[b.a, F, u.a, f.a, p.a, m.a, h, P.a, rn]]
             })),
-            Z),
-          tn =
-            (((K = function n() {
-              t(this, n);
-            }).ɵmod = l.Jb({ type: K })),
-            (K.ɵinj = l.Ib({
-              factory: function(n) {
-                return new (n || K)();
-              },
-              imports: [[b.a, u, p.a, m.a, F.a, f.a, v, h.a, en]]
-            })),
-            K);
+            Z);
       }
     }
   ]);

@@ -167,7 +167,7 @@
           s = r('fXoL'),
           a = r('tyNb'),
           f = function() {
-            return ['/ai-agents'];
+            return ['/drones'];
           },
           u = function() {
             return ['/terms'];

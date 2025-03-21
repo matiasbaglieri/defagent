@@ -199,7 +199,7 @@
         });
       e.exports = function(e, t, n, d) {
         var h = s(e),
-          f = !o(function() {
+          p = !o(function() {
             var t = {};
             return (
               (t[h] = function() {
@@ -208,8 +208,8 @@
               7 != ''[e](t)
             );
           }),
-          p =
-            f &&
+          f =
+            p &&
             !o(function() {
               var t = !1,
                 n = /a/;
@@ -226,11 +226,11 @@
                 !t
               );
             });
-        if (!f || !p || ('replace' === e && !l) || ('split' === e && !u)) {
+        if (!p || !f || ('replace' === e && !l) || ('split' === e && !u)) {
           var m = /./[h],
             g = n(h, ''[e], function(e, t, n, r, i) {
               return t.exec === a
-                ? f && !i
+                ? p && !i
                   ? { done: !0, value: m.call(t, n, r) }
                   : { done: !0, value: e.call(n, t, r) }
                 : { done: !1 };
@@ -304,19 +304,19 @@
               u = o(l),
               d = s(l.length),
               h = e ? d - 1 : 0,
-              f = e ? -1 : 1;
+              p = e ? -1 : 1;
             if (a < 2)
               for (;;) {
                 if (h in u) {
-                  (c = u[h]), (h += f);
+                  (c = u[h]), (h += p);
                   break;
                 }
-                if (((h += f), e ? h < 0 : d <= h))
+                if (((h += p), e ? h < 0 : d <= h))
                   throw TypeError(
                     'Reduce of empty array with no initial value'
                   );
               }
-            for (; e ? h >= 0 : d > h; h += f) h in u && (c = n(c, u[h], h, l));
+            for (; e ? h >= 0 : d > h; h += p) h in u && (c = n(c, u[h], h, l));
             return c;
           };
         };
@@ -361,10 +361,10 @@
           return te;
         }),
         n.d(t, 'm', function() {
-          return Ge;
+          return Fe;
         }),
         n.d(t, 'n', function() {
-          return Fe;
+          return Ve;
         }),
         n.d(t, 'o', function() {
           return qe;
@@ -395,11 +395,11 @@
       n('z+Ro'), n('KqfI');
       var d = n('n6bG'),
         h = n('lJxs');
-      function f(e, t, n, r) {
+      function p(e, t, n, r) {
         return (
           Object(d.a)(n) && ((r = n), (n = void 0)),
           r
-            ? f(e, t, n).pipe(
+            ? p(e, t, n).pipe(
                 Object(h.a)(e => (Object(u.a)(e) ? r(...e) : r(e)))
               )
             : new a.a(r => {
@@ -463,7 +463,7 @@
         );
       }
       n('VRyK');
-      var p = n('yCtX'),
+      var f = n('yCtX'),
         m = n('l7GE'),
         g = n('ZUHj');
       class b {
@@ -734,14 +734,14 @@
       $localize`:@@ngb.alert.close␟f4e529ae5ffd73001d1ff4bbdeeb0a72e342e5c8␟7819314041543176992:Close`;
       const j = ['*'];
       var H;
-      function G(e, t) {
+      function F(e, t) {
         if ((1 & e && (r.Qb(0, 'span'), r.Ub(1, H), r.Pb()), 2 & e)) {
           const e = r.fc();
           r.xb(1), r.Xb(e.getPercentValue()), r.Vb(1);
         }
       }
-      function F(e, t) {}
-      function V(e, t) {
+      function V(e, t) {}
+      function G(e, t) {
         if (1 & e) {
           const e = r.Rb();
           r.Qb(0, 'li', 4),
@@ -753,7 +753,7 @@
               return r.fc().select(i.id), n.preventDefault();
             }),
             r.Fc(3),
-            r.Dc(4, F, 0, 0, 'ng-template', 6),
+            r.Dc(4, V, 0, 0, 'ng-template', 6),
             r.Fc(5, '\n        '),
             r.Pb(),
             r.Fc(6, '\n      '),
@@ -1284,7 +1284,7 @@
         );
         return [t[0], t[t.length - 1]];
       }
-      class fe {
+      class pe {
         getAllStyles(e) {
           return window.getComputedStyle(e);
         }
@@ -1369,7 +1369,7 @@
             u = parseFloat(a.marginLeft),
             d = parseFloat(a.marginRight);
           let h = 0,
-            f = 0;
+            p = 0;
           switch (i) {
             case 'top':
               h = s.top - (t.offsetHeight + c + l);
@@ -1378,10 +1378,10 @@
               h = s.top + s.height;
               break;
             case 'left':
-              f = s.left - (t.offsetWidth + u + d);
+              p = s.left - (t.offsetWidth + u + d);
               break;
             case 'right':
-              f = s.left + s.width;
+              p = s.left + s.width;
           }
           switch (o) {
             case 'top':
@@ -1391,28 +1391,28 @@
               h = s.top + s.height - t.offsetHeight;
               break;
             case 'left':
-              f = s.left;
+              p = s.left;
               break;
             case 'right':
-              f = s.left + s.width - t.offsetWidth;
+              p = s.left + s.width - t.offsetWidth;
               break;
             case 'center':
               'top' === i || 'bottom' === i
-                ? (f = s.left + s.width / 2 - t.offsetWidth / 2)
+                ? (p = s.left + s.width / 2 - t.offsetWidth / 2)
                 : (h = s.top + s.height / 2 - t.offsetHeight / 2);
           }
-          t.style.transform = `translate(${Math.round(f)}px, ${Math.round(
+          t.style.transform = `translate(${Math.round(p)}px, ${Math.round(
             h
           )}px)`;
-          const p = t.getBoundingClientRect(),
+          const f = t.getBoundingClientRect(),
             m = document.documentElement,
             g = window.innerHeight || m.clientHeight,
             b = window.innerWidth || m.clientWidth;
-          return p.left >= 0 && p.top >= 0 && p.right <= b && p.bottom <= g;
+          return f.left >= 0 && f.top >= 0 && f.right <= b && f.bottom <= g;
         }
       }
-      const pe = /\s+/,
-        me = new fe();
+      const fe = /\s+/,
+        me = new pe();
       let ge = (() => {
           class e {}
           return (
@@ -1647,11 +1647,11 @@
               !(function(e, t, n, r, i, o, s, a) {
                 n &&
                   e.runOutsideAngular(() => {
-                    const a = f(t, 'keydown').pipe(
+                    const a = p(t, 'keydown').pipe(
                         Object(_.a)(i),
                         Object(E.a)(e => e.which === ae.Escape)
                       ),
-                      c = f(t, ue ? 'touchstart' : 'mousedown').pipe(
+                      c = p(t, ue ? 'touchstart' : 'mousedown').pipe(
                         Object(h.a)(e => {
                           const t = e.target;
                           return (
@@ -1675,10 +1675,10 @@
                         if (!Object(u.a)(e[0])) return e[0];
                         e = e[0];
                       }
-                      return Object(p.a)(e, void 0).lift(new b());
+                      return Object(f.a)(e, void 0).lift(new b());
                     })([
                       a,
-                      f(t, ue ? 'touchend' : 'mouseup').pipe(
+                      p(t, ue ? 'touchend' : 'mouseup').pipe(
                         w(c),
                         Object(E.a)(([e, t]) => t),
                         I(ue ? 16 : 0),
@@ -1778,7 +1778,7 @@
                 this._applyPlacementClasses(
                   'dynamic' === this.display
                     ? (function(e, t, n, r, i) {
-                        let o = Array.isArray(n) ? n : n.split(pe);
+                        let o = Array.isArray(n) ? n : n.split(fe);
                         const s = [
                             'top',
                             'bottom',
@@ -2236,11 +2236,11 @@
                   if (this._windowCmpts.length) {
                     const e = this._windowCmpts[this._windowCmpts.length - 1];
                     ((e, t, n = !1) => {
-                      const r = f(e, 'focusin').pipe(
+                      const r = p(e, 'focusin').pipe(
                         Object(_.a)(t),
                         Object(h.a)(e => e.target)
                       );
-                      f(e, 'keydown')
+                      p(e, 'keydown')
                         .pipe(
                           Object(_.a)(t),
                           Object(E.a)(e => e.which === ae.Tab),
@@ -2256,7 +2256,7 @@
                               (r.focus(), t.preventDefault());
                         }),
                         n &&
-                          f(e, 'click')
+                          p(e, 'click')
                             .pipe(
                               Object(_.a)(t),
                               w(r),
@@ -2561,7 +2561,7 @@
             e
           );
         })(),
-        Ge = (() => {
+        Fe = (() => {
           class e {
             constructor(e) {
               (this.value = 0),
@@ -2613,7 +2613,7 @@
                   r.Fc(2, '\n      '),
                   r.Qb(3, 'div', 1),
                   r.Fc(4, '\n        '),
-                  r.Dc(5, G, 2, 1, 'span', 2),
+                  r.Dc(5, F, 2, 1, 'span', 2),
                   r.ic(6),
                   r.Fc(7, '\n      '),
                   r.Pb(),
@@ -2645,7 +2645,7 @@
             e
           );
         })(),
-        Fe = (() => {
+        Ve = (() => {
           class e {}
           return (
             (e.ɵmod = r.Jb({ type: e })),
@@ -2658,7 +2658,7 @@
             e
           );
         })(),
-        Ve = (() => {
+        Ge = (() => {
           class e {}
           return (
             (e.ɵmod = r.Jb({ type: e })),
@@ -2839,7 +2839,7 @@
                   (r.Fc(0, '\n    '),
                   r.Qb(1, 'ul', 0),
                   r.Fc(2, '\n      '),
-                  r.Dc(3, V, 7, 11, 'li', 1),
+                  r.Dc(3, G, 7, 11, 'li', 1),
                   r.Fc(4, '\n    '),
                   r.Pb(),
                   r.Fc(5, '\n    '),
@@ -2944,8 +2944,8 @@
         Me,
         Ue,
         je,
-        Fe,
         Ve,
+        Ge,
         $e,
         Qe,
         Xe,
@@ -2972,8 +2972,8 @@
               Me,
               Ue,
               je,
-              Fe,
               Ve,
+              Ge,
               $e,
               Qe,
               Xe,
@@ -3158,7 +3158,7 @@
           return u;
         }),
         n.d(t, 'd', function() {
-          return p;
+          return f;
         }),
         n.d(t, 'e', function() {
           return K;
@@ -3285,14 +3285,14 @@
           }
           return (
             (e.ɵfac = function(t) {
-              return f(t || e);
+              return p(t || e);
             }),
             (e.ɵdir = r.Gb({ type: e, features: [r.ub] })),
             e
           );
         })();
-      const f = r.Sb(h);
-      let p = (() => {
+      const p = r.Sb(h);
+      let f = (() => {
         class e extends class {
           constructor(e) {
             this._cd = e;
@@ -3874,17 +3874,17 @@
         return null != e ? _.composeAsync(e.map(O)) : null;
       }
       function H(e) {
-        const t = F(e) ? e.validators : e;
+        const t = V(e) ? e.validators : e;
         return Array.isArray(t) ? U(t) : t || null;
       }
-      function G(e, t) {
-        const n = F(t) ? t.asyncValidators : e;
+      function F(e, t) {
+        const n = V(t) ? t.asyncValidators : e;
         return Array.isArray(n) ? j(n) : n || null;
       }
-      function F(e) {
+      function V(e) {
         return null != e && !Array.isArray(e) && 'object' == typeof e;
       }
-      class V {
+      class G {
         constructor(e, t) {
           (this.validator = e),
             (this.asyncValidator = t),
@@ -3928,7 +3928,7 @@
           this.validator = H(e);
         }
         setAsyncValidators(e) {
-          this.asyncValidator = G(e);
+          this.asyncValidator = F(e);
         }
         clearValidators() {
           this.validator = null;
@@ -4138,7 +4138,7 @@
           this._onCollectionChange = e;
         }
         _setUpdateStrategy(e) {
-          F(e) && null != e.updateOn && (this._updateOn = e.updateOn);
+          V(e) && null != e.updateOn && (this._updateOn = e.updateOn);
         }
         _parentMarkedDirty(e) {
           return (
@@ -4149,9 +4149,9 @@
           );
         }
       }
-      class Y extends V {
+      class Y extends G {
         constructor(e = null, t, n) {
-          super(H(t), G(n, t)),
+          super(H(t), F(n, t)),
             (this._onChange = []),
             this._applyFormState(e),
             this._setUpdateStrategy(t),
@@ -4218,9 +4218,9 @@
             : (this.value = this._pendingValue = e);
         }
       }
-      class z extends V {
+      class z extends G {
         constructor(e, t, n) {
-          super(H(t), G(n, t)),
+          super(H(t), F(n, t)),
             (this.controls = e),
             this._initObservables(),
             this._setUpdateStrategy(t),
@@ -4358,9 +4358,9 @@
           });
         }
       }
-      class B extends V {
+      class B extends G {
         constructor(e, t, n) {
-          super(H(t), G(n, t)),
+          super(H(t), F(n, t)),
             (this.controls = e),
             this._initObservables(),
             this._setUpdateStrategy(t),
@@ -4752,21 +4752,21 @@
         u = o.values;
       for (var d in i) {
         var h = r[d],
-          f = h && h.prototype;
-        if (f) {
-          if (f[c] !== u)
+          p = h && h.prototype;
+        if (p) {
+          if (p[c] !== u)
             try {
-              s(f, c, u);
+              s(p, c, u);
             } catch (m) {
-              f[c] = u;
+              p[c] = u;
             }
-          if ((f[l] || s(f, l, d), i[d]))
-            for (var p in o)
-              if (f[p] !== o[p])
+          if ((p[l] || s(p, l, d), i[d]))
+            for (var f in o)
+              if (p[f] !== o[f])
                 try {
-                  s(f, p, o[p]);
+                  s(p, f, o[f]);
                 } catch (m) {
-                  f[p] = o[p];
+                  p[f] = o[f];
                 }
         }
       }
@@ -5190,12 +5190,12 @@
       var u = (c.navigator || {}).userAgent,
         d = void 0 === u ? '' : u,
         h = c,
-        f = l,
-        p =
-          !!f.documentElement &&
-          !!f.head &&
-          'function' == typeof f.addEventListener &&
-          'function' == typeof f.createElement,
+        p = l,
+        f =
+          !!p.documentElement &&
+          !!p.head &&
+          'function' == typeof p.addEventListener &&
+          'function' == typeof p.createElement,
         m =
           (~d.indexOf('MSIE') || d.indexOf('Trident/'),
           [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]),
@@ -5248,8 +5248,8 @@
               })
             ),
           h.FontAwesomeConfig || {});
-      f &&
-        'function' == typeof f.querySelector &&
+      p &&
+        'function' == typeof p.querySelector &&
         [
           ['data-family-prefix', 'familyPrefix'],
           ['data-replacement-class', 'replacementClass'],
@@ -5269,7 +5269,7 @@
               return '' === e || ('false' !== e && ('true' === e || e));
             })(
               (function(e) {
-                var t = f.querySelector('script[' + e + ']');
+                var t = p.querySelector('script[' + e + ']');
                 if (t) return t.getAttribute(e);
               })(t[0])
             );
@@ -5302,12 +5302,12 @@
         E.___FONT_AWESOME___.shims || (E.___FONT_AWESOME___.shims = []);
       var S = E.___FONT_AWESOME___,
         w = [];
-      p &&
-        ((f.documentElement.doScroll ? /^loaded|^c/ : /^loaded|^i|^c/).test(
-          f.readyState
+      f &&
+        ((p.documentElement.doScroll ? /^loaded|^c/ : /^loaded|^i|^c/).test(
+          p.readyState
         ) ||
-          f.addEventListener('DOMContentLoaded', function e() {
-            f.removeEventListener('DOMContentLoaded', e),
+          p.addEventListener('DOMContentLoaded', function e() {
+            p.removeEventListener('DOMContentLoaded', e),
               w.map(function(e) {
                 return e();
               });
@@ -5398,10 +5398,10 @@
       function H(e) {
         global.process.emit('rejectionHandled', e);
       }
-      function G(e) {
+      function F(e) {
         if ('function' != typeof e)
           throw new TypeError('Promise resolver ' + e + ' is not a function');
-        if (this instanceof G == 0)
+        if (this instanceof F == 0)
           throw new TypeError(
             "Failed to construct 'Promise': Please use the 'new' operator, this object constructor cannot be called as a function."
           );
@@ -5419,8 +5419,8 @@
             }
           })(e, this);
       }
-      (G.prototype = {
-        constructor: G,
+      (F.prototype = {
+        constructor: F,
         _state: 'pending',
         _then: null,
         _data: void 0,
@@ -5447,10 +5447,10 @@
           return this.then(null, e);
         }
       }),
-        (G.all = function(e) {
+        (F.all = function(e) {
           if (!Array.isArray(e))
             throw new TypeError('You must pass an array to Promise.all().');
-          return new G(function(t, n) {
+          return new F(function(t, n) {
             var r = [],
               i = 0;
             function o(e) {
@@ -5468,28 +5468,28 @@
             i || t(r);
           });
         }),
-        (G.race = function(e) {
+        (F.race = function(e) {
           if (!Array.isArray(e))
             throw new TypeError('You must pass an array to Promise.race().');
-          return new G(function(t, n) {
+          return new F(function(t, n) {
             for (var r, i = 0; i < e.length; i++)
               (r = e[i]) && 'function' == typeof r.then ? r.then(t, n) : t(r);
           });
         }),
-        (G.resolve = function(e) {
-          return e && 'object' === i(e) && e.constructor === G
+        (F.resolve = function(e) {
+          return e && 'object' === i(e) && e.constructor === F
             ? e
-            : new G(function(t) {
+            : new F(function(t) {
                 t(e);
               });
         }),
-        (G.reject = function(e) {
-          return new G(function(t, n) {
+        (F.reject = function(e) {
+          return new F(function(t, n) {
             n(e);
           });
         });
-      var F = { size: 16, x: 0, y: 0, rotate: 0, flipX: !1, flipY: !1 };
-      function V() {
+      var V = { size: 16, x: 0, y: 0, rotate: 0, flipX: !1, flipY: !1 };
+      function G() {
         for (var e = 12, t = ''; e-- > 0; )
           t += '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'[
             (62 * Math.random()) | 0
@@ -5512,10 +5512,10 @@
       }
       function B(e) {
         return (
-          e.size !== F.size ||
-          e.x !== F.x ||
-          e.y !== F.y ||
-          e.rotate !== F.rotate ||
+          e.size !== V.size ||
+          e.x !== V.x ||
+          e.y !== V.y ||
+          e.rotate !== V.rotate ||
           e.flipX ||
           e.flipY
         );
@@ -5563,10 +5563,10 @@
           u = e.extra,
           d = e.watchable,
           h = void 0 !== d && d,
-          f = r.found ? r : n,
-          p = f.width,
-          m = f.height,
-          g = 'fa-w-'.concat(Math.ceil((p / m) * 16)),
+          p = r.found ? r : n,
+          f = p.width,
+          m = p.height,
+          g = 'fa-w-'.concat(Math.ceil((f / m) * 16)),
           b = [
             _.replacementClass,
             o ? ''.concat(_.familyPrefix, '-').concat(o) : '',
@@ -5585,7 +5585,7 @@
               class: b,
               role: u.attributes.role || 'img',
               xmlns: 'http://www.w3.org/2000/svg',
-              viewBox: '0 0 '.concat(p, ' ').concat(m)
+              viewBox: '0 0 '.concat(f, ' ').concat(m)
             })
           };
         h && (y.attributes['data-fa-i2svg'] = ''),
@@ -5593,7 +5593,7 @@
             y.children.push({
               tag: 'title',
               attributes: {
-                id: y.attributes['aria-labelledby'] || 'title-'.concat(V())
+                id: y.attributes['aria-labelledby'] || 'title-'.concat(G())
               },
               children: [l]
             });
@@ -5641,17 +5641,17 @@
                         )
                       ]
                     },
-                    f = { tag: 'g', attributes: s({}, l.outer), children: [h] },
-                    p = 'mask-'.concat(V()),
-                    m = 'clip-'.concat(V()),
+                    p = { tag: 'g', attributes: s({}, l.outer), children: [h] },
+                    f = 'mask-'.concat(G()),
+                    m = 'clip-'.concat(G()),
                     g = {
                       tag: 'mask',
                       attributes: s({}, q, {
-                        id: p,
+                        id: f,
                         maskUnits: 'userSpaceOnUse',
                         maskContentUnits: 'userSpaceOnUse'
                       }),
-                      children: [u, f]
+                      children: [u, p]
                     },
                     b = {
                       tag: 'defs',
@@ -5671,7 +5671,7 @@
                         {
                           fill: 'currentColor',
                           'clip-path': 'url(#'.concat(m, ')'),
-                          mask: 'url(#'.concat(p, ')')
+                          mask: 'url(#'.concat(f, ')')
                         },
                         q
                       )
@@ -5917,13 +5917,13 @@
       }
       function ce() {
         _.autoAddCss &&
-          !fe &&
+          !pe &&
           ((function(e) {
-            if (e && p) {
-              var t = f.createElement('style');
+            if (e && f) {
+              var t = p.createElement('style');
               t.setAttribute('type', 'text/css'), (t.innerHTML = e);
               for (
-                var n = f.head.childNodes, r = null, i = n.length - 1;
+                var n = p.head.childNodes, r = null, i = n.length - 1;
                 i > -1;
                 i--
               ) {
@@ -5931,7 +5931,7 @@
                   s = (o.tagName || '').toUpperCase();
                 ['STYLE', 'LINK'].indexOf(s) > -1 && (r = o);
               }
-              f.head.insertBefore(t, r);
+              p.head.insertBefore(t, r);
             }
           })(
             (function() {
@@ -5952,7 +5952,7 @@
               return r;
             })()
           ),
-          (fe = !0));
+          (pe = !0));
       }
       function le(e, t) {
         return (
@@ -5966,8 +5966,8 @@
           }),
           Object.defineProperty(e, 'node', {
             get: function() {
-              if (p) {
-                var t = f.createElement('div');
+              if (f) {
+                var t = p.createElement('div');
                 return (t.innerHTML = e.html), t.children;
               }
             }
@@ -6060,15 +6060,15 @@
             e
           );
         })())(),
-        fe = !1,
-        pe =
+        pe = !1,
+        fe =
           ((de = function(e) {
             var t =
                 arguments.length > 1 && void 0 !== arguments[1]
                   ? arguments[1]
                   : {},
               n = t.transform,
-              r = void 0 === n ? F : n,
+              r = void 0 === n ? V : n,
               i = t.symbol,
               o = void 0 !== i && i,
               a = t.mask,
@@ -6077,8 +6077,8 @@
               u = void 0 === l ? null : l,
               d = t.classes,
               h = void 0 === d ? [] : d,
-              f = t.attributes,
-              p = void 0 === f ? {} : f,
+              p = t.attributes,
+              f = void 0 === p ? {} : p,
               m = t.styles,
               g = void 0 === m ? {} : m;
             if (e) {
@@ -6090,10 +6090,10 @@
                   ce(),
                   _.autoA11y &&
                     (u
-                      ? (p['aria-labelledby'] = ''
+                      ? (f['aria-labelledby'] = ''
                           .concat(_.replacementClass, '-title-')
-                          .concat(V()))
-                      : ((p['aria-hidden'] = 'true'), (p.focusable = 'false'))),
+                          .concat(G()))
+                      : ((f['aria-hidden'] = 'true'), (f.focusable = 'false'))),
                   $({
                     icons: {
                       main: ae(v),
@@ -6103,10 +6103,10 @@
                     },
                     prefix: b,
                     iconName: y,
-                    transform: s({}, F, r),
+                    transform: s({}, V, r),
                     symbol: o,
                     title: u,
-                    extra: { attributes: p, styles: g, classes: h }
+                    extra: { attributes: f, styles: g, classes: h }
                   })
                 );
               });
@@ -6378,7 +6378,7 @@
               };
             }
             renderIcon(e, t) {
-              const n = pe(e, t);
+              const n = fe(e, t);
               this.renderedIconHTML = this.sanitizer.bypassSecurityTrustHtml(
                 n.html.join('\n')
               );
@@ -6636,7 +6636,7 @@
         h = function(e) {
           s(e, l, { value: { objectID: 'O' + ++u, weakData: {} } });
         },
-        f = (e.exports = {
+        p = (e.exports = {
           REQUIRED: !1,
           fastKey: function(e, t) {
             if (!i(e))
@@ -6659,7 +6659,7 @@
             return e[l].weakData;
           },
           onFreeze: function(e) {
-            return c && f.REQUIRED && d(e) && !o(e, l) && h(e), e;
+            return c && p.REQUIRED && d(e) && !o(e, l) && h(e), e;
           }
         });
       r[l] = !0;
@@ -6754,7 +6754,7 @@
     '8ynp': function(e, t, n) {
       'use strict';
       n.d(t, 'a', function() {
-        return v;
+        return S;
       });
       var r = n('wHSu'),
         i = n('ey9i'),
@@ -6777,7 +6777,7 @@
           return { 'navbar-expanded': e, 'navbar-sticky': t, 'dark-link': n };
         },
         h = ['*'];
-      let f = (() => {
+      let p = (() => {
         class e {
           constructor() {}
           handleScroll() {
@@ -6949,18 +6949,27 @@
           e
         );
       })();
-      var p = n('tyNb'),
+      var f = n('tyNb'),
         m = n('6NWb');
       const g = function() {
-          return ['/ai-agents'];
+          return ['/drones'];
         },
         b = function() {
+          return ['/ai-agents'];
+        },
+        y = function() {
           return ['/processes'];
         },
-        y = function(e) {
+        v = function() {
+          return ['/health'];
+        },
+        _ = function() {
+          return ['/real-estate'];
+        },
+        E = function(e) {
           return { 'ml-md-auto': e };
         };
-      let v = (() => {
+      let S = (() => {
         class e {
           constructor(e, t) {
             (this.i18nService = e),
@@ -6988,8 +6997,8 @@
               darkLinks: 'darkLinks',
               position: 'position'
             },
-            decls: 105,
-            vars: 48,
+            decls: 128,
+            vars: 69,
             consts: [
               [3, 'darkLinks', 'useOnlyDarkLogo'],
               [1, 'nav', 'navbar-nav'],
@@ -7130,89 +7139,119 @@
                 o.Fc(42, '\n            '),
                 o.Fc(43, '\n          '),
                 o.Pb(),
-                o.Fc(44, '\n          '),
-                o.Fc(45, '\n          '),
-                o.Fc(46, '\n          '),
-                o.Fc(47, '\n          '),
-                o.Fc(48, '\n          '),
-                o.Fc(49, '\n          '),
-                o.Fc(50, '\n          '),
-                o.Fc(51, '\n\n          '),
-                o.Qb(52, 'div', 9),
-                o.Fc(53, '\n            '),
+                o.Fc(44, '\n\n          '),
+                o.Qb(45, 'div', 9),
+                o.Fc(46, '\n            '),
+                o.Qb(47, 'p', 10),
+                o.Fc(48),
+                o.gc(49, 'translate'),
+                o.Pb(),
+                o.Fc(50, '\n            '),
+                o.Qb(51, 'a', 11),
+                o.Fc(52),
+                o.gc(53, 'translate'),
+                o.Pb(),
                 o.Fc(54, '\n            '),
                 o.Fc(55, '\n            '),
                 o.Fc(56, '\n          '),
                 o.Pb(),
-                o.Fc(57, '\n        '),
+                o.Fc(57, '\n          '),
+                o.Qb(58, 'div', 9),
+                o.Fc(59, '\n            '),
+                o.Qb(60, 'p', 10),
+                o.Fc(61),
+                o.gc(62, 'translate'),
                 o.Pb(),
-                o.Fc(58, '\n      '),
+                o.Fc(63, '\n            '),
+                o.Qb(64, 'a', 11),
+                o.Fc(65),
+                o.gc(66, 'translate'),
                 o.Pb(),
-                o.Fc(59, '\n    '),
+                o.Fc(67, '\n            '),
+                o.Qb(68, 'a', 11),
+                o.Fc(69),
+                o.gc(70, 'translate'),
                 o.Pb(),
-                o.Fc(60, '\n\n    '),
-                o.Fc(61, '\n\n    '),
-                o.Fc(62, '\n    '),
-                o.Qb(63, 'li', 12),
-                o.Fc(64, '\n      '),
-                o.Qb(65, 'a', 6),
-                o.Fc(66),
-                o.gc(67, 'translate'),
+                o.Fc(71, '\n            '),
+                o.Fc(72, '\n            '),
+                o.Fc(73, '\n          '),
                 o.Pb(),
-                o.Fc(68, '\n      '),
-                o.Qb(69, 'div', 13),
-                o.Fc(70, '\n        '),
-                o.Qb(71, 'a', 14),
+                o.Fc(74, '\n\n          '),
+                o.Qb(75, 'div', 9),
+                o.Fc(76, '\n            '),
+                o.Fc(77, '\n            '),
+                o.Fc(78, '\n            '),
+                o.Fc(79, '\n          '),
+                o.Pb(),
+                o.Fc(80, '\n        '),
+                o.Pb(),
+                o.Fc(81, '\n      '),
+                o.Pb(),
+                o.Fc(82, '\n    '),
+                o.Pb(),
+                o.Fc(83, '\n\n    '),
+                o.Fc(84, '\n\n    '),
+                o.Fc(85, '\n    '),
+                o.Qb(86, 'li', 12),
+                o.Fc(87, '\n      '),
+                o.Qb(88, 'a', 6),
+                o.Fc(89),
+                o.gc(90, 'translate'),
+                o.Pb(),
+                o.Fc(91, '\n      '),
+                o.Qb(92, 'div', 13),
+                o.Fc(93, '\n        '),
+                o.Qb(94, 'a', 14),
                 o.bc('click', function() {
                   return t.setLanguage('en-US');
                 }),
-                o.Fc(72),
-                o.gc(73, 'translate'),
+                o.Fc(95),
+                o.gc(96, 'translate'),
                 o.Pb(),
-                o.Fc(74, '\n        '),
-                o.Qb(75, 'a', 14),
+                o.Fc(97, '\n        '),
+                o.Qb(98, 'a', 14),
                 o.bc('click', function() {
                   return t.setLanguage('es');
                 }),
-                o.Fc(76),
-                o.gc(77, 'translate'),
-                o.Pb(),
-                o.Fc(78, '\n      '),
-                o.Pb(),
-                o.Fc(79, '\n    '),
-                o.Pb(),
-                o.Fc(80, '\n    '),
-                o.Fc(81, '\n  '),
-                o.Pb(),
-                o.Fc(82, '\n\n  '),
-                o.Qb(83, 'nav', 15),
-                o.Fc(84, '\n    '),
-                o.Qb(85, 'a', 16),
-                o.Fc(86, '\n      '),
-                o.Mb(87, 'fa-icon', 17),
-                o.Fc(88, '\n      '),
-                o.Qb(89, 'span', 18),
-                o.Fc(90),
-                o.gc(91, 'translate'),
-                o.Pb(),
-                o.Fc(92, '\n    '),
-                o.Pb(),
-                o.Fc(93, '\n    '),
-                o.Qb(94, 'a', 19),
-                o.Fc(95, '\n      '),
-                o.Mb(96, 'fa-icon', 17),
-                o.Fc(97, '\n      '),
-                o.Qb(98, 'span', 18),
                 o.Fc(99),
                 o.gc(100, 'translate'),
                 o.Pb(),
-                o.Fc(101, '\n    '),
+                o.Fc(101, '\n      '),
                 o.Pb(),
-                o.Fc(102, '\n  '),
+                o.Fc(102, '\n    '),
                 o.Pb(),
-                o.Fc(103, '\n'),
+                o.Fc(103, '\n    '),
+                o.Fc(104, '\n  '),
                 o.Pb(),
-                o.Fc(104, '\n')),
+                o.Fc(105, '\n\n  '),
+                o.Qb(106, 'nav', 15),
+                o.Fc(107, '\n    '),
+                o.Qb(108, 'a', 16),
+                o.Fc(109, '\n      '),
+                o.Mb(110, 'fa-icon', 17),
+                o.Fc(111, '\n      '),
+                o.Qb(112, 'span', 18),
+                o.Fc(113),
+                o.gc(114, 'translate'),
+                o.Pb(),
+                o.Fc(115, '\n    '),
+                o.Pb(),
+                o.Fc(116, '\n    '),
+                o.Qb(117, 'a', 19),
+                o.Fc(118, '\n      '),
+                o.Mb(119, 'fa-icon', 17),
+                o.Fc(120, '\n      '),
+                o.Qb(121, 'span', 18),
+                o.Fc(122),
+                o.gc(123, 'translate'),
+                o.Pb(),
+                o.Fc(124, '\n    '),
+                o.Pb(),
+                o.Fc(125, '\n  '),
+                o.Pb(),
+                o.Fc(126, '\n'),
+                o.Pb(),
+                o.Fc(127, '\n')),
                 2 & e &&
                   (o.kc('darkLinks', t.darkLinks)(
                     'useOnlyDarkLogo',
@@ -7221,45 +7260,69 @@
                   o.xb(2),
                   o.Db('ml-auto', t.isRightPositioned()),
                   o.xb(4),
-                  o.kc('routerLink', o.nc(43, g)),
+                  o.kc('routerLink', o.nc(61, g)),
                   o.xb(1),
-                  o.Gc(o.hc(8, 21, 'NAVBAR.DEFAULT.HOME')),
+                  o.Gc(o.hc(8, 29, 'NAVBAR.DEFAULT.HOME')),
                   o.xb(8),
-                  o.Gc(o.hc(16, 23, 'NAVBAR.DEFAULT.CONTACT')),
+                  o.Gc(o.hc(16, 31, 'NAVBAR.DEFAULT.CONTACT')),
                   o.xb(7),
-                  o.Gc(o.hc(23, 25, 'NAVBAR.DEFAULT.DEMOS')),
+                  o.Gc(o.hc(23, 33, 'NAVBAR.DEFAULT.DEMOS')),
                   o.xb(10),
                   o.Hc(
                     '\n              ',
-                    o.hc(33, 27, 'NAVBAR.DEFAULT.COMPANY'),
+                    o.hc(33, 35, 'NAVBAR.DEFAULT.COMPANY'),
                     '\n            '
                   ),
                   o.xb(3),
-                  o.kc('routerLink', o.nc(44, g)),
+                  o.kc('routerLink', o.nc(62, b)),
                   o.xb(1),
-                  o.Gc(o.hc(37, 29, 'NAVBAR.DEFAULT.HUMAN_RESOURCE')),
+                  o.Gc(o.hc(37, 37, 'NAVBAR.DEFAULT.HUMAN_RESOURCE')),
                   o.xb(3),
-                  o.kc('routerLink', o.nc(45, b)),
+                  o.kc('routerLink', o.nc(63, y)),
                   o.xb(1),
-                  o.Gc(o.hc(41, 31, 'NAVBAR.DEFAULT.SALES')),
-                  o.xb(26),
-                  o.Gc(o.hc(67, 33, 'NAVBAR.DEFAULT.LANGUAGE')),
+                  o.Gc(o.hc(41, 39, 'NAVBAR.DEFAULT.SALES')),
+                  o.xb(8),
+                  o.Hc(
+                    '\n              ',
+                    o.hc(49, 41, 'NAVBAR.DEFAULT.MODULES'),
+                    '\n            '
+                  ),
+                  o.xb(3),
+                  o.kc('routerLink', o.nc(64, g)),
+                  o.xb(1),
+                  o.Gc(o.hc(53, 43, 'NAVBAR.DEFAULT.CALENDAR')),
+                  o.xb(9),
+                  o.Hc(
+                    '\n              ',
+                    o.hc(62, 45, 'NAVBAR.DEFAULT.PRODUCT'),
+                    '\n            '
+                  ),
+                  o.xb(3),
+                  o.kc('routerLink', o.nc(65, v)),
+                  o.xb(1),
+                  o.Gc(o.hc(66, 47, 'NAVBAR.DEFAULT.HEALTH')),
+                  o.xb(3),
+                  o.kc('routerLink', o.nc(66, _)),
+                  o.xb(1),
+                  o.Gc(o.hc(70, 49, 'NAVBAR.DEFAULT.SAAS')),
+                  o.xb(20),
+                  o.Gc(o.hc(90, 51, 'NAVBAR.DEFAULT.LANGUAGE')),
                   o.xb(6),
-                  o.Gc(o.hc(73, 35, 'NAVBAR.DEFAULT.EN')),
+                  o.Gc(o.hc(96, 53, 'NAVBAR.DEFAULT.EN')),
                   o.xb(4),
-                  o.Gc(o.hc(77, 37, 'NAVBAR.DEFAULT.ES')),
+                  o.Gc(o.hc(100, 55, 'NAVBAR.DEFAULT.ES')),
                   o.xb(7),
-                  o.kc('ngClass', o.oc(46, y, !t.isRightPositioned())),
+                  o.kc('ngClass', o.oc(67, E, !t.isRightPositioned())),
                   o.xb(4),
                   o.kc('icon', t.signInAlt),
                   o.xb(3),
-                  o.Gc(o.hc(91, 39, 'NAVBAR.DEFAULT.LOGIN')),
+                  o.Gc(o.hc(114, 57, 'NAVBAR.DEFAULT.LOGIN')),
                   o.xb(6),
                   o.kc('icon', t.userPlus),
                   o.xb(3),
-                  o.Gc(o.hc(100, 41, 'NAVBAR.DEFAULT.SIGNUP')));
+                  o.Gc(o.hc(123, 59, 'NAVBAR.DEFAULT.SIGNUP')));
             },
-            directives: [f, p.f, a.d, a.g, a.e, c.i, m.a],
+            directives: [p, f.f, a.d, a.g, a.e, c.i, m.a],
             pipes: [s.b],
             styles: ['']
           })),
@@ -7283,10 +7346,10 @@
         u = Object.prototype.toString,
         d = Math.max,
         h = Math.min,
-        f = function() {
+        p = function() {
           return l.Date.now();
         };
-      function p(e) {
+      function f(e) {
         var t = typeof e;
         return !!e && ('object' == t || 'function' == t);
       }
@@ -7304,9 +7367,9 @@
           })(e)
         )
           return NaN;
-        if (p(e)) {
+        if (f(e)) {
           var t = 'function' == typeof e.valueOf ? e.valueOf() : e;
-          e = p(t) ? t + '' : t;
+          e = f(t) ? t + '' : t;
         }
         if ('string' != typeof e) return 0 === e ? e : +e;
         e = e.replace(n, '');
@@ -7338,7 +7401,7 @@
           return void 0 === c || n >= t || n < 0 || (g && e - l >= o);
         }
         function E() {
-          var e = f();
+          var e = p();
           if (_(e)) return S(e);
           a = setTimeout(
             E,
@@ -7352,7 +7415,7 @@
           return (a = void 0), b && r ? y(e) : ((r = i = void 0), s);
         }
         function w() {
-          var e = f(),
+          var e = p(),
             n = _(e);
           if (((r = arguments), (i = this), (c = e), n)) {
             if (void 0 === a) return v(c);
@@ -7362,7 +7425,7 @@
         }
         return (
           (t = m(t) || 0),
-          p(n) &&
+          f(n) &&
             ((u = !!n.leading),
             (o = (g = 'maxWait' in n) ? d(m(n.maxWait) || 0, t) : o),
             (b = 'trailing' in n ? !!n.trailing : b)),
@@ -7370,7 +7433,7 @@
             void 0 !== a && clearTimeout(a), (l = 0), (r = c = i = a = void 0);
           }),
           (w.flush = function() {
-            return void 0 === a ? s : S(f());
+            return void 0 === a ? s : S(p());
           }),
           w
         );
@@ -7419,8 +7482,8 @@
             u = r(n(10)),
             d = r(n(11)),
             h = r(n(14)),
-            f = [],
-            p = !1,
+            p = [],
+            f = !1,
             m = {
               offset: 120,
               delay: 0,
@@ -7436,15 +7499,15 @@
             g = function() {
               var e =
                 arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-              if ((e && (p = !0), p))
-                return (f = (0, d.default)(f, m)), (0, u.default)(f, m.once), f;
+              if ((e && (f = !0), f))
+                return (p = (0, d.default)(p, m)), (0, u.default)(p, m.once), p;
             },
             b = function() {
-              (f = (0, h.default)()), g();
+              (p = (0, h.default)()), g();
             };
           e.exports = {
             init: function(e) {
-              (m = i(m, e)), (f = (0, h.default)());
+              (m = i(m, e)), (p = (0, h.default)());
               var t = document.all && !window.atob;
               return (function(e) {
                 return (
@@ -7455,7 +7518,7 @@
                   ('function' == typeof e && !0 === e())
                 );
               })(m.disable) || t
-                ? void f.forEach(function(e, t) {
+                ? void p.forEach(function(e, t) {
                     e.node.removeAttribute('data-aos'),
                       e.node.removeAttribute('data-aos-easing'),
                       e.node.removeAttribute('data-aos-duration'),
@@ -7497,11 +7560,11 @@
                   window.addEventListener(
                     'scroll',
                     (0, s.default)(function() {
-                      (0, u.default)(f, m.once);
+                      (0, u.default)(p, m.once);
                     }, m.throttleDelay)
                   ),
                   m.disableMutationObserver || c.default.ready('[data-aos]', b),
-                  f);
+                  p);
             },
             refresh: g,
             refreshHard: b
@@ -7570,18 +7633,18 @@
               u = /^0b[01]+$/i,
               d = /^0o[0-7]+$/i,
               h = parseInt,
-              f =
+              p =
                 'object' == (void 0 === t ? 'undefined' : i(t)) &&
                 t &&
                 t.Object === Object &&
                 t,
-              p =
+              f =
                 'object' ==
                   ('undefined' == typeof self ? 'undefined' : i(self)) &&
                 self &&
                 self.Object === Object &&
                 self,
-              m = f || p || Function('return this')(),
+              m = p || f || Function('return this')(),
               g = Object.prototype.toString,
               b = Math.max,
               y = Math.min,
@@ -7599,15 +7662,15 @@
                 (function(e, t, i) {
                   function s(t) {
                     var n = h,
-                      r = f;
-                    return (h = f = void 0), (E = t), (m = e.apply(r, n));
+                      r = p;
+                    return (h = p = void 0), (E = t), (m = e.apply(r, n));
                   }
                   function a(e) {
                     return (E = e), (g = setTimeout(l, t)), S ? s(e) : m;
                   }
                   function c(e) {
                     var n = e - _;
-                    return void 0 === _ || n >= t || n < 0 || (w && e - E >= p);
+                    return void 0 === _ || n >= t || n < 0 || (w && e - E >= f);
                   }
                   function l() {
                     var e = v();
@@ -7617,25 +7680,25 @@
                           l,
                           (function(e) {
                             var n = t - (e - _);
-                            return w ? y(n, p - (e - E)) : n;
+                            return w ? y(n, f - (e - E)) : n;
                           })(e)
                         ));
                   }
                   function u(e) {
-                    return (g = void 0), A && h ? s(e) : ((h = f = void 0), m);
+                    return (g = void 0), A && h ? s(e) : ((h = p = void 0), m);
                   }
                   function d() {
                     var e = v(),
                       n = c(e);
-                    if (((h = arguments), (f = this), (_ = e), n)) {
+                    if (((h = arguments), (p = this), (_ = e), n)) {
                       if (void 0 === g) return a(_);
                       if (w) return (g = setTimeout(l, t)), s(_);
                     }
                     return void 0 === g && (g = setTimeout(l, t)), m;
                   }
                   var h,
-                    f,
                     p,
+                    f,
                     m,
                     g,
                     _,
@@ -7648,12 +7711,12 @@
                     (t = r(t) || 0),
                     n(i) &&
                       ((S = !!i.leading),
-                      (p = (w = 'maxWait' in i) ? b(r(i.maxWait) || 0, t) : p),
+                      (f = (w = 'maxWait' in i) ? b(r(i.maxWait) || 0, t) : f),
                       (A = 'trailing' in i ? !!i.trailing : A)),
                     (d.cancel = function() {
                       void 0 !== g && clearTimeout(g),
                         (E = 0),
-                        (h = _ = f = g = void 0);
+                        (h = _ = p = g = void 0);
                     }),
                     (d.flush = function() {
                       return void 0 === g ? m : u(v());
@@ -7732,31 +7795,31 @@
                 t &&
                 t.Object === Object &&
                 t,
-              f =
+              p =
                 'object' ==
                   ('undefined' == typeof self ? 'undefined' : i(self)) &&
                 self &&
                 self.Object === Object &&
                 self,
-              p = h || f || Function('return this')(),
+              f = h || p || Function('return this')(),
               m = Object.prototype.toString,
               g = Math.max,
               b = Math.min,
               y = function() {
-                return p.Date.now();
+                return f.Date.now();
               };
             e.exports = function(e, t, i) {
               function o(t) {
                 var n = d,
                   r = h;
-                return (d = h = void 0), (_ = t), (p = e.apply(r, n));
+                return (d = h = void 0), (_ = t), (f = e.apply(r, n));
               }
               function s(e) {
-                return (_ = e), (m = setTimeout(c, t)), E ? o(e) : p;
+                return (_ = e), (m = setTimeout(c, t)), E ? o(e) : f;
               }
               function a(e) {
                 var n = e - v;
-                return void 0 === v || n >= t || n < 0 || (S && e - _ >= f);
+                return void 0 === v || n >= t || n < 0 || (S && e - _ >= p);
               }
               function c() {
                 var e = y();
@@ -7766,12 +7829,12 @@
                       c,
                       (function(e) {
                         var n = t - (e - v);
-                        return S ? b(n, f - (e - _)) : n;
+                        return S ? b(n, p - (e - _)) : n;
                       })(e)
                     ));
               }
               function l(e) {
-                return (m = void 0), w && d ? o(e) : ((d = h = void 0), p);
+                return (m = void 0), w && d ? o(e) : ((d = h = void 0), f);
               }
               function u() {
                 var e = y(),
@@ -7780,12 +7843,12 @@
                   if (void 0 === m) return s(v);
                   if (S) return (m = setTimeout(c, t)), o(v);
                 }
-                return void 0 === m && (m = setTimeout(c, t)), p;
+                return void 0 === m && (m = setTimeout(c, t)), f;
               }
               var d,
                 h,
-                f,
                 p,
+                f,
                 m,
                 v,
                 _ = 0,
@@ -7798,7 +7861,7 @@
                 (t = r(t) || 0),
                 n(i) &&
                   ((E = !!i.leading),
-                  (f = (S = 'maxWait' in i) ? g(r(i.maxWait) || 0, t) : f),
+                  (p = (S = 'maxWait' in i) ? g(r(i.maxWait) || 0, t) : p),
                   (w = 'trailing' in i ? !!i.trailing : w)),
                 (u.cancel = function() {
                   void 0 !== m && clearTimeout(m),
@@ -7806,7 +7869,7 @@
                     (d = v = h = m = void 0);
                 }),
                 (u.flush = function() {
-                  return void 0 === m ? p : l(y());
+                  return void 0 === m ? f : l(y());
                 }),
                 u
               );
@@ -8089,7 +8152,7 @@
     },
     'A/Ql': function(e) {
       e.exports = JSON.parse(
-        '{"APP_NAME":"DefAgent","About":"About us","Hello world !":"Hello world!","Home":"Home","Logged in as":"Logged in as","Login":"Login","Logout":"Logout","Password":"Password","Password is required":"Password is required","Username":"Username","Username is required":"Username is required","Username or password incorrect.":"Username or password incorrect.","Remember me":"Remember me","Version":"Version","ACTIONS":{"FORM_REGISTER_SIMPLE_INLINE":{"CHECK_YOUR_EMAIL":"Check your email","WE_SENT_YOU_AN_EMAIL":"We sent you an email with a link to get started. You\u2019ll be in your account in no time."},"FORM_REGISTER_COMPANY":{"NAME":"Name","EMAIL":"Email","COMPANY":"Company","SEND_MY_APPLICATION":"Send my application"}},"NAVBAR":{"DEFAULT":{"HOME":"Home","ABOUT":"About us","CONTACT":"Contact","DEMOS":"Solutions","COMPANY":"Segments","HUMAN_RESOURCE":"AI Agents","SALES":"Processes","CUSTOMER_SERVICE":"Customer Service","MODULES":"Modules","CALENDAR":"Calendar","PRODUCT":"Verticals","HEALTH":"Health","DEVELOPERS":"Developers","RPA_CREATORS":"RPA Creators","SERVICES":"Marketplace","DATAFLOWS_CREATORS":"Dataflows Creators","SAAS":"Real Estate","START_UP":"Startup","FOR_STORY_TELLERS":"For StoryTellers","AWESOME_DESIGN_BLOCKS":"Awesome blocks","FOR_DEVELOPERS":"For Developers","THE_DEVELOPERS_PLACE":"The developers\' place","YOUR_BUSINESS":"your business","OUT_BEST_BET":"Our best bet is you, we can ensure you that DefAgent fit your needs.","VIEW_PLAN":"View plans","LANGUAGE":"Languaje","EN":"English","ES":"Espa\xf1ol","LOGIN":"Login","SIGNUP":"Signup"}},"SLIDERS":{"SLIDER_CARD_PROJECTS":{"NEW_SUBSCRIBERS":"New subscribers","NEXT":"Next"},"SLIDER_START_RIGHT_WAY":{"FOR_EVERYONE":"DefAgent IAs for Professionals","EVERYTHINK_DOES_ALL":"DefAgent\u2019s low-code platform does ALL OF THE HEAVY LIFTING by automating repetitive processes so you can focus on more complex tasks and achieve unprecedented levels of efficiency.","START_THE_RIGHT_WAY":"Start the right way","START_WITH_EVERy_THINK":"Start with DefAgent","THINKING_ABOUT_YOUR_AI_JOURNEY":"Thinking about your AI journey?","CHOOSE_THE_RIGHT_PLAN":"CHOOSE THE RIGHT PLAN"},"SLIDER_BRING_TO_LIFE":{"ADMIN_TEMPLATE_INCLUDED":"Admin dashboards included","WE_INCLUDED_A_FULLY_FUNcTIONAL":"We\'ve included a fully functional starter admin dashboards","POWER_WITH_MULIPLE_STARTER_APPS":" Powered by DefAgent","ITS_AWESOME_YOU_TO":"We have new features that you are going to love!","SIMPLE_AND_TRANSPARENT":"Simple and transparent","BRING_YOU_APPLICAION_TO_LIFE":"Bring your IAs to life","DASHCORE_INCLUDED":"DefAgent includes an outstanding starter Admin Dashboard UI Interface. With this feature you can start developing right away your applications.","CLEAN_INBOX_UI":"User friendly"},"SLIDER_ALL_IN_ONE":{"EVERYTHINK_YOU_NEED":"Everything you need - all in your hand!","REAL_TIME_SOLUTION":"Solution","STREAMLINES_PROCESSES":"Real-time","AFFORDABILLITY":"Become ultra-responsive in real-time. Create your own white-label apps. Gain valuable insights into clients, markets, and processes and achieve much more with our powerful AI-enabled tool.","SINCE_THE_NEED_FORHUMAN":"Global reach","EVERYTHINK_DOES_ALL":"Close more deals with less friction. Win more listings with greater ease. Streamline your efforts through automation and predictors. Gain a competitive edge with greater functionality and efficiency.","ALWAYS_ON_TIME":"Always on Time","UNIQUE_USER)EXPERIENCE":"Experience","A_NEW_AND_INTUITIVE_EXPERIENCE":"Unique","ESPECIALLY_WHEN_YOUR_CLIENTS_NEEDS":"Leverage DefAgent AI-driven low-code platform to streamline processes to deliver effortless, instantaneous, and much more enriching experiences for buyers, sellers, real estate agents, and everyone involved!","OUTSTANDING":"","ANALYTICS":"Outstanding","SIT_BACK_AS_YOUR":"DefAgent\u2019s software as a service platform offers much more than just a flawless absorption and spewing of data. These \u2018teachable\u2019 IAs gather and review user interactions for analysis and iteration.","CONTINUOUSLY_CHECK_IN":"Continuously check in with your IAs for new suggestions on automating processes or ways to give better solutions to your clients and employees."}},"SCREENSHOTS":{"APP":{"APP_SCREENSHOTS":"Build your ai agents in one place and automate all the processes","A_PICTURE_IS_WORTH_A_THOUSAND_WORDS":""}},"HOME":{"NETWORK_SEARCH_META":{"TITLE":"DefAgent - AI AGENTIC PLATFORM FOR DEFENSE","KEYWORDS":"Network Search, Networks directory App Landing1"},"APP_LANDING_HEADING":{"HEADING":{"AWARDED":"Selected onto the Global Entrepreneur Programme of the British Government","HR_CONSULTIN":"DefAgent","CONSULTANT":"AI AGENTIC PLATFORM FOR DEFENSE","IAS":"With a proprietary system of AI agents, DefAgent enables you to go from idea to production-ready product, eliminating the need to find a technical cofounder or hire developers.\xa0Simply explain your business idea as you would to a human developer, and we handles the rest - product, payments, security, infrastructure, scalability, and more.","GERSTARTED":"Get Started","WHAT_YOU_GET":"What You Get"},"FEATURE_CARDS":{"WHAT_YOU_GET":"What You Get","WITH_A_SINGLE_TOOL":"Easily and quickly implements real-time solutions without need for a dedicated technology professional on staff. No other solution on the market matches our: "},"TWIN_PHONE_LEFT_LIST":{"WE_ARE_YOUR_PATH_TO_SUCCESS":"Types of ai agents in defense"},"TWIN_PHONE_LEFT_RIGHT":{"WE_HAVE_A_TON_OF_BENEFITSS":"We have tons of benefits","EVERYTHINK_DOES_ALL_OF":"DefAgent does ALL OF THE HEAVY LIFTING so you can focus on more valuable and complex tasks."},"DOWNLOAD":{"START_TODAY":"Start Today","DOWNLOAD_THE_APP":"Download The App","DOWNLOAD_EVERYTHING":"Position your business for HR success. Download DefAgent App now and get started on your AI journey! Available on Windows, Mac, iOS, and Android devices.","GET_IT_ON_THE":"Get it on","APP_STORE":"App Store","DOWNLOAD_ON":"Download on","GOOGLE_PLAY":"Google Play"}}},"DEMOS":{"HUMANRE_SOURCES":{},"SALES":{"NETWORK_SEARCH_META":{"TITLE":"DefAgent - Sales","KEYWORDS":"Network Search, Networks directory Sales"},"APP_LANDING_HEADING2":{"ALLISONE":"All is one,","INFINTY":"where infinity starts","EVERYTHINKFORSALES":"DefAgent","BETTERMARKETING":"AI-powered agents are emerging as invaluable","BETTERRESULT":"assets in the Department of Defense (DoD)","OURIAS":"Revolutionizing how we fight by streamlining work and enhancing decision-making speed. These agents excel in automating low-level, low-risk tasks, freeing warfighters to concentrate on vital, mission-critical decisions.","SUBSCRIBENOW":"Get Started"},"APP_LANDING2_TRENDING_DESIGN":{"SIMPLE_IMPLEMENTATION":"Simple implementation with exponentially positive impacts","SINCE_THE_NEED":" Human interactions are vastly reduced to give way for better workflow efficiency and better management of resources. Better cost-effectiveness!","THE_POSSIBILITIES":"The possibilities for using DefAgent for defense are everywhere and are limited only by the ingenuity of users who want to use AI agents to improve and simplify their processes."},"APP_LANDING2_FOCUS_ON_SUCCESS":{"FORGET_OBSOLETE":"Forget obsolete systems & costly investments","EVERYTHINK_DELIVERS":"DefAgent\u2019s AI-driven software as a service will completely transform your business. Our IAs interacts directly with employees, customers, and suppliers to understand their needs, connect them with people, processes, and in real-time.","DOT_NOT_WASTE_TIME":"Help your team become more productive and profitable! Stop wasting valuable time and start getting meaningful results now!"},"APP_LANDING2_SAFETY":{"SAFETY_FIRST":"You First!","YOUR_SUCCESS_IS_OUR_SUCCESS":"Your success is our success!","EVERYTHINK_DOESALL":"DefAgent helps your team to automate routine processes, blaze through mountains of data, and can even handle more complex tasks."},"APP_LANDING2_POPPING_HIGHLIGHT":{"DISCOVER_CREATE_LOVE":"Discover. Empower. Win.","SEE_WHY_PEOPLE_LOVE_EVERTTHINK":"See why businesses and brands love DefAgent"},"APP_LANDING2_DOWNLOAD":{"START_TODAY":"Start Today","DOWNLOAD_THE_APP":"Download The App","DOWNLOAD_EVERTTHINK":"Download DefAgent App Now And Get Started On Your AI For Sales Journey! Available On Windows, Mac, iOS, And Android Devices.","GET_IT_ON_THE":"Get It On","APP_STORE":"App Store","DOWNLOAD_ON":"Download On","GOOGLE_PLAY":"Google Play"}},"CUSTOMER_SERVICE":{"NETWORK_SEARCH_META":{"TITLE":"DefAgent - Network search  ","KEYWORDS":"Network Search, Networks directory network search"},"AUTOMATE_SOCIAL_HEADING":{"EVERYTHINK_FOR_CUSTOMER_SERVICE":"DefAgent Customer Service","DONT_THINK_IT":"Don\u2019t think it; don\u2019t even answer, because we have it!","DRIVE_YOUR_BUSINESS_FORWARD":"Drive your business forward with managed customer care IAs in the palm of your hands!"},"AUTOMATE_SOCIAL_GET_STARTED":{"ALL_IN_ONE":"All-in-one Customer Service Solution","EVERTTHINK_YOU_NEED_IN_ONE_SOLUTION":"Get everything you need in one solution.","EVERTTHINK_YOU_NEED_IN_ONE_SOLUTION1":"","INTRODUCING":"Create effortless and consistent experiences and reduce costs with a powerful customer service automation tool.","COMMUNICATE_BETTER":"Capture communication; analyze and aggregate conversations to deliver real-time solutions, insights, and statistics with our low-code platform!","NO_CREDIT_CARD_NEEDED":"Get your AI journey started!","START_NOW":"Start Now","BY_REGISTERING":" By registering you will get 14 days of DefAgent."},"AUTOMATE_SOCIAL_WHY":{"WHY_EVERYTHINK":"Why DefAgent","OUR_MISSION_IS_TO_PROVIDE_YOU":"Our goal with the powerful DefAgent software as a service platform is the accurate automation of your entire customer service by connecting actors, processes, and devices in real-time. More so, it also provides strategy-based metrics that make it easy to measure business performance against intended goals."},"AUTOMATE_SOCIAL_AUTOMATION_SOLUTION":{"ADVANCED_CUSTOMER":"Advanced Customer Service Automation Solution","DESCRIPTION":"DefAgent IAs are poised to help brands deliver superior customer self-service experiences and overhaul engagements across digital channels. This is advanced customer service automation right in your palms!","OUR_INTELLIGENT_ASSISTANTS":""}},"DEVELOPERS":{"NETWORK_SEARCH_META":{"TITLE":"DefAgent - developer","KEYWORDS":"Network Search, Networks directory developer"},"HEADING":{"WELCOME_DREAMERS":"Welcome Dreamers!","CREATE_EMOTIONS":"Create Emotions for Smart Assistants","SHOW_VIDEO":"Show video"},"INTEGRATioNS":{"KNOW_WHAT_YOU_CAN_DO_WITH_US":"Know what you can do with Us","LEARN_MORE":"Learn more"},"TOOL":{"INTEGRATION_TOOLS":"","EASY_INTEGRATIONS":"","LOREM_IPSUM":"","LOREM_IPSUM_DOLOR":"","INTEGRATE":""}},"HEALTH":{"NETWORK_SEARCH_META":{"TITLE":"DefAgent - corporate","KEYWORDS":"Network Search, Networks directory corporate"},"CORPORATE":{"EVERYTHINK_MAKE_TREATMENT_MORE":"DefAgent makes treatment more effective, and patients safer, allowing hospitals and insurance companies to save money.","LEARN_MORE":"Learn More","80_OF_THE_CASE_ARISE":"80% of these cases arise from miscommunications during care transitions, resulting in more than 7000 deaths and 500,000 preventable injuries caused by medical errors. Not to mention the 3 out of every 10 lab tests that are reordered because the results get lost in the process. As much as 18% of hospital medical patients are readmitted within a month. All or most of these could be avoided!","DID_YOU_KNOW":"Did you know that medical errors are the third leading cause of death in the US?","HEADING":{"EVERYTHINK_FOR_HEALTH":"DefAgent Health","WELCOME_TO_THE_FUTURE":"Driving the next wave of meaningful innovation in healthcare, don\u2019t be left behind!","WITH_THE_RIGHT_DATA":"Gain insights and leverage radically interoperable data to accelerate healthcare research, usher in a new era of treatment optimization, drug development, outcome prediction, disease diagnosis and prognosis, patient engagement, and better public health.","START_NOW":"Start now","PLANS_AND_PRICEING":"Plans & pricing"},"BUSINESS":{"LETS_DO_BUSINESS":"Let\'s get started","WHAT_EVERYTHINK_OFFERS":"What DefAgent offers"},"EVERYTHINK_IS_THE_SOLUTION":"DefAgent augments the clinician-patient experience. With this software as AIaaS tool at the fundamental of your healthcare delivery interactions, most medical errors can be prevented. The technology integrates the patients\u2019 records in a single, highly secure place that allows for easy sharing within and outside the network, for the benefits of both patients as well as the medical staff."}},"RPACREAORS":{"NETWORK_SEARCH_META":{"TITLE":"DefAgent - online payment","KEYWORDS":"Network Search, Networks directory online payment"},"ONLINE_PAYMENT":{"HEADING":{"GO_BIG":"Go big, or back home!","CREATE_BUY":"Create, buy and sell automated processes.","WITHOUT_CODING":"- Without coding.","KNOW_MORE":"Know more","START_NOW":"Start now"},"FEATURES":{"REASONS_TO_USE_EVERYTHINK":"Reasons to use DefAgent","KNOW_WHAT_YOU_CAN_DO_WITH_US":"Know what you can do with Us"},"CUSTOMERS_MANAGEMENT":{"CREATE_SMART":"Create Smart","EXERIENCES_WITH":"Experiences with","EVERYTHINK":"DefAgent Studio","SIMPLE_IMPLEMENTATION":" Simple implementation with exponentially positive impact.","CUSTOMERSADMINISTRATION":"Customers administration."}}},"DATAFLOWS_CREATOORS":{"NETWORK_SEARCH_META":{"TITLE":"DefAgent - integration","KEYWORDS":"Network Search, Networks directory integration"},"INTEGRATION":{"HEADING":{"CREATE_EMOTIONS_FOR_SMART_ASSISTANTS":"Create Emotions for Smart Assistants","CREATE_BUY_AND_SELL":" Create, Buy and Sell data flows to train Smart Assistants for the different geolocated conversations necessary for each of the actors that participate in each network, community and channel.","JOIN_EVERY_TTHINK":"Join DefAgent"},"HOW_IT_WORK":{"KNOW_WHAT_YOU_CAN_DO_WITH_US":"Know what you can do with Us","EVERYTHINK_DOES_ALL":"DefAgent does ALL OF THE HEAVY LIFTING so you can focus on more valuable and complex tasks."},"BUILT_TECH":{"INDUSTRY_LEADING":"Industry leading","TECHNOLOGY":"technology","EVERYTHINK_STUDIO":"DefAgent Studio gives you everything you and your business  needs to build robust data flows. All without coding!","ONE_STEP_AHEAD_OF_AIS":"One step ahead of AIs","EMPOWER_THE_INTELLIGENT":"Empower the Intelligent Assistants by providing new interactions created by you, this elevating your problem solving skills in real time."},"EXTEND_CORE":{"LIMITLESS_POSSIBILITIES":"Limitless possibilities","BUILD_FAST_BUILD_MORE":"Build Fast. Build More.","USING_EVERYTHINK":"Using DefAgent Studio\u2019s unique software for fast and fluid data flows development, you can build and deploy all data flows you need  in minutes. No scripting, programming, or technical skills required.","KNOW_MORE":"Know more","REGISTER_ACCOUNT":"Register Account"},"LATEST_PROJECTS":{"EVERYTHINK_MARKETPLACE":"DefAgent Marketplace","TAKE_A_LOOK_AT_OUR_LATEST_PROJECTS":"Take a look at our latest projects, those customer have trust in our services to bring their business to the next level!","SOMOS_PILEROS":"Somos Pileros","WE_BUILT_DATA":"We built data flows to connect entrepreneurs with volunteers and mentors more quickly and efficiently by automating the search and connection process between users, in real time."},"REGISTER":{"FILL_IN_THE_FORM":"Fill in the form","YOUR_SUCCESS_IS_OUR_SUCCESS":"Your success is our success","IF_YOU_ARE_LOOKING":"If you\'re looking to be part of DefAgent network, just fill in the form, we\'re sure we can build great things together!"},"WHY_CHOOSE_US":{"SIMPLE_IMPLEMENTATION_WITH":" Simple implementation with exponentially positive impact","SINCE_THE_NEED_FOR_HUMAN":"Since the need for human intervention is reduced and workflow efficiency is increased, the process is highly affordable.","KNOW_MORE":"Know More"}}},"SAAS":{"NETWORK_SEARCH_META":{"TITLE":"DefAgent - saas","KEYWORDS":"Network Search, Networks directory saas"},"HEADING":{"EVERYTHINK_FOR_REAL_ESTATE":"DefAgent Real Estate","YOU_AGENT_IN_YOUR_HANDS_WITHGLOBAL_REACH":"Your agent in your hands with global reach!","OUT_IAS_ARE_POISED":"Our IAs will revolutionize your real estate service delivery with process automation and AI-based innovations. Better still, it is always right there in your palms","PLANS_AND_PRICING":"Plans & pricing","START_NOW":"Start now"},"LIGHTWEIGHT_TEMPLATE":{"YOUR_SMART_PUPPETS":"Your Very Own Smart Puppets","WILL_PROVIDE_YOUR_PROSPECTS_AND_CLIENTS":"With DefAgent software as a service platform, our IAs can help become ultra-responsive in real-time; gain valuable insights into prospects, clients, markets, and processes; leverage valuable data to address clients\u2019 needs and close more sales, achieve greater system transparency; and improve overall efficiency.","SIMLIFYING_THE_CURRENT":"","LEARN_MORE":"Learn More"},"BUILD_TO_LAST":"Built to Last","WHAT_YOU_WILL_GET_WITH_EVERTTHINK":"What You Get","GEOLOCATED_INTELLIGENT_ASSISTANTS":"Automate Your Booking Process With DefAgent Calendar And Focus Only On What Matters","DASHBORD_INCLUDED":"Dashboards included","SIMPLE_IMPLEMENTATION":"Simple implementation with exponentially positive impact","SINCE_THE_NEED_FOR_HUMAN":"Since the need for human intervention is reduced and workflow efficiency is increased, the process is highly affordable.","THE_POSSIBILITIES":"The possibilities for using DefAgent for Sales are everywhere, and only  limited to the ingenuity of users who want to utilize AI to improve their quality of life.","Learn_More":"Learn more"},"START_UP":{"NETWORK_SEARCH_META":{"TITLE":"DefAgent - Networks directory sstart up","KEYWORDS":"Network Search, Networks directory start up"},"HEADING":{"DELIVERING_THE_TOOLS":"Still Struggling To Get New Clients,","YOU_NEED_TO_SUCCEED":"To Generate Loyal Customers?","IT_ALL_BEGINS_BY_CHOSSING":"Find Prequalified Small Business Leads, Identify Issues, then Contact and Close Deals","TRY_IT_FREE":"Get Started!"},"WHAT_YOU_GET":{"BUSINESS_TITLE":"WORK FROM ANYWHERE","PAYMENTS_TITLE":"ACCEPT PAYMENTS","SCHEDULES_TITLE":"YOUR BRAND YOUR WAY","SITE_TITLE":"SAVE TIME AND MONEY","BUSINESS_DESC":"Manage Your Bookings From Any Device. Combine Schedules And Sync Calendars.","PAYMENTS_DESC":"Flexible Appointment Pricing. Payments With 0% Commission In 26 Currencies.","SCHEDULES_DESC":"Fully Customizable Design To Showcase Your Brand. Set Your Space Between Appointments.","SAVING_DESC":"No More Back And Forth Emails. Affordable, Usage-based Plans To Fit Your Budget."},"PRICING":{"TITLE":"DefAgent Calendar","SUBTITLE":"Works With Any Type Of Business And Any Type Of Appointment Scheduling","BUY":"Buy now","PLAN_PERSONAL":"One on One","PLAN_PERSONAL1":"Therapists","PLAN_PERSONAL2":"Personal trainers","PLAN_PERSONAL3":"Human Resources & Head Hunting","PLAN_PERSONAL4":"Pet care services","PLAN_PERSONAL5":"Sales teams & consultants","PLAN_PERSONAL_DESC":"","PLAN_BUSINESS":"Group","PLAN_BUSINESS1":"Gym & Fitness studio","PLAN_BUSINESS2":"Tour operators","PLAN_BUSINESS3":"Language schools","PLAN_BUSINESS4":"Schools & Universities","PLAN_BUSINESS5":"Events, Workshops & Seminars","PLAN_BUSINESS_DESC":"","PLAN_ENTERPRISE":"Reservations","PLAN_ENTERPRISE1":"Venue/Equipment Rentals","PLAN_ENTERPRISE2":"Photography studio","PLAN_ENTERPRISE3":"Resource scheduling","PLAN_ENTERPRISE4":"Conference & meeting rooms","PLAN_ENTERPRISE5":"Sport court reservations","PLAN_ENTERPRISE_DESC":"","PLAN_BUSINESSD":"Service","PLAN_BUSINESSD1":"Beauty salons","PLAN_BUSINESSD2":"Medical professionals","PLAN_BUSINESSD3":"Driving instructors","PLAN_BUSINESSD4":"Repair professionals","PLAN_BUSINESSD5":"Household & cleaning services","PLAN_BUSINESSD_DESC":""},"PRICING_TWO":{"TITLE":"Affordable pricing plans.","TITLE0":"Go Ahead And","TITLE01":"Get Your Discounted","TITLE1":"DefAgent Calendar","TITLE11":"License","TITLE2":"Today!","TITLE22":"Choose Your Plan:","SUBTITLE":"","BUY":"Buy Now","MONTHLY":"Monthly Basis","ANNUAL":"Annual Basis","DISCOUNT":"(Save Up To 30% Off On Annual Plans)","GETNOW":"Get It Now","CUSTOM":"For Teams","CUSTOM1":"(Best Value)","CUSTOM2":"For Teams And Businesses With Additional Scheduling Needs, Customization And Advanced Features","CUSTOM3":"Contact Us","PLAN_BASIC":"For Individuals","PLAN_BASIC_DESC":"Everything You Can Get From A Professional Solution To Keep Your Business On Its Way To Success","FEATURES1":"200 Maximum Number Of Upcoming Appointments","FEATURES2":"1 Integration To Collect Payments","FEATURES3":"50 Free SMS Invitations","FEATURES4":"DefAgent Calendar In Your Website","FEATURES5":"Custom Branding","FEATURES6":"Webhooks","FEATURES7":"Real-time Support","FEATURES8":"Workflows","FEATURES9":"Real-time Reports","FEATURES10":"Marketing Packages","FEATURES11":"Over 700 App Integrations With Zapier","FEATURES12":"Connect To Zoom, Microsoft Teams, Google Meet, And GoToMeeting"},"FEATURES":{"BUSINESS_TITLE":"Scale Your Business","PAYMENTS_TITLE":"Collect Payments","SCHEDULES_TITLE":"Optimize Time Saving","SAVING_TITLE":"Coordinate Different Schedules","INTERFACE_TITLE":"Desktop And Mobile Interface","SITE_TITLE":"Integrate In Your Site","BUSINESS_DESC":"Get More Customers And Increase Your Revenue","PAYMENTS_DESC":"Synchronize with Google Calendar and Outlook","SCHEDULES_DESC":"Integrate Payment With Zero Commission And Supports 26 Currencies","SAVING_DESC":"Save Time With Automated Features","INTERFACE_DESC":"Use An Award Winning User Friendly Interface","SITE_DESC":"Integrate Seamlessly Into Your Website","DASHCORE_FEATURE":"DefAgent Features","WHAT_DASHCORE_CAN_DO":"Benefits Of Using DefAgent Calendar","LOREM_IPSUM":"With DefAgent, In Less Than 24 Hours An Organization Can Build Geolocated Intelligent Assistants That will Manage Data, And Match Needs With Solutions By Interconnecting People, Automated Processes And Devices In Real-time, Constantly Measuring The Performance Of Each Business Actor \u2013 All Without Coding."},"WHY_DASHCORE":{"WHY_DASHCORE_TEMPLATE":"Simple Implementation With High Impact","WHEN_LOOKING":"Since The Need For Human Intervention Is Reduced And Workflow Efficiency Is Increased, The Process Is Highly Affordable","DEVELOPERS":"Assignments","ENGAGING_DEVELOPERS0":"","ENGAGING_DEVELOPERS01":"","ENGAGING_DEVELOPERS1":"Maximize Meeting Efficiency","ENGAGING_DEVELOPERS11":"By Connecting Your Customers With The Right Team Members.","ENGAGING_DEVELOPERS2":"","ENGAGING_DEVELOPERS22":"","LOREM_IPSUM":"","DESIGNER":"Customization","ENGAGING_DESIGNER0":"","ENGAGING_DESIGNER01":"","ENGAGING_DESIGNER1":"","ENGAGING_DESIGNER11":"","ENGAGING_DESIGNER2":"Create A Premium Customer Experience","ENGAGING_DESIGNER22":"With Advanced Branding And Customization Options.","REMINDERS":"Reminders","ENGAGING_REMINDERS0":"","ENGAGING_REMINDERS01":"","ENGAGING_REMINDERS1":"Email & SMS Notifications","ENGAGING_REMINDERS11":"Ensure No One Forgets A Booking.","ENGAGING_REMINDERS2":"","ENGAGING_REMINDERS22":"","PAYMENTS":"Integrations","ENGAGING_PAYMENTS0":"","ENGAGING_PAYMENTS01":"","ENGAGING_PAYMENTS1":"Create A Seamless Experience","ENGAGING_PAYMENTS11":"For Your Team With A Range Of Third-Party Integrations.","ENGAGING_PAYMENTS2":"","ENGAGING_PAYMENTS22":"","PAGE":"Website","ENGAGING_PAGE0":"","ENGAGING_PAGE01":"","ENGAGING_PAGE1":"Add To Your Website & Facebook Page","ENGAGING_PAGE11":"Or Use Your Appointment Schedule As A Standalone If You Don\u2019t Have A Site.","ENGAGING_PAGE2":"","ENGAGING_PAGE22":"","CALENDARS":"Calendars","ENGAGING_CALENDARS0":"","ENGAGING_CALENDARS01":"","ENGAGING_CALENDARS1":"Synchronize With Other Calendars","ENGAGING_CALENDARS11":"Or Let Your Availability Depend On Another Calendar.","ENGAGING_CALENDARS2":"","ENGAGING_CALENDARS22":"","REPORTING":"Reporting","ENGAGING_REPORTING0":"Understand Your Booking Traffic And Your","ENGAGING_REPORTING01":"Customers Needs.","ENGAGING_REPORTING1":"","ENGAGING_REPORTING11":"","ENGAGING_REPORTING2":"","ENGAGING_REPORTING22":"","SECURITY":"Security","ENGAGING_SECURITY0":"Keep Your Data","ENGAGING_SECURITY01":"Safe And Secure.","ENGAGING_SECURITY1":"","ENGAGING_SECURITY11":"","ENGAGING_SECURITY2":"","ENGAGING_SECURITY22":""},"VIDEOs":{"HOW_TO_VIDEO":"Why Us?","TAKE_A_LOOKING_AT":"At DefAgent We\u2019re All About Powering People And Organizations With Smart Solutions That Shorten Time-To-Engagement In All Phases Of The Customer Lifecycle","1_TITLE":"Maximize Scheduling Opportunities","1_DESC":"How Customers The Combined Availability Of Your Team","2_TITLE":"Maximize Conversion Opportunities","2_DESC":"Assign Meetings To Team Members With The Right Skills","3_TITLE":"Maximize Resource Utilization","3_DESC":"Distribute Meetings Equally Across Your Team"}}},"PROJECT":{"NETWORK_SEARCH_META":{"TITLE":"DefAgent - Networks directory","KEYWORDS":"Network Search, Networks directory"},"FOR_DEVELOPERS":{},"FORSTORYTELLERS":{},"VIEW_PLANAND_PRICE":{}},"FAQS":{"FAQS1":{"DO_YOU_HAVE":"Do you have","QUESTIONS":"questions?","NOT_SURE_HOW":"Not sure how DefAgent can help you? Wondering why you need to start your AI journey?","HERE_ARE_THE_ANSWERS":"You can ask us any questions. However, here are the answers to the most common questions we get asked by our esteemed customers."}},"COUNTER":{"COUNTER1":{"MILLIONS_BUSSINESS":"Millions rely on DefAgent to find and retain top talents!","THESE_AMAZING_STATS":"Numerous brands and businesses around the world use DefAgent AIaaS and cognitive computing capabilities to optimize their HR workflows. Numbers don\u2019t lie and these amazing stats can\u2019t be wrong!"},"COUNTER1_L2":{"MILLIONS_BUSSINESS":"Many businesses rely on DefAgent to boost their sales performance!","THESE_AMAZING_STATS":"Businesses and brands are across the world are leveraging our powerful talent technology to boost their lead volume, close rate, and entire sales performance. Check out our numbers!"},"COUNTER2":{"WHY_CUSTOMER_TRUST_US":"Why customer trust us","HAPPY":"Happy","CUSTOMER":"Customers","THESE_AMAZING_STATS":"These amazing stats can be wrong, many happy customers around the world trust our service to boost their business.","TONS_OF_SUCCESSFULL_IMPLEMENATION":"Tons of successful implementations","USERS_IMPROVE_THEIR_ABILITY":"DefAgent raises the bar for efficiency and productivity, thus increasing job satisfaction. This low-code platform also guarantees exceptional ease of implementation and so is trusted by hundreds of thousands of brands across the world.","ALL_POWERED_BY":"Powered by a cognitive engine which can develop characters for various roles, to complete different functions within the company.","LEARN_MORE":"Learn more"},"COUNTER3":{"AMAZING_STATS":"Amazing stats","EVERYTHINK_CREaTES_A_POWERFUL_AND_EFFECTIVE":"Leverage DefAgent\u2019s AIaaS platform to implement a circular economy business model!","EACH_USER_IS_EMPOWERED":"Users are empowered by the ability to improve networking and boost job performance."},"COUNTER6":{"SUCCESSFULL_IMPLEMENTATIONS":"1M+ Successfully Implementations","GET_THEVERY_BEST":"Get the very best of us by doing the best of you"}},"CATE":{"CATE1":{"READY_TO_GET_STARTED":"Ready to get started?","BECOME_ONE_OF_THE_MILLIONS":"Join millions of people and brands around the world who love and use EveryThink!","CREATE_EVERTTHINKACCOUNT":"Create account"}},"TESTIMONIALS":{"TESTIMONIAL_SIMPLE_SLIDER":{"TESTIMONIALS":"Testimonials"},"TESTIMONIAL_SLIDER":{"LOREM_IPS":"This is an incredible tool that can help anyone to create their own algorithms and generate a more sustainable business. Thank you very much for helping us help other people!","JANE_DOR":"Estefany G\xfcech\xe1,","AWESOME_COMPANY":"Somos Pileros"},"TESTIMONIAL_SIMPLE_TEXT_RIGHT":{"IF_YOU_ARE_STRUGGLING":"If you are struggling to stay in business, there may be several options you can explore.","EVERYTHINK":"DefAgent,","IS_THE_PERFECT_TOOL":" is the perfect tool. It is very easy to use, and it has all the functionality you are looking for.","CARO_FOGLIATO":"Caro Fogliato,","CEOANDFOUNDER":" CEO & Founder of DefAgent inc."},"TESTIMONIAL_SIMPLE_TEXT_LEFT":{"EVERYTHIN_IS_GREAT_FOR":"DefAgent is great for","ANYONE_WHO_IS_LOOKING_FOR_SIMPLE":" Anyone who is looking for simple implementation with exponentially positive impact","EVERYTHINK_LTD_TEAM":"DefAgent inc. Team,","DoING_GREATE_SINCE":" Doing great since 2024"},"TESTIMONIAL_SKEWED_SLIDER":{"OUR_CUSTOMERS_HAVE_SOMETHING_TO_SAY":"Our customers have something to say","THEY_ARE_THE_BEST":"They are the best, our customer want to let you know how DefAgent is helping them to achieve their goals and how simple is to use it!"},"TESTIMONIAL_WORLD_MAP":{"WE_HEARD_OUR_CUSTOMERS_SAY":"We\'ve heard our customers say","SED_OUT_PERSPICIATIS":"This is an incredible tool that can help anyone to create their own algorithms and generate a more sustainable business. Thank you very much for helping us help other people!","JANE_DOE":"Estefany G\xfcech\xe1,","MARKEYING_DIRECTOR":"Somos Pileros"}},"USUAL":{"FEATURES_ICONS_COL":{"UP_TO_THE_TASK":"Start your AI for health journey with DefAgent","WHAT_YOU_GET":"What You Get","GEOLOCATED_INTELLIGENT_ASSISTANTS":"With DefAgent AIaaS low-code platform, you can leverage geolocated IAs to manage data from disparate sources like electronic health records and social determinants of health; interconnect people and devices and, automate costly, repetitive, and error-prone administrative labor into a far more efficient and inexpensive digital workforce."},"DEVELOPER_DESIGNER":{"JOIN_AS_DESIGNER":"Join us!","JOIN_AS_DEVELOPER":"","LOREM_IPSUM":""},"START_NOW_BOX":{"TRY_EVERYTHINK_NOW":"Try DefAgent now.... love it forever","WHY_WAIT":"Why wait? Start now!","START_NOW":"Start now"}},"FOOTER":{"FOOTER1":{"EVERYTHINK_IS_POISED":"All is one, where infinity starts.","COMPANY":"DefAgent","ABOUT":"About Us","BLOG":"Blog","PRODUCt":"Product","SERVICES":"Services","FEATURES":"Features","API":"API","CUSTOMERS":"Customers","CHANNELS":"Channels","CAREERS":"Careers","CONTACT":"Contact","SEARCH":"Search","COPYRIGHT":"Copyright \xa9 2024-2025 DefAgent inc. All Rights Reserved."}},"CONTACT":{"NETWORK_SEARCH_META":{"TITLE":"EveryThink - contact","KEYWORDS":"Network Search, Networks directory contact"},"FORM":{"LETS_DO_BUSINESS":"Let\'s do business","STEP_INTO_OUR_PLACE":"Step into our place","123_STREET_ST":"Texas","YC_COUNTRY":" United States"},"OTHER_CHANNELS":{"CONTACT_SALE":"Contact Sale","LOOKING_FOR_CUSTOM_QUOTE":"Looking for a custom quote? need to tell us more about your project? or want a demonstration? drop us a line to","TECHNICAL_SUPPORT":"Technical Support","ANY_QUESTION":"Any question about how to integrate your product?. Don\'t fret, our team is ready for help you"}},"ABOUT":{"NETWORK_SEARCH_META":{"TITLE":"EveryThink - about","KEYWORDS":"Network Search, Networks directory about"},"OVERVIEW":{"SUCCEED_WITH_DASHCORE":"Succeed with EveryThink","THE_NEW_WAY_TO_SHOWCASE":"The new way to boost your Business","DASHCORE_IS_A_BOOTSTRAP":"","IT_INCLUDES_MULTIPLE":"It includes multiple components and pre-made demos ready for you to personalize according to your own needs. EveryThink includes a ready-to-go Admin Dashboard with many out-of-the-box features."},"VIDEO":{"DISCOVER_HOW_DASHCORE_WORKS":"Discover how EveryThink works","PLAY_THE_VIDEO":"Play the video"},"SOLUTIONS":{"A_SOLUTION_FOR_EVERY_NEED":"A solution for every need","LOREM_IPSUM":"","DASHCORE_INCLUDED":"Dashboards Included","OUR_TEMPLATE_IS_PACKED_WITH_A":"EveryThink","START_ADMIN_DASHBOARD":"also has control panels that are customizable according to your needs","START_RIGHT_AWAY":"started right away with your project.","TRY_THE_DASHBOARD":"Try EveryThink"},"FEATURES":{"OUR_FEATURES_STACK":"Our features stack","TAKE_THE_CONTROL":"Take the control of your business with EveryThink. You can customize  according to your needs or just use the ready-to-use the solution we made for you"},"CUSTOMERS":{"THIRD_PARTY":"Third party integration","WE_USE_THE_LATEST_TRENDS":" We use the latest trends because you deserve better","ARE_YOU_A_DEVELOPER":"Are you a developer?","REVIEW_THE_SPECS":"Review the specs"},"TEAM":{"GET_TO_KNOW_OUR_TEAM":"Get to know our team","THESE_AMAZING_PEOPLE":"These amazing people have made possible to stay where we are"},"REGISTER":{"DASHCORE_OFFICIAL":"EveryThink Ltd","NEWSLETTER":"Newsletter"}},"TERMS":{"trm_terms_of_use":"Terms Of Use","trm_last_update":"Last Update: March 30, 2025","trm_general_information":"General Information","trm_introduction":"Welcome to DefAgent inc. (the \u201cCompany\u201d). DefAgent builds technologies and services that enable people to connect with each other, proceses and devices; builds networks, communities, and channels; and grows businesses. These Terms govern your use of DefAgent, and the other products, modules, features, apps, services, technologies, and software we offer. These Products are provided to you by DefAgent, inc. By creating a DefAgent account, whether through a mobile device, mobile application or computer (collectively, the \u201cService\u201d) you agree to be bound by these Terms of Use and our Privacy Policy, which is incorporated by reference into this Agreement and available in the Service (this \u201cAgreement\u201d). If you do not accept and agree to be bound by all of the terms of this Agreement, please do not use the Service.","trm_1_acceptance_terms":"1. Acceptance of Terms of Use Agreement.","trm_1_acceptance_terms_1":"This Agreement is an electronic contract that establishes the legally binding terms you must accept to use the Service. This Agreement includes the Company\u2019s (i) Privacy Policy, (ii) Our Safety Tips and (iii) Terms Disclosed And Agreed To By You if you purchase or accept additional features, modules, products or services we offer on the Service.","trm_1_acceptance_terms_2":"We may, at any time and for any reason make changes to this Agreement. We may do this for a variety of reasons including to reflect changes in or requirements of the law, new features, or changes in business practices. The most recent version of this Agreement will be posted on the Services under Settings and also on https://defagent.ai/ Web-page, and you should regularly check for the most recent version. The most recent version is the version that applies. If the changes include material changes that affect your rights or obligations, we will notify you of the changes by reasonable means, which could include notification through the Services or via email. If you continue to use the Services after the changes become effective, then you shall be deemed to have accepted those changes. If you don\u2019t agree to these changes, you must end your relationship with us by ceasing to use the Services and leaving DefAgent.","trm_2_eligibility":"2. Eligibility.","trm_2_eligibility_1":"You must be at least 18 years of age to create an account on DefAgent and use the Service. By creating and account and using the Service, you represent and warrant that you can form a binding contract with DefAgent, you are not a person who is barred from using the Service under the laws of texas,usa or any other applicable jurisdiction meaning that you do not appear on texas,usa. Treasury Department\u2019s list of Specially Designated Nationals or face any other similar prohibition, and you will comply with this Agreement and all applicable local, state, national and international laws, rules and regulations. If you create an account, you represent and warrant that you have never been convicted of a felony and that you are not required to register as a sex offender with any state, federal or local sex offender registry.","trm_3_user_accounts":"3. User Accounts.","trm_3_user_accounts_1":"In order to use most aspects of the Services, you must register for and maintain an active personal user Services account (\'Account\'). You must be at least 18 years of age, or the age of legal majority in your jurisdiction (if different than 18), to obtain an Account, unless a specific Service permits otherwise. Account registration requires you to submit to DefAgent certain personal information, such as your name, address, mobile phone number and age, as well as at least one valid payment method supported by DefAgent. You agree to maintain accurate, complete, and up-to-date information in your Account. Your failure to maintain accurate, complete, and up-to-date Account information, including having an invalid or expired payment method on file, may result in your inability to access or use the Services. You are responsible for all activity that occurs under your Account, and you agree to maintain the security and secrecy of your Account username and password at all times. Unless otherwise permitted by DefAgent in writing, you may only possess one Account.","trm_4_terms_termination":"4. Terms And Termination.","trm_4_terms_termination_1":"This Agreement will remain in full force and effect while you use the Service and/or have a DefAgent account. You may terminate your account at any time, for any reason, by following the instructions in \u201cSettings\u201d in the Service. The Company may terminate or suspend your account at any time without notice if the Company believes that you have breached this Agreement in its sole discretion. Upon such termination or suspension, you will not be entitled to any refund of unused fees for in app purchases. After your account is terminated, this Agreement will terminate, except that the following provisions will still apply: Section 4, Section 8, Section 9 and Sections 16-18.","trm_5_non_commercial_use":"5. Non-commercial Use by Users.","trm_5_non_commercial_use_1":"The Service is for personal use only. Users may not use the Service or any content contained in the Service (including, but not limited to, content of other users, designs, text, graphics, images, video, logos, software, and computer code) in connection with any commercial endeavors, such as advertising or soliciting any user to buy or sell any products or services not offered by the Company. Users of the Service may not use any information obtained from the Service to contact, advertise to, solicit, or sell to any other user without his or her prior explicit consent. Organizations, companies, and/or businesses may not use the Service for any purpose except with DefAgent\u2019 express consent (such as for promoted profiles or other advertisements), which DefAgent may provide or deny in its sole discretion. The Company may investigate and take any available legal action in response to illegal and/or unauthorized uses of the Service.","trm_6_the_services":"6. The Services.","trm_6_the_services_1":"DefAgent is a Mobile (Android and iOS) and Web interactive network hosted by a virtual assistant with artificial intelligence capable of connecting people according to their personal, work, social and educational interests, needs and abilities through specific questions. The virtual assistant is capable of learning about the user needs, abilities, interests and aspirations in every environment through contextualized and geospatial questions, in order to achieve assertive connections with others.","trm_7_interactions":"7. Your Interactions With Other Users.","trm_7_interactions_1":"YOU ARE SOLELY RESPONSIBLE FOR YOUR INTERACTIONS WITH OTHER USERS. YOU UNDERSTAND THAT THE COMPANY CURRENTLY DOES NOT CONDUCT CRIMINAL BACKGROUND CHECKS ON ITS USERS. THE COMPANY ALSO DOES NOT VERIFY THE STATEMENTS OF ITS USERS. THE COMPANY MAKES NO REPRESENTATIONS OR WARRANTIES AS TO THE CONDUCT OF USERS OR THEIR COMPATIBILITY WITH ANY CURRENT OR FUTURE USERS. THE COMPANY RESERVES THE RIGHT TO CONDUCT ANY CRIMINAL BACKGROUND CHECK OR OTHER SCREENINGS (SUCH AS SEX OFFENDER REGISTER SEARCHES), AT ANY TIME AND USING AVAILABLE PUBLIC RECORDS.","trm_7_interactions_2":"The Company is not responsible for the conduct of any user. As noted in and without limiting Section 15 below, in no event shall the Company, its affiliates or its partners be liable (directly or indirectly) for any losses or damages whatsoever, whether direct, indirect, general, special, compensatory, consequential, and/or incidental, arising out of or relating to the conduct of you or anyone else in connection with the use of the Service including, without limitation, death, bodily injury, emotional distress, and/or any other damages resulting from communications or meetings with other users or persons you meet through the Service. You agree to take all necessary precautions in all interactions with other users, particularly if you decide to communicate off the Service or meet in person, or if you decide to send money to another user. In addition, you agree to review and follow the Company\u2019s Safety Tips, located in the Service, prior to using the Service. You should not provide your financial information (for example, your credit card or bank account information), or wire or otherwise send money, to other users.","trm_8_content_posted":"8. Content Posted By You In The Service.","trm_8_content_posted_1":"You are solely responsible for the content and information that you post, upload, publish, link to, transmit, record, display or otherwise make available (collectively, \u201cpost\u201d) on the Service or transmit to other users, including text messages, chat, videos, photographs, or profile text, whether publicly posted or privately transmitted (collectively, \u201cContent\u201d). You may not post as part of the Service, or transmit to the Company or any other user (either on or off the Service), any offensive, inaccurate, incomplete, abusive, obscene, profane, threatening, intimidating, harassing, racially offensive, or illegal material, or any material that infringes or violates another person\u2019s rights (including intellectual property rights, and rights of privacy and publicity). You represent and warrant that (i) all information that you submit upon creation of your account, is accurate and truthful and that you will promptly update any information provided by you that subsequently becomes inaccurate, incomplete, misleading or false and (ii) you have the right to post the Content on the Service and grant the licenses set forth below.","trm_8_content_posted_2":"You understand and agree that the Company may, but is not obligated to, monitor or review any Content you post as part of a Service. The Company may delete any Content, in whole or in part, that in the sole judgment of the Company violates this Agreement or may harm the reputation of the Service or the Company.","trm_8_content_posted_3":"By posting Content as part of the Service, you grant to DefAgent a worldwide, transferable, sub-licensable, royalty-free, right and license to host, store, use, copy, display, reproduce, adapt, edit, publish, modify and distribute the Content. This license is for the limited purpose of operating, developing, providing, promoting, and improving the Service and researching and developing new ones.","trm_8_content_posted_4":"In addition to the types of Content described in Section 8 (a) above, the following is a partial list of the kind of Content that is prohibited in the Service. You may not post, upload, display or otherwise make available Content that:","trm_8_content_posted_4_1":"(I) Promotes racism, bigotry, hatred or physical harm of any kind against any group or individual;","trm_8_content_posted_4_2":"(II) Advocates harassment or intimidation of another person;","trm_8_content_posted_4_3":"(III) Spams or solicits DefAgent\u2019 users;","trm_8_content_posted_4_4":"(IV) Promotes information that is false or misleading, or promotes illegal activities or conduct that is defamatory, libelous or otherwise objectionable;","trm_8_content_posted_4_5":"(V) Promotes an illegal or unauthorized copy of another person\u2019s copyrighted work, such as providing pirated computer programs, images, audio or video files or links to them;","trm_8_content_posted_4_6":"(VI) Contains video, audio photographs, or images of another person without his or her permission (or in the case of a minor, the minor\u2019s legal guardian);","trm_8_content_posted_4_7":"(VII) Contains restricted or password only access pages, or hidden pages or images (those not linked to or from another accessible page);","trm_8_content_posted_4_8":"(VIII) Provides material that exploits people in a sexual, violent or other illegal manner, or solicits personal information from anyone under the age of 18;","trm_8_content_posted_4_9":"(IX) Provides instructional information about illegal activities such as making or buying illegal weapons or drugs, violating someone\u2019s privacy, or providing, disseminating or creating computer viruses;","trm_8_content_posted_4_10":"(X) Contains viruses, time bombs, trojan horses, cancelbots, worms or other harmful, or disruptive codes, components or devices;","trm_8_content_posted_4_11":"(XI) Impersonates, or otherwise misrepresents affiliation, connection or association with, any person or entity;","trm_8_content_posted_4_12":"(XII) Provides information or data you do not have a right to make available under law or under contractual or fiduciary relationships (such as inside information, proprietary and confidential information);","trm_8_content_posted_4_13":"(XIII) Disrupts the normal flow of dialogue, causes a screen to \u201cscroll\u201d faster than other users are able to type, or otherwise negatively affects other users\u2019 ability to engage in real time exchanges; and","trm_8_content_posted_4_14":"(XIV) Solicits passwords or personal identifying information for commercial or unlawful purposes from other users or disseminates another person\u2019s personal information without his or her permission.","trm_8_content_posted_text":"The Company reserves the right, in its sole discretion, to investigate and take any legal action against anyone who violates this provision, including removing the offending communication from the Service and terminating or suspending the account of such violators.","trm_9_use_service_0":"9. Use Of The Service","trm_9_use_service":"Your use of the Service, including all Content you post through the Service, must comply with all applicable laws and regulations. You agree that the Company may access, preserve and disclose your account information and Content if required to do so by law or in a good faith belief that such access, preservation or disclosure is reasonably necessary, such as to: (i) comply with legal process; (ii) enforce this Agreement; (iii) respond to claims that any Content violates the rights of third parties; (iv) respond to your requests for customer service or allow you to use the Service in the future; or (v) protect the rights, property or personal safety of the Company or any other person.","trm_10_agree_content":"You agree that any Content you place on the Service may be viewed by other users and may be viewed by any person visiting or participating in the Service (such as individuals who may receive shared Content from other DefAgent users).","trm_11_prohibited_activities":"10. Prohibited Activities","trm_11_prohibited_activities_1":"The Company reserves the right to investigate, suspend and/or terminate your account if you have misused the Service or behaved in a way the Company regards as inappropriate or unlawful, including actions or communications the occur off the Service but involve users you meet through the Service. The following is a partial list of the type of actions that you may not engage in with respect to the Service. You will not:","trm_11_prohibited_activities_1_1":"(I) Impersonate any person or entity.","trm_11_prohibited_activities_1_2":"(II) Solicit money from any users.","trm_11_prohibited_activities_1_3":"(III) Post any Content that is prohibited by Section 7.","trm_11_prohibited_activities_1_4":"(IV) \u201cStalk\u201d or otherwise harass any person.","trm_11_prohibited_activities_1_5":"(V) Express or imply that any statements you make are endorsed by the Company without our specific prior written consent.","trm_11_prohibited_activities_1_6":"(VI) Use the Service in an illegal manner or to commit an illegal act.","trm_11_prohibited_activities_1_7":"(VII) Access the Service in a jurisdiction in which it is illegal or unauthorized.","trm_11_prohibited_activities_1_8":"(VIII) Use any robot, spider, site search/retrieval application, or other manual or automatic device or process to retrieve, index, \u201cdata mine\u201d, or in any way reproduce or circumvent the navigational structure or presentation of the Service or its contents.","trm_11_prohibited_activities_1_9":"(IX) Collect usernames and/or email addresses of users by electronic or other means for the purpose of sending unsolicited email or unauthorized framing of or linking to the Service.","trm_11_prohibited_activities_1_10":"(X) Interfere with or disrupt the Service or the servers or networks connected to the Service.","trm_11_prohibited_activities_1_11":"(XII) Transmit any material that contains software viruses or any other computer code, files or programs designed to interrupt, destroy or limit the functionality of any computer software or hardware or telecommunications equipment.","trm_11_prohibited_activities_1_12":"(XIII) Forge headers or otherwise manipulate identifiers in order to disguise the origin of any information transmitted to or through the Service (either directly or indirectly through use of third party software).","trm_11_prohibited_activities_1_13":"(XIV) \u201cFrame\u201d or \u201cMirror\u201d any part of the Service, without the Company\u2019s prior written authorization.","trm_11_prohibited_activities_1_14":"(XV) Use meta tags or code or other devices containing any reference to the Company or the Service (or any trademark, trade name, service mark, logo or slogan of the Company) to direct any person to any other website for any purpose.","trm_11_prohibited_activities_1_15":"(XVI) Modify, adapt, sublicense, translate, sell, reverse engineer, decipher, decompile or otherwise disassemble any portion of the Service any software used on or for the Service, or cause others to do so.","trm_11_prohibited_activities_1_16":"(XVII) Post, use, transmit or distribute, directly or indirectly, (e.g. screen scrape) in any manner or media any content or information obtained from the Service other than solely in connection with your use of the Service in accordance with this Agreement.","trm_12_propietary_rights":"11. Proprietary Rights.","trm_12_propietary_rights_1":"The Company owns and retains all proprietary rights in the Service, and in all content, trademarks, trade names, service marks and other intellectual property rights related thereto. The Service contains the copyrighted material, trademarks, and other proprietary information of the Company and its licensors. You agree to not copy, modify, transmit, create any derivative works from, make use of, or reproduce in any way any copyrighted material, trademarks, trade names, service marks, or other intellectual property or proprietary information accessible through the Service, without first obtaining the prior written consent of the Company or, if such property is not owned by the Company, the owner of such intellectual property or proprietary rights. You agree to not remove, obscure or otherwise alter any proprietary notices appearing on any content, including copyright, trademark and other intellectual property notices.","trm_13_ownership":"12. Ownership.","trm_13_ownership_1":"The Services and all rights therein are and shall remain DefAgent\' property or the property of DefAgent \' licensors. Neither these Terms nor your use of the Services convey or grant to you any rights: (i) in or related to the Services except for the limited license granted above; or (ii) to use or reference in any manner DefAgent company names, logos, product and service names, trademarks or services marks or those of DefAgent licensors.","trm_14_user_provided_content":"13. User Provided Content","trm_14_user_provided_content_1":"DefAgent may, in DefAgent sole discretion, permit you from time to time to submit, upload, publish or otherwise make available to DefAgent through the Services textual, audio, and/or visual content and information, including commentary and feedback related to the Services, initiation of support requests, and submission of entries for competitions and promotions (\'User Content\'). Any User Content provided by you remains your property. However, by providing User Content to DefAgent, you grant DefAgent a worldwide, perpetual, irrevocable, transferable, royalty-free license, with the right to sublicense, to use, copy, modify, create derivative works of, distribute, publicly display, publicly perform, and otherwise exploit in any manner such User Content in all formats and distribution channels now known or hereafter devised (including in connection with the Services and DefAgent business and on third-party sites and services), without further notice to or consent from you, and without the requirement of payment to you or any other person or entity.You represent and warrant that: (i) you either are the sole and exclusive owner of all User Content or you have all rights, licenses, consents and releases necessary to grant DefAgent the license to the User Content as set forth above; and (ii) neither the User Content, nor your submission, uploading, publishing or otherwise making available of such User Content, nor DefAgent use of the User Content as permitted herein will infringe, misappropriate or violate a third party\'s intellectual property or proprietary rights, or rights of publicity or privacy, or result in the violation of any applicable law or regulation.You agree to not provide User Content that is defamatory, libelous, hateful, violent, obscene, pornographic, unlawful, or otherwise offensive, as determined by DefAgent in its sole discretion, whether or not such material may be protected by law. DefAgent may, but shall not be obligated to, review, monitor, or remove User Content, at DefAgent sole discretion and at any time and for any reason, without notice to you.","trm_15_network_access_devices":"14. Networks, Communities, And Channels Access And Devices.","trm_15_network_access_devices_1":"You are responsible for obtaining the data network access necessary to use the Services. Your mobile network\'s data and messaging rates and fees may apply if you access or use the Services from your device. You are responsible for acquiring and updating compatible hardware or devices necessary to access and use the Services and Applications and any updates thereto. DefAgent does not guarantee that the Services, or any portion thereof, will function on any particular hardware or devices. In addition, the Services may be subject to malfunctions and delays inherent in the use of the Internet and electronic communications.","trm_16_modifications_service":"15. Modifications To Service.","trm_16_modifications_service_1":"The Company reserves the right at any time to modify or discontinue, temporarily or permanently, the Service (or any part thereof) with or without notice. You agree that the Company shall not be liable to you or to any third party for any modification, suspension or discontinuance of the Service. To protect the integrity of the Service, the Company reserves the right at any time in its sole discretion to block users from certain IP addresses from accessing the Service.","trm_17_copyright_policy":"16. Copyright Policy.","trm_17_copyright_policy_1":"Notice and Procedure for Making Claims of Copyright Infringement. You may not post, distribute, or reproduce in any way any copyrighted material, trademarks, or other proprietary information without obtaining the prior written consent of the owner of such proprietary rights. If you believe that your work has been copied and posted on the Service in a way that constitutes copyright infringement, please provide our Copyright Agent with the following information:","trm_17_copyright_policy_1_1":"(I) An electronic or physical signature of the person authorized to act on behalf of the owner of the copyright interest;","trm_17_copyright_policy_1_2":"(II) A description of the copyrighted work that you claim has been infringed;","trm_17_copyright_policy_1_3":"(III) A description of where the material that you claim is infringing is located on the Service (and such description must be reasonably sufficient to enable the Company to find the alleged infringing material, such as a url);","trm_17_copyright_policy_1_4":"(IV) Your address, telephone number and email address;","trm_17_copyright_policy_1_5":"(V) A written statement by you that you have a good faith belief that the disputed use is not authorized by the copyright owner, its agent, or the law; and","trm_17_copyright_policy_1_6":"(VI) A statement by you, made under penalty of perjury, that the above information in your notice is accurate and that you are the copyright owner or authorized to act on the copyright owner\u2019s behalf.","trm_17_copyright_policy_1_text":"Notice of claims of copyright infringement should be provided to the Company\u2019s Copyright Agent at caro@DefAgent.ai","trm_17_copyright_policy_1_text1":"The Company will terminate the accounts of repeat infringers.","trm_17_disclaimers":"17.  Disclaimers, Limitation Of Liability.","trm_17_disclaimers_0":"DISCLAIMERS.","trm_17_disclaimers_1":"THE SERVICES ARE PROVIDED \'AS IS\' AND \'AS AVAILABLE.\' DEFAGENT DISCLAIMS ALL REPRESENTATIONS AND WARRANTIES, EXPRESS, IMPLIED, OR STATUTORY, NOT EXPRESSLY SET OUT IN THESE TERMS, INCLUDING THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN ADDITION, DEFAGENT MAKES NO REPRESENTATION, WARRANTY, OR GUARANTEE REGARDING THE RELIABILITY, TIMELINESS, QUALITY, SUITABILITY, OR AVAILABILITY OF THE SERVICES OR ANY SERVICES OR GOODS REQUESTED THROUGH THE USE OF THE SERVICES, OR THAT THE SERVICES WILL BE UNINTERRUPTED OR ERROR-FREE. DEFAGENT DOES NOT GUARANTEE THE QUALITY, SUITABILITY, SAFETY OR ABILITY OF THIRD PARTY PROVIDERS. YOU AGREE THAT THE ENTIRE RISK ARISING OUT OF YOUR USE OF THE SERVICES, AND ANY SERVICE OR GOOD REQUESTED IN CONNECTION THEREWITH, REMAINS SOLELY WITH YOU, TO THE MAXIMUM EXTENT PERMITTED UNDER APPLICABLE LAW.","trm_17_limitation":"LIMITATION OF LIABILITY.","trm_17_limitation_1":"DEFAGENT SHALL NOT BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, PUNITIVE, OR CONSEQUENTIAL DAMAGES, INCLUDING LOST PROFITS, LOST DATA, PERSONAL INJURY, OR PROPERTY DAMAGE RELATED TO, IN CONNECTION WITH, OR OTHERWISE RESULTING FROM ANY USE OF THE SERVICES, REGARDLESS OF THE NEGLIGENCE (EITHER ACTIVE, AFFIRMATIVE, SOLE, OR CONCURRENT) OF DEFAGENT, EVEN IF DEFAGENT HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. DEFAGENT SHALL NOT BE LIABLE FOR ANY DAMAGES, LIABILITY OR LOSSES ARISING OUT OF: (i) YOUR USE OF OR RELIANCE ON THE SERVICES OR YOUR INABILITY TO ACCESS OR USE THE SERVICES; OR (ii) ANY TRANSACTION OR RELATIONSHIP BETWEEN YOU AND ANY THIRD PARTY PROVIDER, EVEN IF DEFAGENT HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. DEFAGENT SHALL NOT BE LIABLE FOR DELAY OR FAILURE IN PERFORMANCE RESULTING FROM CAUSES BEYOND DEFAGENT REASONABLE CONTROL. YOU ACKNOWLEDGE THAT THIRD PARTY PROVIDERS PROVIDING TRANSPORTATION SERVICES REQUESTED THROUGH SOME REQUEST PRODUCTS MAY OFFER RIDESHARING OR PEER-TO-PEER TRANSPORTATION SERVICES AND MAY NOT BE PROFESSIONALLY LICENSED OR PERMITTED. THE SERVICES MAY BE USED BY YOU TO REQUEST AND SCHEDULE TRANSPORTATION, GOODS, OR LOGISTICS SERVICES WITH THIRD PARTY PROVIDERS, BUT YOU AGREE THAT DEFAGENT HAS NO RESPONSIBILITY OR LIABILITY TO YOU RELATED TO ANY TRANSPORTATION, GOODS OR LOGISTICS SERVICES PROVIDED TO YOU BY THIRD PARTY PROVIDERS OTHER THAN AS EXPRESSLY SET FORTH IN THESE TERMS. THE LIMITATIONS AND DISCLAIMER IN THIS SECTION DO NOT PURPORT TO LIMIT LIABILITY OR ALTER YOUR RIGHTS AS A CONSUMER THAT CANNOT BE EXCLUDED UNDER APPLICABLE LAW. BECAUSE SOME STATES OR JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF OR THE LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES, IN SUCH STATES OR JURISDICTIONS, DEFAGENT LIABILITY SHALL BE LIMITED TO THE EXTENT PERMITTED BY LAW. THIS PROVISION SHALL HAVE NO EFFECT ON DEFAGENT CHOICE OF LAW PROVISION SET FORTH BELOW.","trm_18_arbitration":"18. Arbitration And Governing Law.","trm_18_arbitration_p":"Except for users residing within the European Union, Norway and elsewhere where prohibited by applicable law:","trm_18_arbitration_i_01":"The exclusive means of resolving any dispute or claim arising out of or relating to this Agreement (including any alleged breach thereof) or the Service shall be BINDING ARBITRATION administered by the texas,usa Arbitration Association. The one exception to the exclusivity of arbitration is that you have the right to bring an individual claim against the Company in a small-claims court of competent jurisdiction. But whether you choose arbitration or small-claims court, you may not under any circumstances commence or maintain against the Company any class action, class arbitration, or other representative action or proceeding.","trm_18_arbitration_i_02":"By using the Service in any manner, you agree to the above arbitration agreement. In doing so, YOU GIVE UP YOUR RIGHT TO GO TO COURT to assert or defend any claims between you and the Company (except for matters that may be taken to small-claims court). YOU ALSO GIVE UP YOUR RIGHT TO PARTICIPATE IN A CLASS ACTION OR OTHER CLASS PROCEEDING. Your rights will be determined by a NEUTRAL ARBITRATOR, NOT A JUDGE OR JURY. You are entitled to a fair hearing before the arbitrator. The arbitrator can grant any relief that a court can, but you should note that arbitration proceedings are usually simpler and more streamlined than trials and other judicial proceedings. Decisions by the arbitrator are enforceable in court and may be overturned by a court only for very limited reasons. For details on the arbitration process, see our Arbitration Procedures.","trm_18_arbitration_i_03":"Any proceeding to enforce this arbitration agreement, including any proceeding to confirm, modify, or vacate an arbitration award, may be commenced in any court of competent jurisdiction. In the event that this arbitration agreement is for any reason held to be unenforceable, any litigation against the Company (except for small-claims court actions) may be commenced only in the federal or state courts located in texas,usa. You hereby irrevocably consent to the jurisdiction of those courts for such purposes.","trm_18_arbitration_i_04":"This Agreement, and any dispute between you and the Company, shall be governed by the laws of texas,usa without regard to principles of conflicts of law, provided that this arbitration agreement shall be governed by the Federal Arbitration Act.","trm_18_arbitration_p_1":"For users residing in the European Union, Norway or elsewhere where this arbitration agreement is prohibited by law, the laws of texas,usa, excluding texas,usa\u2019s conflict of laws rules, will apply to any disputes arising out of or relating to this Agreement or the Services. All claims arising out of or relating to this Agreement or the Services will be litigated exclusively in the federal or state courts of texas,usa, and you and DefAgent consent to personal jurisdiction in those courts.","trm_19_":"19. Indemnity By You.","trm_19_p":"You agree to indemnify and hold the Company, its subsidiaries, and affiliates, and its and their officers, agents, partners and employees, harmless from any loss, liability, claim, or demand, including reasonable attorney\u2019s fees, made by any third party due to or arising out of your breach of or failure to comply with this Agreement (including any breach of your representations and warranties contained herein), any postings or Content you post in the Service, and the violation of any law or regulation by you. The Company reserves the right to assume the exclusive defense and control of any matter otherwise subject to indemnification by you, in which event you will fully cooperate with the Company in connection therewith.","trm_20_":"20. Notice.","trm_20_p":"The Company may provide you with notices, including those regarding changes to this Agreement, using any reasonable means, which may include email, SMS, MMS, text message or postings in the Service. Such notices may not be received if you violate this Agreement by accessing the Service in an unauthorized manner. You agree that you are deemed to have received any and all notices that would have been delivered had you accessed the Service in an authorized manner.","trm_21_":"21. Entire Agreement","trm_21_p":"This Agreement, with the Privacy Policy and any specific guidelines or rules that are separately posted for particular services or offers in the Service, contains the entire agreement between you and the Company regarding the use of the Service. If any provision of this Agreement is held invalid, the remainder of this Agreement shall continue in full force and effect. The failure of the Company to exercise or enforce any right or provision of this Agreement shall not constitute a waiver of such right or provision. You agree that your DefAgent account is non-transferable and all of your rights to your profile or contents within your DefAgent account terminate upon your death. No agency, partnership, joint venture or employment is created as a result of this Agreement and you may not make any representations or bind the Company in any manner.","trm_question":"Questions?","trm_privacy_policy":"Any questions about this Privacy Policy should be addressed to caro@defagent.ai"}}'
+        '{"APP_NAME":"DefAgent","About":"About us","Hello world !":"Hello world!","Home":"Home","Logged in as":"Logged in as","Login":"Login","Logout":"Logout","Password":"Password","Password is required":"Password is required","Username":"Username","Username is required":"Username is required","Username or password incorrect.":"Username or password incorrect.","Remember me":"Remember me","Version":"Version","ACTIONS":{"FORM_REGISTER_SIMPLE_INLINE":{"CHECK_YOUR_EMAIL":"Check your email","WE_SENT_YOU_AN_EMAIL":"We sent you an email with a link to get started. You\u2019ll be in your account in no time."},"FORM_REGISTER_COMPANY":{"NAME":"Name","EMAIL":"Email","COMPANY":"Company","SEND_MY_APPLICATION":"Send my application"}},"NAVBAR":{"DEFAULT":{"HOME":"Home","ABOUT":"About us","CONTACT":"Contact","DEMOS":"Solutions","COMPANY":"Segments","HUMAN_RESOURCE":"AI Agents","SALES":"Processes","CUSTOMER_SERVICE":"Customer Service","MODULES":"Modules","CALENDAR":"Calendar","PRODUCT":"Verticals","HEALTH":"Health","DEVELOPERS":"Developers","RPA_CREATORS":"RPA Creators","SERVICES":"Marketplace","DATAFLOWS_CREATORS":"Dataflows Creators","SAAS":"Real Estate","START_UP":"Startup","FOR_STORY_TELLERS":"For StoryTellers","AWESOME_DESIGN_BLOCKS":"Awesome blocks","FOR_DEVELOPERS":"For Developers","THE_DEVELOPERS_PLACE":"The developers\' place","YOUR_BUSINESS":"your business","OUT_BEST_BET":"Our best bet is you, we can ensure you that DefAgent fit your needs.","VIEW_PLAN":"View plans","LANGUAGE":"Languaje","EN":"English","ES":"Espa\xf1ol","LOGIN":"Login","SIGNUP":"Signup"}},"SLIDERS":{"SLIDER_CARD_PROJECTS":{"NEW_SUBSCRIBERS":"New subscribers","NEXT":"Next"},"SLIDER_START_RIGHT_WAY":{"FOR_EVERYONE":"DefAgent IAs for Professionals","EVERYTHINK_DOES_ALL":"DefAgent\u2019s low-code platform does ALL OF THE HEAVY LIFTING by automating repetitive processes so you can focus on more complex tasks and achieve unprecedented levels of efficiency.","START_THE_RIGHT_WAY":"Start the right way","START_WITH_EVERy_THINK":"Start with DefAgent","THINKING_ABOUT_YOUR_AI_JOURNEY":"Thinking about your AI journey?","CHOOSE_THE_RIGHT_PLAN":"CHOOSE THE RIGHT PLAN"},"SLIDER_BRING_TO_LIFE":{"ADMIN_TEMPLATE_INCLUDED":"Admin dashboards included","WE_INCLUDED_A_FULLY_FUNcTIONAL":"We\'ve included a fully functional starter admin dashboards","POWER_WITH_MULIPLE_STARTER_APPS":" Powered by DefAgent","ITS_AWESOME_YOU_TO":"We have new features that you are going to love!","SIMPLE_AND_TRANSPARENT":"Simple and transparent","BRING_YOU_APPLICAION_TO_LIFE":"Bring your IAs to life","DASHCORE_INCLUDED":"DefAgent includes an outstanding starter Admin Dashboard UI Interface. With this feature you can start developing right away your applications.","CLEAN_INBOX_UI":"User friendly"},"SLIDER_ALL_IN_ONE":{"EVERYTHINK_YOU_NEED":"Everything you need - all in your hand!","REAL_TIME_SOLUTION":"Solution","STREAMLINES_PROCESSES":"Real-time","AFFORDABILLITY":"Become ultra-responsive in real-time. Create your own white-label apps. Gain valuable insights into clients, markets, and processes and achieve much more with our powerful AI-enabled tool.","SINCE_THE_NEED_FORHUMAN":"Global reach","EVERYTHINK_DOES_ALL":"Close more deals with less friction. Win more listings with greater ease. Streamline your efforts through automation and predictors. Gain a competitive edge with greater functionality and efficiency.","ALWAYS_ON_TIME":"Always on Time","UNIQUE_USER)EXPERIENCE":"Experience","A_NEW_AND_INTUITIVE_EXPERIENCE":"Unique","ESPECIALLY_WHEN_YOUR_CLIENTS_NEEDS":"Leverage DefAgent AI-driven low-code platform to streamline processes to deliver effortless, instantaneous, and much more enriching experiences for buyers, sellers, real estate agents, and everyone involved!","OUTSTANDING":"","ANALYTICS":"Outstanding","SIT_BACK_AS_YOUR":"DefAgent\u2019s software as a service platform offers much more than just a flawless absorption and spewing of data. These \u2018teachable\u2019 IAs gather and review user interactions for analysis and iteration.","CONTINUOUSLY_CHECK_IN":"Continuously check in with your IAs for new suggestions on automating processes or ways to give better solutions to your clients and employees."}},"SCREENSHOTS":{"APP":{"APP_SCREENSHOTS":"Build your ai agents in one place and automate all the processes","A_PICTURE_IS_WORTH_A_THOUSAND_WORDS":""}},"HOME":{"NETWORK_SEARCH_META":{"TITLE":"DefAgent - AI AGENTIC PLATFORM FOR DEFENSE","KEYWORDS":"Network Search, Networks directory App Landing1"},"APP_LANDING_HEADING":{"HEADING":{"AWARDED":"Selected onto the Global Entrepreneur Programme of the British Government","HR_CONSULTIN":"DefAgent","CONSULTANT":"AI AGENTIC PLATFORM FOR DEFENSE","IAS":"With a proprietary system of AI agents, DefAgent enables you to go from idea to production-ready product, eliminating the need to find a technical cofounder or hire developers.\xa0Simply explain your business idea as you would to a human developer, and we handles the rest - product, payments, security, infrastructure, scalability, and more.","GERSTARTED":"Get Started","WHAT_YOU_GET":"What You Get"},"FEATURE_CARDS":{"WHAT_YOU_GET":"What You Get","WITH_A_SINGLE_TOOL":"Easily and quickly implements real-time solutions without need for a dedicated technology professional on staff. No other solution on the market matches our: "},"TWIN_PHONE_LEFT_LIST":{"WE_ARE_YOUR_PATH_TO_SUCCESS":"Types of ai agents in defense"},"TWIN_PHONE_LEFT_RIGHT":{"WE_HAVE_A_TON_OF_BENEFITSS":"We have tons of benefits","EVERYTHINK_DOES_ALL_OF":"DefAgent does ALL OF THE HEAVY LIFTING so you can focus on more valuable and complex tasks."},"DOWNLOAD":{"START_TODAY":"Start Today","DOWNLOAD_THE_APP":"Download The App","DOWNLOAD_EVERYTHING":"Position your business for HR success. Download DefAgent App now and get started on your AI journey! Available on Windows, Mac, iOS, and Android devices.","GET_IT_ON_THE":"Get it on","APP_STORE":"App Store","DOWNLOAD_ON":"Download on","GOOGLE_PLAY":"Google Play"}}},"DEMOS":{"HUMANRE_SOURCES":{},"SALES":{"NETWORK_SEARCH_META":{"TITLE":"DefAgent - Sales","KEYWORDS":"Network Search, Networks directory Sales"},"APP_LANDING_HEADING2":{"ALLISONE":"All is one,","INFINTY":"where infinity starts","EVERYTHINKFORSALES":"DefAgent","BETTERMARKETING":"AI-powered agents are emerging as invaluable","BETTERRESULT":"assets in the Department of Defense (DoD)","OURIAS":"Revolutionizing how we fight by streamlining work and enhancing decision-making speed. These agents excel in automating low-level, low-risk tasks, freeing warfighters to concentrate on vital, mission-critical decisions.","SUBSCRIBENOW":"Get Started"},"APP_LANDING2_TRENDING_DESIGN":{"SIMPLE_IMPLEMENTATION":"Simple implementation with exponentially positive impacts","SINCE_THE_NEED":" Human interactions are vastly reduced to give way for better workflow efficiency and better management of resources. Better cost-effectiveness!","THE_POSSIBILITIES":"The possibilities for using DefAgent for defense are everywhere and are limited only by the ingenuity of users who want to use AI agents to improve and simplify their processes."},"APP_LANDING2_FOCUS_ON_SUCCESS":{"FORGET_OBSOLETE":"Forget obsolete systems & costly investments","EVERYTHINK_DELIVERS":"DefAgent\u2019s AI-driven software as a service will completely transform your business. Our IAs interacts directly with employees, customers, and suppliers to understand their needs, connect them with people, processes, and in real-time.","DOT_NOT_WASTE_TIME":"Help your team become more productive and profitable! Stop wasting valuable time and start getting meaningful results now!"},"APP_LANDING2_SAFETY":{"SAFETY_FIRST":"You First!","YOUR_SUCCESS_IS_OUR_SUCCESS":"Your success is our success!","EVERYTHINK_DOESALL":"DefAgent helps your team to automate routine processes, blaze through mountains of data, and can even handle more complex tasks."},"APP_LANDING2_POPPING_HIGHLIGHT":{"DISCOVER_CREATE_LOVE":"Discover. Empower. Win.","SEE_WHY_PEOPLE_LOVE_EVERTTHINK":"See why businesses and brands love DefAgent"},"APP_LANDING2_DOWNLOAD":{"START_TODAY":"Start Today","DOWNLOAD_THE_APP":"Download The App","DOWNLOAD_EVERTTHINK":"Download DefAgent App Now And Get Started On Your AI For Sales Journey! Available On Windows, Mac, iOS, And Android Devices.","GET_IT_ON_THE":"Get It On","APP_STORE":"App Store","DOWNLOAD_ON":"Download On","GOOGLE_PLAY":"Google Play"}},"CUSTOMER_SERVICE":{"NETWORK_SEARCH_META":{"TITLE":"DefAgent - Network search  ","KEYWORDS":"Network Search, Networks directory network search"},"AUTOMATE_SOCIAL_HEADING":{"EVERYTHINK_FOR_CUSTOMER_SERVICE":"DefAgent Customer Service","DONT_THINK_IT":"Don\u2019t think it; don\u2019t even answer, because we have it!","DRIVE_YOUR_BUSINESS_FORWARD":"Drive your business forward with managed customer care IAs in the palm of your hands!"},"AUTOMATE_SOCIAL_GET_STARTED":{"ALL_IN_ONE":"All-in-one Customer Service Solution","EVERTTHINK_YOU_NEED_IN_ONE_SOLUTION":"Get everything you need in one solution.","EVERTTHINK_YOU_NEED_IN_ONE_SOLUTION1":"","INTRODUCING":"Create effortless and consistent experiences and reduce costs with a powerful customer service automation tool.","COMMUNICATE_BETTER":"Capture communication; analyze and aggregate conversations to deliver real-time solutions, insights, and statistics with our low-code platform!","NO_CREDIT_CARD_NEEDED":"Get your AI journey started!","START_NOW":"Start Now","BY_REGISTERING":" By registering you will get 14 days of DefAgent."},"AUTOMATE_SOCIAL_WHY":{"WHY_EVERYTHINK":"Why DefAgent","OUR_MISSION_IS_TO_PROVIDE_YOU":"Our goal with the powerful DefAgent software as a service platform is the accurate automation of your entire customer service by connecting actors, processes, and devices in real-time. More so, it also provides strategy-based metrics that make it easy to measure business performance against intended goals."},"AUTOMATE_SOCIAL_AUTOMATION_SOLUTION":{"ADVANCED_CUSTOMER":"Advanced Customer Service Automation Solution","DESCRIPTION":"DefAgent IAs are poised to help brands deliver superior customer self-service experiences and overhaul engagements across digital channels. This is advanced customer service automation right in your palms!","OUR_INTELLIGENT_ASSISTANTS":""}},"DEVELOPERS":{"NETWORK_SEARCH_META":{"TITLE":"DefAgent - developer","KEYWORDS":"Network Search, Networks directory developer"},"HEADING":{"WELCOME_DREAMERS":"Welcome Dreamers!","CREATE_EMOTIONS":"Create Emotions for Smart Assistants","SHOW_VIDEO":"Show video"},"INTEGRATioNS":{"KNOW_WHAT_YOU_CAN_DO_WITH_US":"Know what you can do with Us","LEARN_MORE":"Learn more"},"TOOL":{"INTEGRATION_TOOLS":"","EASY_INTEGRATIONS":"","LOREM_IPSUM":"","LOREM_IPSUM_DOLOR":"","INTEGRATE":""}},"HEALTH":{"NETWORK_SEARCH_META":{"TITLE":"DefAgent - corporate","KEYWORDS":"Network Search, Networks directory corporate"},"CORPORATE":{"EVERYTHINK_MAKE_TREATMENT_MORE":"DefAgent makes treatment more effective, and patients safer, allowing hospitals and insurance companies to save money.","LEARN_MORE":"Learn More","80_OF_THE_CASE_ARISE":"80% of these cases arise from miscommunications during care transitions, resulting in more than 7000 deaths and 500,000 preventable injuries caused by medical errors. Not to mention the 3 out of every 10 lab tests that are reordered because the results get lost in the process. As much as 18% of hospital medical patients are readmitted within a month. All or most of these could be avoided!","DID_YOU_KNOW":"Did you know that medical errors are the third leading cause of death in the US?","HEADING":{"EVERYTHINK_FOR_HEALTH":"DefAgent Health","WELCOME_TO_THE_FUTURE":"Driving the next wave of meaningful innovation in healthcare, don\u2019t be left behind!","WITH_THE_RIGHT_DATA":"Gain insights and leverage radically interoperable data to accelerate healthcare research, usher in a new era of treatment optimization, drug development, outcome prediction, disease diagnosis and prognosis, patient engagement, and better public health.","START_NOW":"Start now","PLANS_AND_PRICEING":"Plans & pricing"},"BUSINESS":{"LETS_DO_BUSINESS":"Let\'s get started","WHAT_EVERYTHINK_OFFERS":"What DefAgent offers"},"EVERYTHINK_IS_THE_SOLUTION":"DefAgent augments the clinician-patient experience. With this software as AIaaS tool at the fundamental of your healthcare delivery interactions, most medical errors can be prevented. The technology integrates the patients\u2019 records in a single, highly secure place that allows for easy sharing within and outside the network, for the benefits of both patients as well as the medical staff."}},"RPACREAORS":{"NETWORK_SEARCH_META":{"TITLE":"DefAgent - online payment","KEYWORDS":"Network Search, Networks directory online payment"},"ONLINE_PAYMENT":{"HEADING":{"GO_BIG":"Go big, or back home!","CREATE_BUY":"Create, buy and sell automated processes.","WITHOUT_CODING":"- Without coding.","KNOW_MORE":"Know more","START_NOW":"Start now"},"FEATURES":{"REASONS_TO_USE_EVERYTHINK":"Reasons to use DefAgent","KNOW_WHAT_YOU_CAN_DO_WITH_US":"Know what you can do with Us"},"CUSTOMERS_MANAGEMENT":{"CREATE_SMART":"Create Smart","EXERIENCES_WITH":"Experiences with","EVERYTHINK":"DefAgent Studio","SIMPLE_IMPLEMENTATION":" Simple implementation with exponentially positive impact.","CUSTOMERSADMINISTRATION":"Customers administration."}}},"DATAFLOWS_CREATOORS":{"NETWORK_SEARCH_META":{"TITLE":"DefAgent - integration","KEYWORDS":"Network Search, Networks directory integration"},"INTEGRATION":{"HEADING":{"CREATE_EMOTIONS_FOR_SMART_ASSISTANTS":"Create Emotions for Smart Assistants","CREATE_BUY_AND_SELL":" Create, Buy and Sell data flows to train Smart Assistants for the different geolocated conversations necessary for each of the actors that participate in each network, community and channel.","JOIN_EVERY_TTHINK":"Join DefAgent"},"HOW_IT_WORK":{"KNOW_WHAT_YOU_CAN_DO_WITH_US":"Know what you can do with Us","EVERYTHINK_DOES_ALL":"DefAgent does ALL OF THE HEAVY LIFTING so you can focus on more valuable and complex tasks."},"BUILT_TECH":{"INDUSTRY_LEADING":"Industry leading","TECHNOLOGY":"technology","EVERYTHINK_STUDIO":"DefAgent Studio gives you everything you and your business  needs to build robust data flows. All without coding!","ONE_STEP_AHEAD_OF_AIS":"One step ahead of AIs","EMPOWER_THE_INTELLIGENT":"Empower the Intelligent Assistants by providing new interactions created by you, this elevating your problem solving skills in real time."},"EXTEND_CORE":{"LIMITLESS_POSSIBILITIES":"Limitless possibilities","BUILD_FAST_BUILD_MORE":"Build Fast. Build More.","USING_EVERYTHINK":"Using DefAgent Studio\u2019s unique software for fast and fluid data flows development, you can build and deploy all data flows you need  in minutes. No scripting, programming, or technical skills required.","KNOW_MORE":"Know more","REGISTER_ACCOUNT":"Register Account"},"LATEST_PROJECTS":{"EVERYTHINK_MARKETPLACE":"DefAgent Marketplace","TAKE_A_LOOK_AT_OUR_LATEST_PROJECTS":"Take a look at our latest projects, those customer have trust in our services to bring their business to the next level!","SOMOS_PILEROS":"Somos Pileros","WE_BUILT_DATA":"We built data flows to connect entrepreneurs with volunteers and mentors more quickly and efficiently by automating the search and connection process between users, in real time."},"REGISTER":{"FILL_IN_THE_FORM":"Fill in the form","YOUR_SUCCESS_IS_OUR_SUCCESS":"Your success is our success","IF_YOU_ARE_LOOKING":"If you\'re looking to be part of DefAgent network, just fill in the form, we\'re sure we can build great things together!"},"WHY_CHOOSE_US":{"SIMPLE_IMPLEMENTATION_WITH":" Simple implementation with exponentially positive impact","SINCE_THE_NEED_FOR_HUMAN":"Since the need for human intervention is reduced and workflow efficiency is increased, the process is highly affordable.","KNOW_MORE":"Know More"}}},"SAAS":{"NETWORK_SEARCH_META":{"TITLE":"DefAgent - saas","KEYWORDS":"Network Search, Networks directory saas"},"HEADING":{"EVERYTHINK_FOR_REAL_ESTATE":"DefAgent Real Estate","YOU_AGENT_IN_YOUR_HANDS_WITHGLOBAL_REACH":"Your agent in your hands with global reach!","OUT_IAS_ARE_POISED":"Our IAs will revolutionize your real estate service delivery with process automation and AI-based innovations. Better still, it is always right there in your palms","PLANS_AND_PRICING":"Plans & pricing","START_NOW":"Start now"},"LIGHTWEIGHT_TEMPLATE":{"YOUR_SMART_PUPPETS":"Your Very Own Smart Puppets","WILL_PROVIDE_YOUR_PROSPECTS_AND_CLIENTS":"With DefAgent software as a service platform, our IAs can help become ultra-responsive in real-time; gain valuable insights into prospects, clients, markets, and processes; leverage valuable data to address clients\u2019 needs and close more sales, achieve greater system transparency; and improve overall efficiency.","SIMLIFYING_THE_CURRENT":"","LEARN_MORE":"Learn More"},"BUILD_TO_LAST":"Built to Last","WHAT_YOU_WILL_GET_WITH_EVERTTHINK":"What You Get","GEOLOCATED_INTELLIGENT_ASSISTANTS":"Automate Your Booking Process With DefAgent Calendar And Focus Only On What Matters","DASHBORD_INCLUDED":"Dashboards included","SIMPLE_IMPLEMENTATION":"Simple implementation with exponentially positive impact","SINCE_THE_NEED_FOR_HUMAN":"Since the need for human intervention is reduced and workflow efficiency is increased, the process is highly affordable.","THE_POSSIBILITIES":"The possibilities for using DefAgent for Sales are everywhere, and only  limited to the ingenuity of users who want to utilize AI to improve their quality of life.","Learn_More":"Learn more"},"START_UP":{"NETWORK_SEARCH_META":{"TITLE":"DefAgent - Drone detection system","KEYWORDS":"Drone detection system, ai, blockchain"},"HEADING":{"DELIVERING_THE_TOOLS":"Secure Your Skies: Advanced Drone ","YOU_NEED_TO_SUCCEED":"Detection and Defense Solutions","IT_ALL_BEGINS_BY_CHOSSING":"Protecting Your Airspace with Cutting-Edge Detection, Tracking, and Mitigation Technology","TRY_IT_FREE":"Get Started!"},"WHAT_YOU_GET":{"WHAT_YOU_WILL_GET_WITH_EVERTTHINK":"What You Get","GEOLOCATED_INTELLIGENT_ASSISTANTS":"Automate Your Booking Process With DefAgent Calendar And Focus Only On What Matters","BUSINESS_TITLE":"Real-Time Detection","PAYMENTS_TITLE":"Accurate Tracking","SCHEDULES_TITLE":"Comprehensive Threat Analysis","SITE_TITLE":"24/7 Airspace Monitoring","BUSINESS_DESC":"Instantly identify unauthorized drones in your airspace with advanced radar, RF scanning, and AI-powered sensors.","PAYMENTS_DESC":"Pinpoint the exact location, speed, and flight path of intruding drones for proactive response.","SCHEDULES_DESC":"Differentiate between drones, birds, and other objects to reduce false alarms and ensure reliable alerts.","SAVING_DESC":"Continuous surveillance to protect your property, events, or critical infrastructure around the clock."},"PRICING":{"TITLE":"DefAgent Calendar","SUBTITLE":"Works With Any Type Of Business And Any Type Of Appointment Scheduling","BUY":"Buy now","PLAN_PERSONAL":"One on One","PLAN_PERSONAL1":"Therapists","PLAN_PERSONAL2":"Personal trainers","PLAN_PERSONAL3":"Human Resources & Head Hunting","PLAN_PERSONAL4":"Pet care services","PLAN_PERSONAL5":"Sales teams & consultants","PLAN_PERSONAL_DESC":"","PLAN_BUSINESS":"Group","PLAN_BUSINESS1":"Gym & Fitness studio","PLAN_BUSINESS2":"Tour operators","PLAN_BUSINESS3":"Language schools","PLAN_BUSINESS4":"Schools & Universities","PLAN_BUSINESS5":"Events, Workshops & Seminars","PLAN_BUSINESS_DESC":"","PLAN_ENTERPRISE":"Reservations","PLAN_ENTERPRISE1":"Venue/Equipment Rentals","PLAN_ENTERPRISE2":"Photography studio","PLAN_ENTERPRISE3":"Resource scheduling","PLAN_ENTERPRISE4":"Conference & meeting rooms","PLAN_ENTERPRISE5":"Sport court reservations","PLAN_ENTERPRISE_DESC":"","PLAN_BUSINESSD":"Service","PLAN_BUSINESSD1":"Beauty salons","PLAN_BUSINESSD2":"Medical professionals","PLAN_BUSINESSD3":"Driving instructors","PLAN_BUSINESSD4":"Repair professionals","PLAN_BUSINESSD5":"Household & cleaning services","PLAN_BUSINESSD_DESC":""},"PRICING_TWO":{"TITLE":"Affordable pricing plans.","TITLE0":"Go Ahead And","TITLE01":"Get Your Discounted","TITLE1":"DefAgent Calendar","TITLE11":"License","TITLE2":"Today!","TITLE22":"Choose Your Plan:","SUBTITLE":"","BUY":"Buy Now","MONTHLY":"Monthly Basis","ANNUAL":"Annual Basis","DISCOUNT":"(Save Up To 30% Off On Annual Plans)","GETNOW":"Get It Now","CUSTOM":"For Teams","CUSTOM1":"(Best Value)","CUSTOM2":"For Teams And Businesses With Additional Scheduling Needs, Customization And Advanced Features","CUSTOM3":"Contact Us","PLAN_BASIC":"For Individuals","PLAN_BASIC_DESC":"Everything You Can Get From A Professional Solution To Keep Your Business On Its Way To Success","FEATURES1":"200 Maximum Number Of Upcoming Appointments","FEATURES2":"1 Integration To Collect Payments","FEATURES3":"50 Free SMS Invitations","FEATURES4":"DefAgent Calendar In Your Website","FEATURES5":"Custom Branding","FEATURES6":"Webhooks","FEATURES7":"Real-time Support","FEATURES8":"Workflows","FEATURES9":"Real-time Reports","FEATURES10":"Marketing Packages","FEATURES11":"Over 700 App Integrations With Zapier","FEATURES12":"Connect To Zoom, Microsoft Teams, Google Meet, And GoToMeeting"},"FEATURES":{"BUSINESS_TITLE":"Enhanced Security","PAYMENTS_TITLE":"Real-Time Threat Detection","SCHEDULES_TITLE":"Prevent Espionage and Surveillance","SAVING_TITLE":"Mitigate Smuggling and Contraband Drops","INTERFACE_TITLE":"Ensure Public Safety","SITE_TITLE":"Reduce False Alarms","BUSINESS_DESC":"Protect your property, events, or critical infrastructure from unauthorized drone intrusions.","PAYMENTS_DESC":"Identify and track drones instantly, ensuring timely response to potential threats.","SCHEDULES_DESC":"Safeguard sensitive information and privacy from drone-based spying.","SAVING_DESC":"Prevent drones from delivering illegal items to restricted areas like prisons or secure facilities.","INTERFACE_DESC":"Protect large gatherings, such as concerts, sports events, or public spaces, from rogue drones.","SITE_DESC":"Advanced AI and machine learning differentiate drones from birds, planes, or other objects.","DASHCORE_FEATURE":"DefAgent Features","WHAT_DASHCORE_CAN_DO":"Benefits Of Using Drone Detection System","LOREM_IPSUM":"With DefAgent, In Less Than 24 Hours An Organization Can Build Geolocated Intelligent Assistants That will Manage Data, And Match Needs With Solutions By Interconnecting People, Automated Processes And Devices In Real-time, Constantly Measuring The Performance Of Each Business Actor \u2013 All Without Coding."},"WHY_DASHCORE":{"WHY_DASHCORE_TEMPLATE":"Implementing a drone detection system","WHEN_LOOKING":"requires careful planning, the right technology, and integration with existing security infrastructure. Here\u2019s a step-by-step guide to help you understand the implementation process","DEVELOPERS":"Assess Your Needs","ENGAGING_DEVELOPERS0":"","ENGAGING_DEVELOPERS01":"Identify the area to be protected (e.g., small property, large facility, or wide-area coverage).","ENGAGING_DEVELOPERS1":"Determine the level of threat (e.g., surveillance, smuggling, or malicious drones).","ENGAGING_DEVELOPERS11":"","ENGAGING_DEVELOPERS2":"Define your budget and goals (e.g., detection only, or detection + mitigation).","ENGAGING_DEVELOPERS22":"","LOREM_IPSUM":"","DESIGNER":"Choose the Right Technology","ENGAGING_DESIGNER0":"","ENGAGING_DESIGNER01":"Radar for long-range detection.","ENGAGING_DESIGNER1":"RF Scanners to detect drone communication signals.","ENGAGING_DESIGNER11":"","ENGAGING_DESIGNER2":"Optical/Infrared Cameras for visual confirmation.","ENGAGING_DESIGNER22":"","REMINDERS":"Site Survey and Installation Planning","ENGAGING_REMINDERS0":"","ENGAGING_REMINDERS01":"Conduct a site survey to identify optimal locations for sensors and cameras.","ENGAGING_REMINDERS1":"Ensure coverage of all entry points and vulnerable areas.","ENGAGING_REMINDERS11":"","ENGAGING_REMINDERS2":"Account for environmental factors like weather, terrain, and interference.","ENGAGING_REMINDERS22":"","PAYMENTS":"Install Hardware and Sensors","ENGAGING_PAYMENTS0":"","ENGAGING_PAYMENTS01":"Mount sensors, cameras, and other hardware in strategic locations.","ENGAGING_PAYMENTS1":"Ensure proper calibration and alignment for maximum accuracy.","ENGAGING_PAYMENTS11":"","ENGAGING_PAYMENTS2":"Set up communication links between sensors and the central control system.","ENGAGING_PAYMENTS22":"","PAGE":"Configure Software and AI","ENGAGING_PAGE0":"","ENGAGING_PAGE01":"Set up the central control software for real-time monitoring and alerts.","ENGAGING_PAGE1":"Train AI algorithms to differentiate drones from birds, planes, or other objects.","ENGAGING_PAGE11":"","ENGAGING_PAGE2":"Customize alert settings (e.g., email, SMS, or visual/audio alarms).","ENGAGING_PAGE22":""},"VIDEOs":{"HOW_TO_VIDEO":"Why Us?","TAKE_A_LOOKING_AT":"Leading the Way in Drone Detection and Airspace Security","1_TITLE":"Cutting-Edge Technology","1_DESC":"We use the latest advancements in radar, RF scanning, AI, and machine learning to deliver the most accurate and reliable drone detection systems.","2_TITLE":"Comprehensive Solutions","2_DESC":"From detection and tracking to mitigation, we provide end-to-end solutions tailored to your specific needs.","3_TITLE":"Proven Expertise","3_DESC":"With years of experience in security and drone technology, we understand the challenges and deliver proven results."}}},"PROJECT":{"NETWORK_SEARCH_META":{"TITLE":"DefAgent - Networks directory","KEYWORDS":"Network Search, Networks directory"},"FOR_DEVELOPERS":{},"FORSTORYTELLERS":{},"VIEW_PLANAND_PRICE":{}},"FAQS":{"FAQS1":{"DO_YOU_HAVE":"Do you have","QUESTIONS":"questions?","NOT_SURE_HOW":"Not sure how DefAgent can help you? Wondering why you need to start your AI journey?","HERE_ARE_THE_ANSWERS":"You can ask us any questions. However, here are the answers to the most common questions we get asked by our esteemed customers."}},"COUNTER":{"COUNTER1":{"MILLIONS_BUSSINESS":"Millions rely on DefAgent to find and retain top talents!","THESE_AMAZING_STATS":"Numerous brands and businesses around the world use DefAgent AIaaS and cognitive computing capabilities to optimize their HR workflows. Numbers don\u2019t lie and these amazing stats can\u2019t be wrong!"},"COUNTER1_L2":{"MILLIONS_BUSSINESS":"Many businesses rely on DefAgent to boost their sales performance!","THESE_AMAZING_STATS":"Businesses and brands are across the world are leveraging our powerful talent technology to boost their lead volume, close rate, and entire sales performance. Check out our numbers!"},"COUNTER2":{"WHY_CUSTOMER_TRUST_US":"Why customer trust us","HAPPY":"Happy","CUSTOMER":"Customers","THESE_AMAZING_STATS":"These amazing stats can be wrong, many happy customers around the world trust our service to boost their business.","TONS_OF_SUCCESSFULL_IMPLEMENATION":"Tons of successful implementations","USERS_IMPROVE_THEIR_ABILITY":"DefAgent raises the bar for efficiency and productivity, thus increasing job satisfaction. This low-code platform also guarantees exceptional ease of implementation and so is trusted by hundreds of thousands of brands across the world.","ALL_POWERED_BY":"Powered by a cognitive engine which can develop characters for various roles, to complete different functions within the company.","LEARN_MORE":"Learn more"},"COUNTER3":{"AMAZING_STATS":"Amazing stats","EVERYTHINK_CREaTES_A_POWERFUL_AND_EFFECTIVE":"Leverage DefAgent\u2019s AIaaS platform to implement a circular economy business model!","EACH_USER_IS_EMPOWERED":"Users are empowered by the ability to improve networking and boost job performance."},"COUNTER6":{"SUCCESSFULL_IMPLEMENTATIONS":"1M+ Successfully Implementations","GET_THEVERY_BEST":"Get the very best of us by doing the best of you"}},"CATE":{"CATE1":{"READY_TO_GET_STARTED":"Ready to get started?","BECOME_ONE_OF_THE_MILLIONS":"Join millions of people and brands around the world who love and use EveryThink!","CREATE_EVERTTHINKACCOUNT":"Create account"}},"TESTIMONIALS":{"TESTIMONIAL_SIMPLE_SLIDER":{"TESTIMONIALS":"Testimonials"},"TESTIMONIAL_SLIDER":{"LOREM_IPS":"This is an incredible tool that can help anyone to create their own algorithms and generate a more sustainable business. Thank you very much for helping us help other people!","JANE_DOR":"Estefany G\xfcech\xe1,","AWESOME_COMPANY":"Somos Pileros"},"TESTIMONIAL_SIMPLE_TEXT_RIGHT":{"IF_YOU_ARE_STRUGGLING":"If you are struggling to stay in business, there may be several options you can explore.","EVERYTHINK":"DefAgent,","IS_THE_PERFECT_TOOL":" is the perfect tool. It is very easy to use, and it has all the functionality you are looking for.","CARO_FOGLIATO":"Caro Fogliato,","CEOANDFOUNDER":" CEO & Founder of DefAgent inc."},"TESTIMONIAL_SIMPLE_TEXT_LEFT":{"EVERYTHIN_IS_GREAT_FOR":"DefAgent is great for","ANYONE_WHO_IS_LOOKING_FOR_SIMPLE":" Anyone who is looking for simple implementation with exponentially positive impact","EVERYTHINK_LTD_TEAM":"DefAgent inc. Team,","DoING_GREATE_SINCE":" Doing great since 2024"},"TESTIMONIAL_SKEWED_SLIDER":{"OUR_CUSTOMERS_HAVE_SOMETHING_TO_SAY":"Our customers have something to say","THEY_ARE_THE_BEST":"They are the best, our customer want to let you know how DefAgent is helping them to achieve their goals and how simple is to use it!"},"TESTIMONIAL_WORLD_MAP":{"WE_HEARD_OUR_CUSTOMERS_SAY":"We\'ve heard our customers say","SED_OUT_PERSPICIATIS":"This is an incredible tool that can help anyone to create their own algorithms and generate a more sustainable business. Thank you very much for helping us help other people!","JANE_DOE":"Estefany G\xfcech\xe1,","MARKEYING_DIRECTOR":"Somos Pileros"}},"USUAL":{"FEATURES_ICONS_COL":{"UP_TO_THE_TASK":"Start your AI for health journey with DefAgent","WHAT_YOU_GET":"What You Get","GEOLOCATED_INTELLIGENT_ASSISTANTS":"With DefAgent AIaaS low-code platform, you can leverage geolocated IAs to manage data from disparate sources like electronic health records and social determinants of health; interconnect people and devices and, automate costly, repetitive, and error-prone administrative labor into a far more efficient and inexpensive digital workforce."},"DEVELOPER_DESIGNER":{"JOIN_AS_DESIGNER":"Join us!","JOIN_AS_DEVELOPER":"","LOREM_IPSUM":""},"START_NOW_BOX":{"TRY_EVERYTHINK_NOW":"Try DefAgent now.... love it forever","WHY_WAIT":"Why wait? Start now!","START_NOW":"Start now"}},"FOOTER":{"FOOTER1":{"EVERYTHINK_IS_POISED":"All is one, where infinity starts.","COMPANY":"DefAgent","ABOUT":"About Us","BLOG":"Blog","PRODUCt":"Product","SERVICES":"Services","FEATURES":"Features","API":"API","CUSTOMERS":"Customers","CHANNELS":"Channels","CAREERS":"Careers","CONTACT":"Contact","SEARCH":"Search","COPYRIGHT":"Copyright \xa9 2024-2025 DefAgent inc. All Rights Reserved."}},"CONTACT":{"NETWORK_SEARCH_META":{"TITLE":"EveryThink - contact","KEYWORDS":"Network Search, Networks directory contact"},"FORM":{"LETS_DO_BUSINESS":"Let\'s do business","STEP_INTO_OUR_PLACE":"Step into our place","123_STREET_ST":"Texas","YC_COUNTRY":" United States"},"OTHER_CHANNELS":{"CONTACT_SALE":"Contact Sale","LOOKING_FOR_CUSTOM_QUOTE":"Looking for a custom quote? need to tell us more about your project? or want a demonstration? drop us a line to","TECHNICAL_SUPPORT":"Technical Support","ANY_QUESTION":"Any question about how to integrate your product?. Don\'t fret, our team is ready for help you"}},"ABOUT":{"NETWORK_SEARCH_META":{"TITLE":"EveryThink - about","KEYWORDS":"Network Search, Networks directory about"},"OVERVIEW":{"SUCCEED_WITH_DASHCORE":"Succeed with EveryThink","THE_NEW_WAY_TO_SHOWCASE":"The new way to boost your Business","DASHCORE_IS_A_BOOTSTRAP":"","IT_INCLUDES_MULTIPLE":"It includes multiple components and pre-made demos ready for you to personalize according to your own needs. EveryThink includes a ready-to-go Admin Dashboard with many out-of-the-box features."},"VIDEO":{"DISCOVER_HOW_DASHCORE_WORKS":"Discover how EveryThink works","PLAY_THE_VIDEO":"Play the video"},"SOLUTIONS":{"A_SOLUTION_FOR_EVERY_NEED":"A solution for every need","LOREM_IPSUM":"","DASHCORE_INCLUDED":"Dashboards Included","OUR_TEMPLATE_IS_PACKED_WITH_A":"EveryThink","START_ADMIN_DASHBOARD":"also has control panels that are customizable according to your needs","START_RIGHT_AWAY":"started right away with your project.","TRY_THE_DASHBOARD":"Try EveryThink"},"FEATURES":{"OUR_FEATURES_STACK":"Our features stack","TAKE_THE_CONTROL":"Take the control of your business with EveryThink. You can customize  according to your needs or just use the ready-to-use the solution we made for you"},"CUSTOMERS":{"THIRD_PARTY":"Third party integration","WE_USE_THE_LATEST_TRENDS":" We use the latest trends because you deserve better","ARE_YOU_A_DEVELOPER":"Are you a developer?","REVIEW_THE_SPECS":"Review the specs"},"TEAM":{"GET_TO_KNOW_OUR_TEAM":"Get to know our team","THESE_AMAZING_PEOPLE":"These amazing people have made possible to stay where we are"},"REGISTER":{"DASHCORE_OFFICIAL":"EveryThink Ltd","NEWSLETTER":"Newsletter"}},"TERMS":{"trm_terms_of_use":"Terms Of Use","trm_last_update":"Last Update: March 30, 2025","trm_general_information":"General Information","trm_introduction":"Welcome to DefAgent inc. (the \u201cCompany\u201d). DefAgent builds technologies and services that enable people to connect with each other, proceses and devices; builds networks, communities, and channels; and grows businesses. These Terms govern your use of DefAgent, and the other products, modules, features, apps, services, technologies, and software we offer. These Products are provided to you by DefAgent, inc. By creating a DefAgent account, whether through a mobile device, mobile application or computer (collectively, the \u201cService\u201d) you agree to be bound by these Terms of Use and our Privacy Policy, which is incorporated by reference into this Agreement and available in the Service (this \u201cAgreement\u201d). If you do not accept and agree to be bound by all of the terms of this Agreement, please do not use the Service.","trm_1_acceptance_terms":"1. Acceptance of Terms of Use Agreement.","trm_1_acceptance_terms_1":"This Agreement is an electronic contract that establishes the legally binding terms you must accept to use the Service. This Agreement includes the Company\u2019s (i) Privacy Policy, (ii) Our Safety Tips and (iii) Terms Disclosed And Agreed To By You if you purchase or accept additional features, modules, products or services we offer on the Service.","trm_1_acceptance_terms_2":"We may, at any time and for any reason make changes to this Agreement. We may do this for a variety of reasons including to reflect changes in or requirements of the law, new features, or changes in business practices. The most recent version of this Agreement will be posted on the Services under Settings and also on https://defagent.ai/ Web-page, and you should regularly check for the most recent version. The most recent version is the version that applies. If the changes include material changes that affect your rights or obligations, we will notify you of the changes by reasonable means, which could include notification through the Services or via email. If you continue to use the Services after the changes become effective, then you shall be deemed to have accepted those changes. If you don\u2019t agree to these changes, you must end your relationship with us by ceasing to use the Services and leaving DefAgent.","trm_2_eligibility":"2. Eligibility.","trm_2_eligibility_1":"You must be at least 18 years of age to create an account on DefAgent and use the Service. By creating and account and using the Service, you represent and warrant that you can form a binding contract with DefAgent, you are not a person who is barred from using the Service under the laws of texas,usa or any other applicable jurisdiction meaning that you do not appear on texas,usa. Treasury Department\u2019s list of Specially Designated Nationals or face any other similar prohibition, and you will comply with this Agreement and all applicable local, state, national and international laws, rules and regulations. If you create an account, you represent and warrant that you have never been convicted of a felony and that you are not required to register as a sex offender with any state, federal or local sex offender registry.","trm_3_user_accounts":"3. User Accounts.","trm_3_user_accounts_1":"In order to use most aspects of the Services, you must register for and maintain an active personal user Services account (\'Account\'). You must be at least 18 years of age, or the age of legal majority in your jurisdiction (if different than 18), to obtain an Account, unless a specific Service permits otherwise. Account registration requires you to submit to DefAgent certain personal information, such as your name, address, mobile phone number and age, as well as at least one valid payment method supported by DefAgent. You agree to maintain accurate, complete, and up-to-date information in your Account. Your failure to maintain accurate, complete, and up-to-date Account information, including having an invalid or expired payment method on file, may result in your inability to access or use the Services. You are responsible for all activity that occurs under your Account, and you agree to maintain the security and secrecy of your Account username and password at all times. Unless otherwise permitted by DefAgent in writing, you may only possess one Account.","trm_4_terms_termination":"4. Terms And Termination.","trm_4_terms_termination_1":"This Agreement will remain in full force and effect while you use the Service and/or have a DefAgent account. You may terminate your account at any time, for any reason, by following the instructions in \u201cSettings\u201d in the Service. The Company may terminate or suspend your account at any time without notice if the Company believes that you have breached this Agreement in its sole discretion. Upon such termination or suspension, you will not be entitled to any refund of unused fees for in app purchases. After your account is terminated, this Agreement will terminate, except that the following provisions will still apply: Section 4, Section 8, Section 9 and Sections 16-18.","trm_5_non_commercial_use":"5. Non-commercial Use by Users.","trm_5_non_commercial_use_1":"The Service is for personal use only. Users may not use the Service or any content contained in the Service (including, but not limited to, content of other users, designs, text, graphics, images, video, logos, software, and computer code) in connection with any commercial endeavors, such as advertising or soliciting any user to buy or sell any products or services not offered by the Company. Users of the Service may not use any information obtained from the Service to contact, advertise to, solicit, or sell to any other user without his or her prior explicit consent. Organizations, companies, and/or businesses may not use the Service for any purpose except with DefAgent\u2019 express consent (such as for promoted profiles or other advertisements), which DefAgent may provide or deny in its sole discretion. The Company may investigate and take any available legal action in response to illegal and/or unauthorized uses of the Service.","trm_6_the_services":"6. The Services.","trm_6_the_services_1":"DefAgent is a Mobile (Android and iOS) and Web interactive network hosted by a virtual assistant with artificial intelligence capable of connecting people according to their personal, work, social and educational interests, needs and abilities through specific questions. The virtual assistant is capable of learning about the user needs, abilities, interests and aspirations in every environment through contextualized and geospatial questions, in order to achieve assertive connections with others.","trm_7_interactions":"7. Your Interactions With Other Users.","trm_7_interactions_1":"YOU ARE SOLELY RESPONSIBLE FOR YOUR INTERACTIONS WITH OTHER USERS. YOU UNDERSTAND THAT THE COMPANY CURRENTLY DOES NOT CONDUCT CRIMINAL BACKGROUND CHECKS ON ITS USERS. THE COMPANY ALSO DOES NOT VERIFY THE STATEMENTS OF ITS USERS. THE COMPANY MAKES NO REPRESENTATIONS OR WARRANTIES AS TO THE CONDUCT OF USERS OR THEIR COMPATIBILITY WITH ANY CURRENT OR FUTURE USERS. THE COMPANY RESERVES THE RIGHT TO CONDUCT ANY CRIMINAL BACKGROUND CHECK OR OTHER SCREENINGS (SUCH AS SEX OFFENDER REGISTER SEARCHES), AT ANY TIME AND USING AVAILABLE PUBLIC RECORDS.","trm_7_interactions_2":"The Company is not responsible for the conduct of any user. As noted in and without limiting Section 15 below, in no event shall the Company, its affiliates or its partners be liable (directly or indirectly) for any losses or damages whatsoever, whether direct, indirect, general, special, compensatory, consequential, and/or incidental, arising out of or relating to the conduct of you or anyone else in connection with the use of the Service including, without limitation, death, bodily injury, emotional distress, and/or any other damages resulting from communications or meetings with other users or persons you meet through the Service. You agree to take all necessary precautions in all interactions with other users, particularly if you decide to communicate off the Service or meet in person, or if you decide to send money to another user. In addition, you agree to review and follow the Company\u2019s Safety Tips, located in the Service, prior to using the Service. You should not provide your financial information (for example, your credit card or bank account information), or wire or otherwise send money, to other users.","trm_8_content_posted":"8. Content Posted By You In The Service.","trm_8_content_posted_1":"You are solely responsible for the content and information that you post, upload, publish, link to, transmit, record, display or otherwise make available (collectively, \u201cpost\u201d) on the Service or transmit to other users, including text messages, chat, videos, photographs, or profile text, whether publicly posted or privately transmitted (collectively, \u201cContent\u201d). You may not post as part of the Service, or transmit to the Company or any other user (either on or off the Service), any offensive, inaccurate, incomplete, abusive, obscene, profane, threatening, intimidating, harassing, racially offensive, or illegal material, or any material that infringes or violates another person\u2019s rights (including intellectual property rights, and rights of privacy and publicity). You represent and warrant that (i) all information that you submit upon creation of your account, is accurate and truthful and that you will promptly update any information provided by you that subsequently becomes inaccurate, incomplete, misleading or false and (ii) you have the right to post the Content on the Service and grant the licenses set forth below.","trm_8_content_posted_2":"You understand and agree that the Company may, but is not obligated to, monitor or review any Content you post as part of a Service. The Company may delete any Content, in whole or in part, that in the sole judgment of the Company violates this Agreement or may harm the reputation of the Service or the Company.","trm_8_content_posted_3":"By posting Content as part of the Service, you grant to DefAgent a worldwide, transferable, sub-licensable, royalty-free, right and license to host, store, use, copy, display, reproduce, adapt, edit, publish, modify and distribute the Content. This license is for the limited purpose of operating, developing, providing, promoting, and improving the Service and researching and developing new ones.","trm_8_content_posted_4":"In addition to the types of Content described in Section 8 (a) above, the following is a partial list of the kind of Content that is prohibited in the Service. You may not post, upload, display or otherwise make available Content that:","trm_8_content_posted_4_1":"(I) Promotes racism, bigotry, hatred or physical harm of any kind against any group or individual;","trm_8_content_posted_4_2":"(II) Advocates harassment or intimidation of another person;","trm_8_content_posted_4_3":"(III) Spams or solicits DefAgent\u2019 users;","trm_8_content_posted_4_4":"(IV) Promotes information that is false or misleading, or promotes illegal activities or conduct that is defamatory, libelous or otherwise objectionable;","trm_8_content_posted_4_5":"(V) Promotes an illegal or unauthorized copy of another person\u2019s copyrighted work, such as providing pirated computer programs, images, audio or video files or links to them;","trm_8_content_posted_4_6":"(VI) Contains video, audio photographs, or images of another person without his or her permission (or in the case of a minor, the minor\u2019s legal guardian);","trm_8_content_posted_4_7":"(VII) Contains restricted or password only access pages, or hidden pages or images (those not linked to or from another accessible page);","trm_8_content_posted_4_8":"(VIII) Provides material that exploits people in a sexual, violent or other illegal manner, or solicits personal information from anyone under the age of 18;","trm_8_content_posted_4_9":"(IX) Provides instructional information about illegal activities such as making or buying illegal weapons or drugs, violating someone\u2019s privacy, or providing, disseminating or creating computer viruses;","trm_8_content_posted_4_10":"(X) Contains viruses, time bombs, trojan horses, cancelbots, worms or other harmful, or disruptive codes, components or devices;","trm_8_content_posted_4_11":"(XI) Impersonates, or otherwise misrepresents affiliation, connection or association with, any person or entity;","trm_8_content_posted_4_12":"(XII) Provides information or data you do not have a right to make available under law or under contractual or fiduciary relationships (such as inside information, proprietary and confidential information);","trm_8_content_posted_4_13":"(XIII) Disrupts the normal flow of dialogue, causes a screen to \u201cscroll\u201d faster than other users are able to type, or otherwise negatively affects other users\u2019 ability to engage in real time exchanges; and","trm_8_content_posted_4_14":"(XIV) Solicits passwords or personal identifying information for commercial or unlawful purposes from other users or disseminates another person\u2019s personal information without his or her permission.","trm_8_content_posted_text":"The Company reserves the right, in its sole discretion, to investigate and take any legal action against anyone who violates this provision, including removing the offending communication from the Service and terminating or suspending the account of such violators.","trm_9_use_service_0":"9. Use Of The Service","trm_9_use_service":"Your use of the Service, including all Content you post through the Service, must comply with all applicable laws and regulations. You agree that the Company may access, preserve and disclose your account information and Content if required to do so by law or in a good faith belief that such access, preservation or disclosure is reasonably necessary, such as to: (i) comply with legal process; (ii) enforce this Agreement; (iii) respond to claims that any Content violates the rights of third parties; (iv) respond to your requests for customer service or allow you to use the Service in the future; or (v) protect the rights, property or personal safety of the Company or any other person.","trm_10_agree_content":"You agree that any Content you place on the Service may be viewed by other users and may be viewed by any person visiting or participating in the Service (such as individuals who may receive shared Content from other DefAgent users).","trm_11_prohibited_activities":"10. Prohibited Activities","trm_11_prohibited_activities_1":"The Company reserves the right to investigate, suspend and/or terminate your account if you have misused the Service or behaved in a way the Company regards as inappropriate or unlawful, including actions or communications the occur off the Service but involve users you meet through the Service. The following is a partial list of the type of actions that you may not engage in with respect to the Service. You will not:","trm_11_prohibited_activities_1_1":"(I) Impersonate any person or entity.","trm_11_prohibited_activities_1_2":"(II) Solicit money from any users.","trm_11_prohibited_activities_1_3":"(III) Post any Content that is prohibited by Section 7.","trm_11_prohibited_activities_1_4":"(IV) \u201cStalk\u201d or otherwise harass any person.","trm_11_prohibited_activities_1_5":"(V) Express or imply that any statements you make are endorsed by the Company without our specific prior written consent.","trm_11_prohibited_activities_1_6":"(VI) Use the Service in an illegal manner or to commit an illegal act.","trm_11_prohibited_activities_1_7":"(VII) Access the Service in a jurisdiction in which it is illegal or unauthorized.","trm_11_prohibited_activities_1_8":"(VIII) Use any robot, spider, site search/retrieval application, or other manual or automatic device or process to retrieve, index, \u201cdata mine\u201d, or in any way reproduce or circumvent the navigational structure or presentation of the Service or its contents.","trm_11_prohibited_activities_1_9":"(IX) Collect usernames and/or email addresses of users by electronic or other means for the purpose of sending unsolicited email or unauthorized framing of or linking to the Service.","trm_11_prohibited_activities_1_10":"(X) Interfere with or disrupt the Service or the servers or networks connected to the Service.","trm_11_prohibited_activities_1_11":"(XII) Transmit any material that contains software viruses or any other computer code, files or programs designed to interrupt, destroy or limit the functionality of any computer software or hardware or telecommunications equipment.","trm_11_prohibited_activities_1_12":"(XIII) Forge headers or otherwise manipulate identifiers in order to disguise the origin of any information transmitted to or through the Service (either directly or indirectly through use of third party software).","trm_11_prohibited_activities_1_13":"(XIV) \u201cFrame\u201d or \u201cMirror\u201d any part of the Service, without the Company\u2019s prior written authorization.","trm_11_prohibited_activities_1_14":"(XV) Use meta tags or code or other devices containing any reference to the Company or the Service (or any trademark, trade name, service mark, logo or slogan of the Company) to direct any person to any other website for any purpose.","trm_11_prohibited_activities_1_15":"(XVI) Modify, adapt, sublicense, translate, sell, reverse engineer, decipher, decompile or otherwise disassemble any portion of the Service any software used on or for the Service, or cause others to do so.","trm_11_prohibited_activities_1_16":"(XVII) Post, use, transmit or distribute, directly or indirectly, (e.g. screen scrape) in any manner or media any content or information obtained from the Service other than solely in connection with your use of the Service in accordance with this Agreement.","trm_12_propietary_rights":"11. Proprietary Rights.","trm_12_propietary_rights_1":"The Company owns and retains all proprietary rights in the Service, and in all content, trademarks, trade names, service marks and other intellectual property rights related thereto. The Service contains the copyrighted material, trademarks, and other proprietary information of the Company and its licensors. You agree to not copy, modify, transmit, create any derivative works from, make use of, or reproduce in any way any copyrighted material, trademarks, trade names, service marks, or other intellectual property or proprietary information accessible through the Service, without first obtaining the prior written consent of the Company or, if such property is not owned by the Company, the owner of such intellectual property or proprietary rights. You agree to not remove, obscure or otherwise alter any proprietary notices appearing on any content, including copyright, trademark and other intellectual property notices.","trm_13_ownership":"12. Ownership.","trm_13_ownership_1":"The Services and all rights therein are and shall remain DefAgent\' property or the property of DefAgent \' licensors. Neither these Terms nor your use of the Services convey or grant to you any rights: (i) in or related to the Services except for the limited license granted above; or (ii) to use or reference in any manner DefAgent company names, logos, product and service names, trademarks or services marks or those of DefAgent licensors.","trm_14_user_provided_content":"13. User Provided Content","trm_14_user_provided_content_1":"DefAgent may, in DefAgent sole discretion, permit you from time to time to submit, upload, publish or otherwise make available to DefAgent through the Services textual, audio, and/or visual content and information, including commentary and feedback related to the Services, initiation of support requests, and submission of entries for competitions and promotions (\'User Content\'). Any User Content provided by you remains your property. However, by providing User Content to DefAgent, you grant DefAgent a worldwide, perpetual, irrevocable, transferable, royalty-free license, with the right to sublicense, to use, copy, modify, create derivative works of, distribute, publicly display, publicly perform, and otherwise exploit in any manner such User Content in all formats and distribution channels now known or hereafter devised (including in connection with the Services and DefAgent business and on third-party sites and services), without further notice to or consent from you, and without the requirement of payment to you or any other person or entity.You represent and warrant that: (i) you either are the sole and exclusive owner of all User Content or you have all rights, licenses, consents and releases necessary to grant DefAgent the license to the User Content as set forth above; and (ii) neither the User Content, nor your submission, uploading, publishing or otherwise making available of such User Content, nor DefAgent use of the User Content as permitted herein will infringe, misappropriate or violate a third party\'s intellectual property or proprietary rights, or rights of publicity or privacy, or result in the violation of any applicable law or regulation.You agree to not provide User Content that is defamatory, libelous, hateful, violent, obscene, pornographic, unlawful, or otherwise offensive, as determined by DefAgent in its sole discretion, whether or not such material may be protected by law. DefAgent may, but shall not be obligated to, review, monitor, or remove User Content, at DefAgent sole discretion and at any time and for any reason, without notice to you.","trm_15_network_access_devices":"14. Networks, Communities, And Channels Access And Devices.","trm_15_network_access_devices_1":"You are responsible for obtaining the data network access necessary to use the Services. Your mobile network\'s data and messaging rates and fees may apply if you access or use the Services from your device. You are responsible for acquiring and updating compatible hardware or devices necessary to access and use the Services and Applications and any updates thereto. DefAgent does not guarantee that the Services, or any portion thereof, will function on any particular hardware or devices. In addition, the Services may be subject to malfunctions and delays inherent in the use of the Internet and electronic communications.","trm_16_modifications_service":"15. Modifications To Service.","trm_16_modifications_service_1":"The Company reserves the right at any time to modify or discontinue, temporarily or permanently, the Service (or any part thereof) with or without notice. You agree that the Company shall not be liable to you or to any third party for any modification, suspension or discontinuance of the Service. To protect the integrity of the Service, the Company reserves the right at any time in its sole discretion to block users from certain IP addresses from accessing the Service.","trm_17_copyright_policy":"16. Copyright Policy.","trm_17_copyright_policy_1":"Notice and Procedure for Making Claims of Copyright Infringement. You may not post, distribute, or reproduce in any way any copyrighted material, trademarks, or other proprietary information without obtaining the prior written consent of the owner of such proprietary rights. If you believe that your work has been copied and posted on the Service in a way that constitutes copyright infringement, please provide our Copyright Agent with the following information:","trm_17_copyright_policy_1_1":"(I) An electronic or physical signature of the person authorized to act on behalf of the owner of the copyright interest;","trm_17_copyright_policy_1_2":"(II) A description of the copyrighted work that you claim has been infringed;","trm_17_copyright_policy_1_3":"(III) A description of where the material that you claim is infringing is located on the Service (and such description must be reasonably sufficient to enable the Company to find the alleged infringing material, such as a url);","trm_17_copyright_policy_1_4":"(IV) Your address, telephone number and email address;","trm_17_copyright_policy_1_5":"(V) A written statement by you that you have a good faith belief that the disputed use is not authorized by the copyright owner, its agent, or the law; and","trm_17_copyright_policy_1_6":"(VI) A statement by you, made under penalty of perjury, that the above information in your notice is accurate and that you are the copyright owner or authorized to act on the copyright owner\u2019s behalf.","trm_17_copyright_policy_1_text":"Notice of claims of copyright infringement should be provided to the Company\u2019s Copyright Agent at caro@DefAgent.ai","trm_17_copyright_policy_1_text1":"The Company will terminate the accounts of repeat infringers.","trm_17_disclaimers":"17.  Disclaimers, Limitation Of Liability.","trm_17_disclaimers_0":"DISCLAIMERS.","trm_17_disclaimers_1":"THE SERVICES ARE PROVIDED \'AS IS\' AND \'AS AVAILABLE.\' DEFAGENT DISCLAIMS ALL REPRESENTATIONS AND WARRANTIES, EXPRESS, IMPLIED, OR STATUTORY, NOT EXPRESSLY SET OUT IN THESE TERMS, INCLUDING THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN ADDITION, DEFAGENT MAKES NO REPRESENTATION, WARRANTY, OR GUARANTEE REGARDING THE RELIABILITY, TIMELINESS, QUALITY, SUITABILITY, OR AVAILABILITY OF THE SERVICES OR ANY SERVICES OR GOODS REQUESTED THROUGH THE USE OF THE SERVICES, OR THAT THE SERVICES WILL BE UNINTERRUPTED OR ERROR-FREE. DEFAGENT DOES NOT GUARANTEE THE QUALITY, SUITABILITY, SAFETY OR ABILITY OF THIRD PARTY PROVIDERS. YOU AGREE THAT THE ENTIRE RISK ARISING OUT OF YOUR USE OF THE SERVICES, AND ANY SERVICE OR GOOD REQUESTED IN CONNECTION THEREWITH, REMAINS SOLELY WITH YOU, TO THE MAXIMUM EXTENT PERMITTED UNDER APPLICABLE LAW.","trm_17_limitation":"LIMITATION OF LIABILITY.","trm_17_limitation_1":"DEFAGENT SHALL NOT BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, PUNITIVE, OR CONSEQUENTIAL DAMAGES, INCLUDING LOST PROFITS, LOST DATA, PERSONAL INJURY, OR PROPERTY DAMAGE RELATED TO, IN CONNECTION WITH, OR OTHERWISE RESULTING FROM ANY USE OF THE SERVICES, REGARDLESS OF THE NEGLIGENCE (EITHER ACTIVE, AFFIRMATIVE, SOLE, OR CONCURRENT) OF DEFAGENT, EVEN IF DEFAGENT HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. DEFAGENT SHALL NOT BE LIABLE FOR ANY DAMAGES, LIABILITY OR LOSSES ARISING OUT OF: (i) YOUR USE OF OR RELIANCE ON THE SERVICES OR YOUR INABILITY TO ACCESS OR USE THE SERVICES; OR (ii) ANY TRANSACTION OR RELATIONSHIP BETWEEN YOU AND ANY THIRD PARTY PROVIDER, EVEN IF DEFAGENT HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. DEFAGENT SHALL NOT BE LIABLE FOR DELAY OR FAILURE IN PERFORMANCE RESULTING FROM CAUSES BEYOND DEFAGENT REASONABLE CONTROL. YOU ACKNOWLEDGE THAT THIRD PARTY PROVIDERS PROVIDING TRANSPORTATION SERVICES REQUESTED THROUGH SOME REQUEST PRODUCTS MAY OFFER RIDESHARING OR PEER-TO-PEER TRANSPORTATION SERVICES AND MAY NOT BE PROFESSIONALLY LICENSED OR PERMITTED. THE SERVICES MAY BE USED BY YOU TO REQUEST AND SCHEDULE TRANSPORTATION, GOODS, OR LOGISTICS SERVICES WITH THIRD PARTY PROVIDERS, BUT YOU AGREE THAT DEFAGENT HAS NO RESPONSIBILITY OR LIABILITY TO YOU RELATED TO ANY TRANSPORTATION, GOODS OR LOGISTICS SERVICES PROVIDED TO YOU BY THIRD PARTY PROVIDERS OTHER THAN AS EXPRESSLY SET FORTH IN THESE TERMS. THE LIMITATIONS AND DISCLAIMER IN THIS SECTION DO NOT PURPORT TO LIMIT LIABILITY OR ALTER YOUR RIGHTS AS A CONSUMER THAT CANNOT BE EXCLUDED UNDER APPLICABLE LAW. BECAUSE SOME STATES OR JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF OR THE LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES, IN SUCH STATES OR JURISDICTIONS, DEFAGENT LIABILITY SHALL BE LIMITED TO THE EXTENT PERMITTED BY LAW. THIS PROVISION SHALL HAVE NO EFFECT ON DEFAGENT CHOICE OF LAW PROVISION SET FORTH BELOW.","trm_18_arbitration":"18. Arbitration And Governing Law.","trm_18_arbitration_p":"Except for users residing within the European Union, Norway and elsewhere where prohibited by applicable law:","trm_18_arbitration_i_01":"The exclusive means of resolving any dispute or claim arising out of or relating to this Agreement (including any alleged breach thereof) or the Service shall be BINDING ARBITRATION administered by the texas,usa Arbitration Association. The one exception to the exclusivity of arbitration is that you have the right to bring an individual claim against the Company in a small-claims court of competent jurisdiction. But whether you choose arbitration or small-claims court, you may not under any circumstances commence or maintain against the Company any class action, class arbitration, or other representative action or proceeding.","trm_18_arbitration_i_02":"By using the Service in any manner, you agree to the above arbitration agreement. In doing so, YOU GIVE UP YOUR RIGHT TO GO TO COURT to assert or defend any claims between you and the Company (except for matters that may be taken to small-claims court). YOU ALSO GIVE UP YOUR RIGHT TO PARTICIPATE IN A CLASS ACTION OR OTHER CLASS PROCEEDING. Your rights will be determined by a NEUTRAL ARBITRATOR, NOT A JUDGE OR JURY. You are entitled to a fair hearing before the arbitrator. The arbitrator can grant any relief that a court can, but you should note that arbitration proceedings are usually simpler and more streamlined than trials and other judicial proceedings. Decisions by the arbitrator are enforceable in court and may be overturned by a court only for very limited reasons. For details on the arbitration process, see our Arbitration Procedures.","trm_18_arbitration_i_03":"Any proceeding to enforce this arbitration agreement, including any proceeding to confirm, modify, or vacate an arbitration award, may be commenced in any court of competent jurisdiction. In the event that this arbitration agreement is for any reason held to be unenforceable, any litigation against the Company (except for small-claims court actions) may be commenced only in the federal or state courts located in texas,usa. You hereby irrevocably consent to the jurisdiction of those courts for such purposes.","trm_18_arbitration_i_04":"This Agreement, and any dispute between you and the Company, shall be governed by the laws of texas,usa without regard to principles of conflicts of law, provided that this arbitration agreement shall be governed by the Federal Arbitration Act.","trm_18_arbitration_p_1":"For users residing in the European Union, Norway or elsewhere where this arbitration agreement is prohibited by law, the laws of texas,usa, excluding texas,usa\u2019s conflict of laws rules, will apply to any disputes arising out of or relating to this Agreement or the Services. All claims arising out of or relating to this Agreement or the Services will be litigated exclusively in the federal or state courts of texas,usa, and you and DefAgent consent to personal jurisdiction in those courts.","trm_19_":"19. Indemnity By You.","trm_19_p":"You agree to indemnify and hold the Company, its subsidiaries, and affiliates, and its and their officers, agents, partners and employees, harmless from any loss, liability, claim, or demand, including reasonable attorney\u2019s fees, made by any third party due to or arising out of your breach of or failure to comply with this Agreement (including any breach of your representations and warranties contained herein), any postings or Content you post in the Service, and the violation of any law or regulation by you. The Company reserves the right to assume the exclusive defense and control of any matter otherwise subject to indemnification by you, in which event you will fully cooperate with the Company in connection therewith.","trm_20_":"20. Notice.","trm_20_p":"The Company may provide you with notices, including those regarding changes to this Agreement, using any reasonable means, which may include email, SMS, MMS, text message or postings in the Service. Such notices may not be received if you violate this Agreement by accessing the Service in an unauthorized manner. You agree that you are deemed to have received any and all notices that would have been delivered had you accessed the Service in an authorized manner.","trm_21_":"21. Entire Agreement","trm_21_p":"This Agreement, with the Privacy Policy and any specific guidelines or rules that are separately posted for particular services or offers in the Service, contains the entire agreement between you and the Company regarding the use of the Service. If any provision of this Agreement is held invalid, the remainder of this Agreement shall continue in full force and effect. The failure of the Company to exercise or enforce any right or provision of this Agreement shall not constitute a waiver of such right or provision. You agree that your DefAgent account is non-transferable and all of your rights to your profile or contents within your DefAgent account terminate upon your death. No agency, partnership, joint venture or employment is created as a result of this Agreement and you may not make any representations or bind the Company in any manner.","trm_question":"Questions?","trm_privacy_policy":"Any questions about this Privacy Policy should be addressed to caro@defagent.ai"}}'
       );
     },
     AxL3: function(e, t) {
@@ -8185,7 +8248,7 @@
     },
     CBKz: function(e) {
       e.exports = JSON.parse(
-        '{"APP_NAME":"DefAgent","About":"Sobre Nosotros","Hello world !":"\xa1Hola Mundo!","Home":"Inicio","Logged in as":"Registrarse","Login":"Iniciar Sesi\xf3n","Logout":"Cerrar Sesi\xf3n","Password":"Contrase\xf1a","Password is required":"Se Requiere Contrase\xf1a","Username":"Nombre De Usuario","Username is required":"Se Requiere Nombre De Usuario","Username or password incorrect.":"Usuario O Contrase\xf1a Incorrectos.","Remember me":"Recordar","Version":"Versi\xf3n","ACTIONS":{"FORM_REGISTER_SIMPLE_INLINE":{"CHECK_YOUR_EMAIL":"Revisa Su Correo Electr\xf3nico","WE_SENT_YOU_AN_EMAIL":"Le Enviamos Un Correo Electr\xf3nico Con Un Enlace Para Comenzar. Estar\xe1s En Tu Cuenta En Poco Tiempo."},"FORM_REGISTER_COMPANY":{"NAME":"Nombre","EMAIL":"E-mail","COMPANY":"Empresa","SEND_MY_APPLICATION":"Enviar Mi Solicitud"}},"NAVBAR":{"DEFAULT":{"HOME":"Inicio","ABOUT":"Sobre nosotros","CONTACT":"Contacto","DEMOS":"Soluciones","COMPANY":"Segmentos","HUMAN_RESOURCE":"Agentes AI ","SALES":"Procesos","CUSTOMER_SERVICE":"Servicio Al Cliente","MODULES":"M\xf3dulos","CALENDAR":"Calendario","PRODUCT":"Verticales","HEALTH":"Salud","DEVELOPERS":"Desarrolladores","RPA_CREATORS":"Creadores De RPA","SERVICES":"Marketplace","DATAFLOWS_CREATORS":"Creadores De Dataflows","SAAS":"Bienes Ra\xedces","START_UP":"Startup","FOR_STORY_TELLERS":"Para StoryTellers","AWESOME_DESIGN_BLOCKS":"Bloques Impresionantes","FOR_DEVELOPERS":"Para Desarrolladores","THE_DEVELOPERS_PLACE":"El lugar de los desarrolladores","YOUR_BUSINESS":"Tu Negocio","OUT_BEST_BET":"Nuestra Mejor Apuesta Es Usted, Podemos Asegurarle Que EveryThink Se Ajusta A Sus Necesidades.","VIEW_PLAN":"Ver Planes","LANGUAGE":"Idioma","EN":"Ingl\xe9s","ES":"Espa\xf1ol","LOGIN":"Iniciar","SIGNUP":"Registrarme"}},"SLIDERS":{"SLIDER_CARD_PROJECTS":{"NEW_SUBSCRIBERS":"Nuevos Suscriptores","NEXT":"Siguiente"},"SLIDER_START_RIGHT_WAY":{"FOR_EVERYONE":"DefAgent AIs Para Profesionales","EVERYTHINK_DOES_ALL":"DefAgent Hace TODO EL TRABAJO PESADO Al Automatizar Los Procesos Repetitivos Para Que Pueda Concentrarse En Tareas M\xe1s Complejas Y Lograr Niveles De Eficiencia Sin Precedentes.","START_THE_RIGHT_WAY":"Empiece De La Manera Correcta","START_WITH_EVERy_THINK":"Empiece Con DefAgent","THINKING_ABOUT_YOUR_AI_JOURNEY":"\xbfEst\xe1s Pensando En Tu Viaje Con AIs?","CHOOSE_THE_RIGHT_PLAN":"Elige el plan adecuado para ti"},"SLIDER_BRING_TO_LIFE":{"ADMIN_TEMPLATE_INCLUDED":"Paneles de administraci\xf3n incluidos","WE_INCLUDED_A_FULLY_FUNcTIONAL":"Hemos incluido paneles de administraci\xf3n de inicio completamente funcionales","POWER_WITH_MULIPLE_STARTER_APPS":"Desarrollado por DefAgent","ITS_AWESOME_YOU_TO":" Tenemos nuevas features que te van a encantar!","SIMPLE_AND_TRANSPARENT":"Sencillo y transparente","BRING_YOU_APPLICAION_TO_LIFE":"Da vida a tu AIs","DASHCORE_INCLUDED":"DefAgent incluye una excelente interfaz de usuario del panel de administraci\xf3n de inicio. Con esta funci\xf3n, puede comenzar a desarrollar sus aplicaciones de inmediato.","CLEAN_INBOX_UI":"F\xe1cil de usar"},"SLIDER_ALL_IN_ONE":{"EVERYTHINK_YOU_NEED":"Todo lo que necesita - \xa1todo en su mano!","REAL_TIME_SOLUTION":"Soluci\xf3n","STREAMLINES_PROCESSES":"En Tiempo real","AFFORDABILLITY":"Convi\xe9rtete en ultrarr\xe1pido en tiempo real. Cree sus propias aplicaciones de marca blanca. Obtenga informaci\xf3n valiosa sobre clientes, mercados y procesos y logre mucho m\xe1s con nuestra poderosa herramienta habilitada para IA.","SINCE_THE_NEED_FORHUMAN":"Alcance global","EVERYTHINK_DOES_ALL":"Cierre m\xe1s acuerdos con menos fricci\xf3n. Gana m\xe1s listados con mayor facilidad. Optimice sus esfuerzos mediante la automatizaci\xf3n y los predictores. Obtenga una ventaja competitiva con mayor funcionalidad y eficiencia.","ALWAYS_ON_TIME":"Siempre a tiempo","UNIQUE_USER)EXPERIENCE":"Experiencia","A_NEW_AND_INTUITIVE_EXPERIENCE":"\xdanica","ESPECIALLY_WHEN_YOUR_CLIENTS_NEEDS":"Aproveche la plataforma de c\xf3digo bajo impulsada por AIs de DefAgent para optimizar los procesos y brindar experiencias sin esfuerzo, instant\xe1neas y mucho m\xe1s enriquecedoras para compradores, vendedores, agentes inmobiliarios y todos los involucrados.","OUTSTANDING":"","ANALYTICS":"Excepcional","SIT_BACK_AS_YOUR":"DefAgent AIaaS ofrece mucho m\xe1s que una perfecta absorci\xf3n y emisi\xf3n de datos. Estos AIs ,ense\xf1ables, recopilan y revisan las interacciones de los usuarios para su an\xe1lisis e iteraci\xf3n.","CONTINUOUSLY_CHECK_IN":"Consulte continuamente con sus AIs para obtener nuevas sugerencias sobre la automatizaci\xf3n de procesos o formas de brindar mejores soluciones a sus clientes y empleados."}},"SCREENSHOTS":{"APP":{"APP_SCREENSHOTS":"Crea tus agentes de IA en un solo lugar y automatiza todos los procesos","A_PICTURE_IS_WORTH_A_THOUSAND_WORDS":""}},"HOME":{"NETWORK_SEARCH_META":{"TITLE":"DefAgent - PLATAFORMA DE AGENTES DE IA PARA LA DEFENSA","KEYWORDS":"Network Search, Networks directory App Landing1"},"APP_LANDING_HEADING":{"HEADING":{"AWARDED":"Seleccionado Por El Programa De Emprendedores Globales Del Gobierno Brit\xe1nico","HR_CONSULTIN":"DefAgent","CONSULTANT":"PLATAFORMA DE AGENTES DE IA PARA LA DEFENSA","IAS":"Con un sistema propietario de agentes de IA, DefAgent te permite pasar de la idea al producto listo para producci\xf3n, eliminando la necesidad de encontrar un cofundador t\xe9cnico o contratar desarrolladores. Simplemente explica tu idea de negocio como lo har\xedas con un desarrollador humano, y nosotros nos encargamos del resto: producto, pagos, seguridad, infraestructura, escalabilidad y m\xe1s.","GERSTARTED":"Comenzar","WHAT_YOU_GET":"Lo Que Obtienes"},"FEATURE_CARDS":{"WHAT_YOU_GET":"Lo Que Obtienes","WITH_A_SINGLE_TOOL":"Implementa soluciones en tiempo real de forma f\xe1cil y r\xe1pida sin necesidad de un profesional de tecnolog\xeda dedicado. Ninguna otra soluci\xf3n en el mercado iguala nuestras:"},"TWIN_PHONE_LEFT_LIST":{"WE_ARE_YOUR_PATH_TO_SUCCESS":"Tipos de agentes de IA en defensa"},"TWIN_PHONE_LEFT_RIGHT":{"WE_HAVE_A_TON_OF_BENEFITSS":"Nosotros tenemos toneladas de beneficios","EVERYTHINK_DOES_ALL_OF":"DefAgent hace TODO EL TRABAJO PESADO para que usted pueda concentrarse en tareas m\xe1s valiosas y complejas."},"DOWNLOAD":{"START_TODAY":"Comienza Hoy","DOWNLOAD_THE_APP":"Descargar La Aplicaci\xf3n","DOWNLOAD_EVERYTHING":"Posicione Su Negocio Hacia El \xc9xito. \xa1Descarga La Aplicaci\xf3n DefAgent Ahora Y Comienza Tu Viaje Con AIs! Disponible En Dispositivos Windows, Mac, iOS y Android.","GET_IT_ON_THE":"Cons\xedgalo En","APP_STORE":"App Store","DOWNLOAD_ON":"Descargar En","GOOGLE_PLAY":"Google Play"}}},"DEMOS":{"HUMANRE_SOURCES":{},"SALES":{"NETWORK_SEARCH_META":{"TITLE":"DefAgent - Sales","KEYWORDS":"Network Search, Networks directory Sales"},"APP_LANDING_HEADING2":{"ALLISONE":"Todo es uno,","INFINTY":"donde comienza el infinito","EVERYTHINKFORSALES":"DefAgent","BETTERMARKETING":"Los agentes impulsados \u200b\u200bpor IA se est\xe1n convirtiendo en recursos invaluables","BETTERRESULT":" en el Departamento de Defensa (DoD)","OURIAS":"Revolucionando la forma en que combatimos al optimizar el trabajo y agilizar la toma de decisiones. Estos agentes destacan en la automatizaci\xf3n de tareas de bajo nivel y bajo riesgo, permitiendo a los combatientes concentrarse en decisiones vitales y cruciales para la misi\xf3n.","SUBSCRIBENOW":"Registrarse ahora"},"APP_LANDING2_TRENDING_DESIGN":{"SIMPLE_IMPLEMENTATION":"Implementaci\xf3n simple con impacto exponencialmente positivo","SINCE_THE_NEED":"Dado que se reduce la necesidad de intervenci\xf3n humana y aumenta la eficiencia del flujo de trabajo, el proceso es muy asequible.","THE_POSSIBILITIES":"Las posibilidades de usar DefAgent para defensa est\xe1n en todas partes y solo se limitan al ingenio de los usuarios que desean utilizar los agentes ia para mejorar y simplificar sus procesos"},"APP_LANDING2_FOCUS_ON_SUCCESS":{"FORGET_OBSOLETE":"\xa1Olv\xeddese de los sistemas obsoletos y las costosas inversiones!","EVERYTHINK_DELIVERS":"DefAgent ofrece una experiencia \xfanica y revolucionaria en la que los AI hablan e interact\xfaan directamente con empleados, clientes y proveedores para comprender sus necesidades y conectarlos con personas, procesos y dispositivos en tiempo real.","DOT_NOT_WASTE_TIME":"\xa1Ayuda a tu equipo a ser m\xe1s productivo y rentable! \xa1Deja de perder tiempo valioso y empieza a obtener resultados significativos ahora!"},"APP_LANDING2_SAFETY":{"SAFETY_FIRST":"T\xfa primero","YOUR_SUCCESS_IS_OUR_SUCCESS":"\xa1El \xe9xito de tu negocio es nuestra prioridad!","EVERYTHINK_DOESALL":"DefAgent ayuda a su equipo a automatizar procesos rutinarios, procesar grandes cantidades de datos e incluso manejar tareas m\xe1s complejas."},"APP_LANDING2_POPPING_HIGHLIGHT":{"DISCOVER_CREATE_LOVE":"Descubrir. Empoderar. Ganar.","SEE_WHY_PEOPLE_LOVE_EVERTTHINK":"Vea por qu\xe9 la gente ama DefAgent"},"APP_LANDING2_DOWNLOAD":{"START_TODAY":"Comienza Hoy","DOWNLOAD_THE_APP":"Descargar La Aplicaci\xf3n","DOWNLOAD_EVERTTHINK":"Descargue La Aplicaci\xf3n DefAgent Ahora Y Con\xe9ctese En Dispositivos Windows, Mac, iOS Y Android. \xa1Comience Con Su A.I. Viaje!","GET_IT_ON_THE":"Cons\xedgalo En","APP_STORE":"App Store","DOWNLOAD_ON":"Descargar En","GOOGLE_PLAY":"Google Play"}},"CUSTOMER_SERVICE":{"NETWORK_SEARCH_META":{"TITLE":"DefAgent - Network search  ","KEYWORDS":"Network Search, Networks directory network search"},"AUTOMATE_SOCIAL_HEADING":{"EVERYTHINK_FOR_CUSTOMER_SERVICE":"DefAgent Customer Service","DONT_THINK_IT":"No lo pienses; ni siquiera respondas, porque lo tenemos!","DRIVE_YOUR_BUSINESS_FORWARD":"\xa1Impulse su negocio con AIs de atenci\xf3n al cliente administrados en la palma de sus manos!"},"AUTOMATE_SOCIAL_GET_STARTED":{"ALL_IN_ONE":"Soluci\xf3n de servicio al cliente todo en uno","EVERTTHINK_YOU_NEED_IN_ONE_SOLUTION":"Obtenga todo lo que necesita en una soluci\xf3n.","EVERTTHINK_YOU_NEED_IN_ONE_SOLUTION1":"Cree experiencias consistentes y sin esfuerzo; y reduzca costos con una poderosa herramienta de automatizaci\xf3n del servicio al cliente.","INTRODUCING":"","COMMUNICATE_BETTER":"\xa1Capte la comunicaci\xf3n adecuada para cada uno de sus clientes y obtenga conocimiento y estad\xedsticas para brindar soluciones asertadas en tiempo real!","NO_CREDIT_CARD_NEEDED":"\xa1Emprende tu AI viaje!","START_NOW":"Empieza ahora","BY_REGISTERING":" Al registrarse, obtendr\xe1 14 d\xedas de acceso gratuito a DefAgent."},"AUTOMATE_SOCIAL_WHY":{"WHY_EVERYTHINK":"\xbfPor qu\xe9 DefAgent?","OUR_MISSION_IS_TO_PROVIDE_YOU":"Nuestro objetivo es brindar automatizaci\xf3n precisa de todo su servicio al cliente conectando actores, procesos y dispositivos en tiempo real. M\xe1s a\xfan, tambi\xe9n proporciona m\xe9tricas basadas en estrategias que facilitan la medici\xf3n del rendimiento empresarial frente a los objetivos previstos."},"AUTOMATE_SOCIAL_AUTOMATION_SOLUTION":{"ADVANCED_CUSTOMER":"Soluci\xf3n avanzada de automatizaci\xf3n del servicio al cliente","DESCRIPTION":"Los AIs de DefAgent est\xe1n preparados para ayudar a las marcas a brindar experiencias superiores de atenci\xf3n al cliente y compromisos de revisi\xf3n a trav\xe9s de los canales digitales. \xa1Esta es la mas avanzada  automatizaci\xf3n del servicio al cliente en sus manos!","OUR_INTELLIGENT_ASSISTANTS":" Our Intelligent Assistants are poised to cause significant changes and  disruption on how your Customer Service functions make service delivery, and best of all, it is always right there in your palms."}},"DEVELOPERS":{"NETWORK_SEARCH_META":{"TITLE":"DefAgent - developer","KEYWORDS":"Network Search, Networks directory developer"},"HEADING":{"WELCOME_DREAMERS":"Bienvenidos so\xf1adores!","CREATE_EMOTIONS":"Crea emociones para los Asistentes Inteligentes","SHOW_VIDEO":"Ver video"},"INTEGRATioNS":{"KNOW_WHAT_YOU_CAN_DO_WITH_US":"Sepa lo que puede hacer con nosotros","LEARN_MORE":"Saber m\xe1s"},"TOOL":{"INTEGRATION_TOOLS":"","EASY_INTEGRATIONS":"","LOREM_IPSUM":"","LOREM_IPSUM_DOLOR":"","INTEGRATE":""}},"HEALTH":{"NETWORK_SEARCH_META":{"TITLE":"DefAgent - corporate","KEYWORDS":"Network Search, Networks directory corporate"},"CORPORATE":{"EVERYTHINK_MAKE_TREATMENT_MORE":"DefAgent hace que los tratamientos sean m\xe1s efectivos y los pacientes m\xe1s seguros, ahorrando dinero a los hospitales y seguros m\xe9dicos.","LEARN_MORE":"Aprender mas","80_OF_THE_CASE_ARISE":"El 80% de los casos surgen por falta de comunicaci\xf3n durante las transiciones asistenciales, m\xe1s de 7000 muertes y 500.000 lesiones prevenibles son costos por errores de medicaci\xf3n. Sin mencionar que 3 de cada 10 laboratorios se reordenan porque los resultados se pierden en el proceso. El 18% de los pacientes m\xe9dicos hospitalarios son readmitidos en un mes.","DID_YOU_KNOW":"\xbfSab\xedas que los errores m\xe9dicos son la tercera causa principal de muerte en los EE. UU.?","HEADING":{"EVERYTHINK_FOR_HEALTH":"DefAgent Health","WELCOME_TO_THE_FUTURE":"Impulsando la pr\xf3xima ola de innovaci\xf3n significativa en el cuidado de la salud, \xa1no se quede atr\xe1s!","WITH_THE_RIGHT_DATA":"Obtenga informaci\xf3n y aproveche datos radicalmente interoperables para acelerar la investigaci\xf3n de la salud, marcar el comienzo de una nueva era de optimizaci\xf3n de tratamientos, desarrollo de f\xe1rmacos, predicci\xf3n de resultados, diagn\xf3stico y pron\xf3stico de enfermedades, participaci\xf3n del paciente y mejor salud p\xfablica.","START_NOW":"\xa1Comienza ahora!","PLANS_AND_PRICEING":"Planes y precios"},"BUSINESS":{"LETS_DO_BUSINESS":"Empecemos","WHAT_EVERYTHINK_OFFERS":"Que Ofrecemos"},"EVERYTHINK_IS_THE_SOLUTION":"DefAgent aumenta la experiencia m\xe9dico-paciente. Con este software como herramienta de AIaaS en la base de sus interacciones de prestaci\xf3n de atenci\xf3n m\xe9dica, se pueden prevenir la mayor\xeda de los errores m\xe9dicos. La tecnolog\xeda integra los registros de los pacientes en un \xfanico lugar altamente seguro que permite compartirlos f\xe1cilmente dentro y fuera de la red, para beneficio tanto de los pacientes como del personal m\xe9dico."}},"RPACREAORS":{"NETWORK_SEARCH_META":{"TITLE":"DefAgent - online payment","KEYWORDS":"Network Search, Networks directory online payment"},"ONLINE_PAYMENT":{"HEADING":{"GO_BIG":"\xa1Ve a lo grande o vuelve a casa!","CREATE_BUY":"Crea, compra y vende procesos automatizados.","WITHOUT_CODING":"- Sin codificaci\xf3n.","KNOW_MORE":"Saber m\xe1s","START_NOW":"Comenzar ahora"},"FEATURES":{"REASONS_TO_USE_EVERYTHINK":"Razones para usar DefAgent","KNOW_WHAT_YOU_CAN_DO_WITH_US":"Sepa lo que puede hacer con nosotros"},"CUSTOMERS_MANAGEMENT":{"CREATE_SMART":"Crea experiencias","EXERIENCES_WITH":"Inteligentes con","EVERYTHINK":"DefAgent Studio","SIMPLE_IMPLEMENTATION":"Implementaci\xf3n simple con impacto exponencialmente positivo.","CUSTOMERSADMINISTRATION":"Administraci\xf3n de clientes."}}},"DATAFLOWS_CREATOORS":{"NETWORK_SEARCH_META":{"TITLE":"DefAgent - integration","KEYWORDS":"Network Search, Networks directory integration"},"INTEGRATION":{"HEADING":{"CREATE_EMOTIONS_FOR_SMART_ASSISTANTS":"Crea emociones para los Asistentes Inteligentes","CREATE_BUY_AND_SELL":"Crear, Comprar y Vender flujos de datos para capacitar a Smart Assistants para las diferentes conversaciones geolocalizadas necesarias para cada uno de los actores que participan en cada red, comunidad y canal.","JOIN_EVERY_TTHINK":"Unirse DefAgent"},"HOW_IT_WORK":{"KNOW_WHAT_YOU_CAN_DO_WITH_US":"Sepa lo que puede hacer con nosotros","EVERYTHINK_DOES_ALL":"DefAgent hace TODO EL TRABAJO PESADO para que pueda concentrarse en tareas m\xe1s valiosas y complejas."},"BUILT_TECH":{"INDUSTRY_LEADING":"L\xedder en la industria","TECHNOLOGY":"tecnolog\xeda","EVERYTHINK_STUDIO":"DefAgent Studio le ofrece todo lo que usted y su empresa necesitan para crear flujos de datos s\xf3lidos. \xa1Todo sin codificaci\xf3n!","ONE_STEP_AHEAD_OF_AIS":"Un paso por delante de los AIs","EMPOWER_THE_INTELLIGENT":"Empodere a los Asistentes inteligentes proporcionando nuevas interacciones creadas por usted, lo que eleva sus habilidades para resolver problemas en tiempo real."},"EXTEND_CORE":{"LIMITLESS_POSSIBILITIES":"Posibilidades ilimitadas","BUILD_FAST_BUILD_MORE":"Construye r\xe1pido. Construir m\xe1s.","USING_EVERYTHINK":"Con el software exclusivo de DefAgent Studio para el desarrollo de flujos de datos r\xe1pidos y fluidos, puede crear e implementar todos los flujos de datos que necesita en minutos. No se requieren habilidades t\xe9cnicas, de programaci\xf3n o de scripting.","KNOW_MORE":"Saber m\xe1s","REGISTER_ACCOUNT":"Registrar Cuenta"},"LATEST_PROJECTS":{"EVERYTHINK_MARKETPLACE":"DefAgent Marketplace","TAKE_A_LOOK_AT_OUR_LATEST_PROJECTS":"\xa1Eche un vistazo a nuestros \xfaltimos proyectos, aquellos clientes que conf\xedan en nuestros servicios para llevar su negocio al siguiente nivel!","SOMOS_PILEROS":"Somos Pileros","WE_BUILT_DATA":"Creamos flujos de datos para conectar a emprendedores con voluntarios y mentores de manera m\xe1s r\xe1pida y eficiente al automatizar el proceso de b\xfasqueda y conexi\xf3n entre usuarios, en tiempo real."},"REGISTER":{"FILL_IN_THE_FORM":"Complete el formulario","YOUR_SUCCESS_IS_OUR_SUCCESS":"Su \xe9xito es nuestro \xe9xito","IF_YOU_ARE_LOOKING":"Si est\xe1 buscando ser parte de la red DefAgent, solo complete el formulario, \xa1estamos seguros de que podemos construir grandes cosas juntos!"},"WHY_CHOOSE_US":{"SIMPLE_IMPLEMENTATION_WITH":"Implementaci\xf3n simple con impacto exponencialmente positivo","SINCE_THE_NEED_FOR_HUMAN":"Dado que se reduce la necesidad de intervenci\xf3n humana y aumenta la eficiencia del flujo de trabajo, el proceso es muy asequible.","KNOW_MORE":"Saber m\xe1s"}}},"SAAS":{"NETWORK_SEARCH_META":{"TITLE":"DefAgent - saas","KEYWORDS":"Network Search, Networks directory saas"},"HEADING":{"EVERYTHINK_FOR_REAL_ESTATE":"DefAgent Real Estate","YOU_AGENT_IN_YOUR_HANDS_WITHGLOBAL_REACH":"\xa1Tu agente en tus manos con alcance global!","OUT_IAS_ARE_POISED":"Nuestros AIs revolucionar\xe1n la prestaci\xf3n de servicios inmobiliarios con la automatizaci\xf3n de procesos y las innovaciones basadas en inteligencia artificial. Mejor a\xfan, siempre est\xe1 ah\xed en tus palmas.","PLANS_AND_PRICING":"Planes","START_NOW":"Comienza ahora"},"LIGHTWEIGHT_TEMPLATE":{"YOUR_SMART_PUPPETS":"Tus propias marionetas inteligentes","WILL_PROVIDE_YOUR_PROSPECTS_AND_CLIENTS":"Con DefAgent como plataforma de servicio, nuestros AIs pueden ayudar a ser extremadamente receptivos en tiempo real; obtener informaci\xf3n valiosa sobre prospectos, clientes, mercados y procesos; aprovechar datos valiosos para abordar las necesidades de los clientes y cerrar m\xe1s ventas, lograr una mayor transparencia del sistema; y mejorar la eficiencia general.","SIMLIFYING_THE_CURRENT":"","LEARN_MORE":"Saber mas"},"BUILD_TO_LAST":"Built to Last","WHAT_YOU_WILL_GET_WITH_EVERTTHINK":"Lo Que Obtienes","GEOLOCATED_INTELLIGENT_ASSISTANTS":"Automatice Su Proceso De Reserva Con DefAgent Calendar Y C\xe9ntrese Solo En Lo Que Importa","DASHBORD_INCLUDED":"Tableros incluidos","SIMPLE_IMPLEMENTATION":"Implementaci\xf3n simple con impacto exponencialmente positivo","SINCE_THE_NEED_FOR_HUMAN":"Dado que se reduce la necesidad de intervenci\xf3n humana y aumenta la eficiencia del flujo de trabajo, el proceso es muy asequible.","THE_POSSIBILITIES":"Las posibilidades de usar DefAgent for Sales est\xe1n en todas partes y solo se limitan al ingenio de los usuarios que desean utilizar la inteligencia artificial para mejorar su calidad de vida.","Learn_More":"Saber mas"},"START_UP":{"NETWORK_SEARCH_META":{"TITLE":"DefAgent - Networks directory sstart up","KEYWORDS":"Network Search, Networks directory start up"},"HEADING":{"DELIVERING_THE_TOOLS":"\xbfA\xfan Luchas Por Conseguir Clientes Nuevos,","YOU_NEED_TO_SUCCEED":"Por Generar Clientes Leales?","IT_ALL_BEGINS_BY_CHOSSING":"Encuentre Clientes Potenciales Precalificados Para Peque\xf1as Empresas, Identifique Problemas, Cont\xe1ctelos Y Cierre Acuerdos","TRY_IT_FREE":"COMIENZA AHORA!"},"WHAT_YOU_GET":{"BUSINESS_TITLE":"TRABAJA DESDE CUALQUIER LUGAR","PAYMENTS_TITLE":"ACEPTA PAGOS","SCHEDULES_TITLE":"TU MARCA A TU MANERA","SITE_TITLE":"AHORRE TIEMPO Y DINERO","BUSINESS_DESC":"Gestiona Tus Reservas Desde Cualquier Dispositivo. Combina Horarios Y Sincroniza Calendarios","PAYMENTS_DESC":"Precios De Citas Flexibles. Pagos Con 0% De Comisi\xf3n En 26 Monedas","SCHEDULES_DESC":"Dise\xf1o Totalmente Personalizable Para Mostrar Su Marca. Establezca Su Espacio Entre Citas","SAVING_DESC":"No M\xe1s Correos Electr\xf3nicos De Ida Y Vuelta. Planes Asequibles Basados En El Uso Que Se Ajustan A Su Presupuesto"},"PRICING":{"TITLE":"DefAgent Calendar","SUBTITLE":"Funciona Con Cualquier Tipo De Negocio Y Cualquier Tipo De Programaci\xf3n De Citas","BUY":"Comprar Ahora","PLAN_PERSONAL":"Uno A Uno","PLAN_PERSONAL1":"Terapeutas","PLAN_PERSONAL2":"Entrenadores personales","PLAN_PERSONAL3":"Recursos Humanos y contrataci\xf3n","PLAN_PERSONAL4":"Veterinarias","PLAN_PERSONAL5":"Equipos de ventas y consultores","PLAN_PERSONAL_DESC":"","PLAN_BUSINESS":"Grupal","PLAN_BUSINESS1":"Gimnasio y Estudio de fitness","PLAN_BUSINESS2":"Operadores tur\xedsticos","PLAN_BUSINESS3":"Escuelas de idiomas","PLAN_BUSINESS4":"Escuelas y Universidades","PLAN_BUSINESS5":"Eventos, Talleres y Seminarios","PLAN_BUSINESS_DESC":"","PLAN_ENTERPRISE":"Reservas","PLAN_ENTERPRISE1":"Alquiler lugares/equipos","PLAN_ENTERPRISE2":"Estudio fotografico","PLAN_ENTERPRISE3":"Programaci\xf3n de recursos","PLAN_ENTERPRISE4":"Salas de conferencias y reuniones","PLAN_ENTERPRISE5":"Reservas de canchas deportivas","PLAN_ENTERPRISE_DESC":"","PLAN_BUSINESSD":"Servicios","PLAN_BUSINESSD1":"Salones de belleza","PLAN_BUSINESSD2":"Profesionales m\xe9dicos","PLAN_BUSINESSD3":"Instructores de manejo","PLAN_BUSINESSD4":"Profesionales de la reparaci\xf3n","PLAN_BUSINESSD5":"Servicios de limpieza y hogar","PLAN_BUSINESSD_DESC":""},"PRICING_TWO":{"TITLE":"Affordable pricing plans.","TITLE0":"Avance Y","TITLE01":"Obtenga Su Descuento","TITLE1":"DefAgent Calendar","TITLE11":"Licencia","TITLE2":"Hoy!","TITLE22":"Elija Su Plan:","SUBTITLE":"","BUY":"Comprar Ahora","MONTHLY":"Mensualmente","ANNUAL":"Anualmente","DISCOUNT":"(Ahorre hasta un 30% de descuento en planes anuales)","GETNOW":"Obtenerlo Ahora","CUSTOM":"Para Equipos","CUSTOM1":"(Mejor Valor)","CUSTOM2":"Para Equipos Y Empresas Con Necesidades De Programaci\xf3n Adicionales, Personalizaci\xf3n Y Funciones Avanzadas","CUSTOM3":"Contactenos","PLAN_BASIC":"Para Individuales","PLAN_BASIC_DESC":"Todo Lo Que Puede Obtener De Una Soluci\xf3n Profesional Para Mantener Su Negocio En Camino Hacia El \xc9xito","FEATURES1":"200 N\xfamero M\xe1ximo De Pr\xf3ximas Citas","FEATURES2":"1 Integraci\xf3n Para Cobrar Pagos","FEATURES3":"50 Invitaciones Por SMS Gratis","FEATURES4":"DefAgent Calendar En Tu Sitio Web","FEATURES5":"Marca Personalizada","FEATURES6":"Webhooks","FEATURES7":"Soporte En Tiempo Real","FEATURES8":"Flujos De Trabajo","FEATURES9":"Informes En Tiempo Real","FEATURES10":"Paquetes De Marketing","FEATURES11":"M\xe1s De 700 Integraciones De Aplicaciones Con Zapier","FEATURES12":"Con\xe9cte A Zoom, Microsoft Teams, Google Meet Y GoToMeeting"},"FEATURES":{"BUSINESS_TITLE":"Escalar Su Negocio","PAYMENTS_TITLE":"Cobrar Pagos","SCHEDULES_TITLE":"Coordinar Diferentes Horarios","SAVING_TITLE":"Optimizar El Ahorro De Tiempo","INTERFACE_TITLE":"Interfaz De Escritorio Y M\xf3vil","SITE_TITLE":"Integrar Su Sitio Web","BUSINESS_DESC":"Consiga M\xe1s Clientes Y Aumente Sus Ingresos","PAYMENTS_DESC":"Integra El Pago Con Cero Comisiones Y Admite 26 Monedas","SCHEDULES_DESC":"Sincronizar Con Google Calendar Y Outlook","SAVING_DESC":"Ahorre Tiempo Con Funciones Automatizadas","INTERFACE_DESC":"Utilice Una Interfaz F\xe1cil De Usar","SITE_DESC":"Integre Sin Problemas En Su Sitio Web","DASHCORE_FEATURE":"Funciones de DefAgent","WHAT_DASHCORE_CAN_DO":"Beneficios De Usar DefAgent Calendar","LOREM_IPSUM":"Con DefAgent, en menos de 24 horas, una organizaci\xf3n puede construir Asistentes inteligentes geolocalizados que administrar\xe1n datos y combinar\xe1n las necesidades con soluciones interconectando personas, procesos automatizados y dispositivos en tiempo real, midiendo constantemente el desempe\xf1o de cada actor comercial, todo sin codificaci\xf3n."},"WHY_DASHCORE":{"WHY_DASHCORE_TEMPLATE":"Implementaci\xf3n Simple Con Alto Impacto","WHEN_LOOKING":"Dado Que Se Reduce La Necesidad De Intervenci\xf3n Humana Y Aumenta La Eficiencia Del Flujo De Trabajo, El Proceso Es Muy Asequible","DEVELOPERS":"Roles","ENGAGING_DEVELOPERS0":"","ENGAGING_DEVELOPERS01":"","ENGAGING_DEVELOPERS1":"Maximice La Eficiencia De La Reuni\xf3n","ENGAGING_DEVELOPERS11":"Conectando A Sus Clientes Con Los Miembros Del Equipo Adecuados.","ENGAGING_DEVELOPERS2":"","ENGAGING_DEVELOPERS22":"","LOREM_IPSUM":"","DESIGNER":"Personalizaci\xf3n","ENGAGING_DESIGNER0":"","ENGAGING_DESIGNER01":"","ENGAGING_DESIGNER1":"","ENGAGING_DESIGNER11":"","ENGAGING_DESIGNER2":"Cree Una Experiencia De Cliente Premium","ENGAGING_DESIGNER22":"Con Opciones Avanzadas De Personalizaci\xf3n Y Marca.","REMINDERS":"Recordatorios","ENGAGING_REMINDERS0":"","ENGAGING_REMINDERS01":"","ENGAGING_REMINDERS1":"Notificaciones Por Correo Electr\xf3nico Y SMS","ENGAGING_REMINDERS11":"Aseg\xfarese De Que Nadie Olvide Una Reserva.","ENGAGING_REMINDERS2":"","ENGAGING_REMINDERS22":"","PAYMENTS":"Integraciones","ENGAGING_PAYMENTS0":"","ENGAGING_PAYMENTS01":"","ENGAGING_PAYMENTS1":"Cree Una Experiencia Perfecta","ENGAGING_PAYMENTS11":"Para Su Equipo Con Una Variedad De Integraciones De Terceros.","ENGAGING_PAYMENTS2":"","ENGAGING_PAYMENTS22":"","PAGE":"Website","ENGAGING_PAGE0":"","ENGAGING_PAGE01":"","ENGAGING_PAGE1":"Agregar A Su Sitio Web Y P\xe1gina De Facebook","ENGAGING_PAGE11":"O Use Su Programa De Citas Como Independiente Si No Tiene Un Sitio.","ENGAGING_PAGE2":"","ENGAGING_PAGE22":"","CALENDARS":"Calendarios","ENGAGING_CALENDARS0":"","ENGAGING_CALENDARS01":"","ENGAGING_CALENDARS1":"Sincronizar Con Otros Calendarios","ENGAGING_CALENDARS11":"O Deja Que Tu Disponibilidad Dependa De Otro Calendario.","ENGAGING_CALENDARS2":"","ENGAGING_CALENDARS22":"","REPORTING":"Reporte","ENGAGING_REPORTING0":"Comprenda Su Tr\xe1fico De Reservas Y Las","ENGAGING_REPORTING01":"Necesidades De Los Clientes.","ENGAGING_REPORTING1":"","ENGAGING_REPORTING11":"","ENGAGING_REPORTING2":"","ENGAGING_REPORTING22":"","SECURITY":"Seguridad","ENGAGING_SECURITY0":"Conserva Tus Datos","ENGAGING_SECURITY01":"Seguros Y Protegidos.","ENGAGING_SECURITY1":"","ENGAGING_SECURITY11":"","ENGAGING_SECURITY2":"","ENGAGING_SECURITY22":""},"VIDEOs":{"HOW_TO_VIDEO":"\xbfPorque Nosotros?","TAKE_A_LOOKING_AT":"En DefAgent, Nuestro Objetivo Es Impulsar A Las Personas Y Organizaciones Con Soluciones Inteligentes Que Acortan El Tiempo De Participaci\xf3n En Todas Las Fases Del Ciclo De Vida Del Cliente.","1_TITLE":"Maximice Oportunidades De Programaci\xf3n","1_DESC":"Muestre A Los Clientes La Disponibilidad Combinada DeL Equipo","2_TITLE":"Maximice Oportunidades De Conversi\xf3n","2_DESC":"Asigne Reuniones Al Equipo Con Las Habilidades Adecuadas","3_TITLE":"Maximice La Utilizaci\xf3n De Recursos","3_DESC":"Distribuya Las Reuniones Por Igual En Todo Su Equipo"}}},"PROJECT":{"NETWORK_SEARCH_META":{"TITLE":"DefAgent - Networks directory","KEYWORDS":"Network Search, Networks directory"},"FOR_DEVELOPERS":{},"FORSTORYTELLERS":{},"VIEW_PLANAND_PRICE":{}},"FAQS":{"FAQS1":{"DO_YOU_HAVE":"\xbfTienes ","QUESTIONS":"preguntas?","NOT_SURE_HOW":"\xbfNo est\xe1s seguro de c\xf3mo DefAgent puede ayudarte? \xbfSe pregunta por qu\xe9 necesita comenzar su viaje de IA?","HERE_ARE_THE_ANSWERS":"Puedes consultarnos cualquier duda. Sin embargo, aqu\xed est\xe1n las respuestas a las preguntas m\xe1s comunes que nos hacen nuestros estimados clientes."}},"COUNTER":{"COUNTER1":{"MILLIONS_BUSSINESS":"\xa1Millones conf\xedan en DefAgent para encontrar y retener a los mejores talentos!","THESE_AMAZING_STATS":"Numerosas marcas y empresas de todo el mundo utilizan DefAgent AIaaS y las capacidades de computaci\xf3n cognitiva para optimizar sus flujos de trabajo de recursos humanos. \xa1Los n\xfameros no mienten y estas incre\xedbles estad\xedsticas no pueden estar equivocadas!"},"COUNTER1_L2":{"MILLIONS_BUSSINESS":"\xa1Muchas empresas conf\xedan en DefAgent para mejorar el rendimiento de sus ventas!","THESE_AMAZING_STATS":"Las empresas y las marcas de todo el mundo est\xe1n aprovechando nuestra poderosa tecnolog\xeda de talento para aumentar su volumen de clientes potenciales, su tasa de cierre y el rendimiento total de las ventas. \xa1Mira nuestros n\xfameros!"},"COUNTER2":{"WHY_CUSTOMER_TRUST_US":"Por qu\xe9 el cliente conf\xeda en nosotros","HAPPY":"Clientes","CUSTOMER":"Felices","THESE_AMAZING_STATS":"Estas incre\xedbles estad\xedsticas pueden estar equivocadas, muchos clientes felices de todo el mundo conf\xedan en nuestro servicio para impulsar su negocio.","TONS_OF_SUCCESSFULL_IMPLEMENATION":"Toneladas de implementaciones exitosas","USERS_IMPROVE_THEIR_ABILITY":"DefAgent eleva la eficiencia y la productividad, aumentando tambi\xe9n la satisfacci\xf3n laboral. Esta plataforma de c\xf3digo bajo tambi\xe9n garantiza una facilidad de implementaci\xf3n excepcional, por lo que cientos de miles de marcas en todo el mundo conf\xedan en ella.","ALL_POWERED_BY":" Impulsado por un motor cognitivo que puede desarrollar personajes para varios roles, para completar diferentes funciones dentro de la empresa.","LEARN_MORE":"Saber m\xe1s"},"COUNTER3":{"AMAZING_STATS":"Estad\xedsticas asombrosas","EVERYTHINK_CREaTES_A_POWERFUL_AND_EFFECTIVE":"\xa1Aproveche el poderoso software AIaaS de EveryThink para implementar un modelo comercial de econom\xeda circular!","EACH_USER_IS_EMPOWERED":"Los usuarios tienen la capacidad de mejorar su networking e impulsar el desempe\xf1o laboral."},"COUNTER6":{"SUCCESSFULL_IMPLEMENTATIONS":"M\xe1s de 1 mill\xf3n de implementaciones exitosas","GET_THEVERY_BEST":"Saca lo mejor de nosotros haciendo lo mejor de ti"}},"CATE":{"CATE1":{"READY_TO_GET_STARTED":"\xbfListo para empezar?","BECOME_ONE_OF_THE_MILLIONS":"\xa1\xdanase a millones de personas y marcas de todo el mundo que aman y utilizan EveryThink!","CREATE_EVERTTHINKACCOUNT":"Crear cuenta"}},"TESTIMONIALS":{"TESTIMONIAL_SIMPLE_SLIDER":{"TESTIMONIALS":"Testimonios"},"TESTIMONIAL_SLIDER":{"LOREM_IPS":"Esta es una herramienta incre\xedble que puede ayudar a cualquiera a crear sus propios algoritmos y generar un negocio m\xe1s sostenible. \xa1Muchas gracias por ayudarnos a ayudar a otras personas!","JANE_DOR":"Estefany G\xfcech\xe1,","AWESOME_COMPANY":"Somos Pileros"},"TESTIMONIAL_SIMPLE_TEXT_RIGHT":{"IF_YOU_ARE_STRUGGLING":"Si tiene dificultades para mantenerse en el negocio, puede haber varias opciones que puede explorar.","EVERYTHINK":"DefAgent,","IS_THE_PERFECT_TOOL":"es la herramienta perfecta. Es muy f\xe1cil de usar y tiene toda la funcionalidad que buscas.","CARO_FOGLIATO":"Caro Fogliato,","CEOANDFOUNDER":" CEO & Founder of DefAgent Ltd."},"TESTIMONIAL_SIMPLE_TEXT_LEFT":{"EVERYTHIN_IS_GREAT_FOR":"DefAgent es genial para","ANYONE_WHO_IS_LOOKING_FOR_SIMPLE":"Cualquiera que busque una implementaci\xf3n simple con un impacto exponencialmente positivo","EVERYTHINK_LTD_TEAM":"DefAgent Ltd. Team,","DoING_GREATE_SINCE":"Haciendolo bien desde 2024"},"TESTIMONIAL_SKEWED_SLIDER":{"OUR_CUSTOMERS_HAVE_SOMETHING_TO_SAY":"Nuestros clientes tienen algo que decir","THEY_ARE_THE_BEST":"\xa1Son los mejores, nuestro cliente quiere hacerle saber c\xf3mo DefAgent los est\xe1 ayudando a lograr sus objetivos y lo simple que es usarlo!"},"TESTIMONIAL_WORLD_MAP":{"WE_HEARD_OUR_CUSTOMERS_SAY":"Nuestros clientes tienen algo que decir","SED_OUT_PERSPICIATIS":"Esta es una herramienta incre\xedble que puede ayudar a cualquiera a crear sus propios algoritmos y generar un negocio m\xe1s sostenible. Muchas gracias por ayudarnos a ayudar a otras personas!","JANE_DOE":"Estefany G\xfcech\xe1,","MARKEYING_DIRECTOR":"Somos Pileros"}},"USUAL":{"FEATURES_ICONS_COL":{"UP_TO_THE_TASK":"Inicie su viaje de IA para salud","WHAT_YOU_GET":"Que Obtienes","GEOLOCATED_INTELLIGENT_ASSISTANTS":"Con DefAgent AIaaS, puede aprovechar a los AIs geolocalizados para administrar datos de fuentes dispares, como registros m\xe9dicos electr\xf3nicos y determinantes sociales de la salud; interconectar personas y dispositivos y automatizar el trabajo administrativo costoso, repetitivo y propenso a errores en una fuerza de trabajo digital mucho m\xe1s eficiente y econ\xf3mica."},"DEVELOPER_DESIGNER":{"JOIN_AS_DESIGNER":"\xdanete a nosotros!","JOIN_AS_DEVELOPER":"","LOREM_IPSUM":""},"START_NOW_BOX":{"TRY_EVERYTHINK_NOW":"Prueba DefAgent ahora ... \xe1malo para siempre","WHY_WAIT":"\xbfPor qu\xe9 esperar? \xa1Empieza ahora!","START_NOW":"Comenzar"}},"FOOTER":{"FOOTER1":{"EVERYTHINK_IS_POISED":"Todo es uno, donde el infinito comienza.","COMPANY":"DefAgent","ABOUT":"Sobre nosotros","BLOG":"Blog","PRODUCt":"Productos","SERVICES":"Servicios","FEATURES":"Actualizaciones","API":"API","CUSTOMERS":"Clientes","CHANNELS":"Canales","CAREERS":"Carreras","CONTACT":"Contacto","SEARCH":"Buscar","COPYRIGHT":"Copyright \xa9 2024-2025 DefAgent inc. All Rights Reserved."}},"CONTACT":{"NETWORK_SEARCH_META":{"TITLE":"DefAgent - contact","KEYWORDS":"Network Search, Networks directory contact"},"FORM":{"LETS_DO_BUSINESS":"Comience ahora!","STEP_INTO_OUR_PLACE":"Entra en nuestro lugar","123_STREET_ST":"Texas","YC_COUNTRY":"United States"},"OTHER_CHANNELS":{"CONTACT_SALE":"Contacto a Ventas","LOOKING_FOR_CUSTOM_QUOTE":"\xbfBusca un presupuesto personalizado? \xbfNecesitas contarnos m\xe1s sobre tu proyecto? o quieres una demostraci\xf3n? escr\xedbenos a","TECHNICAL_SUPPORT":"Soporte t\xe9cnico","ANY_QUESTION":"\xbfAlguna duda sobre c\xf3mo integrar su producto ?. No se preocupe, nuestro equipo est\xe1 listo para ayudarle"}},"ABOUT":{"NETWORK_SEARCH_META":{"TITLE":"DefAgent - about","KEYWORDS":"Network Search, Networks directory about"},"OVERVIEW":{"SUCCEED_WITH_DASHCORE":"Triunfa con DefAgent","THE_NEW_WAY_TO_SHOWCASE":"La nueva forma de impulsar su negocio","DASHCORE_IS_A_BOOTSTRAP":"","IT_INCLUDES_MULTIPLE":"Incluye m\xfaltiples componentes y demostraciones prefabricadas listas para que las personalice seg\xfan sus propias necesidades. DefAgent incluye un panel de administraci\xf3n listo para usar con muchas funciones listas para usar."},"VIDEO":{"DISCOVER_HOW_DASHCORE_WORKS":"Descubra c\xf3mo funciona DefAgent","PLAY_THE_VIDEO":"Video"},"SOLUTIONS":{"A_SOLUTION_FOR_EVERY_NEED":"Una soluci\xf3n para cada necesidad","LOREM_IPSUM":"","DASHCORE_INCLUDED":"Tableros incluidos","OUR_TEMPLATE_IS_PACKED_WITH_A":"DefAgent","START_ADMIN_DASHBOARD":"tambi\xe9n cuenta con paneles de control que son personalizables seg\xfan tus necesidades","START_RIGHT_AWAY":"comience de inmediato con su proyecto.","TRY_THE_DASHBOARD":"Pruebe DefAgent"},"FEATURES":{"OUR_FEATURES_STACK":"Nuestras caracter\xedsticas se apilan","TAKE_THE_CONTROL":"Toma el control de tu negocio con DefAgent. Puede personalizar seg\xfan sus necesidades o simplemente usar la soluci\xf3n lista para usar que creamos para usted"},"CUSTOMERS":{"THIRD_PARTY":"Integraci\xf3n de terceros","WE_USE_THE_LATEST_TRENDS":"Usamos las \xfaltimas tendencias porque te mereces algo mejor","ARE_YOU_A_DEVELOPER":"\xbfEres desarrollador?","REVIEW_THE_SPECS":"Revise las especificaciones"},"TEAM":{"GET_TO_KNOW_OUR_TEAM":"Conozca nuestro equipo","THESE_AMAZING_PEOPLE":"Estas personas incre\xedbles han hecho posible que nos quedemos donde estamos"},"REGISTER":{"DASHCORE_OFFICIAL":"DefAgent Ltd","NEWSLETTER":"Boletin informativo"}},"TERMS":{"trm_terms_of_use":"T\xe9rminos De Uso","trm_last_update":"\xdaltima actualizaci\xf3n: 30 de Marzo de 2025","trm_general_information":"Informaci\xf3n General","trm_introduction":"Bienvenido a DefAgent, inc. (la \xa8Compa\xf1\xeda\xa8). DefAgent desarrolla tecnolog\xedas y servicios que permiten a las personas conectarse entre s\xed, con procesos y con dispositivos; permite construir redes, comunidades y canales; y hacer crecer negocios. Estos T\xe9rminos rigen el uso de DefAgent y los dem\xe1s productos, caracter\xedsticas, m\xf3dulos, aplicaciones, servicios, tecnolog\xedas y software que ofrecemos. DefAgent, Ltd. le proporciona estos Productos. Al crear una cuenta en DefAgent, ya sea a trav\xe9s de un dispositivo m\xf3vil, una aplicaci\xf3n m\xf3vil o una computadora (colectivamente, el \'Servicio\'), usted acepta estar sujeto a estos T\xe9rminos de uso y nuestra Pol\xedtica de privacidad que se incorpora por referencia en este Acuerdo y est\xe1 disponible en el Servicio (este \'Acuerdo\'). Si no acepta y acepta estar obligado por todos los t\xe9rminos de este Acuerdo, no utilice el Servicio.","trm_1_acceptance_terms":"1. Aceptaci\xf3n Del Acuerdo De T\xe9rminos De Uso.","trm_1_acceptance_terms_1":"Este Acuerdo es un contrato electr\xf3nico que establece los t\xe9rminos legalmente vinculantes que debe aceptar para usar el Servicio. Este Acuerdo incluye la (i) Pol\xedtica de privacidad de la Compa\xf1\xeda, (ii) nuestros Consejos de seguridad y (iii) los t\xe9rminos divulgados y aceptados por usted si compra o acepta caracter\xedsticas, productos o servicios adicionales que ofrecemos en el Servicio.","trm_1_acceptance_terms_2":"Podemos, en cualquier momento y por cualquier motivo, hacer cambios a este Acuerdo. Podemos hacer esto por una variedad de razones, incluyendo para reflejar cambios o requisitos de la ley, nuevas caracter\xedsticas o cambios en las pr\xe1cticas comerciales. La versi\xf3n m\xe1s reciente de este Acuerdo se publicar\xe1 en los Servicios en Configuraci\xf3n y tambi\xe9n en la p\xe1gina web https://DefAgent.ai/, y debe verificar regularmente la versi\xf3n m\xe1s reciente. La versi\xf3n m\xe1s reciente es la que se aplica. Si los cambios incluyen cambios materiales que afectan sus derechos u obligaciones, le notificaremos los cambios por medios razonables, que podr\xedan incluir notificaciones a trav\xe9s de los Servicios o por correo electr\xf3nico. Si contin\xfaa utilizando los Servicios despu\xe9s de que los cambios entren en vigencia, se considerar\xe1 que los ha aceptado. Si no est\xe1 de acuerdo con estos cambios, debe finalizar su relaci\xf3n con nosotros al dejar de usar los Servicios y abandonar DefAgent.","trm_2_eligibility":"2. Elegibilidad.","trm_2_eligibility_1":"Debe tener al menos 18 a\xf1os de edad para crear una cuenta en DefAgent y usar el Servicio. Al crear una cuenta y usar el Servicio, usted declara y garantiza que puede formar un contrato vinculante con DefAgent, no es una persona a quien se le proh\xedbe usar el Servicio bajo las leyes de Inglaterra o cualquier otra jurisdicci\xf3n aplicable, lo que significa no aparece en la lista de ciudadanos especialmente designados del Departamento del Tesoro de Inglaterra ni se enfrenta a ninguna otra prohibici\xf3n similar, y cumplir\xe1 con este Acuerdo y todas las leyes, normas y reglamentos locales, estatales, nacionales e internacionales aplicables. Si crea una cuenta, declara y garantiza que nunca ha sido condenado por un delito grave y que no est\xe1 obligado a registrarse como delincuente sexual en ning\xfan registro estatal, federal o local de delincuentes sexuales.","trm_3_user_accounts":"3. Cuentas De Usuario.","trm_3_user_accounts_1":"Para utilizar la mayor\xeda de los aspectos de los Servicios, debe registrarse y mantener una cuenta de Servicios de usuario personal activa (\'Cuenta\'). Debe tener al menos 18 a\xf1os de edad, o la mayor\xeda de edad legal en su jurisdicci\xf3n (si es diferente de 18), para obtener una Cuenta, a menos que un Servicio espec\xedfico permita lo contrario. El registro de la cuenta requiere que env\xede a DefAgent cierta informaci\xf3n personal, como su nombre, direcci\xf3n, n\xfamero de tel\xe9fono m\xf3vil y edad, as\xed como al menos un m\xe9todo de pago v\xe1lido compatible con DefAgent. Usted acepta mantener informaci\xf3n precisa, completa y actualizada en su Cuenta. Si no mantiene informaci\xf3n precisa, completa y actualizada de la Cuenta, incluido el hecho de tener un m\xe9todo de pago no v\xe1lido o vencido en el archivo, puede resultar en su incapacidad para acceder o utilizar los Servicios. Usted es responsable de toda actividad que ocurra bajo su Cuenta, y acepta mantener la seguridad y el secreto del nombre de usuario y contrase\xf1a de su Cuenta en todo momento. A menos que DefAgent lo permita por escrito, solo puede tener una Cuenta.","trm_4_terms_termination":"4. T\xe9rminos Y Terminaci\xf3n.","trm_4_terms_termination_1":"Este Acuerdo permanecer\xe1 en pleno vigor y efecto mientras use el Servicio y/o tenga una cuenta DefAgent. Puede cancelar su cuenta en cualquier momento, por cualquier motivo, siguiendo las instrucciones en \'Configuraci\xf3n\' en el Servicio. La Compa\xf1\xeda puede cancelar o suspender su cuenta en cualquier momento sin previo aviso si cree que usted ha incumplido este Acuerdo a su exclusivo criterio. Tras dicha terminaci\xf3n o suspensi\xf3n, no tendr\xe1 derecho a ning\xfan reembolso de las tarifas no utilizadas en las compras de aplicaciones. Despu\xe9s de que se cancele su cuenta, este Acuerdo terminar\xe1, excepto que las siguientes disposiciones a\xfan se aplicar\xe1n: Secci\xf3n 4, Secci\xf3n 8, Secci\xf3n 9 y Secciones 16-18.","trm_5_non_commercial_use":"5. Uso No Comercial Por Parte De Los Usuarios.","trm_5_non_commercial_use_1":"El Servicio es solo para uso personal. Los usuarios no pueden usar el Servicio o cualquier contenido contenido en el Servicio (incluido, entre otros, el contenido de otros usuarios, dise\xf1os, texto, gr\xe1ficos, im\xe1genes, video, logotipos, software y c\xf3digo de computadora) en relaci\xf3n con cualquier esfuerzo comercial, como anunciar o solicitar a cualquier usuario que compre o venda productos o servicios no ofrecidos por la Compa\xf1\xeda. Los usuarios del Servicio no pueden usar ninguna informaci\xf3n obtenida del Servicio para contactar, publicitar, solicitar o vender a ning\xfan otro usuario sin su previo consentimiento expl\xedcito. Las organizaciones, empresas y/o negocios no pueden usar el Servicio para ning\xfan prop\xf3sito, excepto con el consentimiento expreso de DefAgent (como para perfiles promocionados u otros anuncios), que DefAgent puede proporcionar o negar a su exclusivo criterio. La Compa\xf1\xeda puede investigar y tomar cualquier acci\xf3n legal disponible en respuesta a usos ilegales y/o no autorizados del Servicio.","trm_6_the_services":"6. Los Servicios.","trm_6_the_services_1":"DefAgent es una red interactiva m\xf3vil, Android y iOS, y web alojada por un asistente virtual con inteligencia artificial capaz de conectar a las personas de acuerdo con sus intereses, necesidades y habilidades personales, laborales, sociales y educativas a trav\xe9s de preguntas espec\xedficas. El asistente virtual es capaz de aprender sobre las necesidades, habilidades, intereses y aspiraciones del usuario en cada entorno a trav\xe9s de preguntas contextualizadas y geoespaciales, con el fin de lograr conexiones asertivas con los dem\xe1s.","trm_7_interactions":"7. Interacciones Con Otros Usuarios.","trm_7_interactions_1":"Usted es el \xfanico responsable de sus interacciones con otros usuarios. USTED ENTIENDE QUE LA EMPRESA ACTUALMENTE NO REALIZA VERIFICACIONES DE ANTECEDENTES PENALES EN SUS USUARIOS. LA EMPRESA TAMBI\xc9N NO VERIFICA LAS DECLARACIONES DE SUS USUARIOS. LA EMPRESA NO HACE REPRESENTACIONES O GARANT\xcdAS EN RELACI\xd3N CON LA CONDUCTA DE LOS USUARIOS O SU COMPATIBILIDAD CON NING\xdaN USUARIO ACTUAL O FUTURO. LA EMPRESA SE RESERVA EL DERECHO DE REALIZAR CUALQUIER VERIFICACI\xd3N DE ANTECEDENTES PENALES U OTRAS EX\xc1MENES (COMO LAS B\xdaSQUEDAS DE REGISTRO DE OFERTAS SEXUALES), EN CUALQUIER MOMENTO Y UTILIZANDO REGISTROS P\xdaBLICOS DISPONIBLES.","trm_7_interactions_2":"La Compa\xf1\xeda no es responsable por la conducta de ning\xfan usuario. Como se se\xf1ala en y sin limitar la Secci\xf3n 15 a continuaci\xf3n, en ning\xfan caso la Compa\xf1\xeda, sus afiliados o sus socios ser\xe1n responsables (directa o indirectamente) de cualquier p\xe9rdida o da\xf1o, ya sea directo, indirecto, general, especial, compensatorio, consecuente y/o incidental, que surja de o se relacione con su conducta o la de cualquier otra persona en relaci\xf3n con el uso del Servicio, incluidos, entre otros, muerte, lesiones corporales, angustia emocional y/o cualquier otro da\xf1o resultante de las comunicaciones o reuniones con otros usuarios o personas que conozca a trav\xe9s del Servicio. Usted acepta tomar todas las precauciones necesarias en todas las interacciones con otros usuarios, particularmente si decide comunicarse fuera del Servicio o reunirse en persona, o si decide enviar dinero a otro usuario. Adem\xe1s, acepta revisar y seguir los Consejos de seguridad de la Compa\xf1\xeda, ubicados en el Servicio, antes de usar el Servicio. No debe proporcionar su informaci\xf3n financiera (por ejemplo, la informaci\xf3n de su tarjeta de cr\xe9dito o cuenta bancaria), ni transferir ni enviar dinero a otros usuarios.","trm_8_content_posted":"8. Contenido Publicado Por Usted En El Servicio.","trm_8_content_posted_1":"Usted es el \xfanico responsable del contenido y la informaci\xf3n que publica, carga, publica, vincula, transmite, registra, muestra o pone a disposici\xf3n (colectivamente, \'publica\') en el Servicio o transmite a otros usuarios, incluidos mensajes de texto, chat, videos, fotograf\xedas o texto de perfil, ya sea publicado p\xfablicamente o transmitido en privado (colectivamente, \'Contenido\'). No puede publicar como parte del Servicio, ni transmitir a la Compa\xf1\xeda ni a ning\xfan otro usuario (ya sea dentro o fuera del Servicio), cualquier ofensivo, inexacto, incompleto, abusivo, obsceno, profano, amenazante, intimidante, acosador, racialmente ofensivo, o material ilegal, o cualquier material que infrinja o viole los derechos de otra persona (incluidos los derechos de propiedad intelectual y los derechos de privacidad y publicidad). Usted declara y garantiza que (i) toda la informaci\xf3n que env\xede al crear su cuenta, es precisa y veraz, y que actualizar\xe1 de inmediato cualquier informaci\xf3n proporcionada por usted que posteriormente se vuelva inexacta, incompleta, enga\xf1osa o falsa y (ii) usted tenga El derecho a publicar el Contenido en el Servicio y otorgar las licencias establecidas a continuaci\xf3n.","trm_8_content_posted_2":"Usted comprende y acepta que la Compa\xf1\xeda puede, pero no est\xe1 obligada a, monitorear o revisar cualquier Contenido que publique como parte de un Servicio. La Compa\xf1\xeda puede eliminar cualquier Contenido, en su totalidad o en parte, que a juicio exclusivo de la Compa\xf1\xeda viole este Acuerdo o pueda da\xf1ar la reputaci\xf3n del Servicio o la Compa\xf1\xeda.","trm_8_content_posted_3":"Al publicar Contenido como parte del Servicio, usted le otorga a DefAgent un derecho mundial, transferible, sin licencia, libre de regal\xedas, derecho y licencia para alojar, almacenar, usar, copiar, mostrar, reproducir, adaptar, editar, publicar, modificar y distribuir el contenido. Esta licencia tiene el prop\xf3sito limitado de operar, desarrollar, proporcionar, promover y mejorar el Servicio e investigar y desarrollar otros nuevos.","trm_8_content_posted_4":"Adem\xe1s de los tipos de Contenido descritos en la Secci\xf3n 8 (a) anterior, la siguiente es una lista parcial del tipo de Contenido que est\xe1 prohibido en el Servicio. No puede publicar, cargar, mostrar o poner a disposici\xf3n contenido que:","trm_8_content_posted_4_1":"(I) Promueve el racismo, la intolerancia, el odio o el da\xf1o f\xedsico de cualquier tipo contra cualquier grupo o individuo;","trm_8_content_posted_4_2":"(II) Aboga por el acoso o la intimidaci\xf3n de otra persona;","trm_8_content_posted_4_3":"(III) Env\xeda spam o solicita a los usuarios de DefAgent;","trm_8_content_posted_4_4":"(IV) Promueve informaci\xf3n falsa o enga\xf1osa, o promueve actividades ilegales o conductas difamatorias, difamatorias o de otra manera objetables;","trm_8_content_posted_4_5":"(V) Promueve una copia ilegal o no autorizada del trabajo protegido por derechos de autor de otra persona, como proporcionar programas inform\xe1ticos pirateados, im\xe1genes, archivos de audio o video o enlaces a ellos;","trm_8_content_posted_4_6":"(VI) Contiene video, fotograf\xedas de audio o im\xe1genes de otra persona sin su permiso (o en el caso de un menor, el tutor legal del menor);","trm_8_content_posted_4_7":"(VII) Contiene p\xe1ginas de acceso restringido o con contrase\xf1a, o p\xe1ginas o im\xe1genes ocultas (aquellas que no est\xe1n vinculadas ao desde otra p\xe1gina accesible);","trm_8_content_posted_4_8":"(VIII) Proporciona material que explota a las personas de manera sexual, violenta u otra forma ilegal, o solicita informaci\xf3n personal de cualquier persona menor de 18 a\xf1os;","trm_8_content_posted_4_9":"(IX) Proporciona informaci\xf3n educativa sobre actividades ilegales, como fabricar o comprar armas o drogas ilegales, violar la privacidad de alguien o proporcionar, diseminar o crear virus inform\xe1ticos;","trm_8_content_posted_4_10":"(X) Contiene virus, bombas de tiempo, troyanos, cancelbots, gusanos u otros c\xf3digos, componentes o dispositivos da\xf1inos o perjudiciales;","trm_8_content_posted_4_11":"(XI) Suplanta o tergiversa afiliaci\xf3n, conexi\xf3n o asociaci\xf3n con cualquier persona o entidad;","trm_8_content_posted_4_12":"(XII) Proporciona informaci\xf3n o datos que no tiene derecho a poner a disposici\xf3n de acuerdo con la ley o las relaciones contractuales o fiduciarias (como informaci\xf3n privilegiada, informaci\xf3n confidencial y de propiedad exclusiva);","trm_8_content_posted_4_13":"(XIII) Interrumpe el flujo normal del di\xe1logo, hace que una pantalla se \'desplace\' m\xe1s r\xe1pido de lo que otros usuarios pueden escribir, o afecta negativamente la capacidad de otros usuarios para participar en intercambios en tiempo real; y","trm_8_content_posted_4_14":"(XIV) Solicita contrase\xf1as o informaci\xf3n de identificaci\xf3n personal para fines comerciales o ilegales de otros usuarios o difunde la informaci\xf3n personal de otra persona sin su permiso.","trm_8_content_posted_text":"La Compa\xf1\xeda se reserva el derecho, a su sola discreci\xf3n, de investigar y tomar cualquier acci\xf3n legal contra cualquier persona que viole esta disposici\xf3n, incluida la eliminaci\xf3n de la comunicaci\xf3n ofensiva del Servicio y la cancelaci\xf3n o suspensi\xf3n de la cuenta de dichos infractores.","trm_9_use_service_0":"9. Uso Del Servicio.","trm_9_use_service":"Su uso del Servicio, incluido todo el Contenido que publique a trav\xe9s del Servicio, debe cumplir con todas las leyes y regulaciones aplicables. Usted acepta que la Compa\xf1\xeda puede acceder, preservar y divulgar la informaci\xf3n y el Contenido de su cuenta si as\xed lo requiere la ley o de buena fe que dicho acceso, preservaci\xf3n o divulgaci\xf3n es razonablemente necesario, como por ejemplo: (i) cumplir con la ley proceso; (ii) hacer cumplir este Acuerdo; (iii) responder a reclamos de que cualquier Contenido viola los derechos de terceros; (iv) responder a sus solicitudes de servicio al cliente o permitirle usar el Servicio en el futuro; o (v) proteger los derechos, la propiedad o la seguridad personal de la Compa\xf1\xeda o de cualquier otra persona.","trm_10_agree_content":"Usted acepta que cualquier Contenido que coloque en el Servicio puede ser visto por otros usuarios y puede ser visto por cualquier persona que visite o participe en el Servicio (como individuos que pueden recibir Contenido compartido de otros usuarios de DefAgent).","trm_11_prohibited_activities":"10. Actividades Prohibidas.","trm_11_prohibited_activities_1":"La Compa\xf1\xeda se reserva el derecho de investigar, suspender y/o cancelar su cuenta si ha usado mal el Servicio o se ha comportado de una manera que la Compa\xf1\xeda considera inapropiada o ilegal, incluidas acciones o comunicaciones que ocurren fuera del Servicio pero involucran a usuarios que conoce a trav\xe9s del Servicio. La siguiente es una lista parcial del tipo de acciones que no puede realizar con respecto al Servicio. No Ppodr\xe1s realizar lo siguiente:","trm_11_prohibited_activities_1_1":"(I) Hacerse pasar por cualquier persona o entidad.","trm_11_prohibited_activities_1_2":"(II) Solicitar dinero de cualquier usuario.","trm_11_prohibited_activities_1_3":"(III) Publique cualquier Contenido que est\xe9 prohibido por la Secci\xf3n 7.","trm_11_prohibited_activities_1_4":"\'(IV) Acechar\' o acosar a cualquier persona.","trm_11_prohibited_activities_1_5":"(V) Expresar o implicar que cualquier declaraci\xf3n que realice est\xe1 respaldada por la Compa\xf1\xeda sin nuestro consentimiento previo por escrito.","trm_11_prohibited_activities_1_6":"(VI) Usar el Servicio de manera ilegal o para cometer un acto ilegal.","trm_11_prohibited_activities_1_7":"(VII) Acceda al Servicio en una jurisdicci\xf3n en la que sea ilegal o no autorizado.","trm_11_prohibited_activities_1_8":"(VIII) Utilice cualquier robot, ara\xf1a, aplicaci\xf3n de b\xfasqueda / recuperaci\xf3n del sitio u otro dispositivo o proceso manual o autom\xe1tico para recuperar, indexar, \'extraer datos\', o de cualquier manera reproducir o eludir la estructura de navegaci\xf3n o la presentaci\xf3n del Servicio o sus contenidos.","trm_11_prohibited_activities_1_9":"(IX) Recopile los nombres de usuario y / o las direcciones de correo electr\xf3nico de los usuarios por medios electr\xf3nicos u otros con el fin de enviar correos electr\xf3nicos no solicitados o marcos o enlaces no autorizados al Servicio.","trm_11_prohibited_activities_1_10":"(X) Interferir o interrumpir el Servicio o los servidores o redes conectados al Servicio.","trm_11_prohibited_activities_1_11":"(XI) Transmita cualquier material que contenga virus de software o cualquier otro c\xf3digo de computadora, archivos o programas dise\xf1ados para interrumpir, destruir o limitar la funcionalidad de cualquier software, hardware o equipo de telecomunicaciones.","trm_11_prohibited_activities_1_12":"(XII) Falsifique encabezados o manipule identificadores para ocultar el origen de cualquier informaci\xf3n transmitida a trav\xe9s del Servicio (ya sea directa o indirectamente mediante el uso de software de terceros).","trm_11_prohibited_activities_1_13":"(XIII) \'Enmarcar\' o \'Reflejar\' cualquier parte del Servicio, sin la autorizaci\xf3n previa por escrito de la Compa\xf1\xeda.","trm_11_prohibited_activities_1_14":"(XIV) Use metaetiquetas o c\xf3digos u otros dispositivos que contengan alguna referencia a la Compa\xf1\xeda o al Servicio (o cualquier marca registrada, nombre comercial, marca de servicio, logotipo o eslogan de la Compa\xf1\xeda) para dirigir a cualquier persona a cualquier otro sitio web para cualquier prop\xf3sito.","trm_11_prohibited_activities_1_15":"(XV) Modifique, adapte, sublicencia, traduzca, venda, realice ingenier\xeda inversa, descifre, descompile o desarme cualquier parte del Servicio de cualquier software utilizado en el Servicio, o haga que otros lo hagan.","trm_11_prohibited_activities_1_16":"(XVI) Publique, use, transmita o distribuya, directa o indirectamente (por ejemplo, captura de pantalla) de cualquier manera o medio cualquier contenido o informaci\xf3n obtenida del Servicio que no sea \xfanicamente en relaci\xf3n con su uso del Servicio de acuerdo con este Acuerdo.","trm_12_propietary_rights":"11. Derechos De Propiedad.","trm_12_propietary_rights_1":"La Compa\xf1\xeda posee y retiene todos los derechos de propiedad en el Servicio, y en todo el contenido, marcas comerciales, nombres comerciales, marcas de servicio y otros derechos de propiedad intelectual relacionados con el mismo. El Servicio contiene el material con derechos de autor, marcas registradas y otra informaci\xf3n de propiedad de la Compa\xf1\xeda y sus licenciantes. Usted acepta no copiar, modificar, transmitir, crear trabajos derivados, utilizar o reproducir de ninguna manera ning\xfan material con derechos de autor, marcas comerciales, nombres comerciales, marcas de servicio u otra propiedad intelectual o informaci\xf3n de propiedad accesible a trav\xe9s del Servicio, sin obtener primero el consentimiento previo por escrito de la Compa\xf1\xeda o, si dicha propiedad no es propiedad de la Compa\xf1\xeda, el propietario de dicha propiedad intelectual o derechos de propiedad. Usted acepta no eliminar, ocultar ni alterar de ninguna otra manera los avisos de propiedad que aparezcan en ning\xfan contenido, incluidos los avisos de derechos de autor, marcas comerciales y otros avisos de propiedad intelectual.","trm_13_ownership":"12. Propiedad.","trm_13_ownership_1":"Los Servicios y todos los derechos en ellos son y seguir\xe1n siendo propiedad de DefAgent o propiedad de los licenciantes de DefAgent. Ni estos T\xe9rminos ni su uso de los Servicios le otorgan ni le otorgan ning\xfan derecho: (i) en o relacionado con los Servicios, excepto por la licencia limitada otorgada anteriormente; o (ii) usar o hacer referencia de cualquier manera a los nombres de compa\xf1\xedas, logotipos, nombres de productos y servicios, marcas comerciales o marcas de servicios de DefAgent o de los licenciantes de DefAgent.","trm_14_user_provided_content":"13. Contenido Proporcionado Por El Usuario.","trm_14_user_provided_content_1":"DefAgent puede, a su entera discreci\xf3n, permitirle de vez en cuando enviar, cargar, publicar o poner a disposici\xf3n de DefAgent a trav\xe9s de los Servicios contenido textual, de audio y/o visual e informaci\xf3n, incluidos comentarios y comentarios relacionados con los Servicios, inicio de solicitudes de soporte y env\xedo de entradas para concursos y promociones (\'Contenido del usuario\'). Cualquier contenido de usuario proporcionado por usted sigue siendo de su propiedad. Sin embargo, al proporcionar Contenido de usuario a DefAgent, usted le otorga a DefAgent una licencia mundial, perpetua, irrevocable, transferible y libre de regal\xedas, con el derecho de sublicenciar, usar, copiar, modificar, crear trabajos derivados de, distribuir, mostrar p\xfablicamente, p\xfablicamente realizar y explotar de cualquier otra forma el Contenido del usuario en todos los formatos y canales de distribuci\xf3n ahora conocidos o desarrollados en el futuro (incluso en relaci\xf3n con los Servicios y el negocio de DefAgent y en sitios y servicios de terceros), sin previo aviso o consentimiento de usted , y sin el requisito de pago para usted o cualquier otra persona o entidad. Usted declara y garantiza que: (i) usted es el propietario \xfanico y exclusivo de todo el Contenido del usuario o tiene todos los derechos, licencias, consentimientos y liberaciones necesarios para otorgar a DefAgent la licencia del Contenido del usuario como se establece anteriormente; y (ii) ni el Contenido del usuario, ni su env\xedo, carga, publicaci\xf3n o puesta a disposici\xf3n de dicho Contenido del usuario, ni el uso de DefAgent del Contenido del usuario seg\xfan lo permitido en este documento infringir\xe1, malversar\xe1 o violar\xe1 la propiedad intelectual o los derechos de propiedad de un tercero, o derechos de publicidad o privacidad, o resultar en la violaci\xf3n de cualquier ley o regulaci\xf3n aplicable. Usted acepta no proporcionar Contenido de usuario que sea difamatorio, calumnioso, odioso, violento, obsceno, pornogr\xe1fico, ilegal u ofensivo, seg\xfan lo determine DefAgent a su exclusivo criterio, si dicho material puede o no estar protegido por la ley. DefAgent puede, pero no estar\xe1 obligado a, revisar, monitorear o eliminar el Contenido del usuario, a discreci\xf3n exclusiva de DefAgent y en cualquier momento y por cualquier motivo, sin notific\xe1rselo.","trm_15_network_access_devices":"14. Acceso A La Red Y Dispositivos.","trm_15_network_access_devices_1":"Usted es responsable de obtener el acceso a la red de datos necesario para usar los Servicios. Las tarifas y tarifas de datos y mensajes de su red m\xf3vil pueden aplicarse si accede o utiliza los Servicios desde su dispositivo. Usted es responsable de adquirir y actualizar el hardware o dispositivos compatibles necesarios para acceder y utilizar los Servicios y Aplicaciones y cualquier actualizaci\xf3n de los mismos. DefAgent no garantiza que los Servicios, o cualquier parte de los mismos, funcionen en ning\xfan hardware o dispositivo en particular. Adem\xe1s, los Servicios pueden estar sujetos a mal funcionamiento y demoras inherentes al uso de Internet y las comunicaciones electr\xf3nicas.","trm_16_modifications_service":"15. Modificaciones Al Servicio.","trm_16_modifications_service_1":"La Compa\xf1\xeda se reserva el derecho en cualquier momento de modificar o descontinuar, temporal o permanentemente, el Servicio (o cualquier parte del mismo) con o sin previo aviso. Usted acepta que la Compa\xf1\xeda no ser\xe1 responsable ante usted ni ante ning\xfan tercero por cualquier modificaci\xf3n, suspensi\xf3n o interrupci\xf3n del Servicio. Para proteger la integridad del Servicio, la Compa\xf1\xeda se reserva el derecho en cualquier momento, a su exclusivo criterio, de bloquear el acceso de los usuarios de ciertas direcciones IP al Servicio.","trm_17_copyright_policy":"16. Pol\xedtica De Derechos De Autor.","trm_17_copyright_policy_1":"Notificaci\xf3n y procedimiento para realizar reclamaciones de infracci\xf3n de derechos de autor. No puede publicar, distribuir ni reproducir de ninguna manera ning\xfan material con derechos de autor, marcas comerciales u otra informaci\xf3n de propiedad sin obtener el consentimiento previo por escrito del propietario de dichos derechos de propiedad. Si cree que su trabajo ha sido copiado y publicado en el Servicio de una manera que constituye una infracci\xf3n de derechos de autor, proporcione a nuestro Agente de Derechos de Autor la siguiente informaci\xf3n:","trm_17_copyright_policy_1_1":"(I) Una firma electr\xf3nica o f\xedsica de la persona autorizada para actuar en nombre del propietario de los derechos de autor;","trm_17_copyright_policy_1_2":"(II) Una descripci\xf3n del trabajo protegido por derechos de autor que usted afirma que se ha infringido;","trm_17_copyright_policy_1_3":"(III) Una descripci\xf3n de d\xf3nde se encuentra el material que usted afirma que est\xe1 infringiendo en el Servicio (y dicha descripci\xf3n debe ser razonablemente suficiente para permitir a la Compa\xf1\xeda encontrar el material presuntamente infractor, como una url);","trm_17_copyright_policy_1_4":"(IV) Su direcci\xf3n, n\xfamero de tel\xe9fono y direcci\xf3n de correo electr\xf3nico;","trm_17_copyright_policy_1_5":"(V) Una declaraci\xf3n escrita de usted de que cree de buena fe que el uso en disputa no est\xe1 autorizado por el propietario de los derechos de autor, su agente o la ley; y","trm_17_copyright_policy_1_6":"(VI) Una declaraci\xf3n suya, hecha bajo pena de perjurio, que la informaci\xf3n anterior en su aviso es precisa y que usted es el propietario de los derechos de autor o est\xe1 autorizado para actuar en nombre del propietario de los derechos de autor.","trm_17_copyright_policy_1_text":"El aviso de reclamos de infracci\xf3n de derechos de autor debe proporcionarse al Agente de Derechos de Autor de la Compa\xf1\xeda en caro@DefAgent.ai","trm_17_copyright_policy_1_text1":"La Compa\xf1\xeda cancelar\xe1 las cuentas de los infractores reincidentes.","trm_17_disclaimers":"17. Descargos De Responsabilidad, Limitaci\xf3n De Responsabilidad.","trm_17_disclaimers_0":"Descargos De Responsabilidad.","trm_17_disclaimers_1":"LOS SERVICIOS SE PROPORCIONAN \'TAL CUAL\' Y \'SEG\xdaN DISPONIBILIDAD\'. DefAgent RENUNCIA A TODAS LAS REPRESENTACIONES Y GARANT\xcdAS, EXPRESAS, IMPL\xcdCITAS O ESTATUTARIAS, NO EXPRESADAS EXPRESAMENTE EN ESTOS T\xc9RMINOS, INCLUIDAS LAS GARANT\xcdAS IMPL\xcdCITAS DE COMERCIABILIDAD, IDONEIDAD PARA UN PROP\xd3SITO Y NO INFRACCI\xd3N PARTICULARES. ADEM\xc1S, DefAgent NO HACE NINGUNA REPRESENTACI\xd3N, GARANT\xcdA O GARANT\xcdA CON RESPECTO A LA CONFIABILIDAD, OPORTUNIDAD, CALIDAD, IDONEIDAD O DISPONIBILIDAD DE LOS SERVICIOS O CUALQUIER SERVICIO O BIEN SOLICITADOS A TRAV\xc9S DEL USO DE LOS SERVICIOS, O QUE LOS SERVICIOS SER\xc1N ININTERRUMPIDOS GRATIS. DefAgent NO GARANTIZA LA CALIDAD, IDONEIDAD, SEGURIDAD O CAPACIDAD DE PROVEEDORES DE TERCEROS. USTED ACEPTA QUE TODO EL RIESGO DERIVADO DE SU USO DE LOS SERVICIOS, Y CUALQUIER SERVICIO O BIEN SOLICITADO EN CONEXI\xd3N CON ELLOS, SE QUEDA SOLAMENTE CON USTED, EN LA MEDIDA M\xc1XIMA PERMITIDA BAJO LA LEY APLICABLE.","trm_17_limitation":"Limitaci\xf3n De Responsabilidad.","trm_17_limitation_1":"DefAgent NO SER\xc1 RESPONSABLE POR DA\xd1OS INDIRECTOS, INCIDENTALES, ESPECIALES, EJEMPLARES, PUNITIVOS O CONSECUENTES, INCLUYENDO GANANCIAS PERDIDAS, DATOS PERDIDOS, DA\xd1OS PERSONALES O DA\xd1OS A LA PROPIEDAD RELACIONADOS CON, EN RELACI\xd3N CON, O DE CUALQUIER OTRO RESULTADO DE CUALQUIER USO DE LOS SERVICIOS, SIN IMPORTAR LA NEGLIGENCIA (CUALQUIERA ACTIVA, AFIRMATIVA, \xdaNICA O CONCURRENTE) DE DefAgent, INCLUSO SI SE HA INFORMADO A DefAgent DE LA POSIBILIDAD DE TALES DA\xd1OS. DefAgent NO SER\xc1 RESPONSABLE DE NING\xdaN DA\xd1O, RESPONSABILIDAD O P\xc9RDIDA QUE SURJA DE: (i) SU USO O CONFIANZA EN LOS SERVICIOS O SU INCAPACIDAD PARA ACCEDER O UTILIZAR LOS SERVICIOS; O (ii) CUALQUIER TRANSACCI\xd3N O RELACI\xd3N ENTRE USTED Y CUALQUIER PROVEEDOR DE TERCEROS, INCLUSO SI SE HA INFORMADO DefAgent DE LA POSIBILIDAD DE TALES DA\xd1OS. DefAgent NO SER\xc1 RESPONSABLE POR RETRASO O FALLA EN EL RENDIMIENTO RESULTANTE DE CAUSAS M\xc1S ALL\xc1 DE DefAgent CONTROL RAZONABLE. USTED RECONOCE QUE LOS PROVEEDORES DE TERCEROS QUE PROPORCIONAN SERVICIOS DE TRANSPORTE SOLICITADOS A TRAV\xc9S DE ALGUNOS PRODUCTOS DE SOLICITUD PUEDEN OFRECER SERVICIOS DE TRANSPORTE DE COMPARTIMIENTO O PERMISO Y NO PUEDEN SER LICENCIADOS O PERMITIDOS PROFESIONALMENTE. USTED PUEDE UTILIZAR LOS SERVICIOS PARA SOLICITAR Y PROGRAMAR SERVICIOS DE TRANSPORTE, BIENES O LOG\xcdSTICOS CON PROVEEDORES DE TERCEROS, PERO ACEPTA QUE DefAgent NO TIENE NINGUNA RESPONSABILIDAD O RESPONSABILIDAD RELACIONADA CON CUALQUIER SERVICIO DE TRANSPORTE, BIENES O LOG\xcdSTICOS PROPORCIONADOS A USTED POR TERCEROS PROVEEDORES QUE NO SEAN EXPRESAMENTE ESTABLECIDOS EN ESTOS T\xc9RMINOS. LAS LIMITACIONES Y LA RENUNCIA DE RESPONSABILIDAD EN ESTA SECCI\xd3N NO SIGNIFICAN LIMITAR LA RESPONSABILIDAD O ALTERAR SUS DERECHOS COMO CONSUMIDOR QUE NO PUEDE SER EXCLUIDO BAJO LA LEY APLICABLE. PORQUE ALGUNOS ESTADOS O JURISDICCIONES NO PERMITEN LA EXCLUSI\xd3N O LA LIMITACI\xd3N DE RESPONSABILIDAD POR DA\xd1OS CONSECUENTES O INCIDENTALES, EN DICHOS ESTADOS O JURISDICCIONES, TODA LA RESPONSABILIDAD SE LIMITAR\xc1 AL EXTREMO PERMITIDO POR LA LEY. ESTA DISPOSICI\xd3N NO TENDR\xc1 EFECTO EN TODA LA DISPOSICI\xd3N DE ELECCI\xd3N DE LEY ESTABLECIDA A CONTINUACI\xd3N.","trm_18_arbitration":"18. Arbitraje Y Ley Aplicable.","trm_18_arbitration_p":"A excepci\xf3n de los usuarios que residen en la Uni\xf3n Europea, Noruega y otros lugares donde lo proh\xedba la ley aplicable:","trm_18_arbitration_i_01":"El medio exclusivo para resolver cualquier disputa o reclamo que surja de o est\xe9 relacionado con este Acuerdo (incluyendo cualquier presunto incumplimiento del mismo) o el Servicio ser\xe1 el ARBITRAJE VINCULANTE administrado por la Arbitration Association de Inglaterra. La \xfanica excepci\xf3n a la exclusividad del arbitraje es que usted tiene derecho a presentar un reclamo individual contra la Compa\xf1\xeda en un tribunal de reclamos menores de jurisdicci\xf3n competente. Pero ya sea que elija arbitraje o tribunal de reclamos menores, bajo ninguna circunstancia puede iniciar o mantener contra la Compa\xf1\xeda ninguna acci\xf3n de clase, arbitraje de clase u otra acci\xf3n o procedimiento representativo.","trm_18_arbitration_i_02":"Al utilizar el Servicio de cualquier manera, usted acepta el acuerdo de arbitraje anterior. Al hacerlo, USTED CESE SU DERECHO DE IR A LA CORTE para hacer valer o defender cualquier reclamo entre usted y la Compa\xf1\xeda (excepto por asuntos que puedan ser llevados a la corte de reclamos menores). TAMBI\xc9N RENUNCIA A SU DERECHO A PARTICIPAR EN UNA ACCI\xd3N DE CLASE U OTRO PROCESO DE CLASE. Sus derechos ser\xe1n determinados por un \xc1RBITRO NEUTRO, NO UN JUEZ O JURADO. Tiene derecho a una audiencia imparcial ante el \xe1rbitro. El \xe1rbitro puede otorgar cualquier alivio que pueda otorgar un tribunal, pero debe tener en cuenta que los procedimientos de arbitraje suelen ser m\xe1s simples y m\xe1s \xe1giles que los juicios y otros procedimientos judiciales. Las decisiones del \xe1rbitro son ejecutables en el tribunal y pueden ser revocadas por un tribunal solo por razones muy limitadas. Para obtener detalles sobre el proceso de arbitraje, consulte nuestros Procedimientos de arbitraje.","trm_18_arbitration_i_03":"Cualquier procedimiento para hacer cumplir este acuerdo de arbitraje, incluido cualquier procedimiento para confirmar, modificar o anular un laudo arbitral, puede iniciarse en cualquier tribunal de jurisdicci\xf3n competente. En caso de que este acuerdo de arbitraje sea por cualquier motivo considerado inaplicable, cualquier litigio contra la Compa\xf1\xeda (excepto las acciones judiciales de reclamos menores) puede iniciarse solo en los tribunales federales o estatales ubicados en Inglaterra. Por la presente, consiente irrevocablemente la jurisdicci\xf3n de esos tribunales para tales fines.","trm_18_arbitration_i_04":"Este Acuerdo, y cualquier disputa entre usted y la Compa\xf1\xeda, se regir\xe1 por las leyes de Inglaterra sin tener en cuenta los principios de conflictos de leyes, siempre que este acuerdo de arbitraje se rija por la Ley Federal de Arbitraje.","trm_18_arbitration_p_1":"Para los usuarios que residen en la Uni\xf3n Europea, Noruega o en cualquier otro lugar donde este acuerdo de arbitraje est\xe9 prohibido por ley, las leyes de Inglaterra, Excluyendo las reglas de conflicto de leyes de Inglaterra, se aplicar\xe1n a cualquier disputa que surja o est\xe9 relacionada con este Acuerdo o los Servicios. Todos los reclamos que surjan de este Acuerdo o de los Servicios o se relacionen con ellos se litigar\xe1n exclusivamente en los tribunales federales o estatales de Inglaterra, Y usted y DefAgent aceptan la jurisdicci\xf3n personal de dichos tribunales.","trm_19_":"19.  Indemnizaci\xf3n Por T\xed.","trm_19_p":"Usted acepta indemnizar y mantener a la Compa\xf1\xeda, sus subsidiarias y afiliadas, y sus y sus funcionarios, agentes, socios y empleados, indemnes de cualquier p\xe9rdida, responsabilidad, reclamo o demanda, incluidos los honorarios razonables de abogados, realizados por un tercero debido o que surja de su incumplimiento o incumplimiento de este Acuerdo (incluido cualquier incumplimiento de sus representaciones y garant\xedas contenidas en este documento), cualquier publicaci\xf3n o Contenido que publique en el Servicio, y la violaci\xf3n de cualquier ley o regulaci\xf3n por usted. La Compa\xf1\xeda se reserva el derecho de asumir la defensa y el control exclusivos de cualquier asunto sujeto a indemnizaci\xf3n por su parte, en cuyo caso cooperar\xe1 plenamente con la Compa\xf1\xeda en relaci\xf3n con esto.","trm_20_":"20. Aviso.","trm_20_p":"La Compa\xf1\xeda puede proporcionarle avisos, incluidos los relacionados con los cambios a este Acuerdo, utilizando cualquier medio razonable, que puede incluir correo electr\xf3nico, SMS, MMS, mensajes de texto o publicaciones en el Servicio. Es posible que dichos avisos no se reciban si viola este Acuerdo al acceder al Servicio de manera no autorizada. Usted acepta que se considera que ha recibido todos y cada uno de los avisos que se habr\xedan entregado si hubiera accedido al Servicio de manera autorizada.","trm_21_":"21. Acuerdo Completo.","trm_21_p":"Este Acuerdo, con la Pol\xedtica de privacidad y las pautas o reglas espec\xedficas que se publican por separado para servicios u ofertas particulares en el Servicio, contiene el acuerdo completo entre usted y la Compa\xf1\xeda con respecto al uso del Servicio. Si alguna disposici\xf3n de este Acuerdo se considera inv\xe1lida, el resto de este Acuerdo continuar\xe1 en pleno vigor y efecto. El hecho de que la Compa\xf1\xeda no ejerza o haga cumplir alg\xfan derecho o disposici\xf3n de este Acuerdo no constituir\xe1 una renuncia a dicho derecho o disposici\xf3n. Usted acepta que su cuenta DefAgent no es transferible y que todos sus derechos sobre su perfil o contenido dentro de su cuenta DefAgent terminan con su fallecimiento. No se crea ninguna agencia, sociedad, empresa conjunta o empleo como resultado de este Acuerdo y usted no puede hacer ninguna representaci\xf3n ni obligar a la Compa\xf1\xeda de ninguna manera.","trm_question":"\xbfPreguntas?","trm_privacy_policy":"Cualquier duda sobre nuestra Pol\xedtica de privacidad debe dirigirse a caro@DefAgent.ai"}}'
+        '{"APP_NAME":"DefAgent","About":"Sobre Nosotros","Hello world !":"\xa1Hola Mundo!","Home":"Inicio","Logged in as":"Registrarse","Login":"Iniciar Sesi\xf3n","Logout":"Cerrar Sesi\xf3n","Password":"Contrase\xf1a","Password is required":"Se Requiere Contrase\xf1a","Username":"Nombre De Usuario","Username is required":"Se Requiere Nombre De Usuario","Username or password incorrect.":"Usuario O Contrase\xf1a Incorrectos.","Remember me":"Recordar","Version":"Versi\xf3n","ACTIONS":{"FORM_REGISTER_SIMPLE_INLINE":{"CHECK_YOUR_EMAIL":"Revisa Su Correo Electr\xf3nico","WE_SENT_YOU_AN_EMAIL":"Le Enviamos Un Correo Electr\xf3nico Con Un Enlace Para Comenzar. Estar\xe1s En Tu Cuenta En Poco Tiempo."},"FORM_REGISTER_COMPANY":{"NAME":"Nombre","EMAIL":"E-mail","COMPANY":"Empresa","SEND_MY_APPLICATION":"Enviar Mi Solicitud"}},"NAVBAR":{"DEFAULT":{"HOME":"Inicio","ABOUT":"Sobre nosotros","CONTACT":"Contacto","DEMOS":"Soluciones","COMPANY":"Segmentos","HUMAN_RESOURCE":"Agentes AI ","SALES":"Procesos","CUSTOMER_SERVICE":"Servicio Al Cliente","MODULES":"M\xf3dulos","CALENDAR":"Calendario","PRODUCT":"Verticales","HEALTH":"Salud","DEVELOPERS":"Desarrolladores","RPA_CREATORS":"Creadores De RPA","SERVICES":"Marketplace","DATAFLOWS_CREATORS":"Creadores De Dataflows","SAAS":"Bienes Ra\xedces","START_UP":"Startup","FOR_STORY_TELLERS":"Para StoryTellers","AWESOME_DESIGN_BLOCKS":"Bloques Impresionantes","FOR_DEVELOPERS":"Para Desarrolladores","THE_DEVELOPERS_PLACE":"El lugar de los desarrolladores","YOUR_BUSINESS":"Tu Negocio","OUT_BEST_BET":"Nuestra Mejor Apuesta Es Usted, Podemos Asegurarle Que EveryThink Se Ajusta A Sus Necesidades.","VIEW_PLAN":"Ver Planes","LANGUAGE":"Idioma","EN":"Ingl\xe9s","ES":"Espa\xf1ol","LOGIN":"Iniciar","SIGNUP":"Registrarme"}},"SLIDERS":{"SLIDER_CARD_PROJECTS":{"NEW_SUBSCRIBERS":"Nuevos Suscriptores","NEXT":"Siguiente"},"SLIDER_START_RIGHT_WAY":{"FOR_EVERYONE":"DefAgent AIs Para Profesionales","EVERYTHINK_DOES_ALL":"DefAgent Hace TODO EL TRABAJO PESADO Al Automatizar Los Procesos Repetitivos Para Que Pueda Concentrarse En Tareas M\xe1s Complejas Y Lograr Niveles De Eficiencia Sin Precedentes.","START_THE_RIGHT_WAY":"Empiece De La Manera Correcta","START_WITH_EVERy_THINK":"Empiece Con DefAgent","THINKING_ABOUT_YOUR_AI_JOURNEY":"\xbfEst\xe1s Pensando En Tu Viaje Con AIs?","CHOOSE_THE_RIGHT_PLAN":"Elige el plan adecuado para ti"},"SLIDER_BRING_TO_LIFE":{"ADMIN_TEMPLATE_INCLUDED":"Paneles de administraci\xf3n incluidos","WE_INCLUDED_A_FULLY_FUNcTIONAL":"Hemos incluido paneles de administraci\xf3n de inicio completamente funcionales","POWER_WITH_MULIPLE_STARTER_APPS":"Desarrollado por DefAgent","ITS_AWESOME_YOU_TO":" Tenemos nuevas features que te van a encantar!","SIMPLE_AND_TRANSPARENT":"Sencillo y transparente","BRING_YOU_APPLICAION_TO_LIFE":"Da vida a tu AIs","DASHCORE_INCLUDED":"DefAgent incluye una excelente interfaz de usuario del panel de administraci\xf3n de inicio. Con esta funci\xf3n, puede comenzar a desarrollar sus aplicaciones de inmediato.","CLEAN_INBOX_UI":"F\xe1cil de usar"},"SLIDER_ALL_IN_ONE":{"EVERYTHINK_YOU_NEED":"Todo lo que necesita - \xa1todo en su mano!","REAL_TIME_SOLUTION":"Soluci\xf3n","STREAMLINES_PROCESSES":"En Tiempo real","AFFORDABILLITY":"Convi\xe9rtete en ultrarr\xe1pido en tiempo real. Cree sus propias aplicaciones de marca blanca. Obtenga informaci\xf3n valiosa sobre clientes, mercados y procesos y logre mucho m\xe1s con nuestra poderosa herramienta habilitada para IA.","SINCE_THE_NEED_FORHUMAN":"Alcance global","EVERYTHINK_DOES_ALL":"Cierre m\xe1s acuerdos con menos fricci\xf3n. Gana m\xe1s listados con mayor facilidad. Optimice sus esfuerzos mediante la automatizaci\xf3n y los predictores. Obtenga una ventaja competitiva con mayor funcionalidad y eficiencia.","ALWAYS_ON_TIME":"Siempre a tiempo","UNIQUE_USER)EXPERIENCE":"Experiencia","A_NEW_AND_INTUITIVE_EXPERIENCE":"\xdanica","ESPECIALLY_WHEN_YOUR_CLIENTS_NEEDS":"Aproveche la plataforma de c\xf3digo bajo impulsada por AIs de DefAgent para optimizar los procesos y brindar experiencias sin esfuerzo, instant\xe1neas y mucho m\xe1s enriquecedoras para compradores, vendedores, agentes inmobiliarios y todos los involucrados.","OUTSTANDING":"","ANALYTICS":"Excepcional","SIT_BACK_AS_YOUR":"DefAgent AIaaS ofrece mucho m\xe1s que una perfecta absorci\xf3n y emisi\xf3n de datos. Estos AIs ,ense\xf1ables, recopilan y revisan las interacciones de los usuarios para su an\xe1lisis e iteraci\xf3n.","CONTINUOUSLY_CHECK_IN":"Consulte continuamente con sus AIs para obtener nuevas sugerencias sobre la automatizaci\xf3n de procesos o formas de brindar mejores soluciones a sus clientes y empleados."}},"SCREENSHOTS":{"APP":{"APP_SCREENSHOTS":"Crea tus agentes de IA en un solo lugar y automatiza todos los procesos","A_PICTURE_IS_WORTH_A_THOUSAND_WORDS":""}},"HOME":{"NETWORK_SEARCH_META":{"TITLE":"DefAgent - PLATAFORMA DE AGENTES DE IA PARA LA DEFENSA","KEYWORDS":"Network Search, Networks directory App Landing1"},"APP_LANDING_HEADING":{"HEADING":{"AWARDED":"Seleccionado Por El Programa De Emprendedores Globales Del Gobierno Brit\xe1nico","HR_CONSULTIN":"DefAgent","CONSULTANT":"PLATAFORMA DE AGENTES DE IA PARA LA DEFENSA","IAS":"Con un sistema propietario de agentes de IA, DefAgent te permite pasar de la idea al producto listo para producci\xf3n, eliminando la necesidad de encontrar un cofundador t\xe9cnico o contratar desarrolladores. Simplemente explica tu idea de negocio como lo har\xedas con un desarrollador humano, y nosotros nos encargamos del resto: producto, pagos, seguridad, infraestructura, escalabilidad y m\xe1s.","GERSTARTED":"Comenzar","WHAT_YOU_GET":"Lo Que Obtienes"},"FEATURE_CARDS":{"WHAT_YOU_GET":"Lo Que Obtienes","WITH_A_SINGLE_TOOL":"Implementa soluciones en tiempo real de forma f\xe1cil y r\xe1pida sin necesidad de un profesional de tecnolog\xeda dedicado. Ninguna otra soluci\xf3n en el mercado iguala nuestras:"},"TWIN_PHONE_LEFT_LIST":{"WE_ARE_YOUR_PATH_TO_SUCCESS":"Tipos de agentes de IA en defensa"},"TWIN_PHONE_LEFT_RIGHT":{"WE_HAVE_A_TON_OF_BENEFITSS":"Nosotros tenemos toneladas de beneficios","EVERYTHINK_DOES_ALL_OF":"DefAgent hace TODO EL TRABAJO PESADO para que usted pueda concentrarse en tareas m\xe1s valiosas y complejas."},"DOWNLOAD":{"START_TODAY":"Comienza Hoy","DOWNLOAD_THE_APP":"Descargar La Aplicaci\xf3n","DOWNLOAD_EVERYTHING":"Posicione Su Negocio Hacia El \xc9xito. \xa1Descarga La Aplicaci\xf3n DefAgent Ahora Y Comienza Tu Viaje Con AIs! Disponible En Dispositivos Windows, Mac, iOS y Android.","GET_IT_ON_THE":"Cons\xedgalo En","APP_STORE":"App Store","DOWNLOAD_ON":"Descargar En","GOOGLE_PLAY":"Google Play"}}},"DEMOS":{"HUMANRE_SOURCES":{},"SALES":{"NETWORK_SEARCH_META":{"TITLE":"DefAgent - Sales","KEYWORDS":"Network Search, Networks directory Sales"},"APP_LANDING_HEADING2":{"ALLISONE":"Todo es uno,","INFINTY":"donde comienza el infinito","EVERYTHINKFORSALES":"DefAgent","BETTERMARKETING":"Los agentes impulsados \u200b\u200bpor IA se est\xe1n convirtiendo en recursos invaluables","BETTERRESULT":" en el Departamento de Defensa (DoD)","OURIAS":"Revolucionando la forma en que combatimos al optimizar el trabajo y agilizar la toma de decisiones. Estos agentes destacan en la automatizaci\xf3n de tareas de bajo nivel y bajo riesgo, permitiendo a los combatientes concentrarse en decisiones vitales y cruciales para la misi\xf3n.","SUBSCRIBENOW":"Registrarse ahora"},"APP_LANDING2_TRENDING_DESIGN":{"SIMPLE_IMPLEMENTATION":"Implementaci\xf3n simple con impacto exponencialmente positivo","SINCE_THE_NEED":"Dado que se reduce la necesidad de intervenci\xf3n humana y aumenta la eficiencia del flujo de trabajo, el proceso es muy asequible.","THE_POSSIBILITIES":"Las posibilidades de usar DefAgent para defensa est\xe1n en todas partes y solo se limitan al ingenio de los usuarios que desean utilizar los agentes ia para mejorar y simplificar sus procesos"},"APP_LANDING2_FOCUS_ON_SUCCESS":{"FORGET_OBSOLETE":"\xa1Olv\xeddese de los sistemas obsoletos y las costosas inversiones!","EVERYTHINK_DELIVERS":"DefAgent ofrece una experiencia \xfanica y revolucionaria en la que los AI hablan e interact\xfaan directamente con empleados, clientes y proveedores para comprender sus necesidades y conectarlos con personas, procesos y dispositivos en tiempo real.","DOT_NOT_WASTE_TIME":"\xa1Ayuda a tu equipo a ser m\xe1s productivo y rentable! \xa1Deja de perder tiempo valioso y empieza a obtener resultados significativos ahora!"},"APP_LANDING2_SAFETY":{"SAFETY_FIRST":"T\xfa primero","YOUR_SUCCESS_IS_OUR_SUCCESS":"\xa1El \xe9xito de tu negocio es nuestra prioridad!","EVERYTHINK_DOESALL":"DefAgent ayuda a su equipo a automatizar procesos rutinarios, procesar grandes cantidades de datos e incluso manejar tareas m\xe1s complejas."},"APP_LANDING2_POPPING_HIGHLIGHT":{"DISCOVER_CREATE_LOVE":"Descubrir. Empoderar. Ganar.","SEE_WHY_PEOPLE_LOVE_EVERTTHINK":"Vea por qu\xe9 la gente ama DefAgent"},"APP_LANDING2_DOWNLOAD":{"START_TODAY":"Comienza Hoy","DOWNLOAD_THE_APP":"Descargar La Aplicaci\xf3n","DOWNLOAD_EVERTTHINK":"Descargue La Aplicaci\xf3n DefAgent Ahora Y Con\xe9ctese En Dispositivos Windows, Mac, iOS Y Android. \xa1Comience Con Su A.I. Viaje!","GET_IT_ON_THE":"Cons\xedgalo En","APP_STORE":"App Store","DOWNLOAD_ON":"Descargar En","GOOGLE_PLAY":"Google Play"}},"CUSTOMER_SERVICE":{"NETWORK_SEARCH_META":{"TITLE":"DefAgent - Network search  ","KEYWORDS":"Network Search, Networks directory network search"},"AUTOMATE_SOCIAL_HEADING":{"EVERYTHINK_FOR_CUSTOMER_SERVICE":"DefAgent Customer Service","DONT_THINK_IT":"No lo pienses; ni siquiera respondas, porque lo tenemos!","DRIVE_YOUR_BUSINESS_FORWARD":"\xa1Impulse su negocio con AIs de atenci\xf3n al cliente administrados en la palma de sus manos!"},"AUTOMATE_SOCIAL_GET_STARTED":{"ALL_IN_ONE":"Soluci\xf3n de servicio al cliente todo en uno","EVERTTHINK_YOU_NEED_IN_ONE_SOLUTION":"Obtenga todo lo que necesita en una soluci\xf3n.","EVERTTHINK_YOU_NEED_IN_ONE_SOLUTION1":"Cree experiencias consistentes y sin esfuerzo; y reduzca costos con una poderosa herramienta de automatizaci\xf3n del servicio al cliente.","INTRODUCING":"","COMMUNICATE_BETTER":"\xa1Capte la comunicaci\xf3n adecuada para cada uno de sus clientes y obtenga conocimiento y estad\xedsticas para brindar soluciones asertadas en tiempo real!","NO_CREDIT_CARD_NEEDED":"\xa1Emprende tu AI viaje!","START_NOW":"Empieza ahora","BY_REGISTERING":" Al registrarse, obtendr\xe1 14 d\xedas de acceso gratuito a DefAgent."},"AUTOMATE_SOCIAL_WHY":{"WHY_EVERYTHINK":"\xbfPor qu\xe9 DefAgent?","OUR_MISSION_IS_TO_PROVIDE_YOU":"Nuestro objetivo es brindar automatizaci\xf3n precisa de todo su servicio al cliente conectando actores, procesos y dispositivos en tiempo real. M\xe1s a\xfan, tambi\xe9n proporciona m\xe9tricas basadas en estrategias que facilitan la medici\xf3n del rendimiento empresarial frente a los objetivos previstos."},"AUTOMATE_SOCIAL_AUTOMATION_SOLUTION":{"ADVANCED_CUSTOMER":"Soluci\xf3n avanzada de automatizaci\xf3n del servicio al cliente","DESCRIPTION":"Los AIs de DefAgent est\xe1n preparados para ayudar a las marcas a brindar experiencias superiores de atenci\xf3n al cliente y compromisos de revisi\xf3n a trav\xe9s de los canales digitales. \xa1Esta es la mas avanzada  automatizaci\xf3n del servicio al cliente en sus manos!","OUR_INTELLIGENT_ASSISTANTS":" Our Intelligent Assistants are poised to cause significant changes and  disruption on how your Customer Service functions make service delivery, and best of all, it is always right there in your palms."}},"DEVELOPERS":{"NETWORK_SEARCH_META":{"TITLE":"DefAgent - developer","KEYWORDS":"Network Search, Networks directory developer"},"HEADING":{"WELCOME_DREAMERS":"Bienvenidos so\xf1adores!","CREATE_EMOTIONS":"Crea emociones para los Asistentes Inteligentes","SHOW_VIDEO":"Ver video"},"INTEGRATioNS":{"KNOW_WHAT_YOU_CAN_DO_WITH_US":"Sepa lo que puede hacer con nosotros","LEARN_MORE":"Saber m\xe1s"},"TOOL":{"INTEGRATION_TOOLS":"","EASY_INTEGRATIONS":"","LOREM_IPSUM":"","LOREM_IPSUM_DOLOR":"","INTEGRATE":""}},"HEALTH":{"NETWORK_SEARCH_META":{"TITLE":"DefAgent - corporate","KEYWORDS":"Network Search, Networks directory corporate"},"CORPORATE":{"EVERYTHINK_MAKE_TREATMENT_MORE":"DefAgent hace que los tratamientos sean m\xe1s efectivos y los pacientes m\xe1s seguros, ahorrando dinero a los hospitales y seguros m\xe9dicos.","LEARN_MORE":"Aprender mas","80_OF_THE_CASE_ARISE":"El 80% de los casos surgen por falta de comunicaci\xf3n durante las transiciones asistenciales, m\xe1s de 7000 muertes y 500.000 lesiones prevenibles son costos por errores de medicaci\xf3n. Sin mencionar que 3 de cada 10 laboratorios se reordenan porque los resultados se pierden en el proceso. El 18% de los pacientes m\xe9dicos hospitalarios son readmitidos en un mes.","DID_YOU_KNOW":"\xbfSab\xedas que los errores m\xe9dicos son la tercera causa principal de muerte en los EE. UU.?","HEADING":{"EVERYTHINK_FOR_HEALTH":"DefAgent Health","WELCOME_TO_THE_FUTURE":"Impulsando la pr\xf3xima ola de innovaci\xf3n significativa en el cuidado de la salud, \xa1no se quede atr\xe1s!","WITH_THE_RIGHT_DATA":"Obtenga informaci\xf3n y aproveche datos radicalmente interoperables para acelerar la investigaci\xf3n de la salud, marcar el comienzo de una nueva era de optimizaci\xf3n de tratamientos, desarrollo de f\xe1rmacos, predicci\xf3n de resultados, diagn\xf3stico y pron\xf3stico de enfermedades, participaci\xf3n del paciente y mejor salud p\xfablica.","START_NOW":"\xa1Comienza ahora!","PLANS_AND_PRICEING":"Planes y precios"},"BUSINESS":{"LETS_DO_BUSINESS":"Empecemos","WHAT_EVERYTHINK_OFFERS":"Que Ofrecemos"},"EVERYTHINK_IS_THE_SOLUTION":"DefAgent aumenta la experiencia m\xe9dico-paciente. Con este software como herramienta de AIaaS en la base de sus interacciones de prestaci\xf3n de atenci\xf3n m\xe9dica, se pueden prevenir la mayor\xeda de los errores m\xe9dicos. La tecnolog\xeda integra los registros de los pacientes en un \xfanico lugar altamente seguro que permite compartirlos f\xe1cilmente dentro y fuera de la red, para beneficio tanto de los pacientes como del personal m\xe9dico."}},"RPACREAORS":{"NETWORK_SEARCH_META":{"TITLE":"DefAgent - online payment","KEYWORDS":"Network Search, Networks directory online payment"},"ONLINE_PAYMENT":{"HEADING":{"GO_BIG":"\xa1Ve a lo grande o vuelve a casa!","CREATE_BUY":"Crea, compra y vende procesos automatizados.","WITHOUT_CODING":"- Sin codificaci\xf3n.","KNOW_MORE":"Saber m\xe1s","START_NOW":"Comenzar ahora"},"FEATURES":{"REASONS_TO_USE_EVERYTHINK":"Razones para usar DefAgent","KNOW_WHAT_YOU_CAN_DO_WITH_US":"Sepa lo que puede hacer con nosotros"},"CUSTOMERS_MANAGEMENT":{"CREATE_SMART":"Crea experiencias","EXERIENCES_WITH":"Inteligentes con","EVERYTHINK":"DefAgent Studio","SIMPLE_IMPLEMENTATION":"Implementaci\xf3n simple con impacto exponencialmente positivo.","CUSTOMERSADMINISTRATION":"Administraci\xf3n de clientes."}}},"DATAFLOWS_CREATOORS":{"NETWORK_SEARCH_META":{"TITLE":"DefAgent - integration","KEYWORDS":"Network Search, Networks directory integration"},"INTEGRATION":{"HEADING":{"CREATE_EMOTIONS_FOR_SMART_ASSISTANTS":"Crea emociones para los Asistentes Inteligentes","CREATE_BUY_AND_SELL":"Crear, Comprar y Vender flujos de datos para capacitar a Smart Assistants para las diferentes conversaciones geolocalizadas necesarias para cada uno de los actores que participan en cada red, comunidad y canal.","JOIN_EVERY_TTHINK":"Unirse DefAgent"},"HOW_IT_WORK":{"KNOW_WHAT_YOU_CAN_DO_WITH_US":"Sepa lo que puede hacer con nosotros","EVERYTHINK_DOES_ALL":"DefAgent hace TODO EL TRABAJO PESADO para que pueda concentrarse en tareas m\xe1s valiosas y complejas."},"BUILT_TECH":{"INDUSTRY_LEADING":"L\xedder en la industria","TECHNOLOGY":"tecnolog\xeda","EVERYTHINK_STUDIO":"DefAgent Studio le ofrece todo lo que usted y su empresa necesitan para crear flujos de datos s\xf3lidos. \xa1Todo sin codificaci\xf3n!","ONE_STEP_AHEAD_OF_AIS":"Un paso por delante de los AIs","EMPOWER_THE_INTELLIGENT":"Empodere a los Asistentes inteligentes proporcionando nuevas interacciones creadas por usted, lo que eleva sus habilidades para resolver problemas en tiempo real."},"EXTEND_CORE":{"LIMITLESS_POSSIBILITIES":"Posibilidades ilimitadas","BUILD_FAST_BUILD_MORE":"Construye r\xe1pido. Construir m\xe1s.","USING_EVERYTHINK":"Con el software exclusivo de DefAgent Studio para el desarrollo de flujos de datos r\xe1pidos y fluidos, puede crear e implementar todos los flujos de datos que necesita en minutos. No se requieren habilidades t\xe9cnicas, de programaci\xf3n o de scripting.","KNOW_MORE":"Saber m\xe1s","REGISTER_ACCOUNT":"Registrar Cuenta"},"LATEST_PROJECTS":{"EVERYTHINK_MARKETPLACE":"DefAgent Marketplace","TAKE_A_LOOK_AT_OUR_LATEST_PROJECTS":"\xa1Eche un vistazo a nuestros \xfaltimos proyectos, aquellos clientes que conf\xedan en nuestros servicios para llevar su negocio al siguiente nivel!","SOMOS_PILEROS":"Somos Pileros","WE_BUILT_DATA":"Creamos flujos de datos para conectar a emprendedores con voluntarios y mentores de manera m\xe1s r\xe1pida y eficiente al automatizar el proceso de b\xfasqueda y conexi\xf3n entre usuarios, en tiempo real."},"REGISTER":{"FILL_IN_THE_FORM":"Complete el formulario","YOUR_SUCCESS_IS_OUR_SUCCESS":"Su \xe9xito es nuestro \xe9xito","IF_YOU_ARE_LOOKING":"Si est\xe1 buscando ser parte de la red DefAgent, solo complete el formulario, \xa1estamos seguros de que podemos construir grandes cosas juntos!"},"WHY_CHOOSE_US":{"SIMPLE_IMPLEMENTATION_WITH":"Implementaci\xf3n simple con impacto exponencialmente positivo","SINCE_THE_NEED_FOR_HUMAN":"Dado que se reduce la necesidad de intervenci\xf3n humana y aumenta la eficiencia del flujo de trabajo, el proceso es muy asequible.","KNOW_MORE":"Saber m\xe1s"}}},"SAAS":{"NETWORK_SEARCH_META":{"TITLE":"DefAgent - saas","KEYWORDS":"Network Search, Networks directory saas"},"HEADING":{"EVERYTHINK_FOR_REAL_ESTATE":"DefAgent Real Estate","YOU_AGENT_IN_YOUR_HANDS_WITHGLOBAL_REACH":"\xa1Tu agente en tus manos con alcance global!","OUT_IAS_ARE_POISED":"Nuestros AIs revolucionar\xe1n la prestaci\xf3n de servicios inmobiliarios con la automatizaci\xf3n de procesos y las innovaciones basadas en inteligencia artificial. Mejor a\xfan, siempre est\xe1 ah\xed en tus palmas.","PLANS_AND_PRICING":"Planes","START_NOW":"Comienza ahora"},"LIGHTWEIGHT_TEMPLATE":{"YOUR_SMART_PUPPETS":"Tus propias marionetas inteligentes","WILL_PROVIDE_YOUR_PROSPECTS_AND_CLIENTS":"Con DefAgent como plataforma de servicio, nuestros AIs pueden ayudar a ser extremadamente receptivos en tiempo real; obtener informaci\xf3n valiosa sobre prospectos, clientes, mercados y procesos; aprovechar datos valiosos para abordar las necesidades de los clientes y cerrar m\xe1s ventas, lograr una mayor transparencia del sistema; y mejorar la eficiencia general.","SIMLIFYING_THE_CURRENT":"","LEARN_MORE":"Saber mas"},"BUILD_TO_LAST":"Built to Last","WHAT_YOU_WILL_GET_WITH_EVERTTHINK":"Lo Que Obtienes","GEOLOCATED_INTELLIGENT_ASSISTANTS":"Automatice Su Proceso De Reserva Con DefAgent Calendar Y C\xe9ntrese Solo En Lo Que Importa","DASHBORD_INCLUDED":"Tableros incluidos","SIMPLE_IMPLEMENTATION":"Implementaci\xf3n simple con impacto exponencialmente positivo","SINCE_THE_NEED_FOR_HUMAN":"Dado que se reduce la necesidad de intervenci\xf3n humana y aumenta la eficiencia del flujo de trabajo, el proceso es muy asequible.","THE_POSSIBILITIES":"Las posibilidades de usar DefAgent for Sales est\xe1n en todas partes y solo se limitan al ingenio de los usuarios que desean utilizar la inteligencia artificial para mejorar su calidad de vida.","Learn_More":"Saber mas"},"START_UP":{"NETWORK_SEARCH_META":{"TITLE":"DefAgent - Drone detection system","KEYWORDS":"Drone detection system, ai, blockchain"},"HEADING":{"DELIVERING_THE_TOOLS":"Asegure sus cielos: Drones avanzados","YOU_NEED_TO_SUCCEED":"Soluciones de detecci\xf3n y defensa","IT_ALL_BEGINS_BY_CHOSSING":"Protegiendo su espacio a\xe9reo con tecnolog\xeda de vanguardia de detecci\xf3n, seguimiento y mitigaci\xf3n","TRY_IT_FREE":"COMIENZA AHORA!"},"WHAT_YOU_GET":{"WHAT_YOU_WILL_GET_WITH_EVERTTHINK":"What You Get","GEOLOCATED_INTELLIGENT_ASSISTANTS":"Automate Your Booking Process With DefAgent Calendar And Focus Only On What Matters","BUSINESS_TITLE":"Detecci\xf3n en tiempo real","PAYMENTS_TITLE":"Rastreo preciso","SCHEDULES_TITLE":"An\xe1lisis integral de amenazas","SITE_TITLE":"Monitoreo del espacio a\xe9reo 24/7","BUSINESS_DESC":"Identifique al instante drones no autorizados en su espacio a\xe9reo con radar avanzado, escaneo de radiofrecuencia y sensores con inteligencia artificial.","PAYMENTS_DESC":"Identifique la ubicaci\xf3n exacta, la velocidad y la trayectoria de vuelo de drones intrusos para una respuesta proactiva.","SCHEDULES_DESC":"Diferenciar entre drones, aves y otros objetos para reducir las falsas alarmas y garantizar alertas fiables.","SAVING_DESC":"Vigilancia continua para proteger su propiedad, eventos o infraestructura cr\xedtica las 24 horas."},"PRICING":{"TITLE":"DefAgent Calendar","SUBTITLE":"Funciona Con Cualquier Tipo De Negocio Y Cualquier Tipo De Programaci\xf3n De Citas","BUY":"Comprar Ahora","PLAN_PERSONAL":"Uno A Uno","PLAN_PERSONAL1":"Terapeutas","PLAN_PERSONAL2":"Entrenadores personales","PLAN_PERSONAL3":"Recursos Humanos y contrataci\xf3n","PLAN_PERSONAL4":"Veterinarias","PLAN_PERSONAL5":"Equipos de ventas y consultores","PLAN_PERSONAL_DESC":"","PLAN_BUSINESS":"Grupal","PLAN_BUSINESS1":"Gimnasio y Estudio de fitness","PLAN_BUSINESS2":"Operadores tur\xedsticos","PLAN_BUSINESS3":"Escuelas de idiomas","PLAN_BUSINESS4":"Escuelas y Universidades","PLAN_BUSINESS5":"Eventos, Talleres y Seminarios","PLAN_BUSINESS_DESC":"","PLAN_ENTERPRISE":"Reservas","PLAN_ENTERPRISE1":"Alquiler lugares/equipos","PLAN_ENTERPRISE2":"Estudio fotografico","PLAN_ENTERPRISE3":"Programaci\xf3n de recursos","PLAN_ENTERPRISE4":"Salas de conferencias y reuniones","PLAN_ENTERPRISE5":"Reservas de canchas deportivas","PLAN_ENTERPRISE_DESC":"","PLAN_BUSINESSD":"Servicios","PLAN_BUSINESSD1":"Salones de belleza","PLAN_BUSINESSD2":"Profesionales m\xe9dicos","PLAN_BUSINESSD3":"Instructores de manejo","PLAN_BUSINESSD4":"Profesionales de la reparaci\xf3n","PLAN_BUSINESSD5":"Servicios de limpieza y hogar","PLAN_BUSINESSD_DESC":""},"PRICING_TWO":{"TITLE":"Affordable pricing plans.","TITLE0":"Avance Y","TITLE01":"Obtenga Su Descuento","TITLE1":"DefAgent Calendar","TITLE11":"Licencia","TITLE2":"Hoy!","TITLE22":"Elija Su Plan:","SUBTITLE":"","BUY":"Comprar Ahora","MONTHLY":"Mensualmente","ANNUAL":"Anualmente","DISCOUNT":"(Ahorre hasta un 30% de descuento en planes anuales)","GETNOW":"Obtenerlo Ahora","CUSTOM":"Para Equipos","CUSTOM1":"(Mejor Valor)","CUSTOM2":"Para Equipos Y Empresas Con Necesidades De Programaci\xf3n Adicionales, Personalizaci\xf3n Y Funciones Avanzadas","CUSTOM3":"Contactenos","PLAN_BASIC":"Para Individuales","PLAN_BASIC_DESC":"Todo Lo Que Puede Obtener De Una Soluci\xf3n Profesional Para Mantener Su Negocio En Camino Hacia El \xc9xito","FEATURES1":"200 N\xfamero M\xe1ximo De Pr\xf3ximas Citas","FEATURES2":"1 Integraci\xf3n Para Cobrar Pagos","FEATURES3":"50 Invitaciones Por SMS Gratis","FEATURES4":"DefAgent Calendar En Tu Sitio Web","FEATURES5":"Marca Personalizada","FEATURES6":"Webhooks","FEATURES7":"Soporte En Tiempo Real","FEATURES8":"Flujos De Trabajo","FEATURES9":"Informes En Tiempo Real","FEATURES10":"Paquetes De Marketing","FEATURES11":"M\xe1s De 700 Integraciones De Aplicaciones Con Zapier","FEATURES12":"Con\xe9cte A Zoom, Microsoft Teams, Google Meet Y GoToMeeting"},"FEATURES":{"BUSINESS_TITLE":"Seguridad mejorada","PAYMENTS_TITLE":"Detecci\xf3n de amenazas en tiempo real","SCHEDULES_TITLE":"Prevenci\xf3n del espionaje y la vigilancia","SAVING_TITLE":"Mitigaci\xf3n del contrabando y las entregas de contrabando","INTERFACE_TITLE":"Garantizar la seguridad p\xfablica","SITE_TITLE":"Reducir las falsas alarmas","BUSINESS_DESC":"Proteja su propiedad, eventos o infraestructura cr\xedtica de intrusiones no autorizadas con drones.","PAYMENTS_DESC":"Identifique y rastree drones al instante, garantizando una respuesta oportuna ante posibles amenazas.","SCHEDULES_DESC":"Proteja la informaci\xf3n confidencial y la privacidad del espionaje con drones.","SAVING_DESC":"Evite que los drones entreguen art\xedculos ilegales a zonas restringidas como prisiones o instalaciones de seguridad.","INTERFACE_DESC":"Proteja Grandes reuniones, como conciertos, eventos deportivos o espacios p\xfablicos, de drones no autorizados.","SITE_DESC":"La IA avanzada y el aprendizaje autom\xe1tico diferencian los drones de aves, aviones u otros objetos.","DASHCORE_FEATURE":"Caracter\xedsticas de DefAgent","WHAT_DASHCORE_CAN_DO":"Beneficios de usar un sistema de detecci\xf3n de drones","LOREM_IPSUM":"Con DefAgent, en menos de 24 horas, una organizaci\xf3n puede crear asistentes inteligentes geolocalizados que gestionar\xe1n datos y adaptar\xe1n las necesidades a las soluciones mediante la interconexi\xf3n de personas, procesos automatizados y dispositivos en tiempo real, midiendo constantemente el rendimiento de cada actor del negocio, todo sin necesidad de programar."},"WHY_DASHCORE":{"WHY_DASHCORE_TEMPLATE":"Implementar un sistema de detecci\xf3n de drones","WHEN_LOOKING":"requiere una planificaci\xf3n cuidadosa, la tecnolog\xeda adecuada y la integraci\xf3n con la infraestructura de seguridad existente. Aqu\xed tiene una gu\xeda paso a paso para ayudarle a comprender el proceso de implementaci\xf3n","DEVELOPERS":"Eval\xfae sus necesidades","ENGAGING_DEVELOPERS0":"","ENGAGING_DEVELOPERS01":"Identifique el \xe1rea a proteger (p. ej., propiedad peque\xf1a, instalaci\xf3n grande o cobertura de \xe1rea extensa).","ENGAGING_DEVELOPERS1":"Determine el nivel de amenaza (p. ej., vigilancia, contrabando o drones maliciosos).","ENGAGING_DEVELOPERS11":"","ENGAGING_DEVELOPERS2":"Defina su presupuesto y objetivos (p. ej., solo detecci\xf3n o detecci\xf3n y mitigaci\xf3n).","ENGAGING_DEVELOPERS22":"","LOREM_IPSUM":"","DESIGNER":"Elija la tecnolog\xeda adecuada","ENGAGING_DESIGNER0":"","ENGAGING_DESIGNER01":"Radar para detecci\xf3n de largo alcance.","ENGAGING_DESIGNER1":"Esc\xe1neres de radiofrecuencia para detectar se\xf1ales de comunicaci\xf3n de drones.","ENGAGING_DESIGNER11":"","ENGAGING_DESIGNER2":"C\xe1maras \xf3pticas/infrarrojas para confirmaci\xf3n visual.","ENGAGING_DESIGNER22":"","REMINDERS":"Inspecci\xf3n del sitio y planificaci\xf3n de la instalaci\xf3n","ENGAGING_REMINDERS0":"","ENGAGING_REMINDERS01":"Realice una inspecci\xf3n del sitio para identificar las ubicaciones \xf3ptimas para los sensores y las c\xe1maras.","ENGAGING_REMINDERS1":"Asegure la cobertura de todos los puntos de entrada y \xe1reas vulnerables.","ENGAGING_REMINDERS11":"","ENGAGING_REMINDERS2":"Considere Factores ambientales como el clima, el terreno y las interferencias.","ENGAGING_REMINDERS22":"","PAYMENTS":"Instalar hardware y sensores","ENGAGING_PAYMENTS0":"","ENGAGING_PAYMENTS01":"Montar sensores, c\xe1maras y otro hardware en ubicaciones estrat\xe9gicas.","ENGAGING_PAYMENTS1":"Asegurar una calibraci\xf3n y alineaci\xf3n adecuadas para obtener la m\xe1xima precisi\xf3n.","ENGAGING_PAYMENTS11":"","ENGAGING_PAYMENTS2":"Configurar enlaces de comunicaci\xf3n entre los sensores y el sistema de control central.","ENGAGING_PAYMENTS22":"","PAGE":"Configurar software e IA","ENGAGING_PAGE0":"","ENGAGING_PAGE01":"Configurar el software de control central para la monitorizaci\xf3n y las alertas en tiempo real.","ENGAGING_PAGE1":"Entrenar algoritmos de IA para diferenciar drones de aves, aviones u otros objetos.","ENGAGING_PAGE11":"","ENGAGING_PAGE2":"Personalizar la configuraci\xf3n de alertas (p. ej., correo electr\xf3nico, SMS o alarmas visuales/auditivas).","ENGAGING_PAGE22":""},"VIDEOs":{"HOW_TO_VIDEO":"\xbfPorque Nosotros?","TAKE_A_LOOKING_AT":"Liderando el camino en detecci\xf3n de drones y seguridad a\xe9rea","1_TITLE":"Tecnolog\xeda de vanguardia","1_DESC":"Utilizamos los \xfaltimos avances en radar, escaneo de radiofrecuencia, IA y aprendizaje autom\xe1tico para ofrecer los sistemas de detecci\xf3n de drones m\xe1s precisos y fiables.","2_TITLE":"Soluciones integrales","2_DESC":"Desde la detecci\xf3n y el seguimiento hasta la mitigaci\xf3n, ofrecemos soluciones integrales adaptadas a sus necesidades espec\xedficas.","3_TITLE":"Experiencia comprobada","3_DESC":"Con a\xf1os de experiencia en seguridad y tecnolog\xeda de drones, comprendemos los desaf\xedos y ofrecemos resultados comprobados."}}},"PROJECT":{"NETWORK_SEARCH_META":{"TITLE":"DefAgent - Networks directory","KEYWORDS":"Network Search, Networks directory"},"FOR_DEVELOPERS":{},"FORSTORYTELLERS":{},"VIEW_PLANAND_PRICE":{}},"FAQS":{"FAQS1":{"DO_YOU_HAVE":"\xbfTienes ","QUESTIONS":"preguntas?","NOT_SURE_HOW":"\xbfNo est\xe1s seguro de c\xf3mo DefAgent puede ayudarte? \xbfSe pregunta por qu\xe9 necesita comenzar su viaje de IA?","HERE_ARE_THE_ANSWERS":"Puedes consultarnos cualquier duda. Sin embargo, aqu\xed est\xe1n las respuestas a las preguntas m\xe1s comunes que nos hacen nuestros estimados clientes."}},"COUNTER":{"COUNTER1":{"MILLIONS_BUSSINESS":"\xa1Millones conf\xedan en DefAgent para encontrar y retener a los mejores talentos!","THESE_AMAZING_STATS":"Numerosas marcas y empresas de todo el mundo utilizan DefAgent AIaaS y las capacidades de computaci\xf3n cognitiva para optimizar sus flujos de trabajo de recursos humanos. \xa1Los n\xfameros no mienten y estas incre\xedbles estad\xedsticas no pueden estar equivocadas!"},"COUNTER1_L2":{"MILLIONS_BUSSINESS":"\xa1Muchas empresas conf\xedan en DefAgent para mejorar el rendimiento de sus ventas!","THESE_AMAZING_STATS":"Las empresas y las marcas de todo el mundo est\xe1n aprovechando nuestra poderosa tecnolog\xeda de talento para aumentar su volumen de clientes potenciales, su tasa de cierre y el rendimiento total de las ventas. \xa1Mira nuestros n\xfameros!"},"COUNTER2":{"WHY_CUSTOMER_TRUST_US":"Por qu\xe9 el cliente conf\xeda en nosotros","HAPPY":"Clientes","CUSTOMER":"Felices","THESE_AMAZING_STATS":"Estas incre\xedbles estad\xedsticas pueden estar equivocadas, muchos clientes felices de todo el mundo conf\xedan en nuestro servicio para impulsar su negocio.","TONS_OF_SUCCESSFULL_IMPLEMENATION":"Toneladas de implementaciones exitosas","USERS_IMPROVE_THEIR_ABILITY":"DefAgent eleva la eficiencia y la productividad, aumentando tambi\xe9n la satisfacci\xf3n laboral. Esta plataforma de c\xf3digo bajo tambi\xe9n garantiza una facilidad de implementaci\xf3n excepcional, por lo que cientos de miles de marcas en todo el mundo conf\xedan en ella.","ALL_POWERED_BY":" Impulsado por un motor cognitivo que puede desarrollar personajes para varios roles, para completar diferentes funciones dentro de la empresa.","LEARN_MORE":"Saber m\xe1s"},"COUNTER3":{"AMAZING_STATS":"Estad\xedsticas asombrosas","EVERYTHINK_CREaTES_A_POWERFUL_AND_EFFECTIVE":"\xa1Aproveche el poderoso software AIaaS de EveryThink para implementar un modelo comercial de econom\xeda circular!","EACH_USER_IS_EMPOWERED":"Los usuarios tienen la capacidad de mejorar su networking e impulsar el desempe\xf1o laboral."},"COUNTER6":{"SUCCESSFULL_IMPLEMENTATIONS":"M\xe1s de 1 mill\xf3n de implementaciones exitosas","GET_THEVERY_BEST":"Saca lo mejor de nosotros haciendo lo mejor de ti"}},"CATE":{"CATE1":{"READY_TO_GET_STARTED":"\xbfListo para empezar?","BECOME_ONE_OF_THE_MILLIONS":"\xa1\xdanase a millones de personas y marcas de todo el mundo que aman y utilizan EveryThink!","CREATE_EVERTTHINKACCOUNT":"Crear cuenta"}},"TESTIMONIALS":{"TESTIMONIAL_SIMPLE_SLIDER":{"TESTIMONIALS":"Testimonios"},"TESTIMONIAL_SLIDER":{"LOREM_IPS":"Esta es una herramienta incre\xedble que puede ayudar a cualquiera a crear sus propios algoritmos y generar un negocio m\xe1s sostenible. \xa1Muchas gracias por ayudarnos a ayudar a otras personas!","JANE_DOR":"Estefany G\xfcech\xe1,","AWESOME_COMPANY":"Somos Pileros"},"TESTIMONIAL_SIMPLE_TEXT_RIGHT":{"IF_YOU_ARE_STRUGGLING":"Si tiene dificultades para mantenerse en el negocio, puede haber varias opciones que puede explorar.","EVERYTHINK":"DefAgent,","IS_THE_PERFECT_TOOL":"es la herramienta perfecta. Es muy f\xe1cil de usar y tiene toda la funcionalidad que buscas.","CARO_FOGLIATO":"Caro Fogliato,","CEOANDFOUNDER":" CEO & Founder of DefAgent Ltd."},"TESTIMONIAL_SIMPLE_TEXT_LEFT":{"EVERYTHIN_IS_GREAT_FOR":"DefAgent es genial para","ANYONE_WHO_IS_LOOKING_FOR_SIMPLE":"Cualquiera que busque una implementaci\xf3n simple con un impacto exponencialmente positivo","EVERYTHINK_LTD_TEAM":"DefAgent Ltd. Team,","DoING_GREATE_SINCE":"Haciendolo bien desde 2024"},"TESTIMONIAL_SKEWED_SLIDER":{"OUR_CUSTOMERS_HAVE_SOMETHING_TO_SAY":"Nuestros clientes tienen algo que decir","THEY_ARE_THE_BEST":"\xa1Son los mejores, nuestro cliente quiere hacerle saber c\xf3mo DefAgent los est\xe1 ayudando a lograr sus objetivos y lo simple que es usarlo!"},"TESTIMONIAL_WORLD_MAP":{"WE_HEARD_OUR_CUSTOMERS_SAY":"Nuestros clientes tienen algo que decir","SED_OUT_PERSPICIATIS":"Esta es una herramienta incre\xedble que puede ayudar a cualquiera a crear sus propios algoritmos y generar un negocio m\xe1s sostenible. Muchas gracias por ayudarnos a ayudar a otras personas!","JANE_DOE":"Estefany G\xfcech\xe1,","MARKEYING_DIRECTOR":"Somos Pileros"}},"USUAL":{"FEATURES_ICONS_COL":{"UP_TO_THE_TASK":"Inicie su viaje de IA para salud","WHAT_YOU_GET":"Que Obtienes","GEOLOCATED_INTELLIGENT_ASSISTANTS":"Con DefAgent AIaaS, puede aprovechar a los AIs geolocalizados para administrar datos de fuentes dispares, como registros m\xe9dicos electr\xf3nicos y determinantes sociales de la salud; interconectar personas y dispositivos y automatizar el trabajo administrativo costoso, repetitivo y propenso a errores en una fuerza de trabajo digital mucho m\xe1s eficiente y econ\xf3mica."},"DEVELOPER_DESIGNER":{"JOIN_AS_DESIGNER":"\xdanete a nosotros!","JOIN_AS_DEVELOPER":"","LOREM_IPSUM":""},"START_NOW_BOX":{"TRY_EVERYTHINK_NOW":"Prueba DefAgent ahora ... \xe1malo para siempre","WHY_WAIT":"\xbfPor qu\xe9 esperar? \xa1Empieza ahora!","START_NOW":"Comenzar"}},"FOOTER":{"FOOTER1":{"EVERYTHINK_IS_POISED":"Todo es uno, donde el infinito comienza.","COMPANY":"DefAgent","ABOUT":"Sobre nosotros","BLOG":"Blog","PRODUCt":"Productos","SERVICES":"Servicios","FEATURES":"Actualizaciones","API":"API","CUSTOMERS":"Clientes","CHANNELS":"Canales","CAREERS":"Carreras","CONTACT":"Contacto","SEARCH":"Buscar","COPYRIGHT":"Copyright \xa9 2024-2025 DefAgent inc. All Rights Reserved."}},"CONTACT":{"NETWORK_SEARCH_META":{"TITLE":"DefAgent - contact","KEYWORDS":"Network Search, Networks directory contact"},"FORM":{"LETS_DO_BUSINESS":"Comience ahora!","STEP_INTO_OUR_PLACE":"Entra en nuestro lugar","123_STREET_ST":"Texas","YC_COUNTRY":"United States"},"OTHER_CHANNELS":{"CONTACT_SALE":"Contacto a Ventas","LOOKING_FOR_CUSTOM_QUOTE":"\xbfBusca un presupuesto personalizado? \xbfNecesitas contarnos m\xe1s sobre tu proyecto? o quieres una demostraci\xf3n? escr\xedbenos a","TECHNICAL_SUPPORT":"Soporte t\xe9cnico","ANY_QUESTION":"\xbfAlguna duda sobre c\xf3mo integrar su producto ?. No se preocupe, nuestro equipo est\xe1 listo para ayudarle"}},"ABOUT":{"NETWORK_SEARCH_META":{"TITLE":"DefAgent - about","KEYWORDS":"Network Search, Networks directory about"},"OVERVIEW":{"SUCCEED_WITH_DASHCORE":"Triunfa con DefAgent","THE_NEW_WAY_TO_SHOWCASE":"La nueva forma de impulsar su negocio","DASHCORE_IS_A_BOOTSTRAP":"","IT_INCLUDES_MULTIPLE":"Incluye m\xfaltiples componentes y demostraciones prefabricadas listas para que las personalice seg\xfan sus propias necesidades. DefAgent incluye un panel de administraci\xf3n listo para usar con muchas funciones listas para usar."},"VIDEO":{"DISCOVER_HOW_DASHCORE_WORKS":"Descubra c\xf3mo funciona DefAgent","PLAY_THE_VIDEO":"Video"},"SOLUTIONS":{"A_SOLUTION_FOR_EVERY_NEED":"Una soluci\xf3n para cada necesidad","LOREM_IPSUM":"","DASHCORE_INCLUDED":"Tableros incluidos","OUR_TEMPLATE_IS_PACKED_WITH_A":"DefAgent","START_ADMIN_DASHBOARD":"tambi\xe9n cuenta con paneles de control que son personalizables seg\xfan tus necesidades","START_RIGHT_AWAY":"comience de inmediato con su proyecto.","TRY_THE_DASHBOARD":"Pruebe DefAgent"},"FEATURES":{"OUR_FEATURES_STACK":"Nuestras caracter\xedsticas se apilan","TAKE_THE_CONTROL":"Toma el control de tu negocio con DefAgent. Puede personalizar seg\xfan sus necesidades o simplemente usar la soluci\xf3n lista para usar que creamos para usted"},"CUSTOMERS":{"THIRD_PARTY":"Integraci\xf3n de terceros","WE_USE_THE_LATEST_TRENDS":"Usamos las \xfaltimas tendencias porque te mereces algo mejor","ARE_YOU_A_DEVELOPER":"\xbfEres desarrollador?","REVIEW_THE_SPECS":"Revise las especificaciones"},"TEAM":{"GET_TO_KNOW_OUR_TEAM":"Conozca nuestro equipo","THESE_AMAZING_PEOPLE":"Estas personas incre\xedbles han hecho posible que nos quedemos donde estamos"},"REGISTER":{"DASHCORE_OFFICIAL":"DefAgent Ltd","NEWSLETTER":"Boletin informativo"}},"TERMS":{"trm_terms_of_use":"T\xe9rminos De Uso","trm_last_update":"\xdaltima actualizaci\xf3n: 30 de Marzo de 2025","trm_general_information":"Informaci\xf3n General","trm_introduction":"Bienvenido a DefAgent, inc. (la \xa8Compa\xf1\xeda\xa8). DefAgent desarrolla tecnolog\xedas y servicios que permiten a las personas conectarse entre s\xed, con procesos y con dispositivos; permite construir redes, comunidades y canales; y hacer crecer negocios. Estos T\xe9rminos rigen el uso de DefAgent y los dem\xe1s productos, caracter\xedsticas, m\xf3dulos, aplicaciones, servicios, tecnolog\xedas y software que ofrecemos. DefAgent, Ltd. le proporciona estos Productos. Al crear una cuenta en DefAgent, ya sea a trav\xe9s de un dispositivo m\xf3vil, una aplicaci\xf3n m\xf3vil o una computadora (colectivamente, el \'Servicio\'), usted acepta estar sujeto a estos T\xe9rminos de uso y nuestra Pol\xedtica de privacidad que se incorpora por referencia en este Acuerdo y est\xe1 disponible en el Servicio (este \'Acuerdo\'). Si no acepta y acepta estar obligado por todos los t\xe9rminos de este Acuerdo, no utilice el Servicio.","trm_1_acceptance_terms":"1. Aceptaci\xf3n Del Acuerdo De T\xe9rminos De Uso.","trm_1_acceptance_terms_1":"Este Acuerdo es un contrato electr\xf3nico que establece los t\xe9rminos legalmente vinculantes que debe aceptar para usar el Servicio. Este Acuerdo incluye la (i) Pol\xedtica de privacidad de la Compa\xf1\xeda, (ii) nuestros Consejos de seguridad y (iii) los t\xe9rminos divulgados y aceptados por usted si compra o acepta caracter\xedsticas, productos o servicios adicionales que ofrecemos en el Servicio.","trm_1_acceptance_terms_2":"Podemos, en cualquier momento y por cualquier motivo, hacer cambios a este Acuerdo. Podemos hacer esto por una variedad de razones, incluyendo para reflejar cambios o requisitos de la ley, nuevas caracter\xedsticas o cambios en las pr\xe1cticas comerciales. La versi\xf3n m\xe1s reciente de este Acuerdo se publicar\xe1 en los Servicios en Configuraci\xf3n y tambi\xe9n en la p\xe1gina web https://DefAgent.ai/, y debe verificar regularmente la versi\xf3n m\xe1s reciente. La versi\xf3n m\xe1s reciente es la que se aplica. Si los cambios incluyen cambios materiales que afectan sus derechos u obligaciones, le notificaremos los cambios por medios razonables, que podr\xedan incluir notificaciones a trav\xe9s de los Servicios o por correo electr\xf3nico. Si contin\xfaa utilizando los Servicios despu\xe9s de que los cambios entren en vigencia, se considerar\xe1 que los ha aceptado. Si no est\xe1 de acuerdo con estos cambios, debe finalizar su relaci\xf3n con nosotros al dejar de usar los Servicios y abandonar DefAgent.","trm_2_eligibility":"2. Elegibilidad.","trm_2_eligibility_1":"Debe tener al menos 18 a\xf1os de edad para crear una cuenta en DefAgent y usar el Servicio. Al crear una cuenta y usar el Servicio, usted declara y garantiza que puede formar un contrato vinculante con DefAgent, no es una persona a quien se le proh\xedbe usar el Servicio bajo las leyes de Inglaterra o cualquier otra jurisdicci\xf3n aplicable, lo que significa no aparece en la lista de ciudadanos especialmente designados del Departamento del Tesoro de Inglaterra ni se enfrenta a ninguna otra prohibici\xf3n similar, y cumplir\xe1 con este Acuerdo y todas las leyes, normas y reglamentos locales, estatales, nacionales e internacionales aplicables. Si crea una cuenta, declara y garantiza que nunca ha sido condenado por un delito grave y que no est\xe1 obligado a registrarse como delincuente sexual en ning\xfan registro estatal, federal o local de delincuentes sexuales.","trm_3_user_accounts":"3. Cuentas De Usuario.","trm_3_user_accounts_1":"Para utilizar la mayor\xeda de los aspectos de los Servicios, debe registrarse y mantener una cuenta de Servicios de usuario personal activa (\'Cuenta\'). Debe tener al menos 18 a\xf1os de edad, o la mayor\xeda de edad legal en su jurisdicci\xf3n (si es diferente de 18), para obtener una Cuenta, a menos que un Servicio espec\xedfico permita lo contrario. El registro de la cuenta requiere que env\xede a DefAgent cierta informaci\xf3n personal, como su nombre, direcci\xf3n, n\xfamero de tel\xe9fono m\xf3vil y edad, as\xed como al menos un m\xe9todo de pago v\xe1lido compatible con DefAgent. Usted acepta mantener informaci\xf3n precisa, completa y actualizada en su Cuenta. Si no mantiene informaci\xf3n precisa, completa y actualizada de la Cuenta, incluido el hecho de tener un m\xe9todo de pago no v\xe1lido o vencido en el archivo, puede resultar en su incapacidad para acceder o utilizar los Servicios. Usted es responsable de toda actividad que ocurra bajo su Cuenta, y acepta mantener la seguridad y el secreto del nombre de usuario y contrase\xf1a de su Cuenta en todo momento. A menos que DefAgent lo permita por escrito, solo puede tener una Cuenta.","trm_4_terms_termination":"4. T\xe9rminos Y Terminaci\xf3n.","trm_4_terms_termination_1":"Este Acuerdo permanecer\xe1 en pleno vigor y efecto mientras use el Servicio y/o tenga una cuenta DefAgent. Puede cancelar su cuenta en cualquier momento, por cualquier motivo, siguiendo las instrucciones en \'Configuraci\xf3n\' en el Servicio. La Compa\xf1\xeda puede cancelar o suspender su cuenta en cualquier momento sin previo aviso si cree que usted ha incumplido este Acuerdo a su exclusivo criterio. Tras dicha terminaci\xf3n o suspensi\xf3n, no tendr\xe1 derecho a ning\xfan reembolso de las tarifas no utilizadas en las compras de aplicaciones. Despu\xe9s de que se cancele su cuenta, este Acuerdo terminar\xe1, excepto que las siguientes disposiciones a\xfan se aplicar\xe1n: Secci\xf3n 4, Secci\xf3n 8, Secci\xf3n 9 y Secciones 16-18.","trm_5_non_commercial_use":"5. Uso No Comercial Por Parte De Los Usuarios.","trm_5_non_commercial_use_1":"El Servicio es solo para uso personal. Los usuarios no pueden usar el Servicio o cualquier contenido contenido en el Servicio (incluido, entre otros, el contenido de otros usuarios, dise\xf1os, texto, gr\xe1ficos, im\xe1genes, video, logotipos, software y c\xf3digo de computadora) en relaci\xf3n con cualquier esfuerzo comercial, como anunciar o solicitar a cualquier usuario que compre o venda productos o servicios no ofrecidos por la Compa\xf1\xeda. Los usuarios del Servicio no pueden usar ninguna informaci\xf3n obtenida del Servicio para contactar, publicitar, solicitar o vender a ning\xfan otro usuario sin su previo consentimiento expl\xedcito. Las organizaciones, empresas y/o negocios no pueden usar el Servicio para ning\xfan prop\xf3sito, excepto con el consentimiento expreso de DefAgent (como para perfiles promocionados u otros anuncios), que DefAgent puede proporcionar o negar a su exclusivo criterio. La Compa\xf1\xeda puede investigar y tomar cualquier acci\xf3n legal disponible en respuesta a usos ilegales y/o no autorizados del Servicio.","trm_6_the_services":"6. Los Servicios.","trm_6_the_services_1":"DefAgent es una red interactiva m\xf3vil, Android y iOS, y web alojada por un asistente virtual con inteligencia artificial capaz de conectar a las personas de acuerdo con sus intereses, necesidades y habilidades personales, laborales, sociales y educativas a trav\xe9s de preguntas espec\xedficas. El asistente virtual es capaz de aprender sobre las necesidades, habilidades, intereses y aspiraciones del usuario en cada entorno a trav\xe9s de preguntas contextualizadas y geoespaciales, con el fin de lograr conexiones asertivas con los dem\xe1s.","trm_7_interactions":"7. Interacciones Con Otros Usuarios.","trm_7_interactions_1":"Usted es el \xfanico responsable de sus interacciones con otros usuarios. USTED ENTIENDE QUE LA EMPRESA ACTUALMENTE NO REALIZA VERIFICACIONES DE ANTECEDENTES PENALES EN SUS USUARIOS. LA EMPRESA TAMBI\xc9N NO VERIFICA LAS DECLARACIONES DE SUS USUARIOS. LA EMPRESA NO HACE REPRESENTACIONES O GARANT\xcdAS EN RELACI\xd3N CON LA CONDUCTA DE LOS USUARIOS O SU COMPATIBILIDAD CON NING\xdaN USUARIO ACTUAL O FUTURO. LA EMPRESA SE RESERVA EL DERECHO DE REALIZAR CUALQUIER VERIFICACI\xd3N DE ANTECEDENTES PENALES U OTRAS EX\xc1MENES (COMO LAS B\xdaSQUEDAS DE REGISTRO DE OFERTAS SEXUALES), EN CUALQUIER MOMENTO Y UTILIZANDO REGISTROS P\xdaBLICOS DISPONIBLES.","trm_7_interactions_2":"La Compa\xf1\xeda no es responsable por la conducta de ning\xfan usuario. Como se se\xf1ala en y sin limitar la Secci\xf3n 15 a continuaci\xf3n, en ning\xfan caso la Compa\xf1\xeda, sus afiliados o sus socios ser\xe1n responsables (directa o indirectamente) de cualquier p\xe9rdida o da\xf1o, ya sea directo, indirecto, general, especial, compensatorio, consecuente y/o incidental, que surja de o se relacione con su conducta o la de cualquier otra persona en relaci\xf3n con el uso del Servicio, incluidos, entre otros, muerte, lesiones corporales, angustia emocional y/o cualquier otro da\xf1o resultante de las comunicaciones o reuniones con otros usuarios o personas que conozca a trav\xe9s del Servicio. Usted acepta tomar todas las precauciones necesarias en todas las interacciones con otros usuarios, particularmente si decide comunicarse fuera del Servicio o reunirse en persona, o si decide enviar dinero a otro usuario. Adem\xe1s, acepta revisar y seguir los Consejos de seguridad de la Compa\xf1\xeda, ubicados en el Servicio, antes de usar el Servicio. No debe proporcionar su informaci\xf3n financiera (por ejemplo, la informaci\xf3n de su tarjeta de cr\xe9dito o cuenta bancaria), ni transferir ni enviar dinero a otros usuarios.","trm_8_content_posted":"8. Contenido Publicado Por Usted En El Servicio.","trm_8_content_posted_1":"Usted es el \xfanico responsable del contenido y la informaci\xf3n que publica, carga, publica, vincula, transmite, registra, muestra o pone a disposici\xf3n (colectivamente, \'publica\') en el Servicio o transmite a otros usuarios, incluidos mensajes de texto, chat, videos, fotograf\xedas o texto de perfil, ya sea publicado p\xfablicamente o transmitido en privado (colectivamente, \'Contenido\'). No puede publicar como parte del Servicio, ni transmitir a la Compa\xf1\xeda ni a ning\xfan otro usuario (ya sea dentro o fuera del Servicio), cualquier ofensivo, inexacto, incompleto, abusivo, obsceno, profano, amenazante, intimidante, acosador, racialmente ofensivo, o material ilegal, o cualquier material que infrinja o viole los derechos de otra persona (incluidos los derechos de propiedad intelectual y los derechos de privacidad y publicidad). Usted declara y garantiza que (i) toda la informaci\xf3n que env\xede al crear su cuenta, es precisa y veraz, y que actualizar\xe1 de inmediato cualquier informaci\xf3n proporcionada por usted que posteriormente se vuelva inexacta, incompleta, enga\xf1osa o falsa y (ii) usted tenga El derecho a publicar el Contenido en el Servicio y otorgar las licencias establecidas a continuaci\xf3n.","trm_8_content_posted_2":"Usted comprende y acepta que la Compa\xf1\xeda puede, pero no est\xe1 obligada a, monitorear o revisar cualquier Contenido que publique como parte de un Servicio. La Compa\xf1\xeda puede eliminar cualquier Contenido, en su totalidad o en parte, que a juicio exclusivo de la Compa\xf1\xeda viole este Acuerdo o pueda da\xf1ar la reputaci\xf3n del Servicio o la Compa\xf1\xeda.","trm_8_content_posted_3":"Al publicar Contenido como parte del Servicio, usted le otorga a DefAgent un derecho mundial, transferible, sin licencia, libre de regal\xedas, derecho y licencia para alojar, almacenar, usar, copiar, mostrar, reproducir, adaptar, editar, publicar, modificar y distribuir el contenido. Esta licencia tiene el prop\xf3sito limitado de operar, desarrollar, proporcionar, promover y mejorar el Servicio e investigar y desarrollar otros nuevos.","trm_8_content_posted_4":"Adem\xe1s de los tipos de Contenido descritos en la Secci\xf3n 8 (a) anterior, la siguiente es una lista parcial del tipo de Contenido que est\xe1 prohibido en el Servicio. No puede publicar, cargar, mostrar o poner a disposici\xf3n contenido que:","trm_8_content_posted_4_1":"(I) Promueve el racismo, la intolerancia, el odio o el da\xf1o f\xedsico de cualquier tipo contra cualquier grupo o individuo;","trm_8_content_posted_4_2":"(II) Aboga por el acoso o la intimidaci\xf3n de otra persona;","trm_8_content_posted_4_3":"(III) Env\xeda spam o solicita a los usuarios de DefAgent;","trm_8_content_posted_4_4":"(IV) Promueve informaci\xf3n falsa o enga\xf1osa, o promueve actividades ilegales o conductas difamatorias, difamatorias o de otra manera objetables;","trm_8_content_posted_4_5":"(V) Promueve una copia ilegal o no autorizada del trabajo protegido por derechos de autor de otra persona, como proporcionar programas inform\xe1ticos pirateados, im\xe1genes, archivos de audio o video o enlaces a ellos;","trm_8_content_posted_4_6":"(VI) Contiene video, fotograf\xedas de audio o im\xe1genes de otra persona sin su permiso (o en el caso de un menor, el tutor legal del menor);","trm_8_content_posted_4_7":"(VII) Contiene p\xe1ginas de acceso restringido o con contrase\xf1a, o p\xe1ginas o im\xe1genes ocultas (aquellas que no est\xe1n vinculadas ao desde otra p\xe1gina accesible);","trm_8_content_posted_4_8":"(VIII) Proporciona material que explota a las personas de manera sexual, violenta u otra forma ilegal, o solicita informaci\xf3n personal de cualquier persona menor de 18 a\xf1os;","trm_8_content_posted_4_9":"(IX) Proporciona informaci\xf3n educativa sobre actividades ilegales, como fabricar o comprar armas o drogas ilegales, violar la privacidad de alguien o proporcionar, diseminar o crear virus inform\xe1ticos;","trm_8_content_posted_4_10":"(X) Contiene virus, bombas de tiempo, troyanos, cancelbots, gusanos u otros c\xf3digos, componentes o dispositivos da\xf1inos o perjudiciales;","trm_8_content_posted_4_11":"(XI) Suplanta o tergiversa afiliaci\xf3n, conexi\xf3n o asociaci\xf3n con cualquier persona o entidad;","trm_8_content_posted_4_12":"(XII) Proporciona informaci\xf3n o datos que no tiene derecho a poner a disposici\xf3n de acuerdo con la ley o las relaciones contractuales o fiduciarias (como informaci\xf3n privilegiada, informaci\xf3n confidencial y de propiedad exclusiva);","trm_8_content_posted_4_13":"(XIII) Interrumpe el flujo normal del di\xe1logo, hace que una pantalla se \'desplace\' m\xe1s r\xe1pido de lo que otros usuarios pueden escribir, o afecta negativamente la capacidad de otros usuarios para participar en intercambios en tiempo real; y","trm_8_content_posted_4_14":"(XIV) Solicita contrase\xf1as o informaci\xf3n de identificaci\xf3n personal para fines comerciales o ilegales de otros usuarios o difunde la informaci\xf3n personal de otra persona sin su permiso.","trm_8_content_posted_text":"La Compa\xf1\xeda se reserva el derecho, a su sola discreci\xf3n, de investigar y tomar cualquier acci\xf3n legal contra cualquier persona que viole esta disposici\xf3n, incluida la eliminaci\xf3n de la comunicaci\xf3n ofensiva del Servicio y la cancelaci\xf3n o suspensi\xf3n de la cuenta de dichos infractores.","trm_9_use_service_0":"9. Uso Del Servicio.","trm_9_use_service":"Su uso del Servicio, incluido todo el Contenido que publique a trav\xe9s del Servicio, debe cumplir con todas las leyes y regulaciones aplicables. Usted acepta que la Compa\xf1\xeda puede acceder, preservar y divulgar la informaci\xf3n y el Contenido de su cuenta si as\xed lo requiere la ley o de buena fe que dicho acceso, preservaci\xf3n o divulgaci\xf3n es razonablemente necesario, como por ejemplo: (i) cumplir con la ley proceso; (ii) hacer cumplir este Acuerdo; (iii) responder a reclamos de que cualquier Contenido viola los derechos de terceros; (iv) responder a sus solicitudes de servicio al cliente o permitirle usar el Servicio en el futuro; o (v) proteger los derechos, la propiedad o la seguridad personal de la Compa\xf1\xeda o de cualquier otra persona.","trm_10_agree_content":"Usted acepta que cualquier Contenido que coloque en el Servicio puede ser visto por otros usuarios y puede ser visto por cualquier persona que visite o participe en el Servicio (como individuos que pueden recibir Contenido compartido de otros usuarios de DefAgent).","trm_11_prohibited_activities":"10. Actividades Prohibidas.","trm_11_prohibited_activities_1":"La Compa\xf1\xeda se reserva el derecho de investigar, suspender y/o cancelar su cuenta si ha usado mal el Servicio o se ha comportado de una manera que la Compa\xf1\xeda considera inapropiada o ilegal, incluidas acciones o comunicaciones que ocurren fuera del Servicio pero involucran a usuarios que conoce a trav\xe9s del Servicio. La siguiente es una lista parcial del tipo de acciones que no puede realizar con respecto al Servicio. No Ppodr\xe1s realizar lo siguiente:","trm_11_prohibited_activities_1_1":"(I) Hacerse pasar por cualquier persona o entidad.","trm_11_prohibited_activities_1_2":"(II) Solicitar dinero de cualquier usuario.","trm_11_prohibited_activities_1_3":"(III) Publique cualquier Contenido que est\xe9 prohibido por la Secci\xf3n 7.","trm_11_prohibited_activities_1_4":"\'(IV) Acechar\' o acosar a cualquier persona.","trm_11_prohibited_activities_1_5":"(V) Expresar o implicar que cualquier declaraci\xf3n que realice est\xe1 respaldada por la Compa\xf1\xeda sin nuestro consentimiento previo por escrito.","trm_11_prohibited_activities_1_6":"(VI) Usar el Servicio de manera ilegal o para cometer un acto ilegal.","trm_11_prohibited_activities_1_7":"(VII) Acceda al Servicio en una jurisdicci\xf3n en la que sea ilegal o no autorizado.","trm_11_prohibited_activities_1_8":"(VIII) Utilice cualquier robot, ara\xf1a, aplicaci\xf3n de b\xfasqueda / recuperaci\xf3n del sitio u otro dispositivo o proceso manual o autom\xe1tico para recuperar, indexar, \'extraer datos\', o de cualquier manera reproducir o eludir la estructura de navegaci\xf3n o la presentaci\xf3n del Servicio o sus contenidos.","trm_11_prohibited_activities_1_9":"(IX) Recopile los nombres de usuario y / o las direcciones de correo electr\xf3nico de los usuarios por medios electr\xf3nicos u otros con el fin de enviar correos electr\xf3nicos no solicitados o marcos o enlaces no autorizados al Servicio.","trm_11_prohibited_activities_1_10":"(X) Interferir o interrumpir el Servicio o los servidores o redes conectados al Servicio.","trm_11_prohibited_activities_1_11":"(XI) Transmita cualquier material que contenga virus de software o cualquier otro c\xf3digo de computadora, archivos o programas dise\xf1ados para interrumpir, destruir o limitar la funcionalidad de cualquier software, hardware o equipo de telecomunicaciones.","trm_11_prohibited_activities_1_12":"(XII) Falsifique encabezados o manipule identificadores para ocultar el origen de cualquier informaci\xf3n transmitida a trav\xe9s del Servicio (ya sea directa o indirectamente mediante el uso de software de terceros).","trm_11_prohibited_activities_1_13":"(XIII) \'Enmarcar\' o \'Reflejar\' cualquier parte del Servicio, sin la autorizaci\xf3n previa por escrito de la Compa\xf1\xeda.","trm_11_prohibited_activities_1_14":"(XIV) Use metaetiquetas o c\xf3digos u otros dispositivos que contengan alguna referencia a la Compa\xf1\xeda o al Servicio (o cualquier marca registrada, nombre comercial, marca de servicio, logotipo o eslogan de la Compa\xf1\xeda) para dirigir a cualquier persona a cualquier otro sitio web para cualquier prop\xf3sito.","trm_11_prohibited_activities_1_15":"(XV) Modifique, adapte, sublicencia, traduzca, venda, realice ingenier\xeda inversa, descifre, descompile o desarme cualquier parte del Servicio de cualquier software utilizado en el Servicio, o haga que otros lo hagan.","trm_11_prohibited_activities_1_16":"(XVI) Publique, use, transmita o distribuya, directa o indirectamente (por ejemplo, captura de pantalla) de cualquier manera o medio cualquier contenido o informaci\xf3n obtenida del Servicio que no sea \xfanicamente en relaci\xf3n con su uso del Servicio de acuerdo con este Acuerdo.","trm_12_propietary_rights":"11. Derechos De Propiedad.","trm_12_propietary_rights_1":"La Compa\xf1\xeda posee y retiene todos los derechos de propiedad en el Servicio, y en todo el contenido, marcas comerciales, nombres comerciales, marcas de servicio y otros derechos de propiedad intelectual relacionados con el mismo. El Servicio contiene el material con derechos de autor, marcas registradas y otra informaci\xf3n de propiedad de la Compa\xf1\xeda y sus licenciantes. Usted acepta no copiar, modificar, transmitir, crear trabajos derivados, utilizar o reproducir de ninguna manera ning\xfan material con derechos de autor, marcas comerciales, nombres comerciales, marcas de servicio u otra propiedad intelectual o informaci\xf3n de propiedad accesible a trav\xe9s del Servicio, sin obtener primero el consentimiento previo por escrito de la Compa\xf1\xeda o, si dicha propiedad no es propiedad de la Compa\xf1\xeda, el propietario de dicha propiedad intelectual o derechos de propiedad. Usted acepta no eliminar, ocultar ni alterar de ninguna otra manera los avisos de propiedad que aparezcan en ning\xfan contenido, incluidos los avisos de derechos de autor, marcas comerciales y otros avisos de propiedad intelectual.","trm_13_ownership":"12. Propiedad.","trm_13_ownership_1":"Los Servicios y todos los derechos en ellos son y seguir\xe1n siendo propiedad de DefAgent o propiedad de los licenciantes de DefAgent. Ni estos T\xe9rminos ni su uso de los Servicios le otorgan ni le otorgan ning\xfan derecho: (i) en o relacionado con los Servicios, excepto por la licencia limitada otorgada anteriormente; o (ii) usar o hacer referencia de cualquier manera a los nombres de compa\xf1\xedas, logotipos, nombres de productos y servicios, marcas comerciales o marcas de servicios de DefAgent o de los licenciantes de DefAgent.","trm_14_user_provided_content":"13. Contenido Proporcionado Por El Usuario.","trm_14_user_provided_content_1":"DefAgent puede, a su entera discreci\xf3n, permitirle de vez en cuando enviar, cargar, publicar o poner a disposici\xf3n de DefAgent a trav\xe9s de los Servicios contenido textual, de audio y/o visual e informaci\xf3n, incluidos comentarios y comentarios relacionados con los Servicios, inicio de solicitudes de soporte y env\xedo de entradas para concursos y promociones (\'Contenido del usuario\'). Cualquier contenido de usuario proporcionado por usted sigue siendo de su propiedad. Sin embargo, al proporcionar Contenido de usuario a DefAgent, usted le otorga a DefAgent una licencia mundial, perpetua, irrevocable, transferible y libre de regal\xedas, con el derecho de sublicenciar, usar, copiar, modificar, crear trabajos derivados de, distribuir, mostrar p\xfablicamente, p\xfablicamente realizar y explotar de cualquier otra forma el Contenido del usuario en todos los formatos y canales de distribuci\xf3n ahora conocidos o desarrollados en el futuro (incluso en relaci\xf3n con los Servicios y el negocio de DefAgent y en sitios y servicios de terceros), sin previo aviso o consentimiento de usted , y sin el requisito de pago para usted o cualquier otra persona o entidad. Usted declara y garantiza que: (i) usted es el propietario \xfanico y exclusivo de todo el Contenido del usuario o tiene todos los derechos, licencias, consentimientos y liberaciones necesarios para otorgar a DefAgent la licencia del Contenido del usuario como se establece anteriormente; y (ii) ni el Contenido del usuario, ni su env\xedo, carga, publicaci\xf3n o puesta a disposici\xf3n de dicho Contenido del usuario, ni el uso de DefAgent del Contenido del usuario seg\xfan lo permitido en este documento infringir\xe1, malversar\xe1 o violar\xe1 la propiedad intelectual o los derechos de propiedad de un tercero, o derechos de publicidad o privacidad, o resultar en la violaci\xf3n de cualquier ley o regulaci\xf3n aplicable. Usted acepta no proporcionar Contenido de usuario que sea difamatorio, calumnioso, odioso, violento, obsceno, pornogr\xe1fico, ilegal u ofensivo, seg\xfan lo determine DefAgent a su exclusivo criterio, si dicho material puede o no estar protegido por la ley. DefAgent puede, pero no estar\xe1 obligado a, revisar, monitorear o eliminar el Contenido del usuario, a discreci\xf3n exclusiva de DefAgent y en cualquier momento y por cualquier motivo, sin notific\xe1rselo.","trm_15_network_access_devices":"14. Acceso A La Red Y Dispositivos.","trm_15_network_access_devices_1":"Usted es responsable de obtener el acceso a la red de datos necesario para usar los Servicios. Las tarifas y tarifas de datos y mensajes de su red m\xf3vil pueden aplicarse si accede o utiliza los Servicios desde su dispositivo. Usted es responsable de adquirir y actualizar el hardware o dispositivos compatibles necesarios para acceder y utilizar los Servicios y Aplicaciones y cualquier actualizaci\xf3n de los mismos. DefAgent no garantiza que los Servicios, o cualquier parte de los mismos, funcionen en ning\xfan hardware o dispositivo en particular. Adem\xe1s, los Servicios pueden estar sujetos a mal funcionamiento y demoras inherentes al uso de Internet y las comunicaciones electr\xf3nicas.","trm_16_modifications_service":"15. Modificaciones Al Servicio.","trm_16_modifications_service_1":"La Compa\xf1\xeda se reserva el derecho en cualquier momento de modificar o descontinuar, temporal o permanentemente, el Servicio (o cualquier parte del mismo) con o sin previo aviso. Usted acepta que la Compa\xf1\xeda no ser\xe1 responsable ante usted ni ante ning\xfan tercero por cualquier modificaci\xf3n, suspensi\xf3n o interrupci\xf3n del Servicio. Para proteger la integridad del Servicio, la Compa\xf1\xeda se reserva el derecho en cualquier momento, a su exclusivo criterio, de bloquear el acceso de los usuarios de ciertas direcciones IP al Servicio.","trm_17_copyright_policy":"16. Pol\xedtica De Derechos De Autor.","trm_17_copyright_policy_1":"Notificaci\xf3n y procedimiento para realizar reclamaciones de infracci\xf3n de derechos de autor. No puede publicar, distribuir ni reproducir de ninguna manera ning\xfan material con derechos de autor, marcas comerciales u otra informaci\xf3n de propiedad sin obtener el consentimiento previo por escrito del propietario de dichos derechos de propiedad. Si cree que su trabajo ha sido copiado y publicado en el Servicio de una manera que constituye una infracci\xf3n de derechos de autor, proporcione a nuestro Agente de Derechos de Autor la siguiente informaci\xf3n:","trm_17_copyright_policy_1_1":"(I) Una firma electr\xf3nica o f\xedsica de la persona autorizada para actuar en nombre del propietario de los derechos de autor;","trm_17_copyright_policy_1_2":"(II) Una descripci\xf3n del trabajo protegido por derechos de autor que usted afirma que se ha infringido;","trm_17_copyright_policy_1_3":"(III) Una descripci\xf3n de d\xf3nde se encuentra el material que usted afirma que est\xe1 infringiendo en el Servicio (y dicha descripci\xf3n debe ser razonablemente suficiente para permitir a la Compa\xf1\xeda encontrar el material presuntamente infractor, como una url);","trm_17_copyright_policy_1_4":"(IV) Su direcci\xf3n, n\xfamero de tel\xe9fono y direcci\xf3n de correo electr\xf3nico;","trm_17_copyright_policy_1_5":"(V) Una declaraci\xf3n escrita de usted de que cree de buena fe que el uso en disputa no est\xe1 autorizado por el propietario de los derechos de autor, su agente o la ley; y","trm_17_copyright_policy_1_6":"(VI) Una declaraci\xf3n suya, hecha bajo pena de perjurio, que la informaci\xf3n anterior en su aviso es precisa y que usted es el propietario de los derechos de autor o est\xe1 autorizado para actuar en nombre del propietario de los derechos de autor.","trm_17_copyright_policy_1_text":"El aviso de reclamos de infracci\xf3n de derechos de autor debe proporcionarse al Agente de Derechos de Autor de la Compa\xf1\xeda en caro@DefAgent.ai","trm_17_copyright_policy_1_text1":"La Compa\xf1\xeda cancelar\xe1 las cuentas de los infractores reincidentes.","trm_17_disclaimers":"17. Descargos De Responsabilidad, Limitaci\xf3n De Responsabilidad.","trm_17_disclaimers_0":"Descargos De Responsabilidad.","trm_17_disclaimers_1":"LOS SERVICIOS SE PROPORCIONAN \'TAL CUAL\' Y \'SEG\xdaN DISPONIBILIDAD\'. DefAgent RENUNCIA A TODAS LAS REPRESENTACIONES Y GARANT\xcdAS, EXPRESAS, IMPL\xcdCITAS O ESTATUTARIAS, NO EXPRESADAS EXPRESAMENTE EN ESTOS T\xc9RMINOS, INCLUIDAS LAS GARANT\xcdAS IMPL\xcdCITAS DE COMERCIABILIDAD, IDONEIDAD PARA UN PROP\xd3SITO Y NO INFRACCI\xd3N PARTICULARES. ADEM\xc1S, DefAgent NO HACE NINGUNA REPRESENTACI\xd3N, GARANT\xcdA O GARANT\xcdA CON RESPECTO A LA CONFIABILIDAD, OPORTUNIDAD, CALIDAD, IDONEIDAD O DISPONIBILIDAD DE LOS SERVICIOS O CUALQUIER SERVICIO O BIEN SOLICITADOS A TRAV\xc9S DEL USO DE LOS SERVICIOS, O QUE LOS SERVICIOS SER\xc1N ININTERRUMPIDOS GRATIS. DefAgent NO GARANTIZA LA CALIDAD, IDONEIDAD, SEGURIDAD O CAPACIDAD DE PROVEEDORES DE TERCEROS. USTED ACEPTA QUE TODO EL RIESGO DERIVADO DE SU USO DE LOS SERVICIOS, Y CUALQUIER SERVICIO O BIEN SOLICITADO EN CONEXI\xd3N CON ELLOS, SE QUEDA SOLAMENTE CON USTED, EN LA MEDIDA M\xc1XIMA PERMITIDA BAJO LA LEY APLICABLE.","trm_17_limitation":"Limitaci\xf3n De Responsabilidad.","trm_17_limitation_1":"DefAgent NO SER\xc1 RESPONSABLE POR DA\xd1OS INDIRECTOS, INCIDENTALES, ESPECIALES, EJEMPLARES, PUNITIVOS O CONSECUENTES, INCLUYENDO GANANCIAS PERDIDAS, DATOS PERDIDOS, DA\xd1OS PERSONALES O DA\xd1OS A LA PROPIEDAD RELACIONADOS CON, EN RELACI\xd3N CON, O DE CUALQUIER OTRO RESULTADO DE CUALQUIER USO DE LOS SERVICIOS, SIN IMPORTAR LA NEGLIGENCIA (CUALQUIERA ACTIVA, AFIRMATIVA, \xdaNICA O CONCURRENTE) DE DefAgent, INCLUSO SI SE HA INFORMADO A DefAgent DE LA POSIBILIDAD DE TALES DA\xd1OS. DefAgent NO SER\xc1 RESPONSABLE DE NING\xdaN DA\xd1O, RESPONSABILIDAD O P\xc9RDIDA QUE SURJA DE: (i) SU USO O CONFIANZA EN LOS SERVICIOS O SU INCAPACIDAD PARA ACCEDER O UTILIZAR LOS SERVICIOS; O (ii) CUALQUIER TRANSACCI\xd3N O RELACI\xd3N ENTRE USTED Y CUALQUIER PROVEEDOR DE TERCEROS, INCLUSO SI SE HA INFORMADO DefAgent DE LA POSIBILIDAD DE TALES DA\xd1OS. DefAgent NO SER\xc1 RESPONSABLE POR RETRASO O FALLA EN EL RENDIMIENTO RESULTANTE DE CAUSAS M\xc1S ALL\xc1 DE DefAgent CONTROL RAZONABLE. USTED RECONOCE QUE LOS PROVEEDORES DE TERCEROS QUE PROPORCIONAN SERVICIOS DE TRANSPORTE SOLICITADOS A TRAV\xc9S DE ALGUNOS PRODUCTOS DE SOLICITUD PUEDEN OFRECER SERVICIOS DE TRANSPORTE DE COMPARTIMIENTO O PERMISO Y NO PUEDEN SER LICENCIADOS O PERMITIDOS PROFESIONALMENTE. USTED PUEDE UTILIZAR LOS SERVICIOS PARA SOLICITAR Y PROGRAMAR SERVICIOS DE TRANSPORTE, BIENES O LOG\xcdSTICOS CON PROVEEDORES DE TERCEROS, PERO ACEPTA QUE DefAgent NO TIENE NINGUNA RESPONSABILIDAD O RESPONSABILIDAD RELACIONADA CON CUALQUIER SERVICIO DE TRANSPORTE, BIENES O LOG\xcdSTICOS PROPORCIONADOS A USTED POR TERCEROS PROVEEDORES QUE NO SEAN EXPRESAMENTE ESTABLECIDOS EN ESTOS T\xc9RMINOS. LAS LIMITACIONES Y LA RENUNCIA DE RESPONSABILIDAD EN ESTA SECCI\xd3N NO SIGNIFICAN LIMITAR LA RESPONSABILIDAD O ALTERAR SUS DERECHOS COMO CONSUMIDOR QUE NO PUEDE SER EXCLUIDO BAJO LA LEY APLICABLE. PORQUE ALGUNOS ESTADOS O JURISDICCIONES NO PERMITEN LA EXCLUSI\xd3N O LA LIMITACI\xd3N DE RESPONSABILIDAD POR DA\xd1OS CONSECUENTES O INCIDENTALES, EN DICHOS ESTADOS O JURISDICCIONES, TODA LA RESPONSABILIDAD SE LIMITAR\xc1 AL EXTREMO PERMITIDO POR LA LEY. ESTA DISPOSICI\xd3N NO TENDR\xc1 EFECTO EN TODA LA DISPOSICI\xd3N DE ELECCI\xd3N DE LEY ESTABLECIDA A CONTINUACI\xd3N.","trm_18_arbitration":"18. Arbitraje Y Ley Aplicable.","trm_18_arbitration_p":"A excepci\xf3n de los usuarios que residen en la Uni\xf3n Europea, Noruega y otros lugares donde lo proh\xedba la ley aplicable:","trm_18_arbitration_i_01":"El medio exclusivo para resolver cualquier disputa o reclamo que surja de o est\xe9 relacionado con este Acuerdo (incluyendo cualquier presunto incumplimiento del mismo) o el Servicio ser\xe1 el ARBITRAJE VINCULANTE administrado por la Arbitration Association de Inglaterra. La \xfanica excepci\xf3n a la exclusividad del arbitraje es que usted tiene derecho a presentar un reclamo individual contra la Compa\xf1\xeda en un tribunal de reclamos menores de jurisdicci\xf3n competente. Pero ya sea que elija arbitraje o tribunal de reclamos menores, bajo ninguna circunstancia puede iniciar o mantener contra la Compa\xf1\xeda ninguna acci\xf3n de clase, arbitraje de clase u otra acci\xf3n o procedimiento representativo.","trm_18_arbitration_i_02":"Al utilizar el Servicio de cualquier manera, usted acepta el acuerdo de arbitraje anterior. Al hacerlo, USTED CESE SU DERECHO DE IR A LA CORTE para hacer valer o defender cualquier reclamo entre usted y la Compa\xf1\xeda (excepto por asuntos que puedan ser llevados a la corte de reclamos menores). TAMBI\xc9N RENUNCIA A SU DERECHO A PARTICIPAR EN UNA ACCI\xd3N DE CLASE U OTRO PROCESO DE CLASE. Sus derechos ser\xe1n determinados por un \xc1RBITRO NEUTRO, NO UN JUEZ O JURADO. Tiene derecho a una audiencia imparcial ante el \xe1rbitro. El \xe1rbitro puede otorgar cualquier alivio que pueda otorgar un tribunal, pero debe tener en cuenta que los procedimientos de arbitraje suelen ser m\xe1s simples y m\xe1s \xe1giles que los juicios y otros procedimientos judiciales. Las decisiones del \xe1rbitro son ejecutables en el tribunal y pueden ser revocadas por un tribunal solo por razones muy limitadas. Para obtener detalles sobre el proceso de arbitraje, consulte nuestros Procedimientos de arbitraje.","trm_18_arbitration_i_03":"Cualquier procedimiento para hacer cumplir este acuerdo de arbitraje, incluido cualquier procedimiento para confirmar, modificar o anular un laudo arbitral, puede iniciarse en cualquier tribunal de jurisdicci\xf3n competente. En caso de que este acuerdo de arbitraje sea por cualquier motivo considerado inaplicable, cualquier litigio contra la Compa\xf1\xeda (excepto las acciones judiciales de reclamos menores) puede iniciarse solo en los tribunales federales o estatales ubicados en Inglaterra. Por la presente, consiente irrevocablemente la jurisdicci\xf3n de esos tribunales para tales fines.","trm_18_arbitration_i_04":"Este Acuerdo, y cualquier disputa entre usted y la Compa\xf1\xeda, se regir\xe1 por las leyes de Inglaterra sin tener en cuenta los principios de conflictos de leyes, siempre que este acuerdo de arbitraje se rija por la Ley Federal de Arbitraje.","trm_18_arbitration_p_1":"Para los usuarios que residen en la Uni\xf3n Europea, Noruega o en cualquier otro lugar donde este acuerdo de arbitraje est\xe9 prohibido por ley, las leyes de Inglaterra, Excluyendo las reglas de conflicto de leyes de Inglaterra, se aplicar\xe1n a cualquier disputa que surja o est\xe9 relacionada con este Acuerdo o los Servicios. Todos los reclamos que surjan de este Acuerdo o de los Servicios o se relacionen con ellos se litigar\xe1n exclusivamente en los tribunales federales o estatales de Inglaterra, Y usted y DefAgent aceptan la jurisdicci\xf3n personal de dichos tribunales.","trm_19_":"19.  Indemnizaci\xf3n Por T\xed.","trm_19_p":"Usted acepta indemnizar y mantener a la Compa\xf1\xeda, sus subsidiarias y afiliadas, y sus y sus funcionarios, agentes, socios y empleados, indemnes de cualquier p\xe9rdida, responsabilidad, reclamo o demanda, incluidos los honorarios razonables de abogados, realizados por un tercero debido o que surja de su incumplimiento o incumplimiento de este Acuerdo (incluido cualquier incumplimiento de sus representaciones y garant\xedas contenidas en este documento), cualquier publicaci\xf3n o Contenido que publique en el Servicio, y la violaci\xf3n de cualquier ley o regulaci\xf3n por usted. La Compa\xf1\xeda se reserva el derecho de asumir la defensa y el control exclusivos de cualquier asunto sujeto a indemnizaci\xf3n por su parte, en cuyo caso cooperar\xe1 plenamente con la Compa\xf1\xeda en relaci\xf3n con esto.","trm_20_":"20. Aviso.","trm_20_p":"La Compa\xf1\xeda puede proporcionarle avisos, incluidos los relacionados con los cambios a este Acuerdo, utilizando cualquier medio razonable, que puede incluir correo electr\xf3nico, SMS, MMS, mensajes de texto o publicaciones en el Servicio. Es posible que dichos avisos no se reciban si viola este Acuerdo al acceder al Servicio de manera no autorizada. Usted acepta que se considera que ha recibido todos y cada uno de los avisos que se habr\xedan entregado si hubiera accedido al Servicio de manera autorizada.","trm_21_":"21. Acuerdo Completo.","trm_21_p":"Este Acuerdo, con la Pol\xedtica de privacidad y las pautas o reglas espec\xedficas que se publican por separado para servicios u ofertas particulares en el Servicio, contiene el acuerdo completo entre usted y la Compa\xf1\xeda con respecto al uso del Servicio. Si alguna disposici\xf3n de este Acuerdo se considera inv\xe1lida, el resto de este Acuerdo continuar\xe1 en pleno vigor y efecto. El hecho de que la Compa\xf1\xeda no ejerza o haga cumplir alg\xfan derecho o disposici\xf3n de este Acuerdo no constituir\xe1 una renuncia a dicho derecho o disposici\xf3n. Usted acepta que su cuenta DefAgent no es transferible y que todos sus derechos sobre su perfil o contenido dentro de su cuenta DefAgent terminan con su fallecimiento. No se crea ninguna agencia, sociedad, empresa conjunta o empleo como resultado de este Acuerdo y usted no puede hacer ninguna representaci\xf3n ni obligar a la Compa\xf1\xeda de ninguna manera.","trm_question":"\xbfPreguntas?","trm_privacy_policy":"Cualquier duda sobre nuestra Pol\xedtica de privacidad debe dirigirse a caro@DefAgent.ai"}}'
       );
     },
     Cfvw: function(e, t, n) {
@@ -8367,15 +8430,15 @@
         u = n('afO8').enforce,
         d = n('f5p1'),
         h = !i.ActiveXObject && 'ActiveXObject' in i,
-        f = Object.isExtensible,
-        p = function(e) {
+        p = Object.isExtensible,
+        f = function(e) {
           return function() {
             return e(this, arguments.length ? arguments[0] : void 0);
           };
         },
-        m = (e.exports = a('WeakMap', p, c, !0, !0));
+        m = (e.exports = a('WeakMap', f, c, !0, !0));
       if (d && h) {
-        (r = c.getConstructor(p, 'WeakMap', !0)), (s.REQUIRED = !0);
+        (r = c.getConstructor(f, 'WeakMap', !0)), (s.REQUIRED = !0);
         var g = m.prototype,
           b = g.delete,
           y = g.has,
@@ -8383,7 +8446,7 @@
           _ = g.set;
         o(g, {
           delete: function(e) {
-            if (l(e) && !f(e)) {
+            if (l(e) && !p(e)) {
               var t = u(this);
               return (
                 t.frozen || (t.frozen = new r()),
@@ -8393,7 +8456,7 @@
             return b.call(this, e);
           },
           has: function(e) {
-            if (l(e) && !f(e)) {
+            if (l(e) && !p(e)) {
               var t = u(this);
               return (
                 t.frozen || (t.frozen = new r()),
@@ -8403,7 +8466,7 @@
             return y.call(this, e);
           },
           get: function(e) {
-            if (l(e) && !f(e)) {
+            if (l(e) && !p(e)) {
               var t = u(this);
               return (
                 t.frozen || (t.frozen = new r()),
@@ -8413,7 +8476,7 @@
             return v.call(this, e);
           },
           set: function(e, t) {
-            if (l(e) && !f(e)) {
+            if (l(e) && !p(e)) {
               var n = u(this);
               n.frozen || (n.frozen = new r()),
                 y.call(this, e) ? _.call(this, e, t) : n.frozen.set(e, t);
@@ -8690,16 +8753,16 @@
           u,
           d,
           h,
-          f,
-          p = e.target,
+          p,
+          f = e.target,
           m = e.global,
           g = e.stat;
-        if ((n = m ? r : g ? r[p] || a(p, {}) : (r[p] || {}).prototype))
+        if ((n = m ? r : g ? r[f] || a(f, {}) : (r[f] || {}).prototype))
           for (u in t) {
             if (
               ((h = t[u]),
-              (d = e.noTargetGet ? (f = i(n, u)) && f.value : n[u]),
-              !l(m ? u : p + (g ? '.' : '#') + u, e.forced) && void 0 !== d)
+              (d = e.noTargetGet ? (p = i(n, u)) && p.value : n[u]),
+              !l(m ? u : f + (g ? '.' : '#') + u, e.forced) && void 0 !== d)
             ) {
               if (typeof h == typeof d) continue;
               c(h, d);
@@ -8781,26 +8844,26 @@
         };
       (e.exports = function(e, t, n, u, d) {
         var h,
-          f,
           p,
+          f,
           m,
           g,
           b,
           y = s(t, n, u ? 2 : 1);
         if (d) h = e;
         else {
-          if ('function' != typeof (f = a(e)))
+          if ('function' != typeof (p = a(e)))
             throw TypeError('Target is not iterable');
-          if (i(f)) {
-            for (p = 0, m = o(e.length); m > p; p++)
+          if (i(p)) {
+            for (f = 0, m = o(e.length); m > f; f++)
               if (
-                (g = u ? y(r((b = e[p]))[0], b[1]) : y(e[p])) &&
+                (g = u ? y(r((b = e[f]))[0], b[1]) : y(e[f])) &&
                 g instanceof l
               )
                 return g;
             return new l(!1);
           }
-          h = f.call(e);
+          h = p.call(e);
         }
         for (; !(b = h.next()).done; )
           if ((g = c(h, y, b.value, u)) && g instanceof l) return g;
@@ -9408,13 +9471,13 @@
             if (!s.global) return c(s, l);
             var u = s.unicode;
             s.lastIndex = 0;
-            for (var d, h = [], f = 0; null !== (d = c(s, l)); ) {
-              var p = String(d[0]);
-              (h[f] = p),
-                '' === p && (s.lastIndex = a(l, o(s.lastIndex), u)),
-                f++;
+            for (var d, h = [], p = 0; null !== (d = c(s, l)); ) {
+              var f = String(d[0]);
+              (h[p] = f),
+                '' === f && (s.lastIndex = a(l, o(s.lastIndex), u)),
+                p++;
             }
-            return 0 === f ? null : h;
+            return 0 === p ? null : h;
           }
         ];
       });
@@ -9566,8 +9629,8 @@
         u = n('FMNM'),
         d = Math.max,
         h = Math.min,
-        f = Math.floor,
-        p = /\$([$&'`]|\d\d?|<[^>]*>)/g,
+        p = Math.floor,
+        f = /\$([$&'`]|\d\d?|<[^>]*>)/g,
         m = /\$([$&'`]|\d\d?)/g;
       r('replace', 2, function(e, t, n) {
         return [
@@ -9579,26 +9642,26 @@
           function(e, o) {
             var c = n(t, e, this, o);
             if (c.done) return c.value;
-            var f = i(e),
-              p = String(this),
+            var p = i(e),
+              f = String(this),
               m = 'function' == typeof o;
             m || (o = String(o));
-            var g = f.global;
+            var g = p.global;
             if (g) {
-              var b = f.unicode;
-              f.lastIndex = 0;
+              var b = p.unicode;
+              p.lastIndex = 0;
             }
             for (var y = []; ; ) {
-              var v = u(f, p);
+              var v = u(p, f);
               if (null === v) break;
               if ((y.push(v), !g)) break;
-              '' === String(v[0]) && (f.lastIndex = l(p, s(f.lastIndex), b));
+              '' === String(v[0]) && (p.lastIndex = l(f, s(p.lastIndex), b));
             }
             for (var _, E = '', S = 0, w = 0; w < y.length; w++) {
               v = y[w];
               for (
                 var A = String(v[0]),
-                  O = d(h(a(v.index), p.length), 0),
+                  O = d(h(a(v.index), f.length), 0),
                   T = [],
                   I = 1;
                 I < v.length;
@@ -9607,13 +9670,13 @@
                 T.push(void 0 === (_ = v[I]) ? _ : String(_));
               var C = v.groups;
               if (m) {
-                var N = [A].concat(T, O, p);
+                var N = [A].concat(T, O, f);
                 void 0 !== C && N.push(C);
                 var R = String(o.apply(void 0, N));
-              } else R = r(A, p, O, T, C, o);
-              O >= S && ((E += p.slice(S, O) + R), (S = O + A.length));
+              } else R = r(A, f, O, T, C, o);
+              O >= S && ((E += f.slice(S, O) + R), (S = O + A.length));
             }
-            return E + p.slice(S);
+            return E + f.slice(S);
           }
         ];
         function r(e, n, r, i, s, a) {
@@ -9621,7 +9684,7 @@
             l = i.length,
             u = m;
           return (
-            void 0 !== s && ((s = o(s)), (u = p)),
+            void 0 !== s && ((s = o(s)), (u = f)),
             t.call(a, u, function(t, o) {
               var a;
               switch (o.charAt(0)) {
@@ -9640,7 +9703,7 @@
                   var u = +o;
                   if (0 === u) return t;
                   if (u > l) {
-                    var d = f(u / 10);
+                    var d = p(u / 10);
                     return 0 === d
                       ? t
                       : d <= l
@@ -9968,15 +10031,15 @@
 
               )
                 for (
-                  var f,
-                    p = l(arguments[u++]),
-                    m = d ? o(p).concat(d(p)) : o(p),
+                  var p,
+                    f = l(arguments[u++]),
+                    m = d ? o(f).concat(d(f)) : o(f),
                     g = m.length,
                     b = 0;
                   g > b;
 
                 )
-                  (f = m[b++]), (r && !h.call(p, f)) || (n[f] = p[f]);
+                  (p = m[b++]), (r && !h.call(f, p)) || (n[p] = f[p]);
               return n;
             }
           : u;
@@ -10024,11 +10087,11 @@
         u = n('pLZG'),
         d = n('lJxs'),
         h = n('eIep'),
-        f = n('AytR'),
-        p = n('ey9i'),
+        p = n('AytR'),
+        f = n('ey9i'),
         m = n('9a8T'),
         g = n('fXoL');
-      const b = new p.b('App');
+      const b = new f.b('App');
       let y = (() => {
         class e {
           constructor(e, t, n, r, i) {
@@ -10039,11 +10102,11 @@
               (this.i18nService = i);
           }
           ngOnInit() {
-            f.a.production && p.b.enableProductionMode(),
+            p.a.production && f.b.enableProductionMode(),
               b.debug('init'),
               this.i18nService.init(
-                f.a.defaultLanguage,
-                f.a.supportedLanguages
+                p.a.defaultLanguage,
+                p.a.supportedLanguages
               );
             const e = this.router.events.pipe(
               Object(u.a)(e => e instanceof c.b)
@@ -10057,7 +10120,7 @@
                 }),
                 Object(u.a)(e => 'primary' === e.outlet),
                 Object(h.a)(e => e.data),
-                Object(p.d)(this)
+                Object(f.d)(this)
               )
               .subscribe(e => {
                 const t = e.title;
@@ -10077,7 +10140,7 @@
               g.Lb(c.a),
               g.Lb(r.d),
               g.Lb(s.c),
-              g.Lb(p.a)
+              g.Lb(f.a)
             );
           }),
           (e.ɵcmp = g.Fb({
@@ -10205,7 +10268,7 @@
                 .then(e => e.SaasModule)
           },
           {
-            path: 'startup',
+            path: 'drones',
             loadChildren: () =>
               Promise.all([n.e(1), n.e(2), n.e(5), n.e(0), n.e(24)])
                 .then(n.bind(null, 'koon'))
@@ -10493,28 +10556,28 @@
           }
           return e;
         },
-        G = function(e) {
+        F = function(e) {
           return (e && e.ownerDocument && e.ownerDocument.defaultView) || P;
         },
-        F = B(0, 0, 0, 0);
-      function V(e) {
+        V = B(0, 0, 0, 0);
+      function G(e) {
         return parseFloat(e) || 0;
       }
       function Y(e) {
         for (var t = [], n = 1; n < arguments.length; n++)
           t[n - 1] = arguments[n];
         return t.reduce(function(t, n) {
-          return t + V(e['border-' + n + '-width']);
+          return t + G(e['border-' + n + '-width']);
         }, 0);
       }
       var z =
         'undefined' != typeof SVGGraphicsElement
           ? function(e) {
-              return e instanceof G(e).SVGGraphicsElement;
+              return e instanceof F(e).SVGGraphicsElement;
             }
           : function(e) {
               return (
-                e instanceof G(e).SVGElement && 'function' == typeof e.getBBox
+                e instanceof F(e).SVGElement && 'function' == typeof e.getBBox
               );
             };
       function B(e, t, n, r) {
@@ -10541,8 +10604,8 @@
                       : (function(e) {
                           var t = e.clientWidth,
                             n = e.clientHeight;
-                          if (!t && !n) return F;
-                          var r = G(e).getComputedStyle(e),
+                          if (!t && !n) return V;
+                          var r = F(e).getComputedStyle(e),
                             i = (function(e) {
                               for (
                                 var t = {},
@@ -10552,14 +10615,14 @@
                                 n++
                               ) {
                                 var i = r[n];
-                                t[i] = V(e['padding-' + i]);
+                                t[i] = G(e['padding-' + i]);
                               }
                               return t;
                             })(r),
                             o = i.left + i.right,
                             s = i.top + i.bottom,
-                            a = V(r.width),
-                            c = V(r.height);
+                            a = G(r.width),
+                            c = G(r.height);
                           if (
                             ('border-box' === r.boxSizing &&
                               (Math.round(a + o) !== t &&
@@ -10567,7 +10630,7 @@
                               Math.round(c + s) !== n &&
                                 (c -= Y(r, 'top', 'bottom') + s)),
                             !(function(e) {
-                              return e === G(e).document.documentElement;
+                              return e === F(e).document.documentElement;
                             })(e))
                           ) {
                             var l = Math.round(a + o) - t,
@@ -10577,7 +10640,7 @@
                           }
                           return B(i.left, i.top, a, c);
                         })(e)
-                    : F);
+                    : V);
               return (
                 (this.contentRect_ = t),
                 t.width !== this.broadcastWidth ||
@@ -10645,7 +10708,7 @@
               if (!arguments.length)
                 throw new TypeError('1 argument required, but only 0 present.');
               if ('undefined' != typeof Element && Element instanceof Object) {
-                if (!(e instanceof G(e).Element))
+                if (!(e instanceof F(e).Element))
                   throw new TypeError('parameter 1 is not of type "Element".');
                 var t = this.observations_;
                 t.has(e) ||
@@ -10658,7 +10721,7 @@
               if (!arguments.length)
                 throw new TypeError('1 argument required, but only 0 present.');
               if ('undefined' != typeof Element && Element instanceof Object) {
-                if (!(e instanceof G(e).Element))
+                if (!(e instanceof F(e).Element))
                   throw new TypeError('parameter 1 is not of type "Element".');
                 var t = this.observations_;
                 t.has(e) &&
@@ -11535,10 +11598,10 @@
       var ue = n('IjjT');
       class de extends ue.a {}
       const he = new de(le);
-      var fe = n('quSY'),
-        pe = n('7o/Q'),
+      var pe = n('quSY'),
+        fe = n('7o/Q'),
         me = n('WMd4');
-      class ge extends pe.a {
+      class ge extends fe.a {
         constructor(e, t, n = 0) {
           super(e), (this.scheduler = t), (this.delay = n);
         }
@@ -11607,7 +11670,7 @@
           if (this.closed) throw new ye.a();
           if (
             (this.isStopped || this.hasError
-              ? (o = fe.a.EMPTY)
+              ? (o = pe.a.EMPTY)
               : (this.observers.push(e), (o = new ve.a(this, e))),
             r && e.add((e = new ge(e, r))),
             t)
@@ -11917,9 +11980,7 @@
           );
         })();
       const Ne = [
-        E.childRoutes([
-          { path: '', redirectTo: '/ai-agents', pathMatch: 'full' }
-        ])
+        E.childRoutes([{ path: '', redirectTo: '/drones', pathMatch: 'full' }])
       ];
       let Re = (() => {
           class e {}
@@ -12057,18 +12118,18 @@
         d = n('93I0'),
         h = n('0BK2');
       if (s) {
-        var f = new (0, a.WeakMap)(),
-          p = f.get,
-          m = f.has,
-          g = f.set;
+        var p = new (0, a.WeakMap)(),
+          f = p.get,
+          m = p.has,
+          g = p.set;
         (r = function(e, t) {
-          return g.call(f, e, t), t;
+          return g.call(p, e, t), t;
         }),
           (i = function(e) {
-            return p.call(f, e) || {};
+            return f.call(p, e) || {};
           }),
           (o = function(e) {
-            return m.call(f, e);
+            return m.call(p, e);
           });
       } else {
         var b = d('state');
@@ -12133,8 +12194,8 @@
         u = n('hh1v'),
         d = n('0Dky'),
         h = n('HH4o'),
-        f = n('1E5z'),
-        p = n('cVYH');
+        p = n('1E5z'),
+        f = n('cVYH');
       e.exports = function(e, t, n, m, g) {
         var b = i[e],
           y = b && b.prototype,
@@ -12199,7 +12260,7 @@
           T ||
             (((v = t(function(t, n) {
               l(t, v, e);
-              var r = p(new b(), t, v);
+              var r = f(new b(), t, v);
               return null != n && c(n, r[_], r, m), r;
             })).prototype = y),
             (y.constructor = v)),
@@ -12210,7 +12271,7 @@
         return (
           (E[e] = v),
           r({ global: !0, forced: v != b }, E),
-          f(v, e),
+          p(v, e),
           g || n.setStrong(v, e, m),
           v
         );
@@ -12562,7 +12623,7 @@
           return Hl;
         }),
         n.d(t, 'j', function() {
-          return pa;
+          return fa;
         }),
         n.d(t, 'k', function() {
           return xl;
@@ -12610,7 +12671,7 @@
           return ru;
         }),
         n.d(t, 'z', function() {
-          return Vl;
+          return Gl;
         }),
         n.d(t, 'A', function() {
           return d;
@@ -12637,10 +12698,10 @@
           return hr;
         }),
         n.d(t, 'I', function() {
-          return f;
+          return p;
         }),
         n.d(t, 'J', function() {
-          return fu;
+          return pu;
         }),
         n.d(t, 'K', function() {
           return Ha;
@@ -12655,7 +12716,7 @@
           return Sa;
         }),
         n.d(t, 'O', function() {
-          return Fa;
+          return Va;
         }),
         n.d(t, 'P', function() {
           return ge;
@@ -12664,7 +12725,7 @@
           return iu;
         }),
         n.d(t, 'R', function() {
-          return Gn;
+          return Fn;
         }),
         n.d(t, 'S', function() {
           return R;
@@ -12742,7 +12803,7 @@
           return Za;
         }),
         n.d(t, 'rb', function() {
-          return Ge;
+          return Fe;
         }),
         n.d(t, 'sb', function() {
           return I;
@@ -12874,7 +12935,7 @@
           return gs;
         }),
         n.d(t, 'jc', function() {
-          return fs;
+          return ps;
         }),
         n.d(t, 'kc', function() {
           return Zo;
@@ -12886,7 +12947,7 @@
           return ys;
         }),
         n.d(t, 'nc', function() {
-          return Vc;
+          return Gc;
         }),
         n.d(t, 'oc', function() {
           return Yc;
@@ -12913,19 +12974,19 @@
           return st;
         }),
         n.d(t, 'wc', function() {
-          return fr;
+          return pr;
         }),
         n.d(t, 'xc', function() {
           return mr;
         }),
         n.d(t, 'yc', function() {
-          return pr;
+          return fr;
         }),
         n.d(t, 'zc', function() {
           return Oe;
         }),
         n.d(t, 'Ac', function() {
-          return fl;
+          return pl;
         }),
         n.d(t, 'Bc', function() {
           return ll;
@@ -12940,13 +13001,13 @@
           return vl;
         }),
         n.d(t, 'Fc', function() {
-          return Gs;
-        }),
-        n.d(t, 'Gc', function() {
           return Fs;
         }),
-        n.d(t, 'Hc', function() {
+        n.d(t, 'Gc', function() {
           return Vs;
+        }),
+        n.d(t, 'Hc', function() {
+          return Gs;
         }),
         n.d(t, 'Ic', function() {
           return Ys;
@@ -12996,8 +13057,8 @@
       const u = l('Inject', e => ({ token: e })),
         d = l('Optional'),
         h = l('Self'),
-        f = l('SkipSelf');
-      var p = (function(e) {
+        p = l('SkipSelf');
+      var f = (function(e) {
         return (
           (e[(e.Default = 0)] = 'Default'),
           (e[(e.Host = 1)] = 'Host'),
@@ -13095,9 +13156,9 @@
         U = L || M || P || k,
         j = m({ ɵcmp: m }),
         H = m({ ɵdir: m }),
-        G = m({ ɵpipe: m }),
-        F = m({ ɵmod: m }),
-        V = m({ ɵloc: m }),
+        F = m({ ɵpipe: m }),
+        V = m({ ɵmod: m }),
+        G = m({ ɵloc: m }),
         Y = m({ ɵfac: m }),
         z = m({ __NG_ELEMENT_ID__: m });
       class B {
@@ -13132,21 +13193,21 @@
         const t = Q;
         return (Q = e), t;
       }
-      function ee(e, t = p.Default) {
+      function ee(e, t = f.Default) {
         if (void 0 === X)
           throw new Error('inject() must be called from an injection context');
         return null === X
           ? ne(e, void 0, t)
-          : X.get(e, t & p.Optional ? null : void 0, t);
+          : X.get(e, t & f.Optional ? null : void 0, t);
       }
-      function te(e, t = p.Default) {
+      function te(e, t = f.Default) {
         return (Q || ee)(x(e), t);
       }
       function ne(e, t, n) {
         const r = v(e);
         if (r && 'root' == r.providedIn)
           return void 0 === r.value ? (r.value = r.factory()) : r.value;
-        if (n & p.Optional) return null;
+        if (n & f.Optional) return null;
         if (void 0 !== t) return t;
         throw new Error(`Injector: NOT_FOUND [${I(e)}]`);
       }
@@ -13158,15 +13219,15 @@
             if (0 === r.length)
               throw new Error('Arguments array must have arguments.');
             let e = void 0,
-              n = p.Default;
+              n = f.Default;
             for (let t = 0; t < r.length; t++) {
               const i = r[t];
               i instanceof d || 'Optional' === i.ngMetadataName || i === d
-                ? (n |= p.Optional)
-                : i instanceof f || 'SkipSelf' === i.ngMetadataName || i === f
-                ? (n |= p.SkipSelf)
+                ? (n |= f.Optional)
+                : i instanceof p || 'SkipSelf' === i.ngMetadataName || i === p
+                ? (n |= f.SkipSelf)
                 : i instanceof h || 'Self' === i.ngMetadataName || i === h
-                ? (n |= p.Self)
+                ? (n |= f.Self)
                 : (e = i instanceof u || i === u ? i.token : i);
             }
             t.push(te(e, n));
@@ -13203,7 +13264,7 @@
         return n;
       }
       function he(e, t, n) {
-        let r = pe(e, t);
+        let r = fe(e, t);
         return (
           r >= 0
             ? (e[1 | r] = n)
@@ -13221,11 +13282,11 @@
           r
         );
       }
-      function fe(e, t) {
-        const n = pe(e, t);
+      function pe(e, t) {
+        const n = fe(e, t);
         if (n >= 0) return e[1 | n];
       }
-      function pe(e, t) {
+      function fe(e, t) {
         return (function(e, t, n) {
           let r = 0,
             i = e.length >> 1;
@@ -13328,7 +13389,7 @@
       }
       function Se(e) {
         return (function(e) {
-          return e[G] || null;
+          return e[F] || null;
         })(e);
       }
       const we = {};
@@ -13389,7 +13450,7 @@
         return e.hasOwnProperty(Y) ? e[Y] : null;
       }
       function xe(e, t) {
-        const n = e[F] || null;
+        const n = e[V] || null;
         if (!n && !0 === t)
           throw new Error(`Type ${I(e)} does not have '\u0275mod' property.`);
         return n;
@@ -13416,20 +13477,20 @@
         return 0 != (512 & e[2]);
       }
       let He = void 0;
-      function Ge(e) {
+      function Fe(e) {
         He = e;
       }
-      function Fe() {
+      function Ve() {
         return void 0 !== He
           ? He
           : 'undefined' != typeof document
           ? document
           : void 0;
       }
-      function Ve(e) {
+      function Ge(e) {
         return !!e.listen;
       }
-      const Ye = { createRenderer: (e, t) => Fe() };
+      const Ye = { createRenderer: (e, t) => Ve() };
       function ze(e) {
         for (; Array.isArray(e); ) e = e[0];
         return e;
@@ -13514,14 +13575,14 @@
       function ht(e) {
         nt.checkNoChangesMode = e;
       }
-      function ft() {
+      function pt() {
         const e = nt.lFrame;
         let t = e.bindingRootIndex;
         return (
           -1 === t && (t = e.bindingRootIndex = e.tView.bindingStartIndex), t
         );
       }
-      function pt() {
+      function ft() {
         return nt.lFrame.bindingIndex;
       }
       function mt() {
@@ -13691,8 +13752,8 @@
             (this.injectImpl = n);
         }
       }
-      function Gt(e, t, n) {
-        const r = Ve(e);
+      function Ft(e, t, n) {
+        const r = Ge(e);
         let i = 0;
         for (; i < n.length; ) {
           const o = n[i];
@@ -13706,7 +13767,7 @@
           } else {
             const s = o,
               a = n[++i];
-            Vt(s)
+            Gt(s)
               ? r && e.setProperty(t, s, a)
               : r
               ? e.setAttribute(t, s, a)
@@ -13716,10 +13777,10 @@
         }
         return i;
       }
-      function Ft(e) {
+      function Vt(e) {
         return 3 === e || 4 === e || 6 === e;
       }
-      function Vt(e) {
+      function Gt(e) {
         return 64 === e.charCodeAt(0);
       }
       function Yt(e, t) {
@@ -13879,7 +13940,7 @@
             : (c[e] |= o);
         })(e, t, n);
       }
-      function ln(e, t, n, r = p.Default, i) {
+      function ln(e, t, n, r = f.Default, i) {
         if (null !== e) {
           const i = (function(e) {
             if ('string' == typeof e) return e.charCodeAt(0) || 0;
@@ -13890,7 +13951,7 @@
             Et(t, e);
             try {
               const e = i();
-              if (null != e || r & p.Optional) return e;
+              if (null != e || r & f.Optional) return e;
               throw new Error(`No provider for ${Qt(n)}!`);
             } finally {
               Tt();
@@ -13900,9 +13961,9 @@
             let o = null,
               s = sn(e, t),
               a = -1,
-              c = r & p.Host ? t[16][6] : null;
+              c = r & f.Host ? t[16][6] : null;
             for (
-              (-1 === s || r & p.SkipSelf) &&
+              (-1 === s || r & f.SkipSelf) &&
               ((a = -1 === s ? an(e, t) : t[s + 8]),
               mn(r, !1) ? ((o = t[1]), (s = Wt(a)), (t = Kt(a, t))) : (s = -1));
               -1 !== s;
@@ -13910,29 +13971,29 @@
             ) {
               a = t[s + 8];
               const e = t[1];
-              if (pn(i, s, e.data)) {
+              if (fn(i, s, e.data)) {
                 const e = dn(s, t, n, o, r, c);
                 if (e !== un) return e;
               }
-              mn(r, t[1].data[s + 8] === c) && pn(i, s, t)
+              mn(r, t[1].data[s + 8] === c) && fn(i, s, t)
                 ? ((o = e), (s = Wt(a)), (t = Kt(a, t)))
                 : (s = -1);
             }
           }
         }
         if (
-          (r & p.Optional && void 0 === i && (i = null),
-          0 == (r & (p.Self | p.Host)))
+          (r & f.Optional && void 0 === i && (i = null),
+          0 == (r & (f.Self | f.Host)))
         ) {
           const e = t[9],
             o = J(void 0);
           try {
-            return e ? e.get(n, i, r & p.Optional) : ne(n, i, r & p.Optional);
+            return e ? e.get(n, i, r & f.Optional) : ne(n, i, r & f.Optional);
           } finally {
             J(o);
           }
         }
-        if (r & p.Optional) return i;
+        if (r & f.Optional) return i;
         throw new Error(`NodeInjector: NOT_FOUND [${Qt(n)}]`);
       }
       const un = {};
@@ -13944,9 +14005,9 @@
             s,
             n,
             null == r ? ke(a) && en : r != s && 3 === a.type,
-            i & p.Host && o === a
+            i & f.Host && o === a
           );
-        return null !== c ? fn(t, s, c, a) : un;
+        return null !== c ? pn(t, s, c, a) : un;
       }
       function hn(e, t, n, r, i) {
         const o = e.providerIndexes,
@@ -13965,7 +14026,7 @@
         }
         return null;
       }
-      function fn(e, t, n, r) {
+      function pn(e, t, n, r) {
         let i = e[n];
         const o = t.data;
         if (i instanceof Ht) {
@@ -14000,7 +14061,7 @@
         }
         return i;
       }
-      function pn(e, t, n) {
+      function fn(e, t, n) {
         const r = 64 & e,
           i = 32 & e;
         let o;
@@ -14025,7 +14086,7 @@
         );
       }
       function mn(e, t) {
-        return !(e & p.Self || (e & p.Host && t));
+        return !(e & f.Self || (e & f.Host && t));
       }
       class gn {
         constructor(e, t) {
@@ -14168,12 +14229,12 @@
       function Hn() {
         return (jn = !0), Un;
       }
-      function Gn() {
+      function Fn() {
         if (jn)
           throw new Error('Cannot enable prod mode after platform setup.');
         Un = !1;
       }
-      function Fn(e) {
+      function Vn(e) {
         return (function() {
           try {
             return !!new window.DOMParser().parseFromString('', 'text/html');
@@ -14181,10 +14242,10 @@
             return !1;
           }
         })()
-          ? new Vn()
+          ? new Gn()
           : new Yn(e);
       }
-      class Vn {
+      class Gn {
         getInertBodyElement(e) {
           e = '<body><remove></remove>' + e + '</body>';
           try {
@@ -14392,7 +14453,7 @@
       function ur(e, t) {
         let n = null;
         try {
-          lr = lr || Fn(e);
+          lr = lr || Vn(e);
           let r = t ? String(t) : '';
           n = lr.getInertBodyElement(r);
           let i = 5,
@@ -14442,15 +14503,15 @@
           e
         );
       })({});
-      function fr(e) {
+      function pr(e) {
         const t = gr();
         return t
           ? t.sanitize(hr.HTML, e) || ''
           : Rn(e, 'HTML')
           ? Nn(e)
-          : ur(Fe(), $t(e));
+          : ur(Ve(), $t(e));
       }
-      function pr(e) {
+      function fr(e) {
         const t = gr();
         return t
           ? t.sanitize(hr.URL, e) || ''
@@ -14517,7 +14578,7 @@
         let r = 4;
         const i = e.attrs || [],
           o = (function(e) {
-            for (let t = 0; t < e.length; t++) if (Ft(e[t])) return t;
+            for (let t = 0; t < e.length; t++) if (Vt(e[t])) return t;
             return e.length;
           })(i);
         let s = !1;
@@ -14675,13 +14736,13 @@
       }
       const jr = { marker: 'element' },
         Hr = { marker: 'comment' };
-      function Gr(e, t) {
+      function Fr(e, t) {
         return (e << 17) | (t << 2);
       }
-      function Fr(e) {
+      function Vr(e) {
         return (e >> 17) & 32767;
       }
-      function Vr(e) {
+      function Gr(e) {
         return 2 | e;
       }
       function Yr(e) {
@@ -14706,7 +14767,7 @@
           }
       }
       function qr(e, t, n) {
-        return Ve(t)
+        return Ge(t)
           ? t.createElement(e, n)
           : null === n
           ? t.createElement(e)
@@ -14897,7 +14958,7 @@
               const r = e.data[a],
                 o = Ue(r);
               o && yi(t, n, r);
-              const c = fn(t, e, a, n);
+              const c = pn(t, e, a, n);
               br(c, t),
                 null !== s && _i(0, a - i, c, r, 0, s),
                 o && ($e(n.index, t)[8] = c);
@@ -15078,9 +15139,9 @@
                 ? 'tabIndex'
                 : d),
             (i = null != s ? s(i, t.tagName || '', r) : i),
-            Ve(o)
+            Ge(o)
               ? o.setProperty(c, r, i)
-              : Vt(r) || (c.setProperty ? c.setProperty(r, i) : (c[r] = i)));
+              : Gt(r) || (c.setProperty ? c.setProperty(r, i) : (c[r] = i)));
       }
       function li(e, t, n, r) {
         let i = !1;
@@ -15095,7 +15156,7 @@
                     (i || (i = []),
                     cn(rn(n, t), e, s.type),
                     Ue(s)
-                      ? (2 & n.flags && yr(n), pi(e, n), i.unshift(s))
+                      ? (2 & n.flags && yr(n), fi(e, n), i.unshift(s))
                       : i.push(s));
                 }
               return i;
@@ -15108,7 +15169,7 @@
               const t = o[e];
               t.providersResolver && t.providersResolver(t);
             }
-            fi(e, n, o.length);
+            pi(e, n, o.length);
             let a = !1,
               c = !1;
             for (let i = 0; i < o.length; i++) {
@@ -15184,12 +15245,12 @@
       function hi(e, t) {
         null !== e.hostBindings && e.hostBindings(1, t);
       }
-      function fi(e, t, n) {
+      function pi(e, t, n) {
         const r = 20 - t.index,
           i = e.data.length - (65535 & t.providerIndexes);
         (e.expandoInstructions || (e.expandoInstructions = [])).push(r, i, n);
       }
-      function pi(e, t) {
+      function fi(e, t) {
         (t.flags |= 2), (e.components || (e.components = [])).push(t.index);
       }
       function mi(e, t, n) {
@@ -15225,10 +15286,10 @@
         const s = We(e, t),
           a = t[11];
         if (null == r)
-          Ve(a) ? a.removeAttribute(s, n, o) : s.removeAttribute(n);
+          Ge(a) ? a.removeAttribute(s, n, o) : s.removeAttribute(n);
         else {
           const t = null == i ? $t(r) : i(r, e.tagName || '', n);
-          Ve(a)
+          Ge(a)
             ? a.setAttribute(s, n, t, o)
             : o
             ? s.setAttributeNS(o, n, t)
@@ -15357,7 +15418,7 @@
       function Pi(e, t, n) {
         const r = Be(t, e),
           i = e[11];
-        Ve(i) ? i.setValue(r, n) : (r.textContent = n);
+        Ge(i) ? i.setValue(r, n) : (r.textContent = n);
       }
       function ki(e, t) {
         const n = t[3];
@@ -15394,24 +15455,24 @@
         }
       }
       function ji(e, t) {
-        return Ve(t) ? t.createText(e) : t.createTextNode(e);
+        return Ge(t) ? t.createText(e) : t.createTextNode(e);
       }
       function Hi(e, t, n, r) {
         const i = Mi(e.node, t);
         i && to(e, t, t[11], n ? 1 : 2, i, r);
       }
-      function Gi(e, t) {
+      function Fi(e, t) {
         const n = e[9],
           r = n.indexOf(t);
         1024 & t[2] && tt(t[3], -1), n.splice(r, 1);
       }
-      function Fi(e, t) {
+      function Vi(e, t) {
         if (e.length <= 10) return;
         const n = 10 + t,
           r = e[n];
         if (r) {
           const i = r[17];
-          null !== i && i !== e && Gi(i, r), t > 0 && (e[n - 1][4] = r[4]);
+          null !== i && i !== e && Fi(i, r), t > 0 && (e[n - 1][4] = r[4]);
           const o = ue(e, 10 + t);
           Hi(r[1], r, !1, null);
           const s = o[19];
@@ -15422,10 +15483,10 @@
         }
         return r;
       }
-      function Vi(e, t) {
+      function Gi(e, t) {
         if (!(256 & t[2])) {
           const n = t[11];
-          Ve(n) && n.destroyNode && to(e, t, n, 3, null, null),
+          Ge(n) && n.destroyNode && to(e, t, n, 3, null, null),
             (function(e) {
               let t = e[13];
               if (!t) return zi(e[1], e);
@@ -15493,10 +15554,10 @@
               }
             })(e, t);
           const n = t[6];
-          n && 3 === n.type && Ve(t[11]) && t[11].destroy();
+          n && 3 === n.type && Ge(t[11]) && t[11].destroy();
           const r = t[17];
           if (null !== r && Le(t[3])) {
-            r !== t[3] && Gi(r, t);
+            r !== t[3] && Fi(r, t);
             const n = t[19];
             null !== n && n.detachView(e);
           }
@@ -15519,16 +15580,16 @@
         return We(r, n);
       }
       function Wi(e, t, n, r) {
-        Ve(e) ? e.insertBefore(t, n, r) : t.insertBefore(n, r, !0);
+        Ge(e) ? e.insertBefore(t, n, r) : t.insertBefore(n, r, !0);
       }
       function qi(e, t, n) {
-        Ve(e) ? e.appendChild(t, n) : t.appendChild(n);
+        Ge(e) ? e.appendChild(t, n) : t.appendChild(n);
       }
       function Ki(e, t, n, r) {
         null !== r ? Wi(e, t, n, r) : qi(e, t, n);
       }
       function $i(e, t) {
-        return Ve(e) ? e.parentNode(t) : t.parentNode;
+        return Ge(e) ? e.parentNode(t) : t.parentNode;
       }
       function Qi(e, t) {
         if (2 === e.type) {
@@ -15583,7 +15644,7 @@
         const r = $i(e, t);
         r &&
           (function(e, t, n, r) {
-            Ve(e) ? e.removeChild(t, n, r) : t.removeChild(n);
+            Ge(e) ? e.removeChild(t, n, r) : t.removeChild(n);
           })(e, r, t, n);
       }
       function eo(e, t, n, r, i, o, s) {
@@ -15614,10 +15675,10 @@
         else eo(e, t, a, s[3], i, o, !0);
       }
       function io(e, t, n) {
-        Ve(e) ? e.setAttribute(t, 'style', n) : (t.style.cssText = n);
+        Ge(e) ? e.setAttribute(t, 'style', n) : (t.style.cssText = n);
       }
       function oo(e, t, n) {
-        Ve(e)
+        Ge(e)
           ? '' === n
             ? e.removeAttribute(t, 'class')
             : e.setAttribute(t, 'class', n)
@@ -15672,7 +15733,7 @@
             e > -1 && this._viewContainerRef.detach(e),
               (this._viewContainerRef = null);
           }
-          Vi(this._lView[1], this._lView);
+          Gi(this._lView[1], this._lView);
         }
         onDestroy(e) {
           oi(this._lView[1], this._lView, null, e);
@@ -15744,7 +15805,7 @@
       function ho(e, t, n) {
         return co || (co = class extends e {}), new co(We(t, n));
       }
-      function fo(e, t, n, r) {
+      function po(e, t, n, r) {
         return (
           lo ||
             (lo = class extends e {
@@ -15771,7 +15832,7 @@
           0 === n.type ? new lo(r, n, ho(t, n, r)) : null
         );
       }
-      function po(e, t, n, r) {
+      function fo(e, t, n, r) {
         let i;
         uo ||
           (uo = class extends e {
@@ -15890,15 +15951,15 @@
               this.allocateContainerIfNeeded();
               const t = this._adjustIndex(e, -1);
               !(function(e, t) {
-                const n = Fi(e, t);
-                n && Vi(n[1], n);
+                const n = Vi(e, t);
+                n && Gi(n[1], n);
               })(this._lContainer, t),
                 ue(this._lContainer[8], t);
             }
             detach(e) {
               this.allocateContainerIfNeeded();
               const t = this._adjustIndex(e, -1),
-                n = Fi(this._lContainer, t);
+                n = Vi(this._lContainer, t);
               return n && null != ue(this._lContainer[8], t) ? new so(n) : null;
             }
             _adjustIndex(e, t = 0) {
@@ -15921,7 +15982,7 @@
               $i(t, i),
               e,
               (function(e, t) {
-                return Ve(e) ? e.nextSibling(t) : t.nextSibling;
+                return Ge(e) ? e.nextSibling(t) : t.nextSibling;
               })(t, i)
             );
           } else Xi(r[1], r, e, n);
@@ -15985,11 +16046,11 @@
               this.injectorDefTypes.clear();
           }
         }
-        get(e, t = q, n = p.Default) {
+        get(e, t = q, n = f.Default) {
           this.assertNotDestroyed();
           const r = Z(this);
           try {
-            if (!(n & p.SkipSelf)) {
+            if (!(n & f.SkipSelf)) {
               let t = this.records.get(e);
               if (void 0 === t) {
                 const n =
@@ -16001,9 +16062,9 @@
               }
               if (null != t) return this.hydrate(e, t);
             }
-            return (n & p.Self ? Ao() : this.parent).get(
+            return (n & f.Self ? Ao() : this.parent).get(
               e,
-              (t = n & p.Optional && t === q ? null : t)
+              (t = n & f.Optional && t === q ? null : t)
             );
           } catch (o) {
             if ('NullInjectorError' === o.name) {
@@ -16299,35 +16360,35 @@
       }
       function Ho(e) {
         return (
-          !!Go(e) && (Array.isArray(e) || (!(e instanceof Map) && Uo() in e))
+          !!Fo(e) && (Array.isArray(e) || (!(e instanceof Map) && Uo() in e))
         );
       }
-      function Go(e) {
+      function Fo(e) {
         return null !== e && ('function' == typeof e || 'object' == typeof e);
       }
-      function Fo(e, t, n) {
+      function Vo(e, t, n) {
         return (e[t] = n);
       }
-      function Vo(e, t, n) {
+      function Go(e, t, n) {
         return !Object.is(e[t], n) && ((e[t] = n), !0);
       }
       function Yo(e, t, n, r) {
-        const i = Vo(e, t, n);
-        return Vo(e, t + 1, r) || i;
+        const i = Go(e, t, n);
+        return Go(e, t + 1, r) || i;
       }
       function zo(e, t, n, r, i) {
         const o = Yo(e, t, n, r);
-        return Vo(e, t + 2, i) || o;
+        return Go(e, t + 2, i) || o;
       }
       function Bo(e, t, n, r) {
         const i = it();
-        return Vo(i, mt(), t) && (ot(), vi(Rt(), i, e, t, n, r)), Bo;
+        return Go(i, mt(), t) && (ot(), vi(Rt(), i, e, t, n, r)), Bo;
       }
       function Wo(e, t, n, r) {
-        return Vo(e, mt(), n) ? t + $t(n) + r : xr;
+        return Go(e, mt(), n) ? t + $t(n) + r : xr;
       }
       function qo(e, t, n, r, i, o) {
-        const s = Yo(e, pt(), n, i);
+        const s = Yo(e, ft(), n, i);
         return gt(2), s ? t + $t(n) + r + $t(i) + o : xr;
       }
       function Ko(e, t, n, r, i, o, s, a) {
@@ -16373,7 +16434,7 @@
       function $o(e) {
         return Ke(nt.lFrame.contextLView, e);
       }
-      function Qo(e, t = p.Default) {
+      function Qo(e, t = f.Default) {
         const n = it();
         return null == n ? te(e, t) : ln(at(), n, x(e), t);
       }
@@ -16387,7 +16448,7 @@
             let r = 0;
             for (; r < e; ) {
               const i = n[r];
-              if (Ft(i)) break;
+              if (Vt(i)) break;
               if (0 === i) r += 2;
               else if ('number' == typeof i)
                 for (r++; r < e && 'string' == typeof n[r]; ) r++;
@@ -16402,7 +16463,7 @@
       }
       function Zo(e, t, n) {
         const r = it();
-        return Vo(r, mt(), t) && ci(ot(), Rt(), r, e, t, r[11], n, !1), Zo;
+        return Go(r, mt(), t) && ci(ot(), Rt(), r, e, t, r[11], n, !1), Zo;
       }
       function Jo(e, t, n, r, i) {
         const o = i ? 'class' : 'style';
@@ -16430,7 +16491,7 @@
             : o.data[s];
         ct(l, !0);
         const u = l.mergedAttrs;
-        null !== u && Gt(a, c, u);
+        null !== u && Ft(a, c, u);
         const d = l.classes;
         null !== d && oo(a, c, d);
         const h = l.styles;
@@ -16513,11 +16574,11 @@
             let d = !0;
             if (3 === r.type) {
               const h = We(r, t),
-                f = a ? a(h) : be,
-                p = f.target || h,
+                p = a ? a(h) : be,
+                f = p.target || h,
                 m = u.length,
                 g = a ? e => a(ze(e[r.index])).target : r.index;
-              if (Ve(n)) {
+              if (Ge(n)) {
                 let s = null;
                 if (
                   (!a &&
@@ -16543,22 +16604,22 @@
                     (d = !1);
                 else {
                   o = us(r, t, o, !1);
-                  const e = n.listen(f.name || p, i, o);
+                  const e = n.listen(p.name || f, i, o);
                   u.push(o, e), l && l.push(i, g, m, m + 1);
                 }
               } else
                 (o = us(r, t, o, !0)),
-                  p.addEventListener(i, o, s),
+                  f.addEventListener(i, o, s),
                   u.push(o),
                   l && l.push(i, g, m, s);
             }
             const h = r.outputs;
-            let f;
-            if (d && null !== h && (f = h[i])) {
-              const e = f.length;
+            let p;
+            if (d && null !== h && (p = h[i])) {
+              const e = p.length;
               if (e)
                 for (let n = 0; n < e; n += 2) {
-                  const e = t[f[n]][f[n + 1]].subscribe(o),
+                  const e = t[p[n]][p[n + 1]].subscribe(o),
                     s = u.length;
                   u.push(o, e), l && l.push(i, r.index, s, -(s + 1));
                 }
@@ -16611,7 +16672,7 @@
         }
         return n;
       }
-      function fs(e) {
+      function ps(e) {
         const t = it()[16][6];
         if (!t.projection) {
           const n = (t.projection = de(e ? e.length : 1, null)),
@@ -16625,15 +16686,15 @@
           }
         }
       }
-      let ps = !1;
+      let fs = !1;
       function ms(e) {
-        ps = e;
+        fs = e;
       }
       function gs(e, t = 0, n) {
         const r = it(),
           i = ot(),
           o = $r(i, r[6], e, 1, null, n || null);
-        null === o.projection && (o.projection = t), ut(), ps || no(i, r, o);
+        null === o.projection && (o.projection = t), ut(), fs || no(i, r, o);
       }
       function bs(e, t, n) {
         return ys(e, '', t, '', n), bs;
@@ -16647,21 +16708,21 @@
       function _s(e, t, n, r, i) {
         const o = e[n + 1],
           s = null === t;
-        let a = r ? Fr(o) : Yr(o),
+        let a = r ? Vr(o) : Yr(o),
           c = !1;
         for (; 0 !== a && (!1 === c || s); ) {
           const n = e[a + 1];
-          Es(e[a], t) && ((c = !0), (e[a + 1] = r ? Br(n) : Vr(n))),
-            (a = r ? Fr(n) : Yr(n));
+          Es(e[a], t) && ((c = !0), (e[a + 1] = r ? Br(n) : Gr(n))),
+            (a = r ? Vr(n) : Yr(n));
         }
-        c && (e[n + 1] = r ? Vr(o) : Br(o));
+        c && (e[n + 1] = r ? Gr(o) : Br(o));
       }
       function Es(e, t) {
         return (
           null === e ||
           null == t ||
           (Array.isArray(e) ? e[1] : e) === t ||
-          (!(!Array.isArray(e) || 'string' != typeof t) && pe(e, t) >= 0)
+          (!(!Array.isArray(e) || 'string' != typeof t) && fe(e, t) >= 0)
         );
       }
       const Ss = { textEnd: 0, key: 0, keyEnd: 0, value: 0, valueEnd: 0 };
@@ -16716,7 +16777,7 @@
           s = gt(2);
         o.firstUpdatePass && Ls(o, e, s, r),
           t !== xr &&
-            Vo(i, s, t) &&
+            Go(i, s, t) &&
             Ms(
               o,
               o.data[Ct() + 20],
@@ -16741,7 +16802,7 @@
           o = gt(2);
         i.firstUpdatePass && Ls(i, null, o, r);
         const s = it();
-        if (n !== xr && Vo(s, o, n)) {
+        if (n !== xr && Go(s, o, n)) {
           const a = i.data[Ct() + 20];
           if (Hs(a, r) && !Ds(i, o)) {
             let e = r ? a.classesWithoutHost : a.stylesWithoutHost;
@@ -16755,15 +16816,15 @@
                 d = 0 < o.length ? o[0] : null;
               for (; null !== u || null !== d; ) {
                 const h = c < i.length ? i[c + 1] : void 0,
-                  f = l < o.length ? o[l + 1] : void 0;
-                let p = null,
+                  p = l < o.length ? o[l + 1] : void 0;
+                let f = null,
                   m = void 0;
                 u === d
-                  ? ((c += 2), (l += 2), h !== f && ((p = d), (m = f)))
+                  ? ((c += 2), (l += 2), h !== p && ((f = d), (m = p)))
                   : null === d || (null !== u && u < d)
-                  ? ((c += 2), (p = u))
-                  : ((l += 2), (p = d), (m = f)),
-                  null !== p && Ms(e, t, n, r, p, m, s, a),
+                  ? ((c += 2), (f = u))
+                  : ((l += 2), (f = d), (m = p)),
+                  null !== f && Ms(e, t, n, r, f, m, s, a),
                   (u = c < i.length ? i[c] : null),
                   (d = l < o.length ? o[l] : null);
               }
@@ -16814,14 +16875,14 @@
                   if (((n = Ps(i, e, t, n, r)), null === o)) {
                     let n = (function(e, t, n) {
                       const r = n ? t.classBindings : t.styleBindings;
-                      if (0 !== Yr(r)) return e[Fr(r)];
+                      if (0 !== Yr(r)) return e[Vr(r)];
                     })(e, t, r);
                     void 0 !== n &&
                       Array.isArray(n) &&
                       ((n = Ps(null, e, t, n[1], r)),
                       (n = ks(n, t.attrs, r)),
                       (function(e, t, n, r) {
-                        e[Fr(n ? t.classBindings : t.styleBindings)] = r;
+                        e[Vr(n ? t.classBindings : t.styleBindings)] = r;
                       })(e, t, r, n));
                   } else
                     o = (function(e, t, n) {
@@ -16840,40 +16901,40 @@
             })(i, o, t, r)),
             (function(e, t, n, r, i, o) {
               let s = o ? t.classBindings : t.styleBindings,
-                a = Fr(s),
+                a = Vr(s),
                 c = Yr(s);
               e[r] = n;
               let l,
                 u = !1;
               if (Array.isArray(n)) {
                 const e = n;
-                (l = e[1]), (null === l || pe(e, l) > 0) && (u = !0);
+                (l = e[1]), (null === l || fe(e, l) > 0) && (u = !0);
               } else l = n;
               if (i)
                 if (0 !== c) {
-                  const t = Fr(e[a + 1]);
-                  (e[r + 1] = Gr(t, a)),
+                  const t = Vr(e[a + 1]);
+                  (e[r + 1] = Fr(t, a)),
                     0 !== t && (e[t + 1] = zr(e[t + 1], r)),
                     (e[a + 1] = (131071 & e[a + 1]) | (r << 17));
                 } else
-                  (e[r + 1] = Gr(a, 0)),
+                  (e[r + 1] = Fr(a, 0)),
                     0 !== a && (e[a + 1] = zr(e[a + 1], r)),
                     (a = r);
               else
-                (e[r + 1] = Gr(c, 0)),
+                (e[r + 1] = Fr(c, 0)),
                   0 === a ? (a = r) : (e[c + 1] = zr(e[c + 1], r)),
                   (c = r);
-              u && (e[r + 1] = Vr(e[r + 1])),
+              u && (e[r + 1] = Gr(e[r + 1])),
                 _s(e, l, r, !0),
                 _s(e, l, r, !1),
                 (function(e, t, n, r, i) {
                   const o = i ? e.residualClasses : e.residualStyles;
                   null != o &&
                     'string' == typeof t &&
-                    pe(o, t) >= 0 &&
+                    fe(o, t) >= 0 &&
                     (n[r + 1] = Br(n[r + 1]));
                 })(t, l, e, r, o),
-                (s = Gr(a, c)),
+                (s = Fr(a, c)),
                 o ? (t.classBindings = s) : (t.styleBindings = s);
             })(i, o, t, n, s, r);
         }
@@ -16915,7 +16976,7 @@
             })(l) &&
               (o = Us(c, null, n, i, a, s))),
           (function(e, t, n, r, i) {
-            const o = Ve(e);
+            const o = Ge(e);
             if (t)
               i
                 ? o
@@ -16946,14 +17007,14 @@
             l = null === c;
           let u = n[i + 1];
           u === xr && (u = l ? vs : void 0);
-          let d = l ? fe(u, r) : c === r ? u : void 0;
-          if ((o && !js(d) && (d = fe(t, r)), js(d) && ((a = d), s))) return a;
+          let d = l ? pe(u, r) : c === r ? u : void 0;
+          if ((o && !js(d) && (d = pe(t, r)), js(d) && ((a = d), s))) return a;
           const h = e[i + 1];
-          i = s ? Fr(h) : Yr(h);
+          i = s ? Vr(h) : Yr(h);
         }
         if (null !== t) {
           let e = o ? t.residualClasses : t.residualStyles;
-          null != e && (a = fe(e, r));
+          null != e && (a = pe(e, r));
         }
         return a;
       }
@@ -16963,7 +17024,7 @@
       function Hs(e, t) {
         return 0 != (e.flags & (t ? 16 : 32));
       }
-      function Gs(e, t = '') {
+      function Fs(e, t = '') {
         const n = it(),
           r = ot(),
           i = e + 20,
@@ -16971,13 +17032,13 @@
           s = (n[i] = ji(t, n[11]));
         Xi(r, n, s, o), ct(o, !1);
       }
-      function Fs(e) {
-        return Vs('', e, ''), Fs;
+      function Vs(e) {
+        return Gs('', e, ''), Vs;
       }
-      function Vs(e, t, n) {
+      function Gs(e, t, n) {
         const r = it(),
           i = Wo(r, e, t, n);
-        return i !== xr && Pi(r, Ct(), i), Vs;
+        return i !== xr && Pi(r, Ct(), i), Gs;
       }
       function Ys(e, t, n, r, i) {
         const o = it(),
@@ -16995,7 +17056,7 @@
           he,
           Ns,
           (function(e, t, n, r, i, o, s, a) {
-            const c = zo(e, pt(), n, i, s);
+            const c = zo(e, ft(), n, i, s);
             return gt(3), c ? t + $t(n) + r + $t(i) + o + $t(s) + a : xr;
           })(it(), e, t, n, r, i, o, s),
           !0
@@ -17003,7 +17064,7 @@
       }
       function qs(e, t, n) {
         const r = it();
-        return Vo(r, mt(), t) && ci(ot(), Rt(), r, e, t, r[11], n, !0), qs;
+        return Go(r, mt(), t) && ci(ot(), Rt(), r, e, t, r[11], n, !0), qs;
       }
       function Ks(e, t) {
         const n = Qe(e)[1],
@@ -17151,8 +17212,8 @@
             h = l.providerIndexes >> 16;
           if (xo(e) || !e.multi) {
             const r = new Ht(c, i, Qo),
-              f = aa(a, t, i ? u : u + h, d);
-            -1 === f
+              p = aa(a, t, i ? u : u + h, d);
+            -1 === p
               ? (cn(rn(l, s), o, a),
                 oa(o, e, t.length),
                 t.push(a),
@@ -17161,12 +17222,12 @@
                 i && (l.providerIndexes += 65536),
                 n.push(r),
                 s.push(r))
-              : ((n[f] = r), (s[f] = r));
+              : ((n[p] = r), (s[p] = r));
           } else {
-            const f = aa(a, t, u + h, d),
-              p = aa(a, t, u, u + h),
-              m = f >= 0 && n[f],
-              g = p >= 0 && n[p];
+            const p = aa(a, t, u + h, d),
+              f = aa(a, t, u, u + h),
+              m = p >= 0 && n[p],
+              g = f >= 0 && n[f];
             if ((i && !g) || (!i && !m)) {
               cn(rn(l, s), o, a);
               const u = (function(e, t, n, r, i) {
@@ -17179,7 +17240,7 @@
                   o
                 );
               })(i ? la : ca, n.length, i, r, c);
-              !i && g && (n[p].providerFactory = u),
+              !i && g && (n[f].providerFactory = u),
                 oa(o, e, t.length, 0),
                 t.push(a),
                 l.directiveStart++,
@@ -17187,8 +17248,8 @@
                 i && (l.providerIndexes += 65536),
                 n.push(u),
                 s.push(u);
-            } else oa(o, e, f > -1 ? f : p, sa(n[i ? p : f], c, !i && r));
-            !i && r && g && n[p].componentProviders++;
+            } else oa(o, e, p > -1 ? p : f, sa(n[i ? f : p], c, !i && r));
+            !i && r && g && n[f].componentProviders++;
           }
         }
       }
@@ -17220,7 +17281,7 @@
         let o;
         if (this.providerFactory) {
           const e = this.providerFactory.componentProviders,
-            t = fn(n, n[1], this.providerFactory.index, r);
+            t = pn(n, n[1], this.providerFactory.index, r);
           (o = t.slice(0, e)), ua(i, o);
           for (let n = e; n < t.length; n++) o.push(t[n]);
         } else (o = []), ua(i, o);
@@ -17245,7 +17306,7 @@
       }
       ta.ngInherit = !0;
       class ha {}
-      class fa {
+      class pa {
         resolveComponentFactory(e) {
           throw (function(e) {
             const t = Error(
@@ -17257,9 +17318,9 @@
           })(e);
         }
       }
-      let pa = (() => {
+      let fa = (() => {
           class e {}
-          return (e.NULL = new fa()), e;
+          return (e.NULL = new pa()), e;
         })(),
         ma = (() => {
           class e {
@@ -17289,7 +17350,7 @@
           t = $e(at().index, e);
         return (function(e) {
           const t = e[11];
-          if (Ve(t)) return t;
+          if (Ge(t)) return t;
           throw new Error(
             'Cannot inject Renderer2 when the application uses Renderer3!'
           );
@@ -17705,7 +17766,7 @@
       class xa {
         constructor() {}
         supports(e) {
-          return e instanceof Map || Go(e);
+          return e instanceof Map || Fo(e);
         }
         create() {
           return new Da();
@@ -17753,7 +17814,7 @@
         }
         diff(e) {
           if (e) {
-            if (!(e instanceof Map || Go(e)))
+            if (!(e instanceof Map || Fo(e)))
               throw new Error(
                 `Error trying to diff '${I(
                   e
@@ -17914,7 +17975,7 @@
                     );
                   return e.create(t, n);
                 },
-                deps: [[e, new f(), new d()]]
+                deps: [[e, new p(), new d()]]
               };
             }
             find(e) {
@@ -17958,7 +18019,7 @@
                     );
                   return e.create(t, n);
                 },
-                deps: [[e, new f(), new d()]]
+                deps: [[e, new p(), new d()]]
               };
             }
             find(e) {
@@ -17981,20 +18042,20 @@
         ja = new ka(Ma);
       let Ha = (() => {
         class e {}
+        return (e.__NG_ELEMENT_ID__ = () => Fa(e, ma)), e;
+      })();
+      const Fa = function(e, t) {
+        return po(e, t, at(), it());
+      };
+      let Va = (() => {
+        class e {}
         return (e.__NG_ELEMENT_ID__ = () => Ga(e, ma)), e;
       })();
       const Ga = function(e, t) {
-        return fo(e, t, at(), it());
-      };
-      let Fa = (() => {
-        class e {}
-        return (e.__NG_ELEMENT_ID__ = () => Va(e, ma)), e;
-      })();
-      const Va = function(e, t) {
-          return po(e, t, at(), it());
+          return fo(e, t, at(), it());
         },
         Ya = {};
-      class za extends pa {
+      class za extends fa {
         constructor(e) {
           super(), (this.ngModule = e);
         }
@@ -18048,7 +18109,7 @@
             c = this.componentDef.selectors[0][0] || 'div',
             l = n
               ? (function(e, t, n) {
-                  if (Ve(e)) return e.selectRootElement(t, n === ge.ShadowDom);
+                  if (Ge(e)) return e.selectRootElement(t, n === ge.ShadowDom);
                   let r = 'string' == typeof t ? e.querySelector(t) : t;
                   return (r.textContent = ''), r;
                 })(a, n, this.componentDef.encapsulation)
@@ -18073,9 +18134,9 @@
               flags: 0
             },
             h = ii(0, -1, null, 1, 0, null, null, null, null, null),
-            f = Kr(null, h, d, u, null, null, o, a, s, i);
-          let p, m;
-          St(f, null);
+            p = Kr(null, h, d, u, null, null, o, a, s, i);
+          let f, m;
+          St(p, null);
           try {
             const e = (function(e, t, n, r, i, o) {
               const s = n[1];
@@ -18085,7 +18146,7 @@
               null !== c &&
                 (ko(a, c, !0),
                 null !== e &&
-                  (Gt(i, e, c),
+                  (Ft(i, e, c),
                   null !== a.classes && oo(i, e, a.classes),
                   null !== a.styles && io(i, e, a.styles)));
               const l = r.createRenderer(e, t),
@@ -18102,13 +18163,13 @@
                 );
               return (
                 s.firstCreatePass &&
-                  (cn(rn(a, n), s, t.type), pi(s, a), gi(a, n.length, 1)),
+                  (cn(rn(a, n), s, t.type), fi(s, a), gi(a, n.length, 1)),
                 Oi(n, u),
                 (n[20] = u)
               );
-            })(l, this.componentDef, f, o, a);
+            })(l, this.componentDef, p, o, a);
             if (l)
-              if (n) Gt(a, l, ['ng-version', wa.full]);
+              if (n) Ft(a, l, ['ng-version', wa.full]);
               else {
                 const { attrs: e, classes: t } = (function(e) {
                   const t = [],
@@ -18129,7 +18190,7 @@
                   }
                   return { attrs: t, classes: n };
                 })(this.componentDef.selectors[0]);
-                e && Gt(a, l, e), t && t.length > 0 && oo(a, l, t.join(' '));
+                e && Ft(a, l, e), t && t.length > 0 && oo(a, l, t.join(' '));
               }
             if (((m = qe(h, 0)), void 0 !== t)) {
               const e = (m.projection = []);
@@ -18138,15 +18199,15 @@
                 e.push(null != r ? Array.from(r) : null);
               }
             }
-            (p = (function(e, t, n, r, i) {
+            (f = (function(e, t, n, r, i) {
               const o = n[1],
                 s = (function(e, t, n) {
                   const r = at();
                   e.firstCreatePass &&
                     (n.providersResolver && n.providersResolver(n),
-                    fi(e, r, 1),
+                    pi(e, r, 1),
                     bi(e, t, n));
-                  const i = fn(t, e, t.length - 1, r);
+                  const i = pn(t, e, t.length - 1, r);
                   br(i, t);
                   const o = We(r, t);
                   return o && br(o, t), i;
@@ -18165,12 +18226,12 @@
                 ui(e, t), di(e, n, t.hostVars), hi(t, s);
               }
               return s;
-            })(e, this.componentDef, f, d, [Ks])),
-              Qr(h, f, null);
+            })(e, this.componentDef, p, d, [Ks])),
+              Qr(h, p, null);
           } finally {
             It();
           }
-          const g = new Ka(this.componentType, p, ho(ma, m, f), f, m);
+          const g = new Ka(this.componentType, f, ho(ma, m, p), p, m);
           return (h.node.child = m), g;
         }
       }
@@ -18415,7 +18476,7 @@
               (o = !0));
         return (r += e.substr(i)), r;
       }
-      function fc(e, t, n, r = null) {
+      function pc(e, t, n, r = null) {
         const i = [null, null],
           o = e.split(cc);
         let s = 0;
@@ -18434,7 +18495,7 @@
           i
         );
       }
-      function pc(e, t = 0) {
+      function fc(e, t = 0) {
         let n;
         t |= bc(e.mainBinding);
         for (let r = 0; r < e.values.length; r++) {
@@ -18443,7 +18504,7 @@
             const r = i[e];
             if ('string' == typeof r)
               for (; (n = cc.exec(r)); ) t |= bc(parseInt(n[1], 10));
-            else t = pc(r, t);
+            else t = fc(r, t);
           }
         }
         return t;
@@ -18510,9 +18571,9 @@
                 (s = o = qe(n, l >>> 3)), ct(o, !1);
                 break;
               case 4:
-                const f = t[++c],
-                  p = t[++c];
-                vi(qe(n, l >>> 3), r, f, p, null, null);
+                const p = t[++c],
+                  f = t[++c];
+                vi(qe(n, l >>> 3), r, p, f, null, null);
                 break;
               default:
                 throw new Error(
@@ -18534,8 +18595,8 @@
                 break;
               case jr:
                 const h = t[++c],
-                  f = t[++c];
-                (s = o), (o = wc(n, r, f, 3, i.createElement(h), h)), a.push(f);
+                  p = t[++c];
+                (s = o), (o = wc(n, r, p, 3, i.createElement(h), h)), a.push(p);
                 break;
               default:
                 throw new Error(
@@ -18591,7 +18652,7 @@
                         return hc(e.substring(n, r));
                       }
                     })(r, i),
-                    t = ((f = e), f.replace(Mc, ' ')).split(ac);
+                    t = ((p = e), p.replace(Mc, ' ')).split(ac);
                   for (let n = 0; n < t.length; n++) {
                     let r = t[n];
                     if (1 & n)
@@ -18617,7 +18678,7 @@
                             );
                           const i = _c(o);
                           u.push(Hr, '', i, (c << 17) | 1);
-                          const s = pc(r);
+                          const s = fc(r);
                           Lc(h, r, i, i);
                           const a = h.length - 1;
                           d.push(
@@ -18636,12 +18697,12 @@
                             r = e.match(cc),
                             i = _c(o);
                           u.push(r ? '' : e, i, (c << 17) | 1),
-                            r && ae(fc(e, i), d);
+                            r && ae(pc(e, i), d);
                         }
                     }
                   }
                 }
-                var f;
+                var p;
                 vc > 0 &&
                   (function(e, t, n) {
                     if (n > 0 && e.firstCreatePass) {
@@ -18698,7 +18759,7 @@
                 if (s.match(cc))
                   t.firstCreatePass &&
                     null === t.data[n + 20] &&
-                    ae(fc(s, i, a), o);
+                    ae(pc(s, i, a), o);
                 else {
                   const n = qe(t, i);
                   3 === n.type && vi(n, e, a, s, null, null);
@@ -18713,7 +18774,7 @@
       let Cc = 0,
         Nc = 0;
       function Rc(e) {
-        return Vo(it(), mt(), e) && (Cc |= 1 << Nc), Nc++, Rc;
+        return Go(it(), mt(), e) && (Cc |= 1 << Nc), Nc++, Rc;
       }
       function xc(e) {
         if (Nc) {
@@ -18722,7 +18783,7 @@
           let r,
             i = null;
           Array.isArray(n) ? (r = n) : ((r = n.update), (i = n.icus));
-          const o = pt() - Nc - 1,
+          const o = ft() - Nc - 1,
             s = it();
           !(function e(t, n, r, i, o, s, a = !1) {
             let c = !1;
@@ -18738,7 +18799,7 @@
                     if (l < 0) a += $t(s[r - l]);
                     else {
                       const d = l >>> 2;
-                      let h, f, p;
+                      let h, p, f;
                       switch (3 & l) {
                         case 1:
                           const l = t[++u],
@@ -18751,11 +18812,11 @@
                         case 2:
                           if (
                             ((h = t[++u]),
-                            (f = n[h]),
-                            (p = qe(o, d)),
-                            null !== p.activeCaseIndex)
+                            (p = n[h]),
+                            (f = qe(o, d)),
+                            null !== f.activeCaseIndex)
                           ) {
-                            const e = f.remove[p.activeCaseIndex];
+                            const e = p.remove[f.activeCaseIndex];
                             for (let t = 0; t < e.length; t++) {
                               const r = e[t];
                               switch (7 & r) {
@@ -18769,16 +18830,16 @@
                               }
                             }
                           }
-                          const g = Dc(f, a);
-                          (p.activeCaseIndex = -1 !== g ? g : null),
-                            g > -1 && (Ac(-1, f.create[g], o, s), (c = !0));
+                          const g = Dc(p, a);
+                          (f.activeCaseIndex = -1 !== g ? g : null),
+                            g > -1 && (Ac(-1, p.create[g], o, s), (c = !0));
                           break;
                         case 3:
                           (h = t[++u]),
-                            (f = n[h]),
-                            (p = qe(o, d)),
-                            null !== p.activeCaseIndex &&
-                              e(f.update[p.activeCaseIndex], n, r, i, o, s, c);
+                            (p = n[h]),
+                            (f = qe(o, d)),
+                            null !== f.activeCaseIndex &&
+                              e(p.update[f.activeCaseIndex], n, r, i, o, s, c);
                       }
                     }
                 }
@@ -18844,7 +18905,7 @@
           (vc += Math.max(...a));
       }
       function Pc(e, t, n, r, i) {
-        const o = Fn(Fe()).getInertBodyElement(e);
+        const o = Vn(Ve()).getInertBodyElement(e);
         if (!o) throw new Error('Unable to generate inert body element');
         const s = {
           vars: 0,
@@ -18874,10 +18935,10 @@
                           ? rr.hasOwnProperty(r) &&
                             ae(
                               tr[r]
-                                ? fc(t.value, l, t.name, Wn)
+                                ? pc(t.value, l, t.name, Wn)
                                 : nr[r]
-                                ? fc(t.value, l, t.name, qn)
-                                : fc(t.value, l, t.name),
+                                ? pc(t.value, l, t.name, qn)
+                                : pc(t.value, l, t.name),
                               n.update
                             )
                           : n.create.push((l << 3) | 4, t.name, t.value);
@@ -18891,12 +18952,12 @@
                       h = d.match(cc);
                     n.create.push(h ? '' : d, l, (r << 17) | 1),
                       n.remove.push((l << 3) | 3),
-                      h && ae(fc(d, l), n.update);
+                      h && ae(pc(d, l), n.update);
                     break;
                   case Node.COMMENT_NODE:
-                    const f = kc.exec(t.textContent || '');
-                    if (f) {
-                      const e = parseInt(f[1], 10);
+                    const p = kc.exec(t.textContent || '');
+                    if (p) {
+                      const e = parseInt(p[1], 10);
                       n.create.push(Hr, '', l, (r << 17) | 1),
                         a.push([i[e], l]);
                     } else n.vars--;
@@ -18912,7 +18973,7 @@
                 Lc(o, t, r, s + n.vars);
                 const i = o.length - 1;
                 (n.vars += Math.max(...o[i].vars)), n.childIcus.push(i);
-                const c = pc(t);
+                const c = fc(t);
                 n.update.push(
                   bc(t.mainBinding),
                   3,
@@ -18946,7 +19007,7 @@
           'string' == typeof e && (Uc = e.toLowerCase().replace(/_/g, '-'));
       }
       const Hc = new Map();
-      class Gc extends oe {
+      class Fc extends oe {
         constructor(e, t) {
           super(),
             (this._parent = t),
@@ -18955,7 +19016,7 @@
             (this.destroyCbs = []),
             (this.componentFactoryResolver = new za(this));
           const n = xe(e),
-            r = e[V] || null;
+            r = e[G] || null;
           r && jc(r),
             (this._bootstrapComponents = Jt(n.bootstrap)),
             (this._r3Injector = Oo(
@@ -18963,14 +19024,14 @@
               t,
               [
                 { provide: oe, useValue: this },
-                { provide: pa, useValue: this.componentFactoryResolver }
+                { provide: fa, useValue: this.componentFactoryResolver }
               ],
               I(e)
             )),
             this._r3Injector._resolveInjectorDefTypes(),
             (this.instance = this.get(e));
         }
-        get(e, t = Lo.THROW_IF_NOT_FOUND, n = p.Default) {
+        get(e, t = Lo.THROW_IF_NOT_FOUND, n = f.Default) {
           return e === Lo || e === oe || e === W
             ? this
             : this._r3Injector.get(e, t, n);
@@ -18985,7 +19046,7 @@
           this.destroyCbs.push(e);
         }
       }
-      class Fc extends se {
+      class Vc extends se {
         constructor(e) {
           super(),
             (this.moduleType = e),
@@ -19008,36 +19069,36 @@
               })(e);
         }
         create(e) {
-          return new Gc(this.moduleType, e);
+          return new Fc(this.moduleType, e);
         }
       }
-      function Vc(e, t, n) {
-        const r = ft() + e,
+      function Gc(e, t, n) {
+        const r = pt() + e,
           i = it();
         return i[r] === xr
-          ? Fo(i, r, n ? t.call(n) : t())
+          ? Vo(i, r, n ? t.call(n) : t())
           : (function(e, t) {
               return e[t];
             })(i, r);
       }
       function Yc(e, t, n, r) {
-        return Kc(it(), ft(), e, t, n, r);
+        return Kc(it(), pt(), e, t, n, r);
       }
       function zc(e, t, n, r, i) {
         return (function(e, t, n, r, i, o, s) {
           const a = t + n;
           return Yo(e, a, i, o)
-            ? Fo(e, a + 2, s ? r.call(s, i, o) : r(i, o))
+            ? Vo(e, a + 2, s ? r.call(s, i, o) : r(i, o))
             : qc(e, a + 2);
-        })(it(), ft(), e, t, n, r, i);
+        })(it(), pt(), e, t, n, r, i);
       }
       function Bc(e, t, n, r, i, o) {
         return (function(e, t, n, r, i, o, s, a) {
           const c = t + n;
           return zo(e, c, i, o, s)
-            ? Fo(e, c + 3, a ? r.call(a, i, o, s) : r(i, o, s))
+            ? Vo(e, c + 3, a ? r.call(a, i, o, s) : r(i, o, s))
             : qc(e, c + 3);
-        })(it(), ft(), e, t, n, r, i, o);
+        })(it(), pt(), e, t, n, r, i, o);
       }
       function Wc(e, t, n, r, i, o, s) {
         return (function(e, t, n, r, i, o, s, a, c) {
@@ -19046,9 +19107,9 @@
             const s = Yo(e, t, n, r);
             return Yo(e, t + 2, i, o) || s;
           })(e, l, i, o, s, a)
-            ? Fo(e, l + 4, c ? r.call(c, i, o, s, a) : r(i, o, s, a))
+            ? Vo(e, l + 4, c ? r.call(c, i, o, s, a) : r(i, o, s, a))
             : qc(e, l + 4);
-        })(it(), ft(), e, t, n, r, i, o, s);
+        })(it(), pt(), e, t, n, r, i, o, s);
       }
       function qc(e, t) {
         const n = e[t];
@@ -19056,8 +19117,8 @@
       }
       function Kc(e, t, n, r, i, o) {
         const s = t + n;
-        return Vo(e, s, i)
-          ? Fo(e, s + 1, o ? r.call(o, i) : r(i))
+        return Go(e, s, i)
+          ? Vo(e, s + 1, o ? r.call(o, i) : r(i))
           : qc(e, s + 1);
       }
       function $c(e, t) {
@@ -19096,13 +19157,13 @@
         const r = it(),
           i = Ke(r, e);
         return (function(e, t) {
-          return jo.isWrapped(t) && ((t = jo.unwrap(t)), (e[pt()] = xr)), t;
+          return jo.isWrapped(t) && ((t = jo.unwrap(t)), (e[ft()] = xr)), t;
         })(
           r,
           (function(e, t) {
             return e[1].data[t + 20].pure;
           })(r, e)
-            ? Kc(r, ft(), t, i.transform, n, i)
+            ? Kc(r, pt(), t, i.transform, n, i)
             : i.transform(n)
         );
       }
@@ -19367,7 +19428,7 @@
           if (null !== n) {
             const r = this.metadata.read;
             if (null !== r)
-              if (r === ma || r === Fa || (r === Ha && 0 === t.type))
+              if (r === ma || r === Va || (r === Ha && 0 === t.type))
                 this.addMatch(t.index, -2);
               else {
                 const n = hn(t, e, r, !1, !1);
@@ -19394,7 +19455,7 @@
               return 3 === e.type || 4 === e.type
                 ? ho(ma, e, t)
                 : 0 === e.type
-                ? fo(Ha, ma, e, t)
+                ? po(Ha, ma, e, t)
                 : null;
             })(t, e)
           : -2 === n
@@ -19402,12 +19463,12 @@
               return n === ma
                 ? ho(ma, t, e)
                 : n === Ha
-                ? fo(Ha, ma, t, e)
-                : n === Fa
-                ? po(Fa, ma, t, e)
+                ? po(Ha, ma, t, e)
+                : n === Va
+                ? fo(Va, ma, t, e)
                 : void 0;
             })(e, t, r)
-          : fn(e, e[1], n, t);
+          : pn(e, e[1], n, t);
       }
       function al(e, t, n, r) {
         const i = t[19].queries[r];
@@ -19479,12 +19540,12 @@
           gl(e, t);
       }
       function hl(e, t, n, r) {
-        pl(ot(), it(), t, n, r, !1, at(), e);
+        fl(ot(), it(), t, n, r, !1, at(), e);
       }
-      function fl(e, t, n, r) {
-        pl(ot(), it(), t, n, r, !0, at(), e);
+      function pl(e, t, n, r) {
+        fl(ot(), it(), t, n, r, !0, at(), e);
       }
-      function pl(e, t, n, r, i, o, s, a) {
+      function fl(e, t, n, r, i, o, s, a) {
         e.firstCreatePass &&
           (bl(e, new nl(n, r, o, i), s.index),
           (function(e, t) {
@@ -19513,11 +19574,11 @@
         return e.queries.getByIndex(t);
       }
       function vl(e, t) {
-        return fo(Ha, ma, e, t);
+        return po(Ha, ma, e, t);
       }
-      function _l(e = p.Default) {
+      function _l(e = f.Default) {
         const t = mo(!0);
-        if (null != t || e & p.Optional) return t;
+        if (null != t || e & f.Optional) return t;
         throw new Error('No provider for ChangeDetectorRef!');
       }
       const El = new B('Application Initializer');
@@ -19600,7 +19661,7 @@
         }
       }
       const Ll = function(e) {
-          return new Fc(e);
+          return new Vc(e);
         },
         Pl = Ll,
         kl = function(e) {
@@ -19638,15 +19699,15 @@
           e
         );
       })();
-      const Gl = (() => Promise.resolve(0))();
-      function Fl(e) {
+      const Fl = (() => Promise.resolve(0))();
+      function Vl(e) {
         'undefined' == typeof Zone
-          ? Gl.then(() => {
+          ? Fl.then(() => {
               e && e.apply(null, null);
             })
           : Zone.current.scheduleMicroTask('scheduleMicrotask', e);
       }
-      class Vl {
+      class Gl {
         constructor({
           enableLongStackTrace: e = !1,
           shouldCoalesceEventChangeDetection: t = !1
@@ -19755,11 +19816,11 @@
           return !0 === Zone.current.get('isAngularZone');
         }
         static assertInAngularZone() {
-          if (!Vl.isInAngularZone())
+          if (!Gl.isInAngularZone())
             throw new Error('Expected to be in Angular Zone, but it is not!');
         }
         static assertNotInAngularZone() {
-          if (Vl.isInAngularZone())
+          if (Gl.isInAngularZone())
             throw new Error('Expected to not be in Angular Zone, but it is!');
         }
         run(e, t, n) {
@@ -19859,8 +19920,8 @@
                 this._ngZone.runOutsideAngular(() => {
                   this._ngZone.onStable.subscribe({
                     next: () => {
-                      Vl.assertNotInAngularZone(),
-                        Fl(() => {
+                      Gl.assertNotInAngularZone(),
+                        Vl(() => {
                           (this._isZoneStable = !0),
                             this._runCallbacksIfReady();
                         });
@@ -19889,7 +19950,7 @@
             }
             _runCallbacksIfReady() {
               if (this.isStable())
-                Fl(() => {
+                Vl(() => {
                   for (; 0 !== this._callbacks.length; ) {
                     let e = this._callbacks.pop();
                     clearTimeout(e.timeoutId), e.doneCb(this._didWork);
@@ -19944,7 +20005,7 @@
           }
           return (
             (e.ɵfac = function(t) {
-              return new (t || e)(te(Vl));
+              return new (t || e)(te(Gl));
             }),
             (e.ɵprov = b({ token: e, factory: e.ɵfac })),
             e
@@ -20056,14 +20117,14 @@
                     'noop' === e
                       ? new $l()
                       : ('zone.js' === e ? void 0 : e) ||
-                        new Vl({
+                        new Gl({
                           enableLongStackTrace: Hn(),
                           shouldCoalesceEventChangeDetection: t
                         })),
                   n
                 );
               })(t ? t.ngZone : void 0, (t && t.ngZoneEventCoalescing) || !1),
-              r = [{ provide: Vl, useValue: n }];
+              r = [{ provide: Gl, useValue: n }];
             return n.run(() => {
               const t = Lo.create({
                   providers: r,
@@ -20116,7 +20177,7 @@
           bootstrapModule(e, t = []) {
             const n = au({}, t);
             return (function(e, t, n) {
-              const r = new Fc(n);
+              const r = new Vc(n);
               return Promise.resolve(r);
             })(0, 0, e).then(e => this.bootstrapModuleFactory(e, n));
           }
@@ -20202,8 +20263,8 @@
                 let t;
                 this._zone.runOutsideAngular(() => {
                   t = this._zone.onStable.subscribe(() => {
-                    Vl.assertNotInAngularZone(),
-                      Fl(() => {
+                    Gl.assertNotInAngularZone(),
+                      Vl(() => {
                         this._stable ||
                           this._zone.hasPendingMacrotasks ||
                           this._zone.hasPendingMicrotasks ||
@@ -20212,7 +20273,7 @@
                   });
                 });
                 const n = this._zone.onUnstable.subscribe(() => {
-                  Vl.assertInAngularZone(),
+                  Gl.assertInAngularZone(),
                     this._stable &&
                       ((this._stable = !1),
                       this._zone.runOutsideAngular(() => {
@@ -20300,7 +20361,7 @@
         }
         return (
           (e.ɵfac = function(t) {
-            return new (t || e)(te(Vl), te(Nl), te(Lo), te(Sn), te(pa), te(Sl));
+            return new (t || e)(te(Gl), te(Nl), te(Lo), te(Sn), te(fa), te(Sl));
           }),
           (e.ɵprov = b({ token: e, factory: e.ɵfac })),
           e
@@ -20313,7 +20374,7 @@
       class uu {}
       class du {}
       const hu = { factoryPathPrefix: '', factoryPathSuffix: '.ngfactory' };
-      let fu = (() => {
+      let pu = (() => {
         class e {
           constructor(e, t) {
             (this._compiler = e), (this._config = t || hu);
@@ -20327,7 +20388,7 @@
               void 0 === r && (r = 'default'),
               n('zn8P')(t)
                 .then(e => e[r])
-                .then(e => pu(e, t, r))
+                .then(e => fu(e, t, r))
                 .then(e => this._compiler.compileModuleAsync(e))
             );
           }
@@ -20342,7 +20403,7 @@
                   this._config.factoryPathSuffix
               )
                 .then(e => e[r + i])
-                .then(e => pu(e, t, r))
+                .then(e => fu(e, t, r))
             );
           }
         }
@@ -20354,7 +20415,7 @@
           e
         );
       })();
-      function pu(e, t, n) {
+      function fu(e, t, n) {
         if (!e) throw new Error(`Cannot find '${n}' in '${t}'`);
         return e;
       }
@@ -20368,10 +20429,10 @@
           { provide: Nl, deps: [] }
         ]),
         bu = [
-          { provide: cu, useClass: cu, deps: [Vl, Nl, Lo, Sn, pa, Sl] },
+          { provide: cu, useClass: cu, deps: [Gl, Nl, Lo, Sn, fa, Sl] },
           {
             provide: Wa,
-            deps: [Vl],
+            deps: [Gl],
             useFactory: function(e) {
               let t = [];
               return (
@@ -20414,7 +20475,7 @@
                 e
               );
             },
-            deps: [[new u(Rl), new d(), new f()]]
+            deps: [[new u(Rl), new d(), new p()]]
           },
           { provide: xl, useValue: 'USD' }
         ];
@@ -20446,20 +20507,20 @@
         u = n('tiKp'),
         d = n('xDBR'),
         h = n('P4y1'),
-        f = n('rpNk'),
-        p = f.IteratorPrototype,
-        m = f.BUGGY_SAFARI_ITERATORS,
+        p = n('rpNk'),
+        f = p.IteratorPrototype,
+        m = p.BUGGY_SAFARI_ITERATORS,
         g = u('iterator'),
         b = function() {
           return this;
         };
-      e.exports = function(e, t, n, u, f, y, v) {
+      e.exports = function(e, t, n, u, p, y, v) {
         i(n, t, u);
         var _,
           E,
           S,
           w = function(e) {
-            if (e === f && C) return C;
+            if (e === p && C) return C;
             if (!m && e in T) return T[e];
             switch (e) {
               case 'keys':
@@ -20476,20 +20537,20 @@
           A = t + ' Iterator',
           O = !1,
           T = e.prototype,
-          I = T[g] || T['@@iterator'] || (f && T[f]),
-          C = (!m && I) || w(f),
+          I = T[g] || T['@@iterator'] || (p && T[p]),
+          C = (!m && I) || w(p),
           N = ('Array' == t && T.entries) || I;
         if (
           (N &&
             ((_ = o(N.call(new e()))),
-            p !== Object.prototype &&
+            f !== Object.prototype &&
               _.next &&
               (d ||
-                o(_) === p ||
-                (s ? s(_, p) : 'function' != typeof _[g] && c(_, g, b)),
+                o(_) === f ||
+                (s ? s(_, f) : 'function' != typeof _[g] && c(_, g, b)),
               a(_, A, !0, !0),
               d && (h[A] = b))),
-          'values' == f &&
+          'values' == p &&
             I &&
             'values' !== I.name &&
             ((O = !0),
@@ -20498,7 +20559,7 @@
             })),
           (d && !v) || T[g] === C || c(T, g, C),
           (h[t] = C),
-          f)
+          p)
         )
           if (
             ((E = {
@@ -20566,10 +20627,10 @@
         u = Object.prototype.toString,
         d = Math.max,
         h = Math.min,
-        f = function() {
+        p = function() {
           return l.Date.now();
         };
-      function p(e) {
+      function f(e) {
         var t = typeof e;
         return !!e && ('object' == t || 'function' == t);
       }
@@ -20587,9 +20648,9 @@
           })(e)
         )
           return NaN;
-        if (p(e)) {
+        if (f(e)) {
           var t = 'function' == typeof e.valueOf ? e.valueOf() : e;
-          e = p(t) ? t + '' : t;
+          e = f(t) ? t + '' : t;
         }
         if ('string' != typeof e) return 0 === e ? e : +e;
         e = e.replace(n, '');
@@ -20601,7 +20662,7 @@
           i = !0;
         if ('function' != typeof e) throw new TypeError('Expected a function');
         return (
-          p(n) &&
+          f(n) &&
             ((r = 'leading' in n ? !!n.leading : r),
             (i = 'trailing' in n ? !!n.trailing : i)),
           (function(e, t, n) {
@@ -20630,7 +20691,7 @@
               return void 0 === c || n >= t || n < 0 || (g && e - l >= o);
             }
             function E() {
-              var e = f();
+              var e = p();
               if (_(e)) return S(e);
               a = setTimeout(
                 E,
@@ -20644,7 +20705,7 @@
               return (a = void 0), b && r ? y(e) : ((r = i = void 0), s);
             }
             function w() {
-              var e = f(),
+              var e = p(),
                 n = _(e);
               if (((r = arguments), (i = this), (c = e), n)) {
                 if (void 0 === a) return v(c);
@@ -20654,7 +20715,7 @@
             }
             return (
               (t = m(t) || 0),
-              p(n) &&
+              f(n) &&
                 ((u = !!n.leading),
                 (o = (g = 'maxWait' in n) ? d(m(n.maxWait) || 0, t) : o),
                 (b = 'trailing' in n ? !!n.trailing : b)),
@@ -20664,7 +20725,7 @@
                   (r = c = i = a = void 0);
               }),
               (w.flush = function() {
-                return void 0 === a ? s : S(f());
+                return void 0 === a ? s : S(p());
               }),
               w
             );
@@ -20799,7 +20860,7 @@
           return H;
         }),
         n.d(t, 'd', function() {
-          return F;
+          return V;
         }),
         n.d(t, 'e', function() {
           return k;
@@ -20970,7 +21031,7 @@
         }
       }
       const h = new i.q('EventManagerPlugins');
-      let f = (() => {
+      let p = (() => {
         class e {
           constructor(e, t) {
             (this._zone = t),
@@ -21006,7 +21067,7 @@
           e
         );
       })();
-      class p {
+      class f {
         constructor(e) {
           this._doc = e;
         }
@@ -21143,7 +21204,7 @@
         }
         return (
           (e.ɵfac = function(t) {
-            return new (t || e)(i.Yb(f), i.Yb(g), i.Yb(i.c));
+            return new (t || e)(i.Yb(p), i.Yb(g), i.Yb(i.c));
           }),
           (e.ɵprov = i.Hb({ token: e, factory: e.ɵfac })),
           e
@@ -21282,7 +21343,7 @@
         }
       }
       let O = (() => {
-        class e extends p {
+        class e extends f {
           constructor(e) {
             super(e);
           }
@@ -21348,7 +21409,7 @@
           shift: e => e.shiftKey
         };
       let R = (() => {
-          class e extends p {
+          class e extends f {
             constructor(e) {
               super(e);
             }
@@ -21545,12 +21606,12 @@
           { provide: h, useClass: O, multi: !0, deps: [r.c, i.z, i.B] },
           { provide: h, useClass: R, multi: !0, deps: [r.c] },
           [],
-          { provide: E, useClass: E, deps: [f, g, i.c] },
+          { provide: E, useClass: E, deps: [p, g, i.c] },
           { provide: i.E, useExisting: E },
           { provide: m, useExisting: g },
           { provide: g, useClass: g, deps: [r.c] },
           { provide: i.L, useClass: i.L, deps: [i.z] },
-          { provide: f, useClass: f, deps: [h, i.z] },
+          { provide: p, useClass: p, deps: [h, i.z] },
           []
         ];
       let U = (() => {
@@ -21661,10 +21722,10 @@
           e
         );
       })();
-      function G() {
-        return new F(Object(i.Yb)(r.c));
+      function F() {
+        return new V(Object(i.Yb)(r.c));
       }
-      let F = (() => {
+      let V = (() => {
         class e {
           constructor(e) {
             this._doc = e;
@@ -21681,7 +21742,7 @@
             return new (t || e)(i.Yb(r.c));
           }),
           (e.ɵprov = Object(i.Hb)({
-            factory: G,
+            factory: F,
             token: e,
             providedIn: 'root'
           })),
@@ -21954,7 +22015,7 @@
           return de;
         }),
         n.d(t, 'l', function() {
-          return pe;
+          return fe;
         }),
         n.d(t, 'm', function() {
           return me;
@@ -22076,10 +22137,10 @@
             this.location.pathname = e;
           }
           pushState(e, t, n) {
-            f() ? this._history.pushState(e, t, n) : (this.location.hash = n);
+            p() ? this._history.pushState(e, t, n) : (this.location.hash = n);
           }
           replaceState(e, t, n) {
-            f()
+            p()
               ? this._history.replaceState(e, t, n)
               : (this.location.hash = n);
           }
@@ -22098,17 +22159,17 @@
             return new (t || e)(r.Yb(c));
           }),
           (e.ɵprov = Object(r.Hb)({
-            factory: p,
+            factory: f,
             token: e,
             providedIn: 'platform'
           })),
           e
         );
       })();
-      function f() {
+      function p() {
         return !!window.history.pushState;
       }
-      function p() {
+      function f() {
         return new h(Object(r.Yb)(c));
       }
       function m(e, t) {
@@ -22406,27 +22467,27 @@
         })({});
       function x(e, t, n) {
         const i = Object(r.hb)(e),
-          o = G([i[r.Y.DayPeriodsFormat], i[r.Y.DayPeriodsStandalone]], t);
-        return G(o, n);
+          o = F([i[r.Y.DayPeriodsFormat], i[r.Y.DayPeriodsStandalone]], t);
+        return F(o, n);
       }
       function D(e, t, n) {
         const i = Object(r.hb)(e),
-          o = G([i[r.Y.DaysFormat], i[r.Y.DaysStandalone]], t);
-        return G(o, n);
+          o = F([i[r.Y.DaysFormat], i[r.Y.DaysStandalone]], t);
+        return F(o, n);
       }
       function L(e, t, n) {
         const i = Object(r.hb)(e),
-          o = G([i[r.Y.MonthsFormat], i[r.Y.MonthsStandalone]], t);
-        return G(o, n);
+          o = F([i[r.Y.MonthsFormat], i[r.Y.MonthsStandalone]], t);
+        return F(o, n);
       }
       function P(e, t) {
-        return G(Object(r.hb)(e)[r.Y.DateFormat], t);
+        return F(Object(r.hb)(e)[r.Y.DateFormat], t);
       }
       function k(e, t) {
-        return G(Object(r.hb)(e)[r.Y.TimeFormat], t);
+        return F(Object(r.hb)(e)[r.Y.TimeFormat], t);
       }
       function M(e, t) {
-        return G(Object(r.hb)(e)[r.Y.DateTimeFormat], t);
+        return F(Object(r.hb)(e)[r.Y.DateTimeFormat], t);
       }
       function U(e, t) {
         const n = Object(r.hb)(e),
@@ -22446,15 +22507,15 @@
             }". Use "registerLocaleData" to load new data. See the "I18n guide" on angular.io to know more.`
           );
       }
-      function G(e, t) {
+      function F(e, t) {
         for (let n = t; n > -1; n--) if (void 0 !== e[n]) return e[n];
         throw new Error('Locale data API: locale data undefined');
       }
-      function F(e) {
+      function V(e) {
         const [t, n] = e.split(':');
         return { hours: +t, minutes: +n };
       }
-      const V = /^(\d{4})-?(\d\d)-?(\d\d)(?:T(\d\d)(?::?(\d\d)(?::?(\d\d)(?:\.(\d+))?)?)?(Z|([+-])(\d\d):?(\d\d))?)?$/,
+      const G = /^(\d{4})-?(\d\d)-?(\d\d)(?:T(\d\d)(?::?(\d\d)(?::?(\d\d)(?:\.(\d+))?)?)?(Z|([+-])(\d\d):?(\d\d))?)?$/,
         Y = {},
         z = /((?:[^GyMLwWdEabBhHmsSzZO']+)|(?:'(?:[^']|'')*')|(?:G{1,5}|y{1,4}|M{1,5}|L{1,5}|w{1,2}|W{1}|d{1,2}|E{1,6}|a{1,5}|b{1,5}|B{1,5}|h{1,2}|H{1,2}|m{1,2}|s{1,2}|S{1,3}|z{1,4}|Z{1,5}|O{1,4}))([\s\S]*)/;
       var B = (function(e) {
@@ -22501,7 +22562,7 @@
               return new Date(t, n - 1, r);
             }
             let n;
-            if ((n = e.match(V)))
+            if ((n = e.match(G)))
               return (function(e) {
                 const t = new Date(0);
                 let n = 0,
@@ -22853,7 +22914,7 @@
                       return (
                         H(t),
                         (t[r.Y.ExtraData][2] || []).map(e =>
-                          'string' == typeof e ? F(e) : [F(e[0]), F(e[1])]
+                          'string' == typeof e ? V(e) : [V(e[0]), V(e[1])]
                         )
                       );
                     })(t),
@@ -22861,8 +22922,8 @@
                       const i = Object(r.hb)(e);
                       H(i);
                       const o =
-                        G([i[r.Y.ExtraData][0], i[r.Y.ExtraData][1]], t) || [];
-                      return G(o, n) || [];
+                        F([i[r.Y.ExtraData][0], i[r.Y.ExtraData][1]], t) || [];
+                      return F(o, n) || [];
                     })(t, o, i),
                     s = e.findIndex(e => {
                       if (Array.isArray(e)) {
@@ -22880,7 +22941,7 @@
                 return x(t, o, i)[a < 12 ? 0 : 1];
               case q.Eras:
                 return (function(e, t) {
-                  return G(Object(r.hb)(e)[r.Y.Eras], t);
+                  return F(Object(r.hb)(e)[r.Y.Eras], t);
                 })(t, i)[e.getFullYear() <= 0 ? 0 : 1];
               default:
                 throw new Error('unexpected translation type ' + n);
@@ -23242,13 +23303,13 @@
               this._updateView();
           }
           set ngIfThen(e) {
-            fe('ngIfThen', e),
+            pe('ngIfThen', e),
               (this._thenTemplateRef = e),
               (this._thenViewRef = null),
               this._updateView();
           }
           set ngIfElse(e) {
-            fe('ngIfElse', e),
+            pe('ngIfElse', e),
               (this._elseTemplateRef = e),
               (this._elseViewRef = null),
               this._updateView();
@@ -23293,13 +23354,13 @@
           (this.$implicit = null), (this.ngIf = null);
         }
       }
-      function fe(e, t) {
+      function pe(e, t) {
         if (t && !t.createEmbeddedView)
           throw new Error(
             `${e} must be a TemplateRef, but received '${Object(r.sb)(t)}'.`
           );
       }
-      let pe = (() => {
+      let fe = (() => {
           class e {
             constructor(e, t, n) {
               (this._ngEl = e),
@@ -23680,8 +23741,8 @@
         u = n('UTVS'),
         d = n('afO8'),
         h = d.set,
-        f = d.getterFor,
-        p = l.find,
+        p = d.getterFor,
+        f = l.find,
         m = l.findIndex,
         g = 0,
         b = function(e) {
@@ -23691,7 +23752,7 @@
           this.entries = [];
         },
         v = function(e, t) {
-          return p(e.entries, function(e) {
+          return f(e.entries, function(e) {
             return e[0] === t;
           });
         };
@@ -23721,16 +23782,16 @@
                   h(e, { type: t, id: g++, frozen: void 0 }),
                   null != r && c(r, e[l], e, n);
               }),
-              p = f(t),
+              f = p(t),
               m = function(e, t, n) {
-                var r = p(e),
+                var r = f(e),
                   s = i(o(t), !0);
                 return !0 === s ? b(r).set(t, n) : (s[r.id] = n), e;
               };
             return (
               r(d.prototype, {
                 delete: function(e) {
-                  var t = p(this);
+                  var t = f(this);
                   if (!s(e)) return !1;
                   var n = i(e);
                   return !0 === n
@@ -23738,7 +23799,7 @@
                     : n && u(n, t.id) && delete n[t.id];
                 },
                 has: function(e) {
-                  var t = p(this);
+                  var t = f(this);
                   if (!s(e)) return !1;
                   var n = i(e);
                   return !0 === n ? b(t).has(e) : n && u(n, t.id);
@@ -23749,7 +23810,7 @@
                 n
                   ? {
                       get: function(e) {
-                        var t = p(this);
+                        var t = f(this);
                         if (s(e)) {
                           var n = i(e);
                           return !0 === n ? b(t).get(e) : n ? n[t.id] : void 0;
@@ -23863,8 +23924,8 @@
         u = n('lJxs'),
         d = n('Kqap'),
         h = n('BFxc'),
-        f = n('xbPD'),
-        p = n('mCNh');
+        p = n('xbPD'),
+        f = n('mCNh');
       function m(e, t, n) {
         return 0 === n ? [t] : (e.push(t), e);
       }
@@ -24198,14 +24259,14 @@
                     (function(e, t) {
                       return arguments.length >= 2
                         ? function(n) {
-                            return Object(p.a)(
+                            return Object(f.a)(
                               Object(d.a)(e, t),
                               Object(h.a)(1),
-                              Object(f.a)(t)
+                              Object(p.a)(t)
                             )(n);
                           }
                         : function(t) {
-                            return Object(p.a)(
+                            return Object(f.a)(
                               Object(d.a)((t, n, r) => e(t, n, r + 1)),
                               Object(h.a)(1)
                             )(t);
@@ -24562,7 +24623,7 @@
         return T;
       }),
         n.d(t, 'b', function() {
-          return F;
+          return V;
         }),
         n.d(t, 'c', function() {
           return u;
@@ -24698,12 +24759,12 @@
             );
         }
       }
-      class f {
+      class p {
         encodeKey(e) {
-          return p(e);
+          return f(e);
         }
         encodeValue(e) {
-          return p(e);
+          return f(e);
         }
         decodeKey(e) {
           return decodeURIComponent(e);
@@ -24712,7 +24773,7 @@
           return decodeURIComponent(e);
         }
       }
-      function p(e) {
+      function f(e) {
         return encodeURIComponent(e)
           .replace(/%40/gi, '@')
           .replace(/%3A/gi, ':')
@@ -24729,7 +24790,7 @@
           if (
             ((this.updates = null),
             (this.cloneFrom = null),
-            (this.encoder = e.encoder || new f()),
+            (this.encoder = e.encoder || new p()),
             e.fromString)
           ) {
             if (e.fromObject)
@@ -25417,7 +25478,7 @@
             e
           );
         })(),
-        G = (() => {
+        F = (() => {
           class e {
             static disable() {
               return { ngModule: e, providers: [{ provide: j, useClass: N }] };
@@ -25449,7 +25510,7 @@
             e
           );
         })(),
-        F = (() => {
+        V = (() => {
           class e {}
           return (
             (e.ɵmod = r.Jb({ type: e })),
@@ -25467,7 +25528,7 @@
               ],
               imports: [
                 [
-                  G.withOptions({
+                  F.withOptions({
                     cookieName: 'XSRF-TOKEN',
                     headerName: 'X-XSRF-TOKEN'
                   })
@@ -25484,7 +25545,7 @@
         return qe;
       }),
         n.d(t, 'b', function() {
-          return V;
+          return G;
         }),
         n.d(t, 'c', function() {
           return un;
@@ -25534,8 +25595,8 @@
           return (n ? Object(s.a)(n) : Object(d.b)()).subscribe(t);
         });
       }
-      var f = n('XNiG'),
-        p = n('lJxs'),
+      var p = n('XNiG'),
+        f = n('lJxs'),
         m = n('0EUg'),
         g = n('pLZG'),
         b = n('BFxc'),
@@ -25643,12 +25704,12 @@
         }
       }
       var H = n('bHdf');
-      class G {
+      class F {
         constructor(e, t) {
           (this.id = e), (this.url = t);
         }
       }
-      class F extends G {
+      class V extends F {
         constructor(e, t, n = 'imperative', r = null) {
           super(e, t), (this.navigationTrigger = n), (this.restoredState = r);
         }
@@ -25656,7 +25717,7 @@
           return `NavigationStart(id: ${this.id}, url: '${this.url}')`;
         }
       }
-      class V extends G {
+      class G extends F {
         constructor(e, t, n) {
           super(e, t), (this.urlAfterRedirects = n);
         }
@@ -25664,7 +25725,7 @@
           return `NavigationEnd(id: ${this.id}, url: '${this.url}', urlAfterRedirects: '${this.urlAfterRedirects}')`;
         }
       }
-      class Y extends G {
+      class Y extends F {
         constructor(e, t, n) {
           super(e, t), (this.reason = n);
         }
@@ -25672,7 +25733,7 @@
           return `NavigationCancel(id: ${this.id}, url: '${this.url}')`;
         }
       }
-      class z extends G {
+      class z extends F {
         constructor(e, t, n) {
           super(e, t), (this.error = n);
         }
@@ -25680,7 +25741,7 @@
           return `NavigationError(id: ${this.id}, url: '${this.url}', error: ${this.error})`;
         }
       }
-      class B extends G {
+      class B extends F {
         constructor(e, t, n, r) {
           super(e, t), (this.urlAfterRedirects = n), (this.state = r);
         }
@@ -25688,7 +25749,7 @@
           return `RoutesRecognized(id: ${this.id}, url: '${this.url}', urlAfterRedirects: '${this.urlAfterRedirects}', state: ${this.state})`;
         }
       }
-      class W extends G {
+      class W extends F {
         constructor(e, t, n, r) {
           super(e, t), (this.urlAfterRedirects = n), (this.state = r);
         }
@@ -25696,7 +25757,7 @@
           return `GuardsCheckStart(id: ${this.id}, url: '${this.url}', urlAfterRedirects: '${this.urlAfterRedirects}', state: ${this.state})`;
         }
       }
-      class q extends G {
+      class q extends F {
         constructor(e, t, n, r, i) {
           super(e, t),
             (this.urlAfterRedirects = n),
@@ -25707,7 +25768,7 @@
           return `GuardsCheckEnd(id: ${this.id}, url: '${this.url}', urlAfterRedirects: '${this.urlAfterRedirects}', state: ${this.state}, shouldActivate: ${this.shouldActivate})`;
         }
       }
-      class K extends G {
+      class K extends F {
         constructor(e, t, n, r) {
           super(e, t), (this.urlAfterRedirects = n), (this.state = r);
         }
@@ -25715,7 +25776,7 @@
           return `ResolveStart(id: ${this.id}, url: '${this.url}', urlAfterRedirects: '${this.urlAfterRedirects}', state: ${this.state})`;
         }
       }
-      class $ extends G {
+      class $ extends F {
         constructor(e, t, n, r) {
           super(e, t), (this.urlAfterRedirects = n), (this.state = r);
         }
@@ -25963,16 +26024,16 @@
           n
         );
       }
-      function fe(e, t) {
+      function pe(e, t) {
         const n = Object.keys(e),
           r = Object.keys(t);
         if (!n || !r || n.length != r.length) return !1;
         let i;
         for (let o = 0; o < n.length; o++)
-          if (((i = n[o]), !pe(e[i], t[i]))) return !1;
+          if (((i = n[o]), !fe(e[i], t[i]))) return !1;
         return !0;
       }
-      function pe(e, t) {
+      function fe(e, t) {
         return Array.isArray(e) && Array.isArray(t)
           ? e.length == t.length && e.every(e => t.indexOf(e) > -1)
           : e === t;
@@ -25996,7 +26057,7 @@
       function ve(e, t, n) {
         return n
           ? (function(e, t) {
-              return fe(e, t);
+              return pe(e, t);
             })(e.queryParams, t.queryParams) &&
               (function e(t, n) {
                 if (!we(t.segments, n.segments)) return !1;
@@ -26010,7 +26071,7 @@
           : (function(e, t) {
               return (
                 Object.keys(t).length <= Object.keys(e).length &&
-                Object.keys(t).every(n => pe(e[n], t[n]))
+                Object.keys(t).every(n => fe(e[n], t[n]))
               );
             })(e.queryParams, t.queryParams) &&
               (function e(t, n) {
@@ -26316,7 +26377,7 @@
           if (!this.consumeOptional(e)) throw new Error(`Expected "${e}".`);
         }
       }
-      class Ge {
+      class Fe {
         constructor(e) {
           this._root = e;
         }
@@ -26328,35 +26389,35 @@
           return t.length > 1 ? t[t.length - 2] : null;
         }
         children(e) {
-          const t = Fe(e, this._root);
+          const t = Ve(e, this._root);
           return t ? t.children.map(e => e.value) : [];
         }
         firstChild(e) {
-          const t = Fe(e, this._root);
+          const t = Ve(e, this._root);
           return t && t.children.length > 0 ? t.children[0].value : null;
         }
         siblings(e) {
-          const t = Ve(e, this._root);
+          const t = Ge(e, this._root);
           return t.length < 2
             ? []
             : t[t.length - 2].children.map(e => e.value).filter(t => t !== e);
         }
         pathFromRoot(e) {
-          return Ve(e, this._root).map(e => e.value);
+          return Ge(e, this._root).map(e => e.value);
         }
       }
-      function Fe(e, t) {
+      function Ve(e, t) {
         if (e === t.value) return t;
         for (const n of t.children) {
-          const t = Fe(e, n);
+          const t = Ve(e, n);
           if (t) return t;
         }
         return null;
       }
-      function Ve(e, t) {
+      function Ge(e, t) {
         if (e === t.value) return [t];
         for (const n of t.children) {
-          const r = Ve(e, n);
+          const r = Ge(e, n);
           if (r.length) return r.unshift(t), r;
         }
         return [];
@@ -26373,7 +26434,7 @@
         const t = {};
         return e && e.children.forEach(e => (t[e.value.outlet] = e)), t;
       }
-      class Be extends Ge {
+      class Be extends Fe {
         constructor(e, t) {
           super(e), (this.snapshot = t), Xe(this, e);
         }
@@ -26438,7 +26499,7 @@
         get paramMap() {
           return (
             this._paramMap ||
-              (this._paramMap = this.params.pipe(Object(p.a)(e => oe(e)))),
+              (this._paramMap = this.params.pipe(Object(f.a)(e => oe(e)))),
             this._paramMap
           );
         }
@@ -26446,7 +26507,7 @@
           return (
             this._queryParamMap ||
               (this._queryParamMap = this.queryParams.pipe(
-                Object(p.a)(e => oe(e))
+                Object(f.a)(e => oe(e))
               )),
             this._queryParamMap
           );
@@ -26532,7 +26593,7 @@
           }')`;
         }
       }
-      class Qe extends Ge {
+      class Qe extends Fe {
         constructor(e, t) {
           super(t), (this.url = e), Xe(this, t);
         }
@@ -26553,25 +26614,25 @@
           const t = e.snapshot,
             n = e._futureSnapshot;
           (e.snapshot = n),
-            fe(t.queryParams, n.queryParams) ||
+            pe(t.queryParams, n.queryParams) ||
               e.queryParams.next(n.queryParams),
             t.fragment !== n.fragment && e.fragment.next(n.fragment),
-            fe(t.params, n.params) || e.params.next(n.params),
+            pe(t.params, n.params) || e.params.next(n.params),
             (function(e, t) {
               if (e.length !== t.length) return !1;
-              for (let n = 0; n < e.length; ++n) if (!fe(e[n], t[n])) return !1;
+              for (let n = 0; n < e.length; ++n) if (!pe(e[n], t[n])) return !1;
               return !0;
             })(t.url, n.url) || e.url.next(n.url),
-            fe(t.data, n.data) || e.data.next(n.data);
+            pe(t.data, n.data) || e.data.next(n.data);
         } else
           (e.snapshot = e._futureSnapshot), e.data.next(e._futureSnapshot.data);
       }
       function et(e, t) {
         var n, r;
         return (
-          fe(e.params, t.params) &&
+          pe(e.params, t.params) &&
           we((n = e.url), (r = t.url)) &&
-          n.every((e, t) => fe(e.parameters, r[t].parameters)) &&
+          n.every((e, t) => pe(e.parameters, r[t].parameters)) &&
           !(!e.parent != !t.parent) &&
           (!e.parent || et(e.parent, t.parent))
         );
@@ -26740,7 +26801,7 @@
         return be(e, (e, n) => (t[n] = '' + e)), t;
       }
       function dt(e, t, n) {
-        return e == n.path && fe(t, n.parameters);
+        return e == n.path && pe(t, n.parameters);
       }
       class ht {
         constructor(e, t, n, r) {
@@ -26828,7 +26889,7 @@
                 (t.attachRef = e.componentRef),
                 (t.route = e.route.value),
                 t.outlet && t.outlet.attach(e.componentRef, e.route.value),
-                ft(e.route);
+                pt(e.route);
             } else {
               const n = (function(e) {
                   for (let t = e.parent; t; t = t.parent) {
@@ -26848,10 +26909,10 @@
           } else this.activateChildRoutes(e, null, n);
         }
       }
-      function ft(e) {
-        Je(e.value), e.children.forEach(ft);
-      }
       function pt(e) {
+        Je(e.value), e.children.forEach(pt);
+      }
+      function ft(e) {
         return 'function' == typeof e;
       }
       function mt(e) {
@@ -26899,7 +26960,7 @@
             'primary'
           )
             .pipe(
-              Object(p.a)(e =>
+              Object(f.a)(e =>
                 this.createUrlTree(
                   e,
                   this.urlTree.queryParams,
@@ -26924,7 +26985,7 @@
             'primary'
           )
             .pipe(
-              Object(p.a)(t => this.createUrlTree(t, e.queryParams, e.fragment))
+              Object(f.a)(t => this.createUrlTree(t, e.queryParams, e.fragment))
             )
             .pipe(
               Object(O.a)(e => {
@@ -26944,7 +27005,7 @@
         }
         expandSegmentGroup(e, t, n, r) {
           return 0 === n.segments.length && n.hasChildren()
-            ? this.expandChildren(e, t, n).pipe(Object(p.a)(e => new Ee([], e)))
+            ? this.expandChildren(e, t, n).pipe(Object(f.a)(e => new Ee([], e)))
             : this.expandSegment(e, n, t, n.segments, r, !0);
         }
         expandChildren(e, t, n) {
@@ -26955,7 +27016,7 @@
               i = {};
             return (
               be(e, (e, o) => {
-                const s = t(o, e).pipe(Object(p.a)(e => (i[o] = e)));
+                const s = t(o, e).pipe(Object(f.a)(e => (i[o] = e)));
                 'primary' === o ? n.push(s) : r.push(s);
               }),
               o.a.apply(null, n.concat(r)).pipe(
@@ -26969,14 +27030,14 @@
                       n ? Object(w.a)(t) : v(() => new l())
                     );
                 })(),
-                Object(p.a)(() => i)
+                Object(f.a)(() => i)
               )
             );
           })(n.children, (n, r) => this.expandSegmentGroup(e, t, r, n));
         }
         expandSegment(e, t, n, r, i, s) {
           return Object(o.a)(...n).pipe(
-            Object(p.a)(a =>
+            Object(f.a)(a =>
               this.expandSegmentAgainstRoute(e, t, n, a, r, i, s).pipe(
                 Object(O.a)(e => {
                   if (e instanceof gt) return Object(o.a)(null);
@@ -27054,7 +27115,7 @@
               ? this.configLoader
                   .load(e.injector, n)
                   .pipe(
-                    Object(p.a)(e => ((n._loadedConfig = e), new Ee(r, {})))
+                    Object(f.a)(e => ((n._loadedConfig = e), new Ee(r, {})))
                   )
               : Object(o.a)(new Ee(r, {}));
           const { matched: i, consumedSegments: s, lastChild: a } = St(t, n, r);
@@ -27110,12 +27171,12 @@
                 })(t, s, c, r);
               return 0 === a.length && i.hasChildren()
                 ? this.expandChildren(n, r, i).pipe(
-                    Object(p.a)(e => new Ee(s, e))
+                    Object(f.a)(e => new Ee(s, e))
                   )
                 : 0 === r.length && 0 === a.length
                 ? Object(o.a)(new Ee(s, {}))
                 : this.expandSegment(n, i, r, a, 'primary', !0).pipe(
-                    Object(p.a)(e => new Ee(s.concat(e.segments), e.children))
+                    Object(f.a)(e => new Ee(s.concat(e.segments), e.children))
                   );
             })
           );
@@ -27131,7 +27192,7 @@
                     n
                       ? this.configLoader
                           .load(e.injector, t)
-                          .pipe(Object(p.a)(e => ((t._loadedConfig = e), e)))
+                          .pipe(Object(f.a)(e => ((t._loadedConfig = e), e)))
                       : (function(e) {
                           return new c.a(t =>
                             t.error(
@@ -27150,17 +27211,17 @@
           return r && 0 !== r.length
             ? Object(s.a)(r)
                 .pipe(
-                  Object(p.a)(r => {
+                  Object(f.a)(r => {
                     const i = e.get(r);
                     let o;
                     if (
                       (function(e) {
-                        return e && pt(e.canLoad);
+                        return e && ft(e.canLoad);
                       })(i)
                     )
                       o = i.canLoad(t, n);
                     else {
-                      if (!pt(i)) throw new Error('Invalid CanLoad guard');
+                      if (!ft(i)) throw new Error('Invalid CanLoad guard');
                       o = i(t, n);
                     }
                     return ye(o);
@@ -27340,12 +27401,12 @@
                         return !we(e.url, t.url);
                       case 'pathParamsOrQueryParamsChange':
                         return (
-                          !we(e.url, t.url) || !fe(e.queryParams, t.queryParams)
+                          !we(e.url, t.url) || !pe(e.queryParams, t.queryParams)
                         );
                       case 'always':
                         return !0;
                       case 'paramsOrQueryParamsChange':
-                        return !et(e, t) || !fe(e.queryParams, t.queryParams);
+                        return !et(e, t) || !pe(e.queryParams, t.queryParams);
                       case 'paramsChange':
                       default:
                         return !et(e, t);
@@ -27420,7 +27481,7 @@
               }, e);
             }, xt),
             Object(g.a)(e => e !== xt),
-            Object(p.a)(e => (mt(e) ? e : !0 === e)),
+            Object(f.a)(e => (mt(e) ? e : !0 === e)),
             Object(T.a)(1)
           )
         );
@@ -27440,12 +27501,12 @@
             let o;
             if (
               (function(e) {
-                return e && pt(e.canActivate);
+                return e && ft(e.canActivate);
               })(i)
             )
               o = ye(i.canActivate(t, e));
             else {
-              if (!pt(i)) throw new Error('Invalid CanActivate guard');
+              if (!ft(i)) throw new Error('Invalid CanActivate guard');
               o = ye(i(t, e));
             }
             return o.pipe(I());
@@ -27472,12 +27533,12 @@
                   let s;
                   if (
                     (function(e) {
-                      return e && pt(e.canActivateChild);
+                      return e && ft(e.canActivateChild);
                     })(o)
                   )
                     s = ye(o.canActivateChild(r, e));
                   else {
-                    if (!pt(o))
+                    if (!ft(o))
                       throw new Error('Invalid CanActivateChild guard');
                     s = ye(o(r, e));
                   }
@@ -27500,7 +27561,7 @@
         }
         recognize() {
           try {
-            const e = Ft(
+            const e = Vt(
                 this.urlTree.root,
                 [],
                 [],
@@ -27598,7 +27659,7 @@
               e.component,
               e,
               Ht(t),
-              Gt(t) + n.length,
+              Ft(t) + n.length,
               Bt(e)
             );
           } else {
@@ -27639,7 +27700,7 @@
                 e.component,
                 e,
                 Ht(t),
-                Gt(t) + o.length,
+                Ft(t) + o.length,
                 Bt(e)
               ));
           }
@@ -27650,7 +27711,7 @@
                 ? e._loadedConfig.routes
                 : [];
             })(e),
-            { segmentGroup: c, slicedSegments: l } = Ft(
+            { segmentGroup: c, slicedSegments: l } = Vt(
               t,
               o,
               s,
@@ -27671,7 +27732,7 @@
         for (; t._sourceSegment; ) t = t._sourceSegment;
         return t;
       }
-      function Gt(e) {
+      function Ft(e) {
         let t = e,
           n = t._segmentIndexShift ? t._segmentIndexShift : 0;
         for (; t._sourceSegment; )
@@ -27679,11 +27740,11 @@
             (n += t._segmentIndexShift ? t._segmentIndexShift : 0);
         return n - 1;
       }
-      function Ft(e, t, n, r, i) {
+      function Vt(e, t, n, r, i) {
         if (
           n.length > 0 &&
           (function(e, t, n) {
-            return n.some(n => Vt(e, t, n) && 'primary' !== Yt(n));
+            return n.some(n => Gt(e, t, n) && 'primary' !== Yt(n));
           })(e, n, r)
         ) {
           const i = new Ee(
@@ -27712,7 +27773,7 @@
         if (
           0 === n.length &&
           (function(e, t, n) {
-            return n.some(n => Vt(e, t, n));
+            return n.some(n => Gt(e, t, n));
           })(e, n, r)
         ) {
           const o = new Ee(
@@ -27720,7 +27781,7 @@
             (function(e, t, n, r, i, o) {
               const s = {};
               for (const a of r)
-                if (Vt(e, n, a) && !i[Yt(a)]) {
+                if (Gt(e, n, a) && !i[Yt(a)]) {
                   const n = new Ee([], {});
                   (n._sourceSegment = e),
                     (n._segmentIndexShift =
@@ -27743,7 +27804,7 @@
           { segmentGroup: o, slicedSegments: n }
         );
       }
-      function Vt(e, t, n) {
+      function Gt(e, t, n) {
         return (
           (!(e.hasChildren() || t.length > 0) || 'full' !== n.pathMatch) &&
           '' === n.path &&
@@ -27765,7 +27826,7 @@
             Object(D.a)(t => {
               const n = e(t);
               return n
-                ? Object(s.a)(n).pipe(Object(p.a)(() => t))
+                ? Object(s.a)(n).pipe(Object(f.a)(() => t))
                 : Object(s.a)([t]);
             })
           );
@@ -27799,7 +27860,7 @@
           return (
             this.onLoadStartListener && this.onLoadStartListener(t),
             this.loadModuleFactory(t.loadChildren).pipe(
-              Object(p.a)(n => {
+              Object(f.a)(n => {
                 this.onLoadEndListener && this.onLoadEndListener(t);
                 const r = n.create(e);
                 return new ce(me(r.injector.get($t)).map(he), r);
@@ -27887,7 +27948,7 @@
                 (this.currentNavigation = null),
                 (this.navigationId = 0),
                 (this.isNgZoneEnabled = !1),
-                (this.events = new f.a()),
+                (this.events = new p.a()),
                 (this.errorHandler = en),
                 (this.malformedUriErrorHandler = tn),
                 (this.navigated = !1),
@@ -27951,7 +28012,7 @@
               const t = this.events;
               return e.pipe(
                 Object(g.a)(e => 0 !== e.id),
-                Object(p.a)(e =>
+                Object(f.a)(e =>
                   Object.assign(Object.assign({}, e), {
                     extractedUrl: this.urlHandlingStrategy.extract(e.rawUrl)
                   })
@@ -27989,7 +28050,7 @@
                             const n = this.transitions.getValue();
                             return (
                               t.next(
-                                new F(
+                                new V(
                                   e.id,
                                   this.serializeUrl(e.extractedUrl),
                                   e.source,
@@ -28010,7 +28071,7 @@
                                 (function(e, t, n, r, i) {
                                   return new Et(e, t, n, r, i).apply();
                                 })(r, i, s, e.extractedUrl, a).pipe(
-                                  Object(p.a)(t =>
+                                  Object(f.a)(t =>
                                     Object.assign(Object.assign({}, e), {
                                       urlAfterRedirects: t
                                     })
@@ -28046,7 +28107,7 @@
                                     r,
                                     i
                                   ).pipe(
-                                    Object(p.a)(e =>
+                                    Object(f.a)(e =>
                                       Object.assign(Object.assign({}, o), {
                                         targetSnapshot: e
                                       })
@@ -28098,7 +28159,7 @@
                             restoredState: s,
                             extras: a
                           } = e,
-                          c = new F(n, this.serializeUrl(r), i, s);
+                          c = new V(n, this.serializeUrl(r), i, s);
                         t.next(c);
                         const l = We(r, this.rootComponentType).snapshot;
                         return Object(o.a)(
@@ -28144,7 +28205,7 @@
                       );
                       this.triggerEvent(t);
                     }),
-                    Object(p.a)(e =>
+                    Object(f.a)(e =>
                       Object.assign(Object.assign({}, e), {
                         guards: Ct(
                           e.targetSnapshot,
@@ -28186,12 +28247,12 @@
                                           let a;
                                           if (
                                             (function(e) {
-                                              return e && pt(e.canDeactivate);
+                                              return e && ft(e.canDeactivate);
                                             })(s)
                                           )
                                             a = ye(s.canDeactivate(e, t, n, r));
                                           else {
-                                            if (!pt(s))
+                                            if (!ft(s))
                                               throw new Error(
                                                 'Invalid CanDeactivate guard'
                                               );
@@ -28225,7 +28286,7 @@
                                         })(r, a, e, t)
                                       : Object(o.a)(n)
                                   ),
-                                  Object(p.a)(e =>
+                                  Object(f.a)(e =>
                                     Object.assign(Object.assign({}, n), {
                                       guardsResult: e
                                     })
@@ -28325,7 +28386,7 @@
                                               )
                                             );
                                           })(e._resolve, e, t, r).pipe(
-                                            Object(p.a)(
+                                            Object(f.a)(
                                               t => (
                                                 (e._resolvedData = t),
                                                 (e.data = Object.assign(
@@ -28390,7 +28451,7 @@
                         replaceUrl: !!s
                       });
                     }),
-                    Object(p.a)(e => {
+                    Object(f.a)(e => {
                       const t = (function(e, t, n) {
                         const r = (function e(t, n, r) {
                           if (
@@ -28484,7 +28545,7 @@
                     ((c = this.rootContexts),
                     (l = this.routeReuseStrategy),
                     (u = e => this.triggerEvent(e)),
-                    Object(p.a)(
+                    Object(f.a)(
                       e => (
                         new ht(
                           l,
@@ -28797,7 +28858,7 @@
                   (this.navigated = !0),
                     (this.lastSuccessfulId = e.id),
                     this.events.next(
-                      new V(
+                      new G(
                         e.id,
                         this.serializeUrl(e.extractedUrl),
                         this.serializeUrl(this.currentUrlTree)
@@ -28917,7 +28978,7 @@
                 (this.locationStrategy = n),
                 (this.commands = []),
                 (this.subscription = e.events.subscribe(e => {
-                  e instanceof V && this.updateTargetUrlAndHref();
+                  e instanceof G && this.updateTargetUrlAndHref();
                 }));
             }
             set routerLink(e) {
@@ -29148,7 +29209,7 @@
             setUpPreloading() {
               this.subscription = this.router.events
                 .pipe(
-                  Object(g.a)(e => e instanceof V),
+                  Object(g.a)(e => e instanceof G),
                   Object(k.a)(() => this.preload())
                 )
                 .subscribe(() => {});
@@ -29172,7 +29233,7 @@
                     : r.children && n.push(this.processRoutes(e, r.children));
               return Object(s.a)(n).pipe(
                 Object(H.a)(),
-                Object(p.a)(e => {})
+                Object(f.a)(e => {})
               );
             }
             preloadConfig(e, t) {
@@ -29204,7 +29265,7 @@
             e
           );
         })(),
-        fn = (() => {
+        pn = (() => {
           class e {
             constructor(e, t, n = {}) {
               (this.router = e),
@@ -29226,7 +29287,7 @@
             }
             createScrollEvents() {
               return this.router.events.subscribe(e => {
-                e instanceof F
+                e instanceof V
                   ? ((this.store[
                       this.lastId
                     ] = this.viewportScroller.getScrollPosition()),
@@ -29234,7 +29295,7 @@
                     (this.restoredId = e.restoredState
                       ? e.restoredState.navigationId
                       : 0))
-                  : e instanceof V &&
+                  : e instanceof G &&
                     ((this.lastId = e.id),
                     this.scheduleScrollEvent(
                       e,
@@ -29282,7 +29343,7 @@
             e
           );
         })();
-      const pn = new i.q('ROUTER_CONFIGURATION'),
+      const fn = new i.q('ROUTER_CONFIGURATION'),
         mn = new i.q('ROUTER_FORROOT_GUARD'),
         gn = [
           r.g,
@@ -29327,7 +29388,7 @@
               i.w,
               i.i,
               $t,
-              pn,
+              fn,
               [class {}, new i.A()],
               [qt, new i.A()]
             ]
@@ -29344,7 +29405,7 @@
           hn,
           dn,
           un,
-          { provide: pn, useValue: { enableTracing: !1 } }
+          { provide: fn, useValue: { enableTracing: !1 } }
         ];
       function bn() {
         return new i.y('Router', rn);
@@ -29363,13 +29424,13 @@
                   useFactory: En,
                   deps: [[rn, new i.A(), new i.I()]]
                 },
-                { provide: pn, useValue: n || {} },
+                { provide: fn, useValue: n || {} },
                 {
                   provide: r.h,
                   useFactory: _n,
-                  deps: [r.o, [new i.p(r.a), new i.A()], pn]
+                  deps: [r.o, [new i.p(r.a), new i.A()], fn]
                 },
-                { provide: fn, useFactory: vn, deps: [rn, r.q, pn] },
+                { provide: pn, useFactory: vn, deps: [rn, r.q, fn] },
                 {
                   provide: ln,
                   useExisting:
@@ -29400,7 +29461,7 @@
         );
       })();
       function vn(e, t, n) {
-        return n.scrollOffset && t.setOffset(n.scrollOffset), new fn(e, t, n);
+        return n.scrollOffset && t.setOffset(n.scrollOffset), new pn(e, t, n);
       }
       function _n(e, t, n = {}) {
         return n.useHash ? new r.e(e, t) : new r.n(e, t);
@@ -29423,14 +29484,14 @@
           constructor(e) {
             (this.injector = e),
               (this.initNavigation = !1),
-              (this.resultOfPreactivationDone = new f.a());
+              (this.resultOfPreactivationDone = new p.a());
           }
           appInitializer() {
             return this.injector.get(r.f, Promise.resolve(null)).then(() => {
               let e = null;
               const t = new Promise(t => (e = t)),
                 n = this.injector.get(rn),
-                r = this.injector.get(pn);
+                r = this.injector.get(fn);
               if (this.isLegacyDisabled(r) || this.isLegacyEnabled(r)) e(!0);
               else if ('disabled' === r.initialNavigation)
                 n.setUpLocationChangeListener(), e(!0);
@@ -29451,9 +29512,9 @@
             });
           }
           bootstrapListener(e) {
-            const t = this.injector.get(pn),
+            const t = this.injector.get(fn),
               n = this.injector.get(hn),
-              r = this.injector.get(fn),
+              r = this.injector.get(pn),
               o = this.injector.get(rn),
               s = this.injector.get(i.g);
             e === s.components[0] &&
@@ -29510,17 +29571,17 @@
             u = 4 == e,
             d = 6 == e,
             h = 5 == e || d;
-          return function(f, p, m, g) {
+          return function(p, f, m, g) {
             for (
               var b,
                 y,
-                v = o(f),
+                v = o(p),
                 _ = i(v),
-                E = r(p, m, 3),
+                E = r(f, m, 3),
                 S = s(_.length),
                 w = 0,
                 A = g || a,
-                O = t ? A(f, S) : n ? A(f, 0) : void 0;
+                O = t ? A(p, S) : n ? A(p, 0) : void 0;
               S > w;
               w++
             )
@@ -29575,12 +29636,12 @@
           ? 'Symbol(src)_1.' + n
           : '',
         h = c.toString,
-        f = l.hasOwnProperty,
-        p = l.toString,
+        p = l.hasOwnProperty,
+        f = l.toString,
         m = RegExp(
           '^' +
             h
-              .call(f)
+              .call(p)
               .replace(/[\\^$.*+?()[\]{}|]/g, '\\$&')
               .replace(
                 /hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g,
@@ -29641,7 +29702,7 @@
           return (
             !(!T(e) || ((t = e), d && d in t)) &&
             ((function(e) {
-              var t = T(e) ? p.call(e) : '';
+              var t = T(e) ? f.call(e) : '';
               return (
                 '[object Function]' == t || '[object GeneratorFunction]' == t
               );
@@ -29704,11 +29765,11 @@
             var n = t[e];
             return '__lodash_hash_undefined__' === n ? void 0 : n;
           }
-          return f.call(t, e) ? t[e] : void 0;
+          return p.call(t, e) ? t[e] : void 0;
         }),
         (v.prototype.has = function(e) {
           var t = this.__data__;
-          return y ? void 0 !== t[e] : f.call(t, e);
+          return y ? void 0 !== t[e] : p.call(t, e);
         }),
         (v.prototype.set = function(e, t) {
           return (
@@ -29969,7 +30030,7 @@
     w1tV: function(e, t, n) {
       'use strict';
       n.d(t, 'a', function() {
-        return p;
+        return f;
       });
       var r = n('XNiG'),
         i = n('HDdC'),
@@ -30080,13 +30141,13 @@
           }
         }
       }
-      function f() {
+      function p() {
         return new r.a();
       }
-      function p() {
+      function f() {
         return e => {
           return a()(
-            ((t = f),
+            ((t = p),
             function(e) {
               let n;
               n =
@@ -30150,10 +30211,10 @@
           return h;
         }),
         n.d(t, 'k', function() {
-          return f;
+          return p;
         }),
         n.d(t, 'l', function() {
-          return p;
+          return f;
         }),
         n.d(t, 'm', function() {
           return m;
@@ -30301,7 +30362,7 @@
             'M96.06 454.35c.01 6.29 1.87 12.45 5.36 17.69l17.09 25.69a31.99 31.99 0 0 0 26.64 14.28h61.71a31.99 31.99 0 0 0 26.64-14.28l17.09-25.69a31.989 31.989 0 0 0 5.36-17.69l.04-38.35H96.01l.05 38.35zM0 176c0 44.37 16.45 84.85 43.56 115.78 16.52 18.85 42.36 58.23 52.21 91.45.04.26.07.52.11.78h160.24c.04-.26.07-.51.11-.78 9.85-33.22 35.69-72.6 52.21-91.45C335.55 260.85 352 220.37 352 176 352 78.61 272.91-.3 175.45 0 73.44.31 0 82.97 0 176zm176-80c-44.11 0-80 35.89-80 80 0 8.84-7.16 16-16 16s-16-7.16-16-16c0-61.76 50.24-112 112-112 8.84 0 16 7.16 16 16s-7.16 16-16 16z'
           ]
         },
-        f = {
+        p = {
           prefix: 'fas',
           iconName: 'long-arrow-alt-left',
           icon: [
@@ -30312,7 +30373,7 @@
             'M134.059 296H436c6.627 0 12-5.373 12-12v-56c0-6.627-5.373-12-12-12H134.059v-46.059c0-21.382-25.851-32.09-40.971-16.971L7.029 239.029c-9.373 9.373-9.373 24.569 0 33.941l86.059 86.059c15.119 15.119 40.971 4.411 40.971-16.971V296z'
           ]
         },
-        p = {
+        f = {
           prefix: 'fas',
           iconName: 'long-arrow-alt-right',
           icon: [

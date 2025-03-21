@@ -24,9 +24,9 @@
           return l;
         });
         var r = i('fXoL'),
-          a = i('sYmb'),
-          s = i('ofXK'),
-          o = i('AL06');
+          s = i('sYmb'),
+          o = i('ofXK'),
+          a = i('AL06');
         function b(n, t) {
           if (
             (1 & n &&
@@ -84,7 +84,7 @@
           })();
           return (
             (t.ɵfac = function(n) {
-              return new (n || t)(r.Lb(a.c));
+              return new (n || t)(r.Lb(s.c));
             }),
             (t.ɵcmp = r.Fb({
               type: t,
@@ -166,8 +166,8 @@
                     r.xb(6),
                     r.kc('ngForOf', t.elements));
               },
-              directives: [s.j, o.a],
-              pipes: [a.b],
+              directives: [o.j, a.a],
+              pipes: [s.b],
               styles: ['']
             })),
             t
@@ -180,11 +180,11 @@
           return b;
         });
         var r = i('fXoL'),
-          a = i('ofXK'),
-          s = function(n) {
+          s = i('ofXK'),
+          o = function(n) {
             return { small: n };
           },
-          o = ['*'],
+          a = ['*'],
           b = (function() {
             var t = (function() {
               function t() {
@@ -200,7 +200,7 @@
                 type: t,
                 selectors: [['dc-badge']],
                 inputs: { bg: 'bg', text: 'text', small: 'small' },
-                ngContentSelectors: o,
+                ngContentSelectors: a,
                 decls: 5,
                 vars: 7,
                 consts: [[3, 'ngClass']],
@@ -221,9 +221,9 @@
                         t.text,
                         ' bold py-2 px-4 mb-3'
                       ),
-                      r.kc('ngClass', r.oc(5, s, t.small)));
+                      r.kc('ngClass', r.oc(5, o, t.small)));
                 },
-                directives: [a.i],
+                directives: [s.i],
                 styles: ['']
               })),
               t
@@ -233,12 +233,12 @@
       MTqK: function(t, c, i) {
         'use strict';
         i.d(c, 'a', function() {
-          return o;
+          return a;
         });
         var r = i('fXoL'),
-          a = i('sYmb'),
-          s = i('AL06'),
-          o = (function() {
+          s = i('sYmb'),
+          o = i('AL06'),
+          a = (function() {
             var t = (function() {
               function t(e) {
                 n(this, t), (this.translate = e);
@@ -247,7 +247,7 @@
             })();
             return (
               (t.ɵfac = function(n) {
-                return new (n || t)(r.Lb(a.c));
+                return new (n || t)(r.Lb(s.c));
               }),
               (t.ɵcmp = r.Fb({
                 type: t,
@@ -387,8 +387,8 @@
                         '\n          '
                       ));
                 },
-                directives: [s.a],
-                pipes: [a.b],
+                directives: [o.a],
+                pipes: [s.b],
                 styles: ['']
               })),
               t
@@ -398,11 +398,11 @@
       N7aX: function(t, c, i) {
         'use strict';
         i.d(c, 'a', function() {
-          return s;
+          return o;
         });
         var r = i('fLW6'),
-          a = i('fXoL'),
-          s = (function() {
+          s = i('fXoL'),
+          o = (function() {
             var t = (function() {
               function t() {
                 n(this, t),
@@ -424,7 +424,7 @@
               (t.ɵfac = function(n) {
                 return new (n || t)();
               }),
-              (t.ɵprov = a.Hb({
+              (t.ɵprov = s.Hb({
                 token: t,
                 factory: t.ɵfac,
                 providedIn: 'root'
@@ -436,11 +436,11 @@
       VKEt: function(t, c, i) {
         'use strict';
         i.d(c, 'a', function() {
-          return s;
+          return o;
         });
         var r = i('fXoL'),
-          a = i('sYmb'),
-          s = (function() {
+          s = i('sYmb'),
+          o = (function() {
             var t = (function() {
               function t(e) {
                 n(this, t), (this.translate = e);
@@ -449,7 +449,7 @@
             })();
             return (
               (t.ɵfac = function(n) {
-                return new (n || t)(r.Lb(a.c));
+                return new (n || t)(r.Lb(s.c));
               }),
               (t.ɵcmp = r.Fb({
                 type: t,
@@ -541,7 +541,7 @@
                         ''
                       ));
                 },
-                pipes: [a.b],
+                pipes: [s.b],
                 styles: ['']
               })),
               t
@@ -554,14 +554,14 @@
           return b;
         });
         var r = i('fXoL'),
-          a = i('ofXK');
-        function s(n, t) {
+          s = i('ofXK');
+        function o(n, t) {
           if ((1 & n && (r.Qb(0, 'p', 8), r.Fc(1), r.Pb()), 2 & n)) {
             var e = r.fc();
             r.xb(1), r.Gc(e.subtitle);
           }
         }
-        var o = function(n) {
+        var a = function(n) {
             return { 'mb-4': n };
           },
           b = (function() {
@@ -671,7 +671,7 @@
                     r.Fc(18),
                     r.Pb(),
                     r.Fc(19, '\n        '),
-                    r.Dc(20, s, 2, 1, 'p', 7),
+                    r.Dc(20, o, 2, 1, 'p', 7),
                     r.Fc(21, '\n      '),
                     r.Pb(),
                     r.Fc(22, '\n    '),
@@ -689,13 +689,13 @@
                       r.xb(4),
                       r.Ab('col-md-', t.rows || 6, ''),
                       r.xb(2),
-                      r.kc('ngClass', r.oc(8, o, t.subtitle)),
+                      r.kc('ngClass', r.oc(8, a, t.subtitle)),
                       r.xb(1),
                       r.Hc('\n          ', t.title, '\n        '),
                       r.xb(2),
                       r.kc('ngIf', t.subtitle));
                 },
-                directives: [a.i, a.k],
+                directives: [s.i, s.k],
                 styles: ['']
               })),
               t
@@ -705,23 +705,23 @@
       XMwz: function(t, e, c) {
         'use strict';
         c.d(e, 'a', function() {
-          return o;
+          return a;
         });
         var i = c('3Pt+'),
           r = c('ofXK'),
-          a = c('sYmb'),
-          s = c('fXoL'),
-          o = (function() {
+          s = c('sYmb'),
+          o = c('fXoL'),
+          a = (function() {
             var t = function t() {
               n(this, t);
             };
             return (
-              (t.ɵmod = s.Jb({ type: t })),
-              (t.ɵinj = s.Ib({
+              (t.ɵmod = o.Jb({ type: t })),
+              (t.ɵinj = o.Ib({
                 factory: function(n) {
                   return new (n || t)();
                 },
-                imports: [[r.b, i.a, a.a.forChild()]]
+                imports: [[r.b, i.a, s.a.forChild()]]
               })),
               t
             );
@@ -733,14 +733,14 @@
           return l;
         });
         var r = i('fXoL'),
-          a = i('ofXK');
-        function s(n, t) {
+          s = i('ofXK');
+        function o(n, t) {
           if ((1 & n && (r.Qb(0, 'h4', 4), r.Fc(1), r.Pb()), 2 & n)) {
             var e = r.fc();
             r.xb(1), r.Hc('\n      ', e.title, '\n    ');
           }
         }
-        function o(n, t) {
+        function a(n, t) {
           if (
             (1 & n &&
               (r.Qb(0, 'div', 5),
@@ -812,11 +812,11 @@
                     r.Fc(1, '\n  '),
                     r.Qb(2, 'div', 0),
                     r.Fc(3, '\n    '),
-                    r.Dc(4, s, 2, 1, 'h4', 1),
+                    r.Dc(4, o, 2, 1, 'h4', 1),
                     r.Fc(5, '\n\n    '),
                     r.Qb(6, 'div', 2),
                     r.Fc(7, '\n      '),
-                    r.Dc(8, o, 4, 1, 'div', 3),
+                    r.Dc(8, a, 4, 1, 'div', 3),
                     r.Fc(9, '\n    '),
                     r.Pb(),
                     r.Fc(10, '\n  '),
@@ -839,7 +839,7 @@
                       r.xb(4),
                       r.kc('ngForOf', r.nc(7, b)));
                 },
-                directives: [a.i, a.k, a.j],
+                directives: [s.i, s.k, s.j],
                 styles: ['']
               })),
               t
@@ -852,9 +852,9 @@
           return d;
         });
         var r = i('fXoL'),
-          a = i('ofXK'),
-          s = i('nhfI');
-        function o(n, t) {
+          s = i('ofXK'),
+          o = i('nhfI');
+        function a(n, t) {
           if ((1 & n && (r.Qb(0, 'h4', 4), r.Fc(1), r.Pb()), 2 & n)) {
             var e = r.fc();
             r.xb(1), r.Hc('\n      ', e.title, '\n    ');
@@ -933,7 +933,7 @@
                     r.Fc(1, '\n  '),
                     r.Qb(2, 'div', 0),
                     r.Fc(3, '\n    '),
-                    r.Dc(4, o, 2, 1, 'h4', 1),
+                    r.Dc(4, a, 2, 1, 'h4', 1),
                     r.Fc(5, '\n\n    '),
                     r.Qb(6, 'swiper', 2),
                     r.Fc(7, '\n      '),
@@ -962,7 +962,7 @@
                       r.xb(2),
                       r.kc('ngForOf', r.nc(9, l)));
                 },
-                directives: [a.k, s.a, a.j],
+                directives: [s.k, o.a, s.j],
                 styles: ['']
               })),
               t
@@ -975,9 +975,9 @@
           return b;
         });
         var r = i('fXoL'),
-          a = i('sYmb'),
-          s = i('3Pt+'),
-          o = i('ofXK'),
+          s = i('sYmb'),
+          o = i('3Pt+'),
+          a = i('ofXK'),
           b = (function() {
             var t = (function() {
               function t(e) {
@@ -987,7 +987,7 @@
             })();
             return (
               (t.ɵfac = function(n) {
-                return new (n || t)(r.Lb(a.c));
+                return new (n || t)(r.Lb(s.c));
               }),
               (t.ɵcmp = r.Fb({
                 type: t,
@@ -1093,8 +1093,8 @@
                         '\n  '
                       ));
                 },
-                directives: [s.h, s.d, s.e, o.i],
-                pipes: [a.b],
+                directives: [o.h, o.d, o.e, a.i],
+                pipes: [s.b],
                 styles: ['']
               })),
               t
@@ -1104,95 +1104,95 @@
       'f+4U': function(t, c, i) {
         'use strict';
         i.d(c, 'a', function() {
-          return p;
+          return u;
         });
         var r = i('wHSu'),
-          a = i('fXoL'),
-          s = i('sYmb'),
-          o = i('nhfI'),
+          s = i('fXoL'),
+          o = i('sYmb'),
+          a = i('nhfI'),
           b = i('ofXK'),
           l = i('6NWb');
         function d(n, t) {
           if (
             (1 & n &&
-              (a.Qb(0, 'div', 9),
-              a.Fc(1, '\n            '),
-              a.Qb(2, 'div', 10),
-              a.Fc(3, '\n              '),
-              a.Qb(4, 'div', 11),
-              a.Fc(5, '\n                '),
-              a.Qb(6, 'div', 12),
-              a.Fc(7, '\n                  '),
-              a.Mb(8, 'img', 13),
-              a.Fc(9, '\n                '),
-              a.Pb(),
-              a.Fc(10, '\n\n                '),
-              a.Mb(11, 'hr', 14),
-              a.Fc(12, '\n\n                '),
-              a.Qb(13, 'p', 15),
-              a.Fc(14),
-              a.Pb(),
-              a.Fc(15, '\n                '),
-              a.Qb(16, 'p', 16),
-              a.Fc(17),
-              a.Pb(),
-              a.Fc(18, '\n              '),
-              a.Pb(),
-              a.Fc(19, '\n\n              '),
-              a.Qb(20, 'div', 17),
-              a.Fc(21, '\n                '),
-              a.Qb(22, 'div', 18),
-              a.Fc(23, '\n                  '),
-              a.Qb(24, 'p', 19),
-              a.Fc(25, '1.5k'),
-              a.Pb(),
-              a.Fc(26, '\n                  '),
-              a.Qb(27, 'p', 20),
-              a.Fc(28),
-              a.gc(29, 'translate'),
-              a.Pb(),
-              a.Fc(30, '\n                '),
-              a.Pb(),
-              a.Fc(31, '\n                '),
-              a.Qb(32, 'a', 21),
-              a.Fc(33, '\n                  '),
-              a.Mb(34, 'fa-icon', 22),
-              a.Fc(35, '\n                '),
-              a.Pb(),
-              a.Fc(36, '\n              '),
-              a.Pb(),
-              a.Fc(37, '\n            '),
-              a.Pb(),
-              a.Fc(38, '\n          '),
-              a.Pb()),
+              (s.Qb(0, 'div', 9),
+              s.Fc(1, '\n            '),
+              s.Qb(2, 'div', 10),
+              s.Fc(3, '\n              '),
+              s.Qb(4, 'div', 11),
+              s.Fc(5, '\n                '),
+              s.Qb(6, 'div', 12),
+              s.Fc(7, '\n                  '),
+              s.Mb(8, 'img', 13),
+              s.Fc(9, '\n                '),
+              s.Pb(),
+              s.Fc(10, '\n\n                '),
+              s.Mb(11, 'hr', 14),
+              s.Fc(12, '\n\n                '),
+              s.Qb(13, 'p', 15),
+              s.Fc(14),
+              s.Pb(),
+              s.Fc(15, '\n                '),
+              s.Qb(16, 'p', 16),
+              s.Fc(17),
+              s.Pb(),
+              s.Fc(18, '\n              '),
+              s.Pb(),
+              s.Fc(19, '\n\n              '),
+              s.Qb(20, 'div', 17),
+              s.Fc(21, '\n                '),
+              s.Qb(22, 'div', 18),
+              s.Fc(23, '\n                  '),
+              s.Qb(24, 'p', 19),
+              s.Fc(25, '1.5k'),
+              s.Pb(),
+              s.Fc(26, '\n                  '),
+              s.Qb(27, 'p', 20),
+              s.Fc(28),
+              s.gc(29, 'translate'),
+              s.Pb(),
+              s.Fc(30, '\n                '),
+              s.Pb(),
+              s.Fc(31, '\n                '),
+              s.Qb(32, 'a', 21),
+              s.Fc(33, '\n                  '),
+              s.Mb(34, 'fa-icon', 22),
+              s.Fc(35, '\n                '),
+              s.Pb(),
+              s.Fc(36, '\n              '),
+              s.Pb(),
+              s.Fc(37, '\n            '),
+              s.Pb(),
+              s.Fc(38, '\n          '),
+              s.Pb()),
             2 & n)
           ) {
             var e = t.$implicit,
               c = t.index,
-              i = a.fc();
-            a.xb(8),
-              a.kc('src', 'assets/img/v8/icons/' + (c + 1) + '.svg', a.yc),
-              a.xb(6),
-              a.Ic(
+              i = s.fc();
+            s.xb(8),
+              s.kc('src', 'assets/img/v8/icons/' + (c + 1) + '.svg', s.yc),
+              s.xb(6),
+              s.Ic(
                 '\n                  ',
                 e.title[0],
                 ' ',
                 e.title[1],
                 '\n                '
               ),
-              a.xb(3),
-              a.Hc('\n                  ', e.description, '\n                '),
-              a.xb(11),
-              a.Hc(
+              s.xb(3),
+              s.Hc('\n                  ', e.description, '\n                '),
+              s.xb(11),
+              s.Hc(
                 '\n                    ',
-                a.hc(29, 6, 'SLIDERS.SLIDER_CARD_PROJECTS.NEW_SUBSCRIBERS'),
+                s.hc(29, 6, 'SLIDERS.SLIDER_CARD_PROJECTS.NEW_SUBSCRIBERS'),
                 '\n                  '
               ),
-              a.xb(6),
-              a.kc('icon', i.infoCircle);
+              s.xb(6),
+              s.kc('icon', i.infoCircle);
           }
         }
-        var p = (function() {
+        var u = (function() {
           var t = (function() {
             function t(e) {
               n(this, t),
@@ -1258,9 +1258,9 @@
           })();
           return (
             (t.ɵfac = function(n) {
-              return new (n || t)(a.Lb(s.c));
+              return new (n || t)(s.Lb(o.c));
             }),
-            (t.ɵcmp = a.Fb({
+            (t.ɵcmp = s.Fb({
               type: t,
               selectors: [['dc-slider-card-projects']],
               inputs: { liftUp: 'liftUp' },
@@ -1299,55 +1299,55 @@
               ],
               template: function(n, t) {
                 1 & n &&
-                  (a.Qb(0, 'section', 0),
-                  a.Fc(1, '\n  '),
-                  a.Qb(2, 'div', 1),
-                  a.Fc(3, '\n    '),
-                  a.Qb(4, 'div', 2),
-                  a.Fc(5, '\n      '),
-                  a.Qb(6, 'div', 3),
-                  a.Fc(7, '\n        '),
-                  a.Qb(8, 'div', 4),
-                  a.Fc(9, '\n          '),
-                  a.Dc(10, d, 39, 8, 'div', 5),
-                  a.Fc(11, '\n        '),
-                  a.Pb(),
-                  a.Fc(12, '\n\n        '),
-                  a.Fc(13, '\n        '),
-                  a.Qb(14, 'div', 6),
-                  a.Fc(15, '\n          '),
-                  a.Qb(16, 'span', 7),
-                  a.Fc(17),
-                  a.gc(18, 'translate'),
-                  a.Pb(),
-                  a.Fc(19, '\n          '),
-                  a.Mb(20, 'fa-icon', 8),
-                  a.Fc(21, '\n        '),
-                  a.Pb(),
-                  a.Fc(22, '\n      '),
-                  a.Pb(),
-                  a.Fc(23, '\n    '),
-                  a.Pb(),
-                  a.Fc(24, '\n  '),
-                  a.Pb(),
-                  a.Fc(25, '\n'),
-                  a.Pb(),
-                  a.Fc(26, '\n')),
+                  (s.Qb(0, 'section', 0),
+                  s.Fc(1, '\n  '),
+                  s.Qb(2, 'div', 1),
+                  s.Fc(3, '\n    '),
+                  s.Qb(4, 'div', 2),
+                  s.Fc(5, '\n      '),
+                  s.Qb(6, 'div', 3),
+                  s.Fc(7, '\n        '),
+                  s.Qb(8, 'div', 4),
+                  s.Fc(9, '\n          '),
+                  s.Dc(10, d, 39, 8, 'div', 5),
+                  s.Fc(11, '\n        '),
+                  s.Pb(),
+                  s.Fc(12, '\n\n        '),
+                  s.Fc(13, '\n        '),
+                  s.Qb(14, 'div', 6),
+                  s.Fc(15, '\n          '),
+                  s.Qb(16, 'span', 7),
+                  s.Fc(17),
+                  s.gc(18, 'translate'),
+                  s.Pb(),
+                  s.Fc(19, '\n          '),
+                  s.Mb(20, 'fa-icon', 8),
+                  s.Fc(21, '\n        '),
+                  s.Pb(),
+                  s.Fc(22, '\n      '),
+                  s.Pb(),
+                  s.Fc(23, '\n    '),
+                  s.Pb(),
+                  s.Fc(24, '\n  '),
+                  s.Pb(),
+                  s.Fc(25, '\n'),
+                  s.Pb(),
+                  s.Fc(26, '\n')),
                   2 & n &&
-                    (a.xb(2),
-                    a.Db('lift-up', t.liftUp),
-                    a.xb(4),
-                    a.kc('swiper', t.config),
-                    a.xb(4),
-                    a.kc('ngForOf', t.features),
-                    a.xb(7),
-                    a.Gc(a.hc(18, 8, 'SLIDERS.SLIDER_CARD_PROJECTS.NEXT')),
-                    a.xb(3),
-                    a.zb('features-nav-icon'),
-                    a.kc('icon', t.longArrowAltRight));
+                    (s.xb(2),
+                    s.Db('lift-up', t.liftUp),
+                    s.xb(4),
+                    s.kc('swiper', t.config),
+                    s.xb(4),
+                    s.kc('ngForOf', t.features),
+                    s.xb(7),
+                    s.Gc(s.hc(18, 8, 'SLIDERS.SLIDER_CARD_PROJECTS.NEXT')),
+                    s.xb(3),
+                    s.zb('features-nav-icon'),
+                    s.kc('icon', t.longArrowAltRight));
               },
-              directives: [o.b, b.j, l.a],
-              pipes: [s.b],
+              directives: [a.b, b.j, l.a],
+              pipes: [o.b],
               styles: [
                 '@media (min-width:576px){.container[_ngcontent-%COMP%] > .cards-wrapper[_ngcontent-%COMP%]{width:510px}}@media (min-width:768px){.container[_ngcontent-%COMP%] > .cards-wrapper[_ngcontent-%COMP%]{width:690px}}@media (min-width:992px){.container[_ngcontent-%COMP%] > .cards-wrapper[_ngcontent-%COMP%]{width:930px}}@media (min-width:1200px){.container[_ngcontent-%COMP%] > .cards-wrapper[_ngcontent-%COMP%]{width:1110px}}@media (min-width:992px){.container.lift-up[_ngcontent-%COMP%]{padding-bottom:16rem}.container.lift-up[_ngcontent-%COMP%] > .cards-wrapper[_ngcontent-%COMP%]{position:absolute;transform:translateY(-50%)}}.logo[_ngcontent-%COMP%]{min-height:48px}'
               ]
@@ -1667,118 +1667,118 @@
           (t.prototype.simplex2 = function(n, t) {
             var i,
               r,
-              a = (n + t) * e,
-              s = Math.floor(n + a),
-              o = Math.floor(t + a),
-              b = (s + o) * c,
-              l = n - s + b,
-              d = t - o + b;
+              s = (n + t) * e,
+              o = Math.floor(n + s),
+              a = Math.floor(t + s),
+              b = (o + a) * c,
+              l = n - o + b,
+              d = t - a + b;
             l > d ? ((i = 1), (r = 0)) : ((i = 0), (r = 1));
-            var p = l - i + c,
-              u = d - r + c,
-              F = l - 1 + 2 * c,
-              f = d - 1 + 2 * c,
-              g = this.perm,
-              h = this.gradP,
-              m = h[(s &= 255) + i + g[(o &= 255) + r]],
-              P = h[s + 1 + g[o + 1]],
-              v = 0.5 - l * l - d * d,
-              S = 0.5 - p * p - u * u,
-              T = 0.5 - F * F - f * f;
+            var u = l - i + c,
+              p = d - r + c,
+              f = l - 1 + 2 * c,
+              g = d - 1 + 2 * c,
+              h = this.perm,
+              F = this.gradP,
+              m = F[(o &= 255) + i + h[(a &= 255) + r]],
+              v = F[o + 1 + h[a + 1]],
+              x = 0.5 - l * l - d * d,
+              w = 0.5 - u * u - p * p,
+              P = 0.5 - f * f - g * g;
             return (
               70 *
-              ((v < 0 ? 0 : (v *= v) * v * h[s + g[o]].dot2(l, d)) +
-                (S < 0 ? 0 : (S *= S) * S * m.dot2(p, u)) +
-                (T < 0 ? 0 : (T *= T) * T * P.dot2(F, f)))
+              ((x < 0 ? 0 : (x *= x) * x * F[o + h[a]].dot2(l, d)) +
+                (w < 0 ? 0 : (w *= w) * w * m.dot2(u, p)) +
+                (P < 0 ? 0 : (P *= P) * P * v.dot2(f, g)))
             );
           }),
             (t.prototype.simplex3 = function(n, t, e) {
               var c,
                 i,
                 r,
-                a,
                 s,
                 o,
+                a,
                 b = (n + t + e) * (1 / 3),
                 l = Math.floor(n + b),
                 d = Math.floor(t + b),
-                p = Math.floor(e + b),
-                u = (l + d + p) * (1 / 6),
-                F = n - l + u,
-                f = t - d + u,
-                g = e - p + u;
-              F >= f
-                ? f >= g
-                  ? ((c = 1), (i = 0), (r = 0), (a = 1), (s = 1), (o = 0))
-                  : F >= g
-                  ? ((c = 1), (i = 0), (r = 0), (a = 1), (s = 0), (o = 1))
-                  : ((c = 0), (i = 0), (r = 1), (a = 1), (s = 0), (o = 1))
-                : f < g
-                ? ((c = 0), (i = 0), (r = 1), (a = 0), (s = 1), (o = 1))
-                : F < g
-                ? ((c = 0), (i = 1), (r = 0), (a = 0), (s = 1), (o = 1))
-                : ((c = 0), (i = 1), (r = 0), (a = 1), (s = 1), (o = 0));
-              var h = F - c + 1 / 6,
-                m = f - i + 1 / 6,
-                P = g - r + 1 / 6,
-                v = F - a + (1 / 6) * 2,
-                S = f - s + (1 / 6) * 2,
-                T = g - o + (1 / 6) * 2,
-                E = F - 1 + 0.5,
-                x = f - 1 + 0.5,
-                I = g - 1 + 0.5,
-                _ = this.perm,
-                R = this.gradP,
-                O = R[(l &= 255) + c + _[(d &= 255) + i + _[(p &= 255) + r]]],
-                y = R[l + a + _[d + s + _[p + o]]],
-                A = R[l + 1 + _[d + 1 + _[p + 1]]],
-                w = 0.5 - F * F - f * f - g * g,
-                Q = 0.5 - h * h - m * m - P * P,
-                N = 0.5 - v * v - S * S - T * T,
-                C = 0.5 - E * E - x * x - I * I;
+                u = Math.floor(e + b),
+                p = (l + d + u) * (1 / 6),
+                f = n - l + p,
+                g = t - d + p,
+                h = e - u + p;
+              f >= g
+                ? g >= h
+                  ? ((c = 1), (i = 0), (r = 0), (s = 1), (o = 1), (a = 0))
+                  : f >= h
+                  ? ((c = 1), (i = 0), (r = 0), (s = 1), (o = 0), (a = 1))
+                  : ((c = 0), (i = 0), (r = 1), (s = 1), (o = 0), (a = 1))
+                : g < h
+                ? ((c = 0), (i = 0), (r = 1), (s = 0), (o = 1), (a = 1))
+                : f < h
+                ? ((c = 0), (i = 1), (r = 0), (s = 0), (o = 1), (a = 1))
+                : ((c = 0), (i = 1), (r = 0), (s = 1), (o = 1), (a = 0));
+              var F = f - c + 1 / 6,
+                m = g - i + 1 / 6,
+                v = h - r + 1 / 6,
+                x = f - s + (1 / 6) * 2,
+                w = g - o + (1 / 6) * 2,
+                P = h - a + (1 / 6) * 2,
+                y = f - 1 + 0.5,
+                E = g - 1 + 0.5,
+                Q = h - 1 + 0.5,
+                k = this.perm,
+                O = this.gradP,
+                C = O[(l &= 255) + c + k[(d &= 255) + i + k[(u &= 255) + r]]],
+                _ = O[l + s + k[d + o + k[u + a]]],
+                S = O[l + 1 + k[d + 1 + k[u + 1]]],
+                I = 0.5 - f * f - g * g - h * h,
+                T = 0.5 - F * F - m * m - v * v,
+                L = 0.5 - x * x - w * w - P * P,
+                M = 0.5 - y * y - E * E - Q * Q;
               return (
                 32 *
-                ((w < 0 ? 0 : (w *= w) * w * R[l + _[d + _[p]]].dot3(F, f, g)) +
-                  (Q < 0 ? 0 : (Q *= Q) * Q * O.dot3(h, m, P)) +
-                  (N < 0 ? 0 : (N *= N) * N * y.dot3(v, S, T)) +
-                  (C < 0 ? 0 : (C *= C) * C * A.dot3(E, x, I)))
+                ((I < 0 ? 0 : (I *= I) * I * O[l + k[d + k[u]]].dot3(f, g, h)) +
+                  (T < 0 ? 0 : (T *= T) * T * C.dot3(F, m, v)) +
+                  (L < 0 ? 0 : (L *= L) * L * _.dot3(x, w, P)) +
+                  (M < 0 ? 0 : (M *= M) * M * S.dot3(y, E, Q)))
               );
             }),
             (t.prototype.perlin2 = function(n, t) {
               var e = Math.floor(n),
                 c = Math.floor(t);
               (n -= e), (t -= c);
-              var a = this.perm,
-                s = this.gradP,
-                o = s[(e &= 255) + a[(c &= 255)]].dot2(n, t),
-                b = s[e + a[c + 1]].dot2(n, t - 1),
-                l = s[e + 1 + a[c]].dot2(n - 1, t),
-                d = s[e + 1 + a[c + 1]].dot2(n - 1, t - 1),
-                p = i(n);
-              return r(r(o, l, p), r(b, d, p), i(t));
+              var s = this.perm,
+                o = this.gradP,
+                a = o[(e &= 255) + s[(c &= 255)]].dot2(n, t),
+                b = o[e + s[c + 1]].dot2(n, t - 1),
+                l = o[e + 1 + s[c]].dot2(n - 1, t),
+                d = o[e + 1 + s[c + 1]].dot2(n - 1, t - 1),
+                u = i(n);
+              return r(r(a, l, u), r(b, d, u), i(t));
             }),
             (t.prototype.perlin3 = function(n, t, e) {
               var c = Math.floor(n),
-                a = Math.floor(t),
-                s = Math.floor(e);
-              (n -= c), (t -= a), (e -= s);
-              var o = this.perm,
+                s = Math.floor(t),
+                o = Math.floor(e);
+              (n -= c), (t -= s), (e -= o);
+              var a = this.perm,
                 b = this.gradP,
-                l = b[(c &= 255) + o[(a &= 255) + o[(s &= 255)]]].dot3(n, t, e),
-                d = b[c + o[a + o[s + 1]]].dot3(n, t, e - 1),
-                p = b[c + o[a + 1 + o[s]]].dot3(n, t - 1, e),
-                u = b[c + o[a + 1 + o[s + 1]]].dot3(n, t - 1, e - 1),
-                F = b[c + 1 + o[a + o[s]]].dot3(n - 1, t, e),
-                f = b[c + 1 + o[a + o[s + 1]]].dot3(n - 1, t, e - 1),
-                g = b[c + 1 + o[a + 1 + o[s]]].dot3(n - 1, t - 1, e),
-                h = b[c + 1 + o[a + 1 + o[s + 1]]].dot3(n - 1, t - 1, e - 1),
+                l = b[(c &= 255) + a[(s &= 255) + a[(o &= 255)]]].dot3(n, t, e),
+                d = b[c + a[s + a[o + 1]]].dot3(n, t, e - 1),
+                u = b[c + a[s + 1 + a[o]]].dot3(n, t - 1, e),
+                p = b[c + a[s + 1 + a[o + 1]]].dot3(n, t - 1, e - 1),
+                f = b[c + 1 + a[s + a[o]]].dot3(n - 1, t, e),
+                g = b[c + 1 + a[s + a[o + 1]]].dot3(n - 1, t, e - 1),
+                h = b[c + 1 + a[s + 1 + a[o]]].dot3(n - 1, t - 1, e),
+                F = b[c + 1 + a[s + 1 + a[o + 1]]].dot3(n - 1, t - 1, e - 1),
                 m = i(n),
-                P = i(t),
-                v = i(e);
+                v = i(t),
+                x = i(e);
               return r(
-                r(r(l, F, m), r(d, f, m), v),
-                r(r(p, g, m), r(u, h, m), v),
-                P
+                r(r(l, f, m), r(d, g, m), x),
+                r(r(u, h, m), r(p, F, m), x),
+                v
               );
             }),
             (n.Noise = t);
@@ -1787,18 +1787,18 @@
       kpBo: function(t, e, c) {
         'use strict';
         c.d(e, 'a', function() {
-          return s;
+          return o;
         });
         var i = c('M0ag'),
           r = c('sYmb'),
-          a = c('fXoL'),
-          s = (function() {
+          s = c('fXoL'),
+          o = (function() {
             var t = function t() {
               n(this, t);
             };
             return (
-              (t.ɵmod = a.Jb({ type: t })),
-              (t.ɵinj = a.Ib({
+              (t.ɵmod = s.Jb({ type: t })),
+              (t.ɵinj = s.Ib({
                 factory: function(n) {
                   return new (n || t)();
                 },
@@ -1808,571 +1808,15 @@
             );
           })();
       },
-      mrcQ: function(t, c, i) {
-        'use strict';
-        i.d(c, 'a', function() {
-          return p;
-        });
-        var r = i('fXoL'),
-          a = i('sYmb'),
-          s = i('ofXK'),
-          o = i('AL06');
-        function b(n, t) {
-          if (
-            (1 & n &&
-              (r.Qb(0, 'li'),
-              r.Fc(1, '\n                    '),
-              r.Qb(2, 'div', 34),
-              r.Fc(3, '\n                      '),
-              r.Qb(4, 'div', 35),
-              r.Fc(5, '\n                        '),
-              r.Mb(6, 'dc-feather', 33),
-              r.Fc(7, '\n                      '),
-              r.Pb(),
-              r.Fc(8, '\n\n                      '),
-              r.Qb(9, 'div', 36),
-              r.Fc(10),
-              r.gc(11, 'translate'),
-              r.Pb(),
-              r.Fc(12, '\n                    '),
-              r.Pb(),
-              r.Fc(13, '\n                  '),
-              r.Pb()),
-            2 & n)
-          ) {
-            var e = t.$implicit;
-            r.xb(6),
-              r.kc('name', e.icon)('size', 16)('iconClass', 'stroke-contrast'),
-              r.xb(4),
-              r.Hc(
-                '\n                        ',
-                r.hc(11, 4, e.name),
-                '\n                      '
-              );
-          }
-        }
-        function l(n, t) {
-          if (
-            (1 & n &&
-              (r.Qb(0, 'div', 23),
-              r.Fc(1, '\n        '),
-              r.Qb(2, 'div', 24),
-              r.Fc(3, '\n          '),
-              r.Qb(4, 'div', 11),
-              r.Fc(5, '\n            '),
-              r.Qb(6, 'div', 12),
-              r.Fc(7, '\n              '),
-              r.Qb(8, 'div', 25),
-              r.Fc(9, '\n                '),
-              r.Qb(10, 'div', 26),
-              r.Fc(11, '\n                  '),
-              r.Qb(12, 'h5', 27),
-              r.Fc(13),
-              r.gc(14, 'translate'),
-              r.Pb(),
-              r.Fc(15, '\n                  '),
-              r.Mb(16, 'hr', 16),
-              r.Fc(17, '\n\n                  '),
-              r.Qb(18, 'p'),
-              r.Fc(19),
-              r.gc(20, 'translate'),
-              r.Pb(),
-              r.Fc(21, '\n\n                  '),
-              r.Qb(22, 'div', 28),
-              r.Fc(23, '\n                    '),
-              r.Qb(24, 'span', 29),
-              r.Fc(25),
-              r.Pb(),
-              r.Fc(26, '\n                  '),
-              r.Pb(),
-              r.Fc(27, '\n                '),
-              r.Pb(),
-              r.Fc(28, '\n\n                '),
-              r.Qb(29, 'ul', 30),
-              r.Fc(30, '\n                  '),
-              r.Dc(31, b, 14, 6, 'li', 31),
-              r.Fc(32, '\n                '),
-              r.Pb(),
-              r.Fc(33, '\n              '),
-              r.Pb(),
-              r.Fc(34, '\n            '),
-              r.Pb(),
-              r.Fc(35, '\n          '),
-              r.Pb(),
-              r.Fc(36, '\n\n          '),
-              r.Qb(37, 'a', 32),
-              r.Fc(38),
-              r.gc(39, 'translate'),
-              r.Mb(40, 'dc-feather', 33),
-              r.Fc(41, '\n          '),
-              r.Pb(),
-              r.Fc(42, '\n        '),
-              r.Pb(),
-              r.Fc(43, '\n      '),
-              r.Pb()),
-            2 & n)
-          ) {
-            var e = t.$implicit,
-              c = r.fc();
-            r.Ab('col-md-', 12 / (c.plans.length + 1), ''),
-              r.xb(13),
-              r.Hc(
-                '\n                    ',
-                r.hc(14, 13, e.plan.name),
-                '\n                  '
-              ),
-              r.xb(6),
-              r.Gc(r.hc(20, 15, e.plan.description)),
-              r.xb(5),
-              r.yb('data-monthly-price', e.plan.price.monthly)(
-                'data-yearly-price',
-                e.plan.price.yearly
-              ),
-              r.xb(1),
-              r.Hc(
-                '\n                      ',
-                e.plan.price.monthly,
-                '\n                    '
-              ),
-              r.xb(6),
-              r.kc('ngForOf', e.features),
-              r.xb(7),
-              r.Hc(
-                '\n            ',
-                r.hc(39, 17, 'DEMOS.START_UP.PRICING_TWO.GETNOW'),
-                '\n\n            '
-              ),
-              r.xb(2),
-              r.kc('name', 'arrow-right')('size', 16)('iconClass', 'ml-3');
-          }
-        }
-        function d(n, t) {
-          if (
-            (1 & n &&
-              (r.Qb(0, 'div'),
-              r.Fc(1, '\n                      '),
-              r.Qb(2, 'div', 37),
-              r.Fc(3, '\n                        '),
-              r.Mb(4, 'dc-feather', 33),
-              r.Fc(5, '\n                        '),
-              r.Qb(6, 'p', 38),
-              r.Fc(7),
-              r.gc(8, 'translate'),
-              r.Pb(),
-              r.Fc(9, '\n                      '),
-              r.Pb(),
-              r.Fc(10, '\n                    '),
-              r.Pb()),
-            2 & n)
-          ) {
-            var e = t.$implicit,
-              c = t.index;
-            r.Ab('col-6 border-', e.border, ''),
-              r.Db('border-top', c > 1),
-              r.xb(4),
-              r.kc('name', e.icon)('size', 32)('iconClass', 'stroke-primary'),
-              r.xb(3),
-              r.Gc(r.hc(8, 9, e.title));
-          }
-        }
-        var p = (function() {
-          var t = (function() {
-            function t(e) {
-              n(this, t),
-                (this.translate = e),
-                (this.plans = [
-                  {
-                    icon: 'box',
-                    plan: {
-                      name: 'DEMOS.START_UP.PRICING_TWO.PLAN_BASIC',
-                      price: { monthly: 9.99, yearly: 99.78 },
-                      description: 'DEMOS.START_UP.PRICING_TWO.PLAN_BASIC_DESC'
-                    },
-                    features: [
-                      {
-                        name: 'DEMOS.START_UP.PRICING_TWO.FEATURES1',
-                        icon: 'calendar'
-                      },
-                      {
-                        name: 'DEMOS.START_UP.PRICING_TWO.FEATURES2',
-                        icon: 'dollar-sign'
-                      },
-                      {
-                        name: 'DEMOS.START_UP.PRICING_TWO.FEATURES3',
-                        icon: 'smartphone'
-                      },
-                      {
-                        name: 'DEMOS.START_UP.PRICING_TWO.FEATURES4',
-                        icon: 'layout'
-                      }
-                    ]
-                  }
-                ]),
-                (this.xtras = [
-                  {
-                    icon: 'home',
-                    title: 'DEMOS.START_UP.PRICING_TWO.FEATURES5',
-                    border: 'right'
-                  },
-                  {
-                    icon: 'git-branch',
-                    title: 'DEMOS.START_UP.PRICING_TWO.FEATURES6'
-                  },
-                  {
-                    icon: 'headphones',
-                    title: 'DEMOS.START_UP.PRICING_TWO.FEATURES7',
-                    border: 'right'
-                  },
-                  {
-                    icon: 'activity',
-                    title: 'DEMOS.START_UP.PRICING_TWO.FEATURES8'
-                  },
-                  {
-                    icon: 'trello',
-                    title: 'DEMOS.START_UP.PRICING_TWO.FEATURES9',
-                    border: 'right'
-                  },
-                  {
-                    icon: 'volume-2',
-                    title: 'DEMOS.START_UP.PRICING_TWO.FEATURES10'
-                  },
-                  {
-                    icon: 'box',
-                    title: 'DEMOS.START_UP.PRICING_TWO.FEATURES11',
-                    border: 'right'
-                  },
-                  {
-                    icon: 'share-2',
-                    title: 'DEMOS.START_UP.PRICING_TWO.FEATURES12'
-                  }
-                ]);
-            }
-            return e(t, [{ key: 'ngOnInit', value: function() {} }]), t;
-          })();
-          return (
-            (t.ɵfac = function(n) {
-              return new (n || t)(r.Lb(a.c));
-            }),
-            (t.ɵcmp = r.Fb({
-              type: t,
-              selectors: [['dc-pricing-two-cards']],
-              decls: 95,
-              vars: 38,
-              consts: [
-                [1, 'bg-light', 'edge', 'top-left'],
-                [1, 'container', 'bring-to-front', 'pb-0', 'pt-3'],
-                [1, 'section-heading'],
-                [1, 'row', 'justify-content-center'],
-                [1, 'col-md-10', 'col-lg-8', 'text-center'],
-                [
-                  2,
-                  'color',
-                  '#212121',
-                  'font-size',
-                  '35px',
-                  'font-weight',
-                  'normal'
-                ],
-                [
-                  2,
-                  'color',
-                  '#000000',
-                  'font-weight',
-                  'bold',
-                  'font-size',
-                  '40px'
-                ],
-                [1, 'lead', 'text-muted'],
-                [1, 'row', 'align-items-center', 'no-gutters'],
-                ['style', 'z-index: 1', 3, 'class', 4, 'ngFor', 'ngForOf'],
-                [
-                  'data-aos',
-                  'fade-up',
-                  'data-aos-delay',
-                  '200',
-                  1,
-                  'card',
-                  'border-0',
-                  'rounded-lg',
-                  'shadow-lg'
-                ],
-                [1, 'card-body', 'py-4'],
-                [1, 'row'],
-                [1, 'col-xl-10', 'mx-auto'],
-                [1, 'text-center'],
-                [1, 'bold', 'text-uppercase'],
-                [1, 'my-4'],
-                [1, 'lead', 'bold'],
-                [1, 'text-muted'],
-                [1, 'row', 'no-gutters'],
-                [3, 'class', 'border-top', 4, 'ngFor', 'ngForOf'],
-                [
-                  'href',
-                  'https://everythink.ai/app/#/sessions/signup',
-                  1,
-                  'btn',
-                  'btn-light',
-                  'btn-lg',
-                  'btn-block',
-                  'rounded-top-0',
-                  'rounded-bottom',
-                  'py-4'
-                ],
-                ['name', 'arrow-right', 1, 'ml-3'],
-                [2, 'z-index', '1'],
-                [
-                  'data-aos',
-                  'fade-up',
-                  1,
-                  'card',
-                  'border-0',
-                  'rounded-lg',
-                  'shadow-lg',
-                  'mb-4',
-                  'mb-md-0'
-                ],
-                [1, 'col-xl-9', 'mx-auto'],
-                [1, 'pricing', 'text-center', 'mb-5'],
-                [1, 'bold', 'text-uppercase', 'text-primary'],
-                [1, 'pricing-value'],
-                [
-                  1,
-                  'price',
-                  'display-lg-4',
-                  'semibold',
-                  'odometer',
-                  'text-dark'
-                ],
-                [1, 'list-unstyled'],
-                [4, 'ngFor', 'ngForOf'],
-                [
-                  'href',
-                  'https://everythink.ai/app/#/sessions/signup',
-                  1,
-                  'btn',
-                  'btn-primary',
-                  'btn-lg',
-                  'btn-block',
-                  'rounded-top-0',
-                  'rounded-bottom',
-                  'py-4'
-                ],
-                [3, 'name', 'size', 'iconClass'],
-                [1, 'media', 'align-items-center', 'mb-3'],
-                [
-                  1,
-                  'icon-md',
-                  'bg-success',
-                  'p-2',
-                  'rounded-circle',
-                  'center-flex',
-                  'mr-3'
-                ],
-                [1, 'media-body'],
-                [1, 'text-center', 'p-3'],
-                [1, 'mb-0']
-              ],
-              template: function(n, t) {
-                1 & n &&
-                  (r.Qb(0, 'section', 0),
-                  r.Fc(1, '\n  '),
-                  r.Qb(2, 'div', 1),
-                  r.Fc(3, '\n    '),
-                  r.Qb(4, 'div', 2),
-                  r.Fc(5, '\n      '),
-                  r.Qb(6, 'div', 3),
-                  r.Fc(7, '\n        '),
-                  r.Qb(8, 'div', 4),
-                  r.Fc(9, '\n          '),
-                  r.Qb(10, 'h2'),
-                  r.Fc(11, '\n            '),
-                  r.Qb(12, 'p', 5),
-                  r.Fc(13),
-                  r.gc(14, 'translate'),
-                  r.Qb(15, 'span', 6),
-                  r.Fc(16),
-                  r.gc(17, 'translate'),
-                  r.Pb(),
-                  r.Fc(18, '\n            '),
-                  r.Pb(),
-                  r.Fc(19, '\n            '),
-                  r.Qb(20, 'p', 6),
-                  r.Fc(21),
-                  r.gc(22, 'translate'),
-                  r.Qb(23, 'span', 5),
-                  r.Fc(24),
-                  r.gc(25, 'translate'),
-                  r.Pb(),
-                  r.Fc(26, '\n            '),
-                  r.Pb(),
-                  r.Fc(27, '\n            '),
-                  r.Qb(28, 'p', 6),
-                  r.Fc(29),
-                  r.gc(30, 'translate'),
-                  r.Qb(31, 'span', 5),
-                  r.Fc(32),
-                  r.gc(33, 'translate'),
-                  r.Pb(),
-                  r.Fc(34, '\n            '),
-                  r.Pb(),
-                  r.Fc(35, '\n          '),
-                  r.Pb(),
-                  r.Fc(36, '\n\n          '),
-                  r.Qb(37, 'p', 7),
-                  r.Fc(38),
-                  r.gc(39, 'translate'),
-                  r.Pb(),
-                  r.Fc(40, '\n        '),
-                  r.Pb(),
-                  r.Fc(41, '\n      '),
-                  r.Pb(),
-                  r.Fc(42, '\n\n      '),
-                  r.Fc(43, '\n    '),
-                  r.Pb(),
-                  r.Fc(44, '\n\n    '),
-                  r.Qb(45, 'div', 8),
-                  r.Fc(46, '\n      '),
-                  r.Dc(47, l, 44, 19, 'div', 9),
-                  r.Fc(48, '\n\n      '),
-                  r.Qb(49, 'div'),
-                  r.Fc(50, '\n        '),
-                  r.Qb(51, 'div', 10),
-                  r.Fc(52, '\n          '),
-                  r.Qb(53, 'div', 11),
-                  r.Fc(54, '\n            '),
-                  r.Qb(55, 'div', 12),
-                  r.Fc(56, '\n              '),
-                  r.Qb(57, 'div', 13),
-                  r.Fc(58, '\n                '),
-                  r.Qb(59, 'div', 14),
-                  r.Fc(60, '\n                  '),
-                  r.Qb(61, 'h5', 15),
-                  r.Fc(62),
-                  r.gc(63, 'translate'),
-                  r.Pb(),
-                  r.Fc(64, '\n                  '),
-                  r.Mb(65, 'hr', 16),
-                  r.Fc(66, '\n\n                  '),
-                  r.Qb(67, 'p', 17),
-                  r.Fc(68),
-                  r.gc(69, 'translate'),
-                  r.Pb(),
-                  r.Fc(70, '\n\n                  '),
-                  r.Qb(71, 'p', 18),
-                  r.Fc(72),
-                  r.gc(73, 'translate'),
-                  r.Pb(),
-                  r.Fc(74, '\n\n                  '),
-                  r.Qb(75, 'div', 19),
-                  r.Fc(76, '\n                    '),
-                  r.Dc(77, d, 11, 11, 'div', 20),
-                  r.Fc(78, '\n                  '),
-                  r.Pb(),
-                  r.Fc(79, '\n                '),
-                  r.Pb(),
-                  r.Fc(80, '\n              '),
-                  r.Pb(),
-                  r.Fc(81, '\n            '),
-                  r.Pb(),
-                  r.Fc(82, '\n          '),
-                  r.Pb(),
-                  r.Fc(83, '\n\n          '),
-                  r.Qb(84, 'a', 21),
-                  r.Fc(85),
-                  r.gc(86, 'translate'),
-                  r.Mb(87, 'dc-feather', 22),
-                  r.Fc(88, '\n          '),
-                  r.Pb(),
-                  r.Fc(89, '\n        '),
-                  r.Pb(),
-                  r.Fc(90, '\n      '),
-                  r.Pb(),
-                  r.Fc(91, '\n    '),
-                  r.Pb(),
-                  r.Fc(92, '\n  '),
-                  r.Pb(),
-                  r.Fc(93, '\n'),
-                  r.Pb(),
-                  r.Fc(94, '\n')),
-                  2 & n &&
-                    (r.xb(13),
-                    r.Hc(
-                      '\n              ',
-                      r.hc(14, 16, 'DEMOS.START_UP.PRICING_TWO.TITLE0'),
-                      '\n              '
-                    ),
-                    r.xb(3),
-                    r.Gc(r.hc(17, 18, 'DEMOS.START_UP.PRICING_TWO.TITLE01')),
-                    r.xb(5),
-                    r.Hc(
-                      '\n              ',
-                      r.hc(22, 20, 'DEMOS.START_UP.PRICING_TWO.TITLE1'),
-                      '\n              '
-                    ),
-                    r.xb(3),
-                    r.Gc(r.hc(25, 22, 'DEMOS.START_UP.PRICING_TWO.TITLE11')),
-                    r.xb(5),
-                    r.Hc(
-                      '\n              ',
-                      r.hc(30, 24, 'DEMOS.START_UP.PRICING_TWO.TITLE2'),
-                      '\n              '
-                    ),
-                    r.xb(3),
-                    r.Gc(r.hc(33, 26, 'DEMOS.START_UP.PRICING_TWO.TITLE22')),
-                    r.xb(6),
-                    r.Hc(
-                      '\n            ',
-                      r.hc(39, 28, 'DEMOS.START_UP.PRICING_TWO.SUBTITLE'),
-                      '\n          '
-                    ),
-                    r.xb(9),
-                    r.kc('ngForOf', t.plans),
-                    r.xb(2),
-                    r.Ab('col-md-', 12 / (t.plans.length + 1), ' ml-md-n3'),
-                    r.xb(13),
-                    r.Hc(
-                      '\n                    ',
-                      r.hc(63, 30, 'DEMOS.START_UP.PRICING_TWO.CUSTOM'),
-                      '\n                  '
-                    ),
-                    r.xb(6),
-                    r.Hc(
-                      '\n                    ',
-                      r.hc(69, 32, 'DEMOS.START_UP.PRICING_TWO.CUSTOM1'),
-                      '\n                  '
-                    ),
-                    r.xb(4),
-                    r.Hc(
-                      '\n                    ',
-                      r.hc(73, 34, 'DEMOS.START_UP.PRICING_TWO.CUSTOM2'),
-                      '\n                  '
-                    ),
-                    r.xb(5),
-                    r.kc('ngForOf', t.xtras),
-                    r.xb(8),
-                    r.Hc(
-                      '',
-                      r.hc(86, 36, 'DEMOS.START_UP.PRICING_TWO.CUSTOM3'),
-                      '\n\n            '
-                    ));
-              },
-              directives: [s.j, o.a],
-              pipes: [a.b],
-              styles: ['']
-            })),
-            t
-          );
-        })();
-      },
       nEva: function(t, c, i) {
         'use strict';
         i.d(c, 'a', function() {
-          return p;
+          return u;
         });
         var r = i('fXoL'),
-          a = i('sYmb'),
-          s = i('nhfI'),
-          o = i('ofXK'),
+          s = i('sYmb'),
+          o = i('nhfI'),
+          a = i('ofXK'),
           b = i('AL06');
         function l(n, t) {
           if (
@@ -2453,7 +1897,7 @@
               r.Gc(e.customer.name);
           }
         }
-        var p = (function() {
+        var u = (function() {
           var t = (function() {
             function t(e) {
               n(this, t),
@@ -2528,7 +1972,7 @@
           })();
           return (
             (t.ɵfac = function(n) {
-              return new (n || t)(r.Lb(a.c));
+              return new (n || t)(r.Lb(s.c));
             }),
             (t.ɵcmp = r.Fb({
               type: t,
@@ -2688,8 +2132,8 @@
                     r.xb(7),
                     r.kc('name', 'arrow-right')('size', 24));
               },
-              directives: [s.b, o.j, b.a],
-              pipes: [a.b],
+              directives: [o.b, a.j, b.a],
+              pipes: [s.b],
               styles: ['']
             })),
             t
@@ -2699,11 +2143,11 @@
       'q+Ce': function(t, c, i) {
         'use strict';
         i.d(c, 'a', function() {
-          return s;
+          return o;
         });
         var r = i('fXoL'),
-          a = i('sYmb'),
-          s = (function() {
+          s = i('sYmb'),
+          o = (function() {
             var t = (function() {
               function t(e) {
                 n(this, t), (this.translate = e);
@@ -2712,7 +2156,7 @@
             })();
             return (
               (t.ɵfac = function(n) {
-                return new (n || t)(r.Lb(a.c));
+                return new (n || t)(r.Lb(s.c));
               }),
               (t.ɵcmp = r.Fb({
                 type: t,
@@ -2791,252 +2235,12 @@
                         '\n      '
                       ));
                 },
-                pipes: [a.b],
+                pipes: [s.b],
                 styles: ['']
               })),
               t
             );
           })();
-      },
-      u8tZ: function(t, c, i) {
-        'use strict';
-        i.d(c, 'a', function() {
-          return l;
-        });
-        var r = i('fXoL'),
-          a = i('sYmb'),
-          s = i('ofXK');
-        function o(n, t) {
-          if (
-            (1 & n && (r.Qb(0, 'li'), r.Fc(1), r.gc(2, 'translate'), r.Pb()),
-            2 & n)
-          ) {
-            var e = t.$implicit;
-            r.Ab('list-group-item ', e.class, ''),
-              r.xb(1),
-              r.Hc('\n              ', r.hc(2, 4, e.name), '\n            ');
-          }
-        }
-        function b(n, t) {
-          if (
-            (1 & n &&
-              (r.Qb(0, 'div', 6),
-              r.Fc(1, '\n        '),
-              r.Qb(2, 'div', 7),
-              r.Fc(3, '\n          '),
-              r.Qb(4, 'div'),
-              r.Fc(5, '\n            '),
-              r.Qb(6, 'h4'),
-              r.Fc(7),
-              r.gc(8, 'translate'),
-              r.Pb(),
-              r.Fc(9, '\n\n            '),
-              r.Fc(10, '\n\n            '),
-              r.Qb(11, 'p'),
-              r.Fc(12),
-              r.gc(13, 'translate'),
-              r.Pb(),
-              r.Fc(14, '\n          '),
-              r.Pb(),
-              r.Fc(15, '\n\n          '),
-              r.Qb(16, 'ul', 8),
-              r.Fc(17, '\n            '),
-              r.Dc(18, o, 3, 6, 'li', 9),
-              r.Fc(19, '\n          '),
-              r.Pb(),
-              r.Fc(20, '\n\n          '),
-              r.Qb(21, 'div', 10),
-              r.Fc(22, '\n            '),
-              r.Qb(23, 'a', 11),
-              r.Fc(24),
-              r.gc(25, 'translate'),
-              r.Pb(),
-              r.Fc(26, '\n          '),
-              r.Pb(),
-              r.Fc(27, '\n        '),
-              r.Pb(),
-              r.Fc(28, '\n      '),
-              r.Pb()),
-            2 & n)
-          ) {
-            var e = t.$implicit;
-            r.xb(4),
-              r.zb(
-                'pricing card-header d-flex align-items-center flex-column ' +
-                  (e.best
-                    ? 'bg-primary-gradient text-contrast'
-                    : 'bg-light-gradient')
-              ),
-              r.xb(2),
-              r.Db('text-contrast', e.best),
-              r.xb(1),
-              r.Hc(
-                '\n              ',
-                r.hc(8, 11, e.plan.name),
-                '\n            '
-              ),
-              r.xb(5),
-              r.Gc(r.hc(13, 13, e.plan.description)),
-              r.xb(6),
-              r.kc('ngForOf', e.features),
-              r.xb(5),
-              r.Ab(
-                'btn ',
-                e.best ? 'btn-primary' : 'btn-outline-secondary',
-                ''
-              ),
-              r.xb(1),
-              r.Hc(
-                '\n              ',
-                r.hc(25, 15, 'DEMOS.START_UP.PRICING.BUY'),
-                '\n            '
-              );
-          }
-        }
-        var l = (function() {
-          var t = (function() {
-            function t(e) {
-              n(this, t),
-                (this.translate = e),
-                (this.plans = [
-                  {
-                    icon: 'box',
-                    plan: {
-                      name: 'DEMOS.START_UP.PRICING.PLAN_PERSONAL',
-                      price: 0.99,
-                      description: 'DEMOS.START_UP.PRICING.PLAN_PERSONAL_DESC'
-                    },
-                    features: [
-                      { name: 'DEMOS.START_UP.PRICING.PLAN_PERSONAL1' },
-                      { name: 'DEMOS.START_UP.PRICING.PLAN_PERSONAL2' },
-                      { name: 'DEMOS.START_UP.PRICING.PLAN_PERSONAL3' },
-                      { name: 'DEMOS.START_UP.PRICING.PLAN_PERSONAL4' },
-                      { name: 'DEMOS.START_UP.PRICING.PLAN_PERSONAL5' }
-                    ]
-                  },
-                  {
-                    icon: 'download-cloud',
-                    best: !0,
-                    plan: {
-                      name: 'DEMOS.START_UP.PRICING.PLAN_BUSINESS',
-                      price: 29.99,
-                      description: 'DEMOS.START_UP.PRICING.PLAN_BUSINESS_DESC'
-                    },
-                    features: [
-                      { name: 'DEMOS.START_UP.PRICING.PLAN_BUSINESS1' },
-                      { name: 'DEMOS.START_UP.PRICING.PLAN_BUSINESS2' },
-                      { name: 'DEMOS.START_UP.PRICING.PLAN_BUSINESS3' },
-                      { name: 'DEMOS.START_UP.PRICING.PLAN_BUSINESS4' },
-                      { name: 'DEMOS.START_UP.PRICING.PLAN_BUSINESS5' }
-                    ]
-                  },
-                  {
-                    icon: 'settings',
-                    plan: {
-                      name: 'DEMOS.START_UP.PRICING.PLAN_ENTERPRISE',
-                      price: 99.99,
-                      description: 'DEMOS.START_UP.PRICING.PLAN_ENTERPRISE_DESC'
-                    },
-                    features: [
-                      { name: 'DEMOS.START_UP.PRICING.PLAN_ENTERPRISE1' },
-                      { name: 'DEMOS.START_UP.PRICING.PLAN_ENTERPRISE2' },
-                      { name: 'DEMOS.START_UP.PRICING.PLAN_ENTERPRISE3' },
-                      { name: 'DEMOS.START_UP.PRICING.PLAN_ENTERPRISE4' },
-                      { name: 'DEMOS.START_UP.PRICING.PLAN_ENTERPRISE5' }
-                    ]
-                  },
-                  {
-                    icon: 'download-cloud',
-                    best: !0,
-                    plan: {
-                      name: 'DEMOS.START_UP.PRICING.PLAN_BUSINESSD',
-                      price: 29.99,
-                      description: 'DEMOS.START_UP.PRICING.PLAN_BUSINESSD_DESC'
-                    },
-                    features: [
-                      { name: 'DEMOS.START_UP.PRICING.PLAN_BUSINESSD1' },
-                      { name: 'DEMOS.START_UP.PRICING.PLAN_BUSINESSD2' },
-                      { name: 'DEMOS.START_UP.PRICING.PLAN_BUSINESSD3' },
-                      { name: 'DEMOS.START_UP.PRICING.PLAN_BUSINESSD4' },
-                      { name: 'DEMOS.START_UP.PRICING.PLAN_BUSINESSD5' }
-                    ]
-                  }
-                ]);
-            }
-            return e(t, [{ key: 'ngOnInit', value: function() {} }]), t;
-          })();
-          return (
-            (t.ɵfac = function(n) {
-              return new (n || t)(r.Lb(a.c));
-            }),
-            (t.ɵcmp = r.Fb({
-              type: t,
-              selectors: [['dc-pricing-cards']],
-              decls: 22,
-              vars: 7,
-              consts: [
-                [1, 'container'],
-                [1, 'section-heading', 'text-center'],
-                [1, 'mb-2'],
-                [1, 'lead', 'text-secondary'],
-                [1, 'row'],
-                ['class', 'col-md-3 mt-4', 4, 'ngFor', 'ngForOf'],
-                [1, 'col-md-3', 'mt-4'],
-                [1, 'card', 'text-center'],
-                [1, 'list-group', 'list-group-flush'],
-                [3, 'class', 4, 'ngFor', 'ngForOf'],
-                [1, 'card-body'],
-                ['href', 'https://everythink.ai/app/#/sessions/signup']
-              ],
-              template: function(n, t) {
-                1 & n &&
-                  (r.Qb(0, 'section'),
-                  r.Fc(1, '\n  '),
-                  r.Qb(2, 'div', 0),
-                  r.Fc(3, '\n    '),
-                  r.Qb(4, 'div', 1),
-                  r.Fc(5, '\n      '),
-                  r.Qb(6, 'h2', 2),
-                  r.Fc(7),
-                  r.gc(8, 'translate'),
-                  r.Pb(),
-                  r.Fc(9, '\n      '),
-                  r.Qb(10, 'p', 3),
-                  r.Fc(11),
-                  r.gc(12, 'translate'),
-                  r.Pb(),
-                  r.Fc(13, '\n    '),
-                  r.Pb(),
-                  r.Fc(14, '\n\n    '),
-                  r.Qb(15, 'div', 4),
-                  r.Fc(16, '\n      '),
-                  r.Dc(17, b, 29, 17, 'div', 5),
-                  r.Fc(18, '\n    '),
-                  r.Pb(),
-                  r.Fc(19, '\n  '),
-                  r.Pb(),
-                  r.Fc(20, '\n'),
-                  r.Pb(),
-                  r.Fc(21, '\n')),
-                  2 & n &&
-                    (r.xb(7),
-                    r.Gc(r.hc(8, 3, 'DEMOS.START_UP.PRICING.TITLE')),
-                    r.xb(4),
-                    r.Hc(
-                      '\n        ',
-                      r.hc(12, 5, 'DEMOS.START_UP.PRICING.SUBTITLE'),
-                      '\n      '
-                    ),
-                    r.xb(6),
-                    r.kc('ngForOf', t.plans));
-              },
-              directives: [s.j],
-              pipes: [a.b],
-              styles: ['']
-            })),
-            t
-          );
-        })();
       }
     }
   ]);

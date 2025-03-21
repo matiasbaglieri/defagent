@@ -148,7 +148,7 @@
         o = e('fXoL'),
         s = e('tyNb');
       const i = function() {
-          return ['/ai-agents'];
+          return ['/drones'];
         },
         a = function() {
           return ['/terms'];
